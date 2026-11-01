@@ -1,0 +1,43 @@
+---
+// Hub page for a topic, e.g. /the-cycle/
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Text from '../../components/Text.astro';
+import { url } from '../../lib/url';
+
+export async function getStaticPaths() {
+  const topics = await getCollection('topics', (t) => t.data.status === 'live');
+  return topics.map((topic) => ({ params: { topic: topic.id }, props: { topic } }));
+}
+
+const { topic } = Astro.props as { topic: CollectionEntry<'topics'> };
+const { Content } = await render(topic);
+const problems = (await getCollection('problems', (p) => p.id.startsWith(`${topic.id}/`))).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+<Base title={topic.data.title} description={topic.data.hook}>
+  <p class="eyebrow">Act 1 · The problems</p>
+  <h1>{topic.data.title}</h1>
+  <p class="hook"><Text text={topic.data.hook} /></p>
+  <Content />
+
+  <ul class="cards">
+    {
+      problems.map((p) => (
+        <li class="card">
+          <h3><a href={url(`/${p.id}/`)}>{p.data.title}</a></h3>
+          <p><Text text={p.data.hook} /></p>
+        </li>
+      ))
+    }
+    {
+      topic.data.comingSoon.map((name) => (
+        <li class="card coming-soon">
+          <span class="badge">Coming soon</span>
+          <h3>{name}</h3>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

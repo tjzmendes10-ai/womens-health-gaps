@@ -1,0 +1,10 @@
+---
+// Shows a piece of text from frontmatter, highlighting any [PLACEHOLDERS].
+import { splitPlaceholders, PLACEHOLDER_TITLE } from '../lib/placeholder-plugins.mjs';
+
+interface Props {
+  text: string;
+}
+const parts = splitPlaceholders(Astro.props.text);
+---
+{parts.map((p) => (p.placeholder ? <mark class="placeholder" title={PLACEHOLDER_TITLE}>{p.text}</mark> : p.text))}

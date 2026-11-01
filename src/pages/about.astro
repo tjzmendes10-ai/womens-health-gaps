@@ -1,0 +1,15 @@
+---
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
+import { getPage } from '../lib/content';
+
+const page = await getPage('about', 'about');
+const { Content } = await render(page);
+---
+<Base title={page.data.title} description={page.data.description}>
+  <h1>{page.data.title}</h1>
+  <Content />
+  <h2>Not medical advice</h2>
+  <MedicalDisclaimer />
+</Base>

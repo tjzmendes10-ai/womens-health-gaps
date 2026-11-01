@@ -1,0 +1,52 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Text from '../components/Text.astro';
+import { getPage } from '../lib/content';
+import { url } from '../lib/url';
+
+const home = await getPage('home', 'home');
+const { Content } = await render(home);
+const topics = (await getCollection('topics')).sort((a, b) => a.data.order - b.data.order);
+const { act1, act2, act3 } = home.data;
+---
+<Base title={home.data.title} description={home.data.description}>
+  <h1>{home.data.title}</h1>
+  <Content />
+
+  <section id="act-1">
+    <p class="eyebrow">Act 1</p>
+    <h2>{act1.title}</h2>
+    <p><Text text={act1.blurb} /></p>
+    <ul class="cards">
+      {
+        topics.map((t) =>
+          t.data.status === 'live' ? (
+            <li class="card">
+              <h3><a href={url(`/${t.id}/`)}>{t.data.title}</a></h3>
+              <p><Text text={t.data.hook} /></p>
+            </li>
+          ) : (
+            <li class="card coming-soon">
+              <span class="badge">Coming soon</span>
+              <h3>{t.data.title}</h3>
+              <p><Text text={t.data.hook} /></p>
+            </li>
+          ),
+        )
+      }
+    </ul>
+  </section>
+
+  <section id="act-2">
+    <p class="eyebrow">Act 2</p>
+    <h2><a href={url('/history/')}>{act2.title}</a></h2>
+    <p><Text text={act2.blurb} /></p>
+  </section>
+
+  <section id="act-3">
+    <p class="eyebrow">Act 3</p>
+    <h2><a href={url('/where-were-headed/')}>{act3.title}</a></h2>
+    <p><Text text={act3.blurb} /></p>
+  </section>
+</Base>

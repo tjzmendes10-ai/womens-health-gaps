@@ -1,0 +1,83 @@
+/* Deliberately plain: readable defaults only. Proper design comes later. */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #1d1d1f;
+  background: #fff;
+}
+
+main, .site-header, .site-footer {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
+h1, h2, h3, nav, .stat, .site-name, .eyebrow, .timeline-date {
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  line-height: 1.25;
+}
+
+a { color: #0b5c8a; }
+
+.skip-link { position: absolute; left: -999px; }
+.skip-link:focus { left: 1rem; top: 1rem; background: #fff; padding: 0.5rem; }
+
+.site-header { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; align-items: baseline; border-bottom: 1px solid #ddd; }
+.site-name { font-weight: 700; text-decoration: none; color: inherit; }
+.site-header ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin: 0; padding: 0; font-size: 0.95rem; }
+.site-header [aria-current='page'] { font-weight: 700; }
+
+.site-footer { border-top: 1px solid #ddd; margin-top: 3rem; font-size: 0.95rem; color: #555; }
+
+.hook { font-size: 1.3rem; color: #444; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; color: #666; margin-bottom: 0; }
+.breadcrumb { font-size: 0.9rem; }
+
+/* Placeholders: impossible to miss on purpose */
+mark.placeholder {
+  background: #fff3a3;
+  outline: 2px dashed #c79a00;
+  padding: 0 0.2em;
+  color: #5c4500;
+}
+
+/* Lifeline: prominent, not small print */
+.lifeline {
+  border: 2px solid #0b5c8a;
+  background: #eef6fb;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+}
+.lifeline p { margin: 0.25rem 0; }
+.lifeline-number { font-size: 1.4rem; font-weight: 700; font-family: system-ui, sans-serif; }
+
+/* Stat callouts */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1rem; margin: 2rem 0; }
+.stat { margin: 0; padding: 1rem; border: 1px solid #ddd; border-radius: 6px; }
+.stat-region { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: #666; }
+.stat-value { font-size: 1.6rem; font-weight: 700; margin: 0.25rem 0; }
+.stat figcaption { font-size: 0.95rem; }
+
+/* Cards */
+.cards { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1rem; }
+.card { border: 1px solid #ddd; border-radius: 6px; padding: 1rem; }
+.card h3 { margin-top: 0; }
+.card.coming-soon { color: #777; border-style: dashed; }
+.badge { font-family: system-ui, sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* Timeline */
+.timeline { list-style: none; padding: 0; border-left: 2px solid #ccc; }
+.timeline-entry { padding: 0 0 1.5rem 1.25rem; }
+.timeline-date { font-weight: 700; margin: 0; color: #0b5c8a; }
+.timeline-title { margin: 0.25rem 0; font-size: 1.25rem; }
+.timeline-source { font-size: 0.9rem; color: #555; }
+
+.sources { font-size: 0.95rem; }
+.last-reviewed, .disclaimer { font-size: 0.95rem; color: #555; }

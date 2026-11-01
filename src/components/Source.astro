@@ -1,0 +1,18 @@
+---
+// One source citation: a real reference, or a highlighted "needed" placeholder.
+import { PLACEHOLDER_TITLE } from '../lib/placeholder-plugins.mjs';
+
+interface Props {
+  source: { title?: string; publisher?: string; year?: string | number; url?: string; needed?: string };
+}
+const { source: s } = Astro.props;
+---
+{
+  s.needed ? (
+    <mark class="placeholder" title={PLACEHOLDER_TITLE}>[SOURCE NEEDED – {s.needed}]</mark>
+  ) : (
+    <>
+      <a href={s.url}>{s.title}</a>. {s.publisher}{s.year ? `, ${s.year}` : ''}.
+    </>
+  )
+}

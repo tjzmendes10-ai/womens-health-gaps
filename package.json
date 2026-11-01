@@ -1,0 +1,19 @@
+{
+  "name": "womens-health-gaps",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A three-part story about where women's healthcare falls short, how we got here, and where we're headed.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@astrojs/markdown-satteri": "^0.4.6",
+    "astro": "^7.4.4",
+    "typescript": "^6.0.3"
+  }
+}

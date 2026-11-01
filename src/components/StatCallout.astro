@@ -1,0 +1,22 @@
+---
+// A single statistic. The "chart" slot is empty for now; a small chart can be
+// dropped in later without changing how stats are written in markdown.
+import Text from './Text.astro';
+
+interface Props {
+  value: string;
+  label: string;
+  region: 'Australia' | 'Global';
+  source: number;
+}
+const { value, label, region, source } = Astro.props;
+---
+<figure class="stat" data-region={region.toLowerCase()}>
+  <span class="stat-region">{region}</span>
+  <p class="stat-value"><Text text={value} /></p>
+  <slot name="chart" />
+  <figcaption>
+    <Text text={label} />
+    <a class="stat-source" href={`#source-${source}`} aria-label={`Source ${source}`}>[{source}]</a>
+  </figcaption>
+</figure>

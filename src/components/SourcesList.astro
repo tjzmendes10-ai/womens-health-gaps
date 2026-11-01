@@ -1,0 +1,14 @@
+---
+import Source from './Source.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  sources: CollectionEntry<'problems'>['data']['sources'];
+}
+---
+<section class="sources" aria-labelledby="sources-heading">
+  <h2 id="sources-heading">Sources</h2>
+  <ol>
+    {Astro.props.sources.map((s, i) => <li id={`source-${i + 1}`}><Source source={s} /></li>)}
+  </ol>
+</section>

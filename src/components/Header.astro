@@ -1,0 +1,19 @@
+---
+import { url } from '../lib/url';
+
+const links = [
+  { href: url('/the-cycle/'), label: 'The problems' },
+  { href: url('/history/'), label: 'How we got here' },
+  { href: url('/where-were-headed/'), label: "Where we're headed" },
+  { href: url('/about/'), label: 'About' },
+];
+const here = Astro.url.pathname;
+---
+<header class="site-header">
+  <a class="site-name" href={url('/')}>Women's Health Gaps</a>
+  <nav aria-label="Main">
+    <ul>
+      {links.map((l) => <li><a href={l.href} aria-current={here.startsWith(l.href) ? 'page' : undefined}>{l.label}</a></li>)}
+    </ul>
+  </nav>
+</header>
