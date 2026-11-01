@@ -3,9 +3,11 @@ import MedicalDisclaimer from './MedicalDisclaimer.astro';
 import { url } from '../lib/url';
 ---
 <footer class="site-footer">
+  <div class="wrap">
   <MedicalDisclaimer />
   <p>
-    Built by <a href={url('/about/')}>Tom Mendes</a>.
+    Built by <a href={url('/about/')}>Tom Mendes</a>.{' '}
     <a href="https://github.com/tjzmendes10-ai/womens-health-gaps">Source code on GitHub</a>.
   </p>
+  </div>
 </footer>

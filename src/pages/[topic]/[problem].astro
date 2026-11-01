@@ -34,33 +34,35 @@ const { title, hook, stats, sources, mentalHealth, lastReviewed } = problem.data
 const body = splitProblemBody(problem);
 ---
 <Base title={title} description={hook}>
-  <p class="breadcrumb"><a href={url(`/${topic.id}/`)}>{topic.data.title}</a></p>
-  <h1>{title}</h1>
-  <p class="hook"><Text text={hook} /></p>
+  <article class="page">
+    <p class="breadcrumb"><a href={url(`/${topic.id}/`)}>{topic.data.title}</a></p>
+    <h1>{title}</h1>
+    <p class="hook"><Text text={hook} /></p>
 
-  {mentalHealth && <Lifeline />}
+    {mentalHealth && <Lifeline />}
 
-  <Fragment set:html={body.summary} />
+    <Fragment set:html={body.summary} />
 
-  <section class="stats" aria-label="Key statistics">
-    {stats.map((s) => <StatCallout {...s} />)}
-  </section>
+    <section class="stats" aria-label="Key statistics">
+      {stats.map((s) => <StatCallout {...s} />)}
+    </section>
 
-  <Fragment set:html={body.whyAustralia} />
-  {body.globalContext && <Fragment set:html={body.globalContext} />}
+    <Fragment set:html={body.whyAustralia} />
+    {body.globalContext && <Fragment set:html={body.globalContext} />}
 
-  <SourcesList sources={sources} />
+    <SourcesList sources={sources} />
 
-  <p class="last-reviewed">
-    Last reviewed:{' '}
-    {
-      lastReviewed === 'not yet reviewed' ? (
-        <mark class="placeholder">[NOT YET REVIEWED]</mark>
-      ) : (
-        <time datetime={lastReviewed.toISOString().slice(0, 10)}>
-          {lastReviewed.toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })}
-        </time>
-      )
-    }
-  </p>
+    <p class="last-reviewed">
+      Last reviewed:{' '}
+      {
+        lastReviewed === 'not yet reviewed' ? (
+          <mark class="placeholder">[NOT YET REVIEWED]</mark>
+        ) : (
+          <time datetime={lastReviewed.toISOString().slice(0, 10)}>
+            {lastReviewed.toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })}
+          </time>
+        )
+      }
+    </p>
+  </article>
 </Base>

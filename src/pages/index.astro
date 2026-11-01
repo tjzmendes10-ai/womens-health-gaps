@@ -11,42 +11,63 @@ const topics = (await getCollection('topics')).sort((a, b) => a.data.order - b.d
 const { act1, act2, act3 } = home.data;
 ---
 <Base title={home.data.title} description={home.data.description}>
-  <h1>{home.data.title}</h1>
-  <Content />
+  <header class="home-hero">
+    <p class="eyebrow">Women's health, in three acts</p>
+    <h1>{home.data.title}</h1>
+    <div class="home-intro"><Content /></div>
+  </header>
 
-  <section id="act-1">
-    <p class="eyebrow">Act 1</p>
-    <h2>{act1.title}</h2>
-    <p><Text text={act1.blurb} /></p>
-    <ul class="cards">
-      {
-        topics.map((t) =>
-          t.data.status === 'live' ? (
-            <li class="card">
-              <h3><a href={url(`/${t.id}/`)}>{t.data.title}</a></h3>
-              <p><Text text={t.data.hook} /></p>
-            </li>
-          ) : (
-            <li class="card coming-soon">
-              <span class="badge">Coming soon</span>
-              <h3>{t.data.title}</h3>
-              <p><Text text={t.data.hook} /></p>
-            </li>
-          ),
-        )
-      }
-    </ul>
+  <section class="act" id="act-1" aria-labelledby="act-1-title">
+    <div class="act-inner">
+      <p class="eyebrow">Act 1</p>
+      <div>
+        <h2 id="act-1-title">{act1.title}</h2>
+        <p class="act-blurb"><Text text={act1.blurb} /></p>
+        <ul class="row-list">
+          {
+            topics.map((t) =>
+              t.data.status === 'live' ? (
+                <li>
+                  <a href={url(`/${t.id}/`)}>
+                    <h3>{t.data.title}</h3>
+                    <p><Text text={t.data.hook} /></p>
+                  </a>
+                </li>
+              ) : (
+                <li class="coming-soon">
+                  <div class="row">
+                    <span class="tag">Coming soon</span>
+                    <h3>{t.data.title}</h3>
+                    <p><Text text={t.data.hook} /></p>
+                  </div>
+                </li>
+              ),
+            )
+          }
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section id="act-2">
-    <p class="eyebrow">Act 2</p>
-    <h2><a href={url('/history/')}>{act2.title}</a></h2>
-    <p><Text text={act2.blurb} /></p>
+  <section class="act" id="act-2" aria-labelledby="act-2-title">
+    <div class="act-inner">
+      <p class="eyebrow">Act 2</p>
+      <div>
+        <h2 id="act-2-title"><a href={url('/history/')}>{act2.title}</a></h2>
+        <p class="act-blurb"><Text text={act2.blurb} /></p>
+        <a class="read-more" href={url('/history/')}>See the timeline</a>
+      </div>
+    </div>
   </section>
 
-  <section id="act-3">
-    <p class="eyebrow">Act 3</p>
-    <h2><a href={url('/where-were-headed/')}>{act3.title}</a></h2>
-    <p><Text text={act3.blurb} /></p>
+  <section class="act" id="act-3" aria-labelledby="act-3-title">
+    <div class="act-inner">
+      <p class="eyebrow">Act 3</p>
+      <div>
+        <h2 id="act-3-title"><a href={url('/where-were-headed/')}>{act3.title}</a></h2>
+        <p class="act-blurb"><Text text={act3.blurb} /></p>
+        <a class="read-more" href={url('/where-were-headed/')}>Read on</a>
+      </div>
+    </div>
   </section>
 </Base>

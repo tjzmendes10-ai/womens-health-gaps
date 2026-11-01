@@ -9,28 +9,32 @@ const page = await getPage('headed', 'headed');
 const { Content } = await render(page);
 ---
 <Base title={page.data.title} description={page.data.description}>
-  <p class="eyebrow">Act 3</p>
-  <h1>{page.data.title}</h1>
-  <Content />
+  <article class="page">
+    <p class="eyebrow">Act 3</p>
+    <h1>{page.data.title}</h1>
+    <Content />
 
-  <section aria-labelledby="actions-heading">
-    <h2 id="actions-heading">{page.data.actionsTitle}</h2>
-    <ol class="cards">
-      {
-        page.data.actions.map((a) => (
-          <li class="card">
-            <h3><Text text={a.title} /></h3>
-            <p><Text text={a.description} /></p>
-            <p>
-              {a.needed ? (
-                <mark class="placeholder" title={PLACEHOLDER_TITLE}>[LINK NEEDED – {a.needed}]</mark>
-              ) : (
-                <a href={a.url}>{a.organisation}</a>
-              )}
-            </p>
-          </li>
-        ))
-      }
-    </ol>
-  </section>
+    <section aria-labelledby="actions-heading">
+      <h2 id="actions-heading">{page.data.actionsTitle}</h2>
+      <ol class="action-list">
+        {
+          page.data.actions.map((a) => (
+            <li>
+              <div>
+                <h3><Text text={a.title} /></h3>
+                <p><Text text={a.description} /></p>
+                <p>
+                  {a.needed ? (
+                    <mark class="placeholder" title={PLACEHOLDER_TITLE}>[LINK NEEDED – {a.needed}]</mark>
+                  ) : (
+                    <a class="action-link" href={a.url}>{a.organisation}</a>
+                  )}
+                </p>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+  </article>
 </Base>

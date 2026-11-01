@@ -8,8 +8,10 @@ const page = await getPage('about', 'about');
 const { Content } = await render(page);
 ---
 <Base title={page.data.title} description={page.data.description}>
-  <h1>{page.data.title}</h1>
-  <Content />
-  <h2>Not medical advice</h2>
-  <MedicalDisclaimer />
+  <article class="page">
+    <h1>{page.data.title}</h1>
+    <Content />
+    <h2>Not medical advice</h2>
+    <MedicalDisclaimer />
+  </article>
 </Base>

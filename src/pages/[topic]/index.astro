@@ -17,27 +17,33 @@ const problems = (await getCollection('problems', (p) => p.id.startsWith(`${topi
 );
 ---
 <Base title={topic.data.title} description={topic.data.hook}>
-  <p class="eyebrow">Act 1 · The problems</p>
-  <h1>{topic.data.title}</h1>
-  <p class="hook"><Text text={topic.data.hook} /></p>
-  <Content />
+  <article class="page">
+    <p class="eyebrow"><a href={url('/#act-1')}>Act 1 · The problems</a></p>
+    <h1>{topic.data.title}</h1>
+    <p class="hook"><Text text={topic.data.hook} /></p>
+    <Content />
 
-  <ul class="cards">
-    {
-      problems.map((p) => (
-        <li class="card">
-          <h3><a href={url(`/${p.id}/`)}>{p.data.title}</a></h3>
-          <p><Text text={p.data.hook} /></p>
-        </li>
-      ))
-    }
-    {
-      topic.data.comingSoon.map((name) => (
-        <li class="card coming-soon">
-          <span class="badge">Coming soon</span>
-          <h3>{name}</h3>
-        </li>
-      ))
-    }
-  </ul>
+    <ul class="row-list">
+      {
+        problems.map((p) => (
+          <li>
+            <a href={url(`/${p.id}/`)}>
+              <h3>{p.data.title}</h3>
+              <p><Text text={p.data.hook} /></p>
+            </a>
+          </li>
+        ))
+      }
+      {
+        topic.data.comingSoon.map((name) => (
+          <li class="coming-soon">
+            <div class="row">
+              <span class="tag">Coming soon</span>
+              <h3>{name}</h3>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </article>
 </Base>
