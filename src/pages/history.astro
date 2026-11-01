@@ -8,8 +8,10 @@ const page = await getPage('history', 'history');
 const { Content } = await render(page);
 ---
 <Base title={page.data.title} description={page.data.description}>
-  <p class="eyebrow">Act 2</p>
-  <h1>{page.data.title}</h1>
-  <Content />
-  <Timeline />
+  <article class="page">
+    <p class="eyebrow">Act 2</p>
+    <h1>{page.data.title}</h1>
+    <Content />
+    <Timeline />
+  </article>
 </Base>

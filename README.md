@@ -179,5 +179,7 @@ You can see each build's progress and results in the repository's **Actions** ta
 - `src/pages/` holds the page templates. File names map to web addresses.
 - `src/components/` holds reusable pieces: stat callouts, the Lifeline box, the timeline, sources.
 - `src/layouts/Base.astro` is the shared page shell (header, footer).
+- `src/styles/global.css` holds the design. Colours, fonts, sizes and spacing are set once at the top ("design tokens"), so the whole look can be adjusted there.
+- Fonts (Newsreader for headings, Inter for body text) are set in `astro.config.mjs`. They're downloaded at build time and served from this site.
 - `src/lib/placeholder-plugins.mjs` contains the placeholder highlighting and the end-of-build report.
 - `.github/workflows/` holds the automated build and deploy steps.

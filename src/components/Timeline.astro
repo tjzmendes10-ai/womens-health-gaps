@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Source from './Source.astro';
+import Text from './Text.astro';
 
 const entries = (await getCollection('timeline')).sort((a, b) => a.data.sortYear - b.data.sortYear);
 const rendered = await Promise.all(entries.map(async (e) => ({ entry: e, Content: (await render(e)).Content })));
@@ -10,13 +11,13 @@ const rendered = await Promise.all(entries.map(async (e) => ({ entry: e, Content
     rendered.map(({ entry, Content }) => (
       <li class="timeline-entry">
         <p class="timeline-date">{entry.data.date}</p>
-        <h2 class="timeline-title">{entry.data.title}</h2>
-        <div class="timeline-description">
+        <div class="timeline-body">
+          <h2 class="timeline-title"><Text text={entry.data.title} /></h2>
           <Content />
+          <p class="timeline-source">
+            Source: <Source source={entry.data.source} />
+          </p>
         </div>
-        <p class="timeline-source">
-          Source: <Source source={entry.data.source} />
-        </p>
       </li>
     ))
   }

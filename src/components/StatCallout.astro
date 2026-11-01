@@ -1,6 +1,7 @@
 ---
-// A single statistic. The "chart" slot is empty for now; a small chart can be
-// dropped in later without changing how stats are written in markdown.
+// A single statistic: big number, short context line, region tag, source link.
+// The "chart" slot is empty for now; a small chart can be dropped in later
+// without changing how stats are written in markdown.
 import Text from './Text.astro';
 
 interface Props {
@@ -12,11 +13,11 @@ interface Props {
 const { value, label, region, source } = Astro.props;
 ---
 <figure class="stat" data-region={region.toLowerCase()}>
-  <span class="stat-region">{region}</span>
   <p class="stat-value"><Text text={value} /></p>
+  <figcaption><Text text={label} /></figcaption>
   <slot name="chart" />
-  <figcaption>
-    <Text text={label} />
-    <a class="stat-source" href={`#source-${source}`} aria-label={`Source ${source}`}>[{source}]</a>
-  </figcaption>
+  <div class="stat-meta">
+    <span class="tag">{region}</span>
+    <a class="stat-source" href={`#source-${source}`}>Source {source}</a>
+  </div>
 </figure>
