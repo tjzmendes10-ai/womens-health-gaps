@@ -4,6 +4,7 @@ import Base from '../layouts/Base.astro';
 import Text from '../components/Text.astro';
 import PageBand from '../components/PageBand.astro';
 import SunSpot from '../components/spots/SunSpot.astro';
+import Source from '../components/Source.astro';
 import { getPage } from '../lib/content';
 import { PLACEHOLDER_TITLE } from '../lib/placeholder-plugins.mjs';
 
@@ -32,19 +33,42 @@ const { Content } = await render(page);
     </svg>
   </div>
 
-  <section class="actions-panel" aria-labelledby="actions-heading">
+  <section class="actions-panel" aria-labelledby="changes-heading">
     <div class="page">
-      <h2 id="actions-heading">{page.data.actionsTitle}</h2>
-      <ol class="action-cards">
+      <h2 id="changes-heading">{page.data.changesTitle}</h2>
+      <p class="panel-lead">The system has to change. Individual women shouldn't have to carry it.</p>
+      <ul class="change-cards">
+        {
+          page.data.changes.map((c) => (
+            <li class="change-card">
+              <h3><Text text={c.who} /></h3>
+              <ul>
+                {c.points.map((pt) => <li><Text text={pt} /></li>)}
+              </ul>
+              {c.sources.length > 0 && (
+                <div class="change-sources">
+                  <p>{c.sources.length === 1 ? 'Source' : 'Sources'}</p>
+                  <ul>
+                    {c.sources.map((src) => <li><Source source={src} /></li>)}
+                  </ul>
+                </div>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+
+      <h2 id="you-heading" class="you-heading">{page.data.youTitle}</h2>
+      <ol class="you-list" aria-labelledby="you-heading">
         {
           page.data.actions.map((a) => (
-            <li class="action-card">
+            <li>
               <h3><Text text={a.title} /></h3>
               <p><Text text={a.description} /></p>
               {a.needed ? (
                 <p><mark class="placeholder" title={PLACEHOLDER_TITLE}>[LINK NEEDED – {a.needed}]</mark></p>
               ) : (
-                <a class="action-link" href={a.url}>{a.organisation}</a>
+                a.url && <a class="action-link" href={a.url}>{a.organisation}</a>
               )}
             </li>
           ))

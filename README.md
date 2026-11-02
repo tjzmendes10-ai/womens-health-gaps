@@ -120,7 +120,7 @@ Placeholders show up **highlighted in yellow** on the site. Every build also end
 [WARN] [placeholder-report]    14  dismissed-as-normal/endometriosis/index.html
 ```
 
-For sources and the action links on the "Where we're headed" page, write `needed: "what's missing"` instead of the real details.
+For sources, write `needed: "what's missing"` instead of the real details. On the "Where we're headed" page, "What needs to change" is the `changes` list (who is responsible, their `points`, and `sources` for any figures); "What you can do" is the `actions` list, where a link to an organisation is optional.
 
 ## When something's wrong
 

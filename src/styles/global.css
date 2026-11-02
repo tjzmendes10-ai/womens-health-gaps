@@ -171,7 +171,7 @@ main:has(> .hero) { padding-top: 0; }
 
 /* Standard reading page: one centred column, prose at a comfortable width. */
 .page { max-width: var(--page); margin-inline: auto; padding-inline: var(--gutter); }
-.page > :not(.stats, .timeline, .action-list, .action-cards, .row-list) { max-width: var(--measure); }
+.page > :not(.stats, .timeline, .action-list, .action-cards, .change-cards, .you-list, .row-list) { max-width: var(--measure); }
 
 /* ==========================================================================
    Shared text pieces
@@ -569,3 +569,30 @@ main:has(.actions-panel) { padding-bottom: 0; }
 @keyframes scene-sun { from { transform: translateY(110px); } to { transform: translateY(0); } }
 @keyframes scene-door-open { from { transform: scaleX(1); } to { transform: scaleX(0.15); } }
 @keyframes scene-join { from { transform: translateX(var(--from)); opacity: 0; } to { transform: none; opacity: 1; } }
+
+/* What needs to change: cards by who is responsible */
+.panel-lead { font-size: var(--step-1); color: var(--ink); margin-bottom: 1.5rem; }
+.change-cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+@media (min-width: 40rem) { .change-cards { grid-template-columns: 1fr 1fr; } }
+.change-card {
+  background: var(--surface);
+  border-radius: 14px;
+  border-top: 5px solid var(--teal);
+  padding: 1.25rem 1.25rem 1.4rem;
+  box-shadow: 0 10px 24px -16px rgba(15, 61, 62, 0.45);
+}
+.change-card h3 { font-size: var(--step-2); margin: 0 0 0.6rem; }
+.change-card ul { margin: 0; padding-left: 1.1rem; }
+.change-card li + li { margin-top: 0.5rem; }
+.change-sources { margin: 0.9rem 0 0; font-size: var(--step--1); color: var(--ink-muted); }
+.change-sources p { margin: 0 0 0.2rem; font-weight: 600; }
+.change-card .change-sources ul { list-style: none; padding: 0; }
+.change-card .change-sources li + li { margin-top: 0.3rem; }
+
+/* What you can do: smaller and simpler than the cards above */
+.actions-panel .page > h2.you-heading { font-size: var(--step-2); margin-top: 3rem; }
+.you-list { list-style: none; margin: 1rem 0 0; padding: 0; border-top: 1px solid rgba(15, 61, 62, 0.2); }
+.you-list > li { padding: 1rem 0; border-bottom: 1px solid rgba(15, 61, 62, 0.2); }
+.you-list h3 { font-family: var(--sans); font-size: var(--step-0); font-weight: 700; margin: 0 0 0.25rem; color: var(--ink); }
+.you-list p { margin: 0 0 0.35rem; max-width: var(--measure); }
+.you-list .action-link { font-weight: 600; font-size: var(--step--1); }

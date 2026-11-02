@@ -10,7 +10,7 @@ act2:
   blurb: For most of medical history, women were explained away, studied as an afterthought or left out of research entirely. A timeline of how that happened and how it began to change.
 act3:
   title: Where we're headed
-  blurb: Real progress has been made, especially in the past few years. What has changed, what's still missing, and practical ways to speed things up.
+  blurb: Real progress has been made. What has changed, what still needs to change, and who is responsible for changing it.
 ---
 
 A girl born in Australia in 2024 can expect to live to about 85.5, around four years longer than a boy, who can expect about 81.6. But the extra years don't all come in good health. Women are expected to spend about 11.7 years of their lives in ill health, compared with about 9.9 years for men ([AIHW, 2024](https://www.aihw.gov.au/reports/burden-of-disease/australian-burden-of-disease-study-2024/contents/summary); years in ill health calculated from life expectancy and health-adjusted life expectancy).
