@@ -60,7 +60,7 @@ sources:
     year: 2025                 # optional
     url: https://...
   - needed: "what's missing"   # use this until you have the real source
-lastReviewed: 2026-11-02       # or: not yet reviewed
+lastReviewed: 2026-11-02T18:10:00+11:00   # date and Sydney time; or just 2026-11-02; or: not yet reviewed
 ---
 
 Summary: two or three paragraphs.

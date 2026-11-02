@@ -49,7 +49,7 @@ sources:
     publisher: InSight+, Medical Journal of Australia
     year: 2024
     url: https://insightplus.mja.com.au/2024/2/why-australia-needs-a-second-national-action-plan-for-endometriosis/
-lastReviewed: not yet reviewed
+lastReviewed: 2026-11-02T18:10:00+11:00
 ---
 
 Endometriosis is a chronic, inflammatory condition in which tissue similar to the lining of the uterus grows outside it. It can cause severe pelvic pain, painful periods, pain during sex, bowel and bladder symptoms, fatigue and difficulty getting pregnant. Its cause is not well understood, and there is no cure.
