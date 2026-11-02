@@ -19,7 +19,8 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#faf7f2" />
+    <!-- Browser toolbar colour on phones; matches --brand-deep (meta tags cannot read CSS variables) -->
+    <meta name="theme-color" content="#3a1838" />
     <Font cssVariable="--font-serif" preload />
     <Font cssVariable="--font-sans" preload={[{ style: 'normal' }]} />
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />

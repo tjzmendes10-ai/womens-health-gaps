@@ -1,14 +1,14 @@
 ---
-// Act 3: the doors open, others join her, and a blush sun rises.
+// Act 3: the doors open, others join her, and a saffron sun rises.
 import Person from '../figures/Person.astro';
 
 // A varied cast: ages, skin tones, hair and body types.
 const cast = [
-  { x: 132, from: -70, props: { stage: 'older', hair: 'curly', build: 1.25, skin: '#5c3a28', hairColour: '#1c1b19', coat: '#cfc6b8' } },
-  { x: 190, from: -110, props: { stage: 'child', hair: 'curly', skin: '#c68b59', hairColour: '#3b2a1e', coat: '#f6d3c4' } },
-  { x: 368, from: 110, props: { stage: 'adult', hair: 'short', build: 1.1, skin: '#6b4430', hairColour: '#1c1b19', coat: '#9db4bd', legs: '#4a5d66' } },
-  { x: 424, from: 90, props: { stage: 'adult', hair: 'long', build: 0.9, skin: '#e0b38f', hairColour: '#7a4b2a', coat: '#2f7a6e', legs: '#e0b38f' } },
-  { x: 236, from: -150, props: { stage: 'elderly', hair: 'short', skin: '#a8714f', hairColour: '#1c1b19', coat: '#e4dccd', legs: '#4a5d66' } },
+  { x: 132, from: -70, props: { stage: 'older', hair: 'curly', build: 1.25, skin: '#5c3a28', hairColour: '#1c1b19', coat: 'var(--accent-soft)' } },
+  { x: 190, from: -110, props: { stage: 'child', hair: 'curly', skin: '#c68b59', hairColour: '#3b2a1e', coat: 'var(--accent)' } },
+  { x: 368, from: 110, props: { stage: 'adult', hair: 'short', build: 1.1, skin: '#6b4430', hairColour: '#1c1b19', coat: 'var(--figure-grey)', legs: 'var(--figure-grey-dark)' } },
+  { x: 424, from: 90, props: { stage: 'adult', hair: 'long', build: 0.9, skin: '#e0b38f', hairColour: '#7a4b2a', coat: 'var(--brand-mid)', legs: '#e0b38f' } },
+  { x: 236, from: -150, props: { stage: 'elderly', hair: 'short', skin: '#a8714f', hairColour: '#1c1b19', coat: 'var(--cream-soft)', legs: 'var(--figure-grey-dark)' } },
 ] as const;
 ---
 <div class="act-scene" aria-hidden="true">
@@ -17,21 +17,21 @@ const cast = [
       <clipPath id="future-panel"><rect width="600" height="300" rx="24"></rect></clipPath>
     </defs>
     <g clip-path="url(#future-panel)">
-      <rect width="600" height="300" fill="#0f3d3e"></rect>
+      <rect width="600" height="300" style="fill:var(--brand-deep)"></rect>
       <g class="anim sun">
-        <circle cx="300" cy="200" r="78" fill="#f6d3c4"></circle>
+        <circle cx="300" cy="200" r="78" style="fill:var(--accent)"></circle>
       </g>
-      <path d="M0,214 C120,196 220,208 300,214 C400,222 500,200 600,206 L600,300 L0,300 Z" fill="#2f7a6e"></path>
+      <path d="M0,214 C120,196 220,208 300,214 C400,222 500,200 600,206 L600,300 L0,300 Z" style="fill:var(--brand-mid)"></path>
 
       <!-- two doors, swinging open -->
       {[24, 506].map((x) => (
         <g>
-          <rect x={x} y="96" width="70" height="140" rx="4" fill="#0f3d3e" opacity="0.6"></rect>
-          <rect x={x + 6} y="102" width="58" height="134" fill="#cfc6b8" opacity="0.85"></rect>
-          <rect class="anim door-open" x={x + 6} y="102" width="58" height="134" fill="#f6d3c4"></rect>
+          <rect x={x} y="96" width="70" height="140" rx="4" opacity="0.6" style="fill:var(--brand-deep)"></rect>
+          <rect x={x + 6} y="102" width="58" height="134" opacity="0.85" style="fill:var(--accent-soft)"></rect>
+          <rect class="anim door-open" x={x + 6} y="102" width="58" height="134" style="fill:var(--accent)"></rect>
         </g>
       ))}
-      <path d="M0,236 L600,236 L600,300 L0,300 Z" fill="#2f7a6e"></path>
+      <path d="M0,236 L600,236 L600,300 L0,300 Z" style="fill:var(--brand-mid)"></path>
 
       {cast.map((p) => (
         <g class="anim join" style={`--from:${p.from}px`}>
@@ -41,7 +41,7 @@ const cast = [
         </g>
       ))}
       <g transform="translate(300 236) scale(1.15)">
-        <Person hair="bun" skin="#8d5a3e" hairColour="#1c1b19" coat="#f6d3c4" collar="#cfc6b8" outline="#3e4c59" />
+        <Person hair="bun" skin="#8d5a3e" hairColour="#1c1b19" coat="var(--accent)" collar="var(--accent-soft)" outline="var(--outline)" />
       </g>
     </g>
   </svg>

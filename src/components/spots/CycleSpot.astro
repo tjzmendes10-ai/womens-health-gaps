@@ -3,13 +3,13 @@
 const r = 52;
 const c = 2 * Math.PI * r;
 const seg = c / 4 - 9;
-const colours = ['#f6d3c4', '#cfc6b8', '#f6d3c4', '#2f7a6e'];
+const colours = ['var(--accent)', 'var(--accent-soft)', 'var(--accent)', 'var(--brand-mid)'];
 ---
 <svg viewBox="0 0 160 160" aria-hidden="true" focusable="false">
   {colours.map((col, i) => (
-    <circle cx="80" cy="80" r={r} fill="none" stroke={col} stroke-width="16" stroke-linecap="round"
-      stroke-dasharray={`${seg} ${c - seg}`} stroke-dashoffset={-(i * c) / 4} transform="rotate(-90 80 80)"></circle>
+    <circle cx="80" cy="80" r={r} fill="none" stroke-width="16" stroke-linecap="round"
+      stroke-dasharray={`${seg} ${c - seg}`} stroke-dashoffset={-(i * c) / 4} transform="rotate(-90 80 80)" style={`stroke:${col}`}></circle>
   ))}
-  <circle cx="80" cy="28" r="7" fill="#fbf6ee"></circle>
-  <circle cx="80" cy="80" r="16" fill="#2f7a6e" opacity="0.6"></circle>
+  <circle cx="80" cy="28" r="7" style="fill:var(--cream)"></circle>
+  <circle cx="80" cy="80" r="16" opacity="0.6" style="fill:var(--brand-mid)"></circle>
 </svg>

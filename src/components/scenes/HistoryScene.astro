@@ -5,35 +5,35 @@ import Person from '../figures/Person.astro';
 ---
 <div class="act-scene" aria-hidden="true">
   <svg viewBox="0 0 600 300" focusable="false">
-    <rect width="600" height="300" rx="24" fill="#0f3d3e"></rect>
+    <rect width="600" height="300" rx="24" style="fill:var(--brand-deep)"></rect>
 
     <!-- paper pages: move at different speeds (back, middle, front) -->
     <g class="anim pages-far">
-      <rect x="40" y="30" width="150" height="190" rx="8" fill="#e4dccd" opacity="0.5" transform="rotate(-8 115 125)"></rect>
+      <rect x="40" y="30" width="150" height="190" rx="8" opacity="0.5" transform="rotate(-8 115 125)" style="fill:var(--cream-soft)"></rect>
     </g>
     <g class="anim pages-mid">
-      <rect x="140" y="40" width="150" height="190" rx="8" fill="#f6d3c4" opacity="0.75" transform="rotate(5 215 135)"></rect>
-      <path d="M160,80 H260 M160,100 H270 M160,120 H240" stroke="#0f3d3e" stroke-width="3" stroke-linecap="round" opacity="0.25" transform="rotate(5 215 135)"></path>
+      <rect x="140" y="40" width="150" height="190" rx="8" opacity="0.75" transform="rotate(5 215 135)" style="fill:var(--accent-soft)"></rect>
+      <path d="M160,80 H260 M160,100 H270 M160,120 H240" stroke-width="3" stroke-linecap="round" opacity="0.25" transform="rotate(5 215 135)" style="stroke:var(--brand-deep)"></path>
     </g>
     <g class="anim pages-near">
-      <rect x="-20" y="60" width="140" height="180" rx="8" fill="#fbf6ee" opacity="0.9" transform="rotate(-3 50 150)"></rect>
-      <path d="M0,100 H90 M0,120 H96 M0,140 H70" stroke="#0f3d3e" stroke-width="3" stroke-linecap="round" opacity="0.25" transform="rotate(-3 50 150)"></path>
+      <rect x="-20" y="60" width="140" height="180" rx="8" opacity="0.9" transform="rotate(-3 50 150)" style="fill:var(--cream)"></rect>
+      <path d="M0,100 H90 M0,120 H96 M0,140 H70" stroke-width="3" stroke-linecap="round" opacity="0.25" transform="rotate(-3 50 150)" style="stroke:var(--brand-deep)"></path>
     </g>
 
     <!-- floor -->
-    <path d="M0,236 L600,236 L600,276 C600,289 589,300 576,300 L24,300 C11,300 0,289 0,276 Z" fill="#2f7a6e"></path>
+    <path d="M0,236 L600,236 L600,276 C600,289 589,300 576,300 L24,300 C11,300 0,289 0,276 Z" style="fill:var(--brand-mid)"></path>
 
     <!-- the door: light inside, then the door swings shut -->
-    <rect x="400" y="70" width="96" height="166" rx="4" fill="#2f7a6e"></rect>
-    <rect x="408" y="78" width="80" height="158" fill="#cfc6b8"></rect>
-    <rect class="anim door" x="408" y="78" width="80" height="158" fill="#f6d3c4"></rect>
-    <rect x="376" y="30" width="144" height="34" rx="6" fill="#cfc6b8"></rect>
-    <text x="448" y="53" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="0.04em" fill="#0f3d3e">CLINICAL TRIALS</text>
+    <rect x="400" y="70" width="96" height="166" rx="4" style="fill:var(--brand-mid)"></rect>
+    <rect x="408" y="78" width="80" height="158" style="fill:var(--accent-soft)"></rect>
+    <rect class="anim door" x="408" y="78" width="80" height="158" style="fill:var(--accent)"></rect>
+    <rect x="376" y="30" width="144" height="34" rx="6" style="fill:var(--accent-soft)"></rect>
+    <text x="448" y="53" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="0.04em" style="fill:var(--brand-deep)">CLINICAL TRIALS</text>
 
     <!-- she walks back in time, facing left -->
     <g class="anim walk-back">
       <g transform="translate(250 236) scale(-1.15 1.15)">
-        <Person hair="bun" skin="#8d5a3e" hairColour="#1c1b19" coat="#f6d3c4" collar="#cfc6b8" outline="#3e4c59" />
+        <Person hair="bun" skin="#8d5a3e" hairColour="#1c1b19" coat="var(--accent)" collar="var(--accent-soft)" outline="var(--outline)" />
       </g>
     </g>
 

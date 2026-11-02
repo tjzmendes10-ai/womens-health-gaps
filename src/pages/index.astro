@@ -14,7 +14,7 @@ const { Content } = await render(home);
 const topics = (await getCollection('topics')).sort((a, b) => a.data.order - b.data.order);
 const { act1, act2, act3 } = home.data;
 
-// Highlight the second half of the headline ("living sicker") in blush.
+// Highlight the second half of the headline ("living sicker") in saffron.
 const escape = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const [first, ...rest] = home.data.title.split(', ');
 const heroTitle = rest.length ? `${escape(first)}, <span class="hl">${escape(rest.join(', '))}</span>` : escape(home.data.title);
