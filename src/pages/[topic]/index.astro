@@ -15,12 +15,14 @@ const { Content } = await render(topic);
 const problems = (await getCollection('problems', (p) => p.id.startsWith(`${topic.id}/`))).sort(
   (a, b) => a.data.order - b.data.order,
 );
+import PageBand from '../../components/PageBand.astro';
+import CycleSpot from '../../components/spots/CycleSpot.astro';
 ---
 <Base title={topic.data.title} description={topic.data.hook}>
+  <PageBand title={topic.data.title} hook={topic.data.hook} eyebrow="Act 1 · The problems" eyebrowHref={url('/#act-1')}>
+    <CycleSpot />
+  </PageBand>
   <article class="page">
-    <p class="eyebrow"><a href={url('/#act-1')}>Act 1 · The problems</a></p>
-    <h1>{topic.data.title}</h1>
-    <p class="hook"><Text text={topic.data.hook} /></p>
     <Content />
 
     <ul class="row-list">

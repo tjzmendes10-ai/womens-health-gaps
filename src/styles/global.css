@@ -422,3 +422,30 @@ mark.placeholder {
 .action-list p { margin: 0 0 0.5rem; max-width: var(--measure); }
 .action-link { font-weight: 600; }
 .action-link::after { content: ' ↗'; }
+
+/* ==========================================================================
+   Title band on inner pages (teal, cream text: 11.1:1)
+   ========================================================================== */
+main:has(> .band) { padding-top: 0; }
+.band {
+  background: var(--grain-strong) var(--teal);
+  color: var(--cream);
+  border-bottom-left-radius: 50% 2rem;
+  border-bottom-right-radius: 50% 2rem;
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+.band-inner {
+  max-width: var(--page);
+  margin-inline: auto;
+  padding: clamp(2rem, 6vw, 3.5rem) var(--gutter) clamp(2.25rem, 6vw, 3.5rem);
+  display: grid;
+  gap: 1rem 2rem;
+  align-items: end;
+}
+.band-has-art .band-inner { grid-template-columns: minmax(0, 1fr) auto; }
+.band h1 { color: var(--cream); margin-bottom: 0.3em; }
+.band a { color: var(--cream); }
+.band .eyebrow, .band .breadcrumb a { color: var(--cream-soft); }
+.band :focus-visible { outline-color: var(--marigold); }
+.band-hook { color: var(--cream-soft); font-size: var(--step-1); line-height: 1.5; margin: 0; max-width: var(--measure); }
+.band-art svg { display: block; width: clamp(5rem, 18vw, 9.5rem); height: auto; }

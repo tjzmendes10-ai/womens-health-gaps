@@ -6,11 +6,14 @@ import { getPage } from '../lib/content';
 
 const page = await getPage('history', 'history');
 const { Content } = await render(page);
+import PageBand from '../components/PageBand.astro';
+import PagesSpot from '../components/spots/PagesSpot.astro';
 ---
 <Base title={page.data.title} description={page.data.description}>
+  <PageBand title={page.data.title} eyebrow="Act 2">
+    <PagesSpot />
+  </PageBand>
   <article class="page">
-    <p class="eyebrow">Act 2</p>
-    <h1>{page.data.title}</h1>
     <Content />
     <Timeline />
   </article>

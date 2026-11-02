@@ -1,10 +1,14 @@
 ---
 import Base from '../layouts/Base.astro';
 import { url } from '../lib/url';
+import PageBand from '../components/PageBand.astro';
+import SignpostSpot from '../components/spots/SignpostSpot.astro';
 ---
 <Base title="Page not found" description="This page doesn't exist.">
+  <PageBand title="Page not found">
+    <SignpostSpot />
+  </PageBand>
   <article class="page">
-    <h1>Page not found</h1>
     <p>Sorry, there's nothing at this address. It may have moved, or the link may have a typo.</p>
     <p><a href={url('/')}>Go to the home page</a></p>
   </article>

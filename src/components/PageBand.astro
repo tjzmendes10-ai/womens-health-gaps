@@ -1,0 +1,27 @@
+---
+// Teal title band at the top of inner pages, with an optional spot
+// illustration passed in as the default slot.
+import Text from './Text.astro';
+
+interface Props {
+  title: string;
+  hook?: string;
+  eyebrow?: string;
+  eyebrowHref?: string;
+  crumbLabel?: string;
+  crumbHref?: string;
+}
+const { title, hook, eyebrow, eyebrowHref, crumbLabel, crumbHref } = Astro.props;
+const hasArt = Astro.slots.has('default');
+---
+<header class:list={['band', { 'band-has-art': hasArt }]}>
+  <div class="band-inner">
+    <div class="band-text">
+      {crumbHref && <p class="breadcrumb"><a href={crumbHref}>{crumbLabel}</a></p>}
+      {eyebrow && <p class="eyebrow">{eyebrowHref ? <a href={eyebrowHref}>{eyebrow}</a> : eyebrow}</p>}
+      <h1>{title}</h1>
+      {hook && <p class="band-hook"><Text text={hook} /></p>}
+    </div>
+    {hasArt && <div class="band-art"><slot /></div>}
+  </div>
+</header>
