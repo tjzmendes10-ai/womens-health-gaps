@@ -15,8 +15,8 @@ Built by Tom Mendes with [Astro](https://astro.build), deployed to GitHub Pages.
 | Part | Page | Content file(s) |
 | --- | --- | --- |
 | Home | `/` | `src/content/pages/home.md` |
-| Act 1: The problems | `/the-cycle/` (hub) | `src/content/topics/the-cycle.md` |
-| | `/the-cycle/endometriosis/` etc. | `src/content/problems/the-cycle/*.md` |
+| Act 1: Where care falls short | `/dismissed-as-normal/` (hub) | `src/content/topics/dismissed-as-normal.md` |
+| | `/dismissed-as-normal/endometriosis/` etc. | `src/content/problems/dismissed-as-normal/*.md` |
 | | Heart, Bones ("coming soon" cards) | `src/content/topics/heart-disease.md`, `bones.md` |
 | Act 2: How we got here | `/history/` | `src/content/pages/history.md` (intro) + `src/content/timeline/*.md` (one file per event) |
 | Act 3: Where we're headed | `/where-were-headed/` | `src/content/pages/headed.md` |
@@ -41,7 +41,7 @@ Markdown basics: `## Heading`, `**bold**`, `*italic*`, `[link text](https://exam
 
 ## Editing a problem page
 
-File: `src/content/problems/<topic>/<page>.md`, e.g. `src/content/problems/the-cycle/pmdd.md`.
+File: `src/content/problems/<topic>/<page>.md`, e.g. `src/content/problems/dismissed-as-normal/pmdd.md`.
 
 ```markdown
 ---
@@ -117,7 +117,7 @@ Placeholders show up **highlighted in yellow** on the site. Every build also end
 
 ```
 [WARN] [placeholder-report] 80 placeholder(s) still on the site:
-[WARN] [placeholder-report]    14  the-cycle/endometriosis/index.html
+[WARN] [placeholder-report]    14  dismissed-as-normal/endometriosis/index.html
 ```
 
 For sources and the action links on the "Where we're headed" page, write `needed: "what's missing"` instead of the real details.
@@ -127,7 +127,7 @@ For sources and the action links on the "Where we're headed" page, write `needed
 If a content file is missing a field or has a mistake, the build stops and tells you which file and what to fix. For example:
 
 ```
-problems → the-cycle/pmos data does not match collection schema.
+problems → dismissed-as-normal/pmos data does not match collection schema.
   mentalHealth: Add   mentalHealth: true   or   mentalHealth: false. ...
   stats.2.region: Each stat needs   region: Australia   or   region: Global
 ```

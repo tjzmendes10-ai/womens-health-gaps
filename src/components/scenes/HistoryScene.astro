@@ -1,8 +1,7 @@
 ---
 // Act 2: she walks back through layered pages of history. A door marked
-// "Clinical trials" closes, and a row of identical lab mice appears.
+// "Clinical trials" closes.
 import Person from '../figures/Person.astro';
-const mice = [330, 372, 414, 456, 498];
 ---
 <div class="act-scene" aria-hidden="true">
   <svg viewBox="0 0 600 300" focusable="false">
@@ -26,28 +25,17 @@ const mice = [330, 372, 414, 456, 498];
 
     <!-- the door: light inside, then the door swings shut -->
     <rect x="400" y="70" width="96" height="166" rx="4" fill="#2f7a6e"></rect>
-    <rect x="408" y="78" width="80" height="158" fill="#f4b942"></rect>
-    <rect class="anim door" x="408" y="78" width="80" height="158" fill="#e8604c"></rect>
-    <rect x="376" y="30" width="144" height="34" rx="6" fill="#f4b942"></rect>
+    <rect x="408" y="78" width="80" height="158" fill="#cfc6b8"></rect>
+    <rect class="anim door" x="408" y="78" width="80" height="158" fill="#f6d3c4"></rect>
+    <rect x="376" y="30" width="144" height="34" rx="6" fill="#cfc6b8"></rect>
     <text x="448" y="53" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="0.04em" fill="#0f3d3e">CLINICAL TRIALS</text>
 
     <!-- she walks back in time, facing left -->
     <g class="anim walk-back">
       <g transform="translate(250 236) scale(-1.15 1.15)">
-        <Person hair="bun" skin="#8d5a3e" hairColour="#1c1b19" coat="#e8604c" collar="#f4b942" />
+        <Person hair="bun" skin="#8d5a3e" hairColour="#1c1b19" coat="#f6d3c4" collar="#cfc6b8" outline="#3e4c59" />
       </g>
     </g>
 
-    <!-- identical lab mice -->
-    <g class="anim mice">
-      {mice.map((x) => (
-        <g transform={`translate(${x} 262)`}>
-          <path d="M-6,8 C-14,10 -16,20 -8,22" stroke="#0f3d3e" stroke-width="2" fill="none" stroke-linecap="round"></path>
-          <ellipse cx="6" cy="6" rx="12" ry="8" fill="#9db4bd"></ellipse>
-          <circle cx="16" cy="0" r="6" fill="#9db4bd"></circle>
-          <circle cx="13" cy="-6" r="4" fill="#f6d3c4"></circle>
-        </g>
-      ))}
-    </g>
   </svg>
 </div>

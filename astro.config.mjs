@@ -8,6 +8,15 @@ export default defineConfig({
   site: 'https://tjzmendes10-ai.github.io',
   base: '/womens-health-gaps',
 
+  // Old addresses keep working after the hub was renamed (Nov 2026).
+  // Destinations need the full path: Astro doesn't add `base` to them.
+  redirects: {
+    '/the-cycle': '/womens-health-gaps/dismissed-as-normal/',
+    '/the-cycle/endometriosis': '/womens-health-gaps/dismissed-as-normal/endometriosis/',
+    '/the-cycle/pmos': '/womens-health-gaps/dismissed-as-normal/pmos/',
+    '/the-cycle/pmdd': '/womens-health-gaps/dismissed-as-normal/pmdd/',
+  },
+
   markdown: {
     // Highlights [CAPS – like this] placeholders inside markdown text.
     processor: satteri({ hastPlugins: [placeholderMarkdownPlugin] }),

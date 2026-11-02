@@ -3,8 +3,8 @@ page: home
 title: Living longer, living sicker
 description: Australian women live longer than men but spend more of those years unwell. Where women's healthcare falls short, how we got here, and where we're headed.
 act1:
-  title: The problems
-  blurb: Conditions that affect a large share of Australian women are often dismissed and slow to be diagnosed. This act starts with the menstrual cycle.
+  title: Where care falls short
+  blurb: Periods are a normal part of life. Severe pain and conditions that go unrecognised for years are not, yet they are too often dismissed as normal. This act starts there.
 act2:
   title: How we got here
   blurb: For most of medical history, women were explained away, studied as an afterthought or left out of research entirely. A timeline of how that happened and how it began to change.
