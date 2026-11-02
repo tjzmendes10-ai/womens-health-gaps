@@ -47,17 +47,26 @@ const action = z
     needed: z.string().optional(),
   })
   .superRefine((a, ctx) => {
-    if (a.needed) return;
+    // A link is optional, but if there is one it needs both an organisation and a url.
+    if (a.needed || (!a.organisation && !a.url)) return;
     for (const field of ['organisation', 'url'] as const) {
       if (!a[field]) {
         ctx.addIssue({
           code: 'custom',
           path: [field],
-          message: `This action has no "${field}". Add it, or write   needed: "what's missing"   instead.`,
+          message: `This action links to an organisation but has no "${field}". Add it, or remove the link.`,
         });
       }
     }
   });
+
+// "What needs to change": who is responsible, what they should do, and
+// sources for any figures quoted.
+const change = z.object({
+  who: required('who', 'e.g. "Governments and funders".'),
+  points: z.array(z.string().min(1), { error: 'Each group needs a "points" list.' }).min(1, 'Add at least one point.'),
+  sources: z.array(source).default([]),
+});
 
 // A "last reviewed" date, or the honest alternative.
 const lastReviewed = z.union([z.literal('not yet reviewed'), z.coerce.date()], {
@@ -166,11 +175,13 @@ const pages = defineCollection({
       z.object({
         page: z.literal('headed'),
         ...base,
-        actionsTitle: required('actionsTitle'),
+        changesTitle: required('changesTitle'),
+        changes: z.array(change).min(3, 'List at least 3 groups.').max(5, 'List at most 5 groups.'),
+        youTitle: required('youTitle'),
         actions: z
           .array(action)
           .min(3, 'List at least 3 actions.')
-          .max(4, 'List at most 4 actions.'),
+          .max(6, 'List at most 6 actions.'),
       }),
       z.object({ page: z.literal('about'), ...base }),
     ],

@@ -1,25 +1,61 @@
 ---
 page: headed
 title: Where we're headed
-description: What has been funded and what has changed in Australian women's health, and practical ways to speed things up.
-actionsTitle: How we get there faster
+description: What has been funded and what has changed in Australian women's health, what still needs to change, and who is responsible for changing it.
+changesTitle: What needs to change
+changes:
+  - who: Governments and funders
+    points:
+      - Sustained, dedicated funding for women's health research and care, rather than one-off packages.
+      - Enforce the 2026 requirement that NHMRC- and MRFF-funded research considers sex and gender at every stage, and check that it is being followed.
+      - Better national data. There is still no published national estimate of how many Australians live with PMDD.
+    sources:
+      - title: Statement on sex and gender in health and medical research
+        publisher: National Health and Medical Research Council
+        year: 2026
+        url: https://www.nhmrc.gov.au/research-policy/gender-equity/statement-sex-and-gender-health-and-medical-research
+  - who: Medical schools and doctors
+    points:
+      - Training on endometriosis, PMDD and how heart disease presents in women.
+      - Taking pain seriously, and referring faster when it doesn't settle.
+      - A full conversation about side effects and alternatives whenever a hormonal medicine is prescribed.
+  - who: Researchers and institutions
+    points:
+      - Include women in trials, and analyse and report results by sex.
+      - Fund contraception research for men as well as women.
+  - who: Investors
+    points:
+      - "Women's health receives a small share of health investment. In the United States, 4% of healthcare-related research and development is aimed specifically at women's health, a figure cited in a 2024 World Economic Forum report."
+      - "Venture capital for women's health companies across the US and Europe fell to about US$2 billion in 2025, down from a peak in 2024, according to Silicon Valley Bank."
+    sources:
+      - title: "Closing the Women's Health Gap: A $1 Trillion Opportunity to Improve Lives and Economies (with the McKinsey Health Institute)"
+        publisher: World Economic Forum
+        year: 2024
+        url: https://www.weforum.org/publications/closing-the-women-s-health-gap-a-1-trillion-opportunity-to-improve-lives-and-economies/
+      - title: Innovation in Women's Health (2026 edition)
+        publisher: Silicon Valley Bank, a division of First Citizens Bank
+        year: 2026
+        url: https://innovation.firstcitizens.com/trends-insights/reports/womens-health-report
+youTitle: What you can do
 actions:
   - title: Track your symptoms before you see a doctor
-    description: If your mood changes sharply with your cycle, rate your symptoms every day for at least two cycles. PMDD is diagnosed this way, and a completed chart gives a GP something concrete to act on. IAPMD's free tracker includes the clinically validated Daily Record of Severity of Problems.
+    description: If your mood changes sharply with your cycle, rate your symptoms every day for at least two cycles. PMDD is diagnosed this way, and a completed chart gives a GP something concrete to act on.
     organisation: International Association for Premenstrual Disorders (IAPMD)
     url: https://www.iapmd.org/pmds-toolkit/tracking-your-symptoms
-  - title: Don't accept that severe period pain is normal
-    description: Pain that stops you going to school, work or doing everyday things is worth raising with a GP, including asking about endometriosis. The federal government now funds 33 endometriosis and pelvic pain clinics in general practice around Australia.
+  - title: Don't accept severe pain as normal
+    description: Pain that stops you going to school, work or doing everyday things is worth raising with a GP, including asking about endometriosis.
     organisation: Endometriosis Australia
     url: https://endometriosisaustralia.org/
   - title: Book a Heart Health Check
-    description: A 20-minute, Medicare-funded check with a GP that estimates your risk of heart attack or stroke over the next five years. It's available to people aged 45 and over, or 30 and over for First Nations people, and is funded until June 2028.
+    description: A 20-minute, Medicare-funded check with a GP for people aged 45 and over, or 30 and over for First Nations people. It is funded until June 2028.
     organisation: Heart Foundation
     url: https://www.heartfoundation.org.au/
   - title: Check your bone health
-    description: Know Your Bones is a free online self-assessment, built on Australian research, that reviews your risk factors for osteoporosis and gives you a report to take to your doctor.
+    description: Know Your Bones is a free online self-assessment that reviews your risk factors for osteoporosis.
     organisation: Healthy Bones Australia
     url: https://www.knowyourbones.org.au/
+  - title: Ask about side effects and alternatives
+    description: Before starting any hormonal medicine, it is reasonable to ask what it is for, what the common side effects are, and what the alternatives are. Talk to a doctor before starting, changing or stopping any medication.
 ---
 
 ## Progress so far
