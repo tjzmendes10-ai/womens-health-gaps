@@ -1,9 +1,11 @@
 ---
 // Hub page for a topic, e.g. /dismissed-as-normal/
-import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Text from '../../components/Text.astro';
 import { url } from '../../lib/url';
+import PageBand from '../../components/PageBand.astro';
+import CycleSpot from '../../components/spots/CycleSpot.astro';
 
 export async function getStaticPaths() {
   const topics = await getCollection('topics', (t) => t.data.status === 'live');
@@ -11,19 +13,22 @@ export async function getStaticPaths() {
 }
 
 const { topic } = Astro.props as { topic: CollectionEntry<'topics'> };
-const { Content } = await render(topic);
+// The intro (before the first ## heading) sits above the list of
+// conditions; any further sections (e.g. on the pill) follow the list.
+const html = topic.rendered?.html ?? '';
+const splitAt = html.indexOf('<h2');
+const intro = splitAt === -1 ? html : html.slice(0, splitAt);
+const more = splitAt === -1 ? '' : html.slice(splitAt);
 const problems = (await getCollection('problems', (p) => p.id.startsWith(`${topic.id}/`))).sort(
   (a, b) => a.data.order - b.data.order,
 );
-import PageBand from '../../components/PageBand.astro';
-import CycleSpot from '../../components/spots/CycleSpot.astro';
 ---
 <Base title={topic.data.title} description={topic.data.hook}>
   <PageBand title={topic.data.title} hook={topic.data.hook} eyebrow="Act 1 · Where care falls short" eyebrowHref={url('/#act-1')}>
     <CycleSpot />
   </PageBand>
   <article class="page">
-    <Content />
+    <Fragment set:html={intro} />
 
     <ul class="row-list">
       {
@@ -47,5 +52,7 @@ import CycleSpot from '../../components/spots/CycleSpot.astro';
         ))
       }
     </ul>
+
+    {more && <Fragment set:html={more} />}
   </article>
 </Base>

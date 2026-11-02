@@ -1,6 +1,6 @@
 ---
 date: "1961"
-sortYear: 1961
+sortYear: 1961.9 # December 1961, after the pill (February)
 title: Thalidomide
 source:
   title: "Thalidomide: an unanticipated adverse effect (Vandenbroucke JP)"
