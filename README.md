@@ -149,6 +149,15 @@ npm run dev      # starts a preview at http://localhost:4321/womens-health-gaps/
 
 The preview updates every time you save a file. Press `Ctrl + C` in the Terminal to stop it.
 
+**If Claude Code (or another AI assistant) started the preview**, it runs in the background instead. Astro does this automatically when it detects an AI agent, so the assistant doesn't get stuck waiting. There's no Terminal window to press `Ctrl + C` in, so use these instead:
+
+```sh
+npx astro dev status   # is a preview running, and on which address?
+npx astro dev stop     # stop the background preview
+```
+
+If the preview starts on a different address, such as `localhost:4322`, another preview is probably still running in the background. Stop it with `npx astro dev stop`, then run `npm run dev` again.
+
 To run the exact same checks GitHub runs before publishing:
 
 ```sh

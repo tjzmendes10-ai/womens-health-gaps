@@ -3,10 +3,9 @@ date: "2017"
 sortYear: 2017
 title: An apology to women with endometriosis
 source:
-  title: "Endometriosis: four years since Greg Hunt's apology, what's changed? (Priestley A)"
-  publisher: Women's Agenda
-  year: 2021
-  url: https://womensagenda.com.au/latest/endometriosis-four-years-since-greg-hunts-apology-whats-changed/
+  title: Endometriosis Coalition
+  publisher: Pelvic Pain Foundation of Australia
+  url: https://www.pelvicpain.org.au/endometriosis-coalition
 ---
 
-In December 2017, at an endometriosis event in Canberra, the federal Health Minister made a rare public apology to Australian women living with endometriosis.
+On 5 December 2017, at an event at Parliament House in Canberra, the federal Health Minister made a public apology to Australians living with endometriosis and committed the government to developing a National Action Plan for Endometriosis.
