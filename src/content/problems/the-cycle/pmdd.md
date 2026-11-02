@@ -32,7 +32,7 @@ sources:
   - title: "PMDs toolkit: track your symptoms"
     publisher: International Association for Premenstrual Disorders (IAPMD)
     url: https://www.iapmd.org/pmds-toolkit/tracking-your-symptoms
-lastReviewed: 2026-11-02
+lastReviewed: not yet reviewed
 ---
 
 Premenstrual dysphoric disorder (PMDD) is a severe, cyclical mood condition. People with PMDD experience mood, physical and cognitive symptoms that follow the menstrual cycle and are severe enough to disrupt work, relationships and daily life. It is not "bad PMS": it is a recognised psychiatric diagnosis, listed in the DSM-5 since 2013 and in the World Health Organization's ICD-11 since 2019 [[1]](#source-1).
