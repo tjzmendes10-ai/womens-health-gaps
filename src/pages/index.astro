@@ -3,6 +3,9 @@ import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Text from '../components/Text.astro';
 import HeroScene from '../components/HeroScene.astro';
+import CycleScene from '../components/scenes/CycleScene.astro';
+import HistoryScene from '../components/scenes/HistoryScene.astro';
+import FutureScene from '../components/scenes/FutureScene.astro';
 import { getPage } from '../lib/content';
 import { url } from '../lib/url';
 
@@ -52,6 +55,7 @@ const heroTitle = rest.length ? `${escape(first)}, <span class="hl">${escape(res
             )
           }
         </ul>
+        <CycleScene />
       </div>
     </div>
   </section>
@@ -63,6 +67,7 @@ const heroTitle = rest.length ? `${escape(first)}, <span class="hl">${escape(res
         <h2 id="act-2-title"><a href={url('/history/')}>{act2.title}</a></h2>
         <p class="act-blurb"><Text text={act2.blurb} /></p>
         <a class="read-more" href={url('/history/')}>See the timeline</a>
+        <HistoryScene />
       </div>
     </div>
   </section>
@@ -74,6 +79,7 @@ const heroTitle = rest.length ? `${escape(first)}, <span class="hl">${escape(res
         <h2 id="act-3-title"><a href={url('/where-were-headed/')}>{act3.title}</a></h2>
         <p class="act-blurb"><Text text={act3.blurb} /></p>
         <a class="read-more" href={url('/where-were-headed/')}>Read on</a>
+        <FutureScene />
       </div>
     </div>
   </section>
