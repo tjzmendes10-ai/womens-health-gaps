@@ -1,0 +1,59 @@
+---
+// Act 1: she waits in a waiting room. As the scene scrolls past, the cycle
+// ring turns, the clock spins and calendar pages fall away: time passing
+// before a diagnosis. Decorative; the act's text carries the meaning.
+import Person from '../figures/Person.astro';
+const ringR = 46;
+const c = 2 * Math.PI * ringR;
+const seg = c / 4 - 8;
+const ring = ['#e8604c', '#f4b942', '#f6d3c4', '#2f7a6e'];
+---
+<div class="act-scene" aria-hidden="true">
+  <svg viewBox="0 0 600 300" focusable="false">
+    <rect width="600" height="300" rx="24" fill="#0f3d3e"></rect>
+    <!-- wall panel and floor -->
+    <path d="M24,40 C24,30 30,24 40,24 L560,24 C570,24 576,30 576,40 L576,236 L24,236 Z" fill="#2f7a6e" opacity="0.35"></path>
+    <path d="M0,236 L600,236 L600,276 C600,289 589,300 576,300 L24,300 C11,300 0,289 0,276 Z" fill="#2f7a6e"></path>
+
+    <!-- cycle ring: turns with scroll -->
+    <g class="anim spin-ring">
+      {ring.map((col, i) => (
+        <circle cx="470" cy="110" r={ringR} fill="none" stroke={col} stroke-width="14" stroke-linecap="round"
+          stroke-dasharray={`${seg} ${c - seg}`} stroke-dashoffset={-(i * c) / 4}></circle>
+      ))}
+      <circle cx="470" cy="64" r="6" fill="#fbf6ee"></circle>
+    </g>
+
+    <!-- clock: hands spin through the years -->
+    <circle cx="300" cy="78" r="32" fill="#fbf6ee"></circle>
+    <circle cx="300" cy="78" r="32" fill="none" stroke="#f4b942" stroke-width="6"></circle>
+    <line class="anim hand-hour" x1="300" y1="78" x2="300" y2="60" stroke="#0f3d3e" stroke-width="5" stroke-linecap="round"></line>
+    <line class="anim hand-min" x1="300" y1="78" x2="300" y2="52" stroke="#e8604c" stroke-width="3.5" stroke-linecap="round"></line>
+    <circle cx="300" cy="78" r="4" fill="#0f3d3e"></circle>
+
+    <!-- calendar: pages fall away -->
+    <rect x="84" y="56" width="64" height="70" rx="7" fill="#f6d3c4"></rect>
+    <rect x="84" y="56" width="64" height="16" rx="6" fill="#e8604c"></rect>
+    {[0, 1, 2].map((i) => (
+      <g class={`anim page page-${i}`}>
+        <rect x="84" y="56" width="64" height="70" rx="7" fill="#fbf6ee"></rect>
+        <rect x="84" y="56" width="64" height="16" rx="6" fill="#e8604c"></rect>
+        <path d="M96,90 H136 M96,104 H124" stroke="#0f3d3e" stroke-width="3" stroke-linecap="round" opacity="0.3"></path>
+      </g>
+    ))}
+
+    <!-- chairs; she sits on the middle one -->
+    {[120, 210, 380].map((x) => (
+      <g fill="#e8604c">
+        <rect x={x - 22} y="168" width="9" height="46" rx="4.5"></rect>
+        <rect x={x - 22} y="204" width="50" height="9" rx="4.5"></rect>
+        <rect x={x - 18} y="212" width="5" height="24" rx="2.5" fill="#f6d3c4"></rect>
+        <rect x={x + 20} y="212" width="5" height="24" rx="2.5" fill="#f6d3c4"></rect>
+      </g>
+    ))}
+    <g transform="translate(200 236) scale(1.15)">
+      <Person pose="sit" hair="bun" skin="#8d5a3e" hairColour="#1c1b19" coat="#e8604c" collar="#f4b942" />
+    </g>
+    <path d="M520,236 C514,214 526,196 546,194 C548,216 538,232 520,236 Z" fill="#f4b942"></path>
+  </svg>
+</div>

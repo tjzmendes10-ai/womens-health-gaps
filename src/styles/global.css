@@ -508,3 +508,57 @@ main:has(.actions-panel) { padding-bottom: 0; }
   }
 }
 @keyframes sun-rise { from { transform: translateY(70px); } to { transform: translateY(0); } }
+
+/* ==========================================================================
+   Home story scenes (Acts 1–3). Not pinned: each animates as it scrolls
+   through the screen. The default is the finished frame, so with reduced
+   motion or no support everything still reads.
+   ========================================================================== */
+.act-scene { margin-top: 2rem; view-timeline-name: --scene; }
+.act-scene svg { display: block; width: 100%; height: auto; }
+
+/* Finished-frame defaults */
+.act-scene .door-open { transform-box: fill-box; transform-origin: left center; transform: scaleX(0.15); }
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .act-scene .anim {
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: --scene;
+      animation-range: entry 20% cover 60%;
+    }
+    /* Act 1: the waiting room */
+    .act-scene .spin-ring { transform-box: fill-box; transform-origin: center; animation-name: scene-spin; }
+    .act-scene .hand-hour { transform-box: view-box; transform-origin: 300px 78px; animation-name: scene-hour; }
+    .act-scene .hand-min { transform-box: view-box; transform-origin: 300px 78px; animation-name: scene-minute; }
+    .act-scene .page { animation-name: scene-page-fall; }
+    .act-scene .page-2 { animation-range: entry 30% cover 38%; }
+    .act-scene .page-1 { animation-range: cover 34% cover 46%; }
+    .act-scene .page-0 { animation-range: cover 42% cover 56%; }
+    /* Act 2: back through history */
+    .act-scene .pages-far { animation-name: scene-drift-far; }
+    .act-scene .pages-mid { animation-name: scene-drift-mid; }
+    .act-scene .pages-near { animation-name: scene-drift-near; }
+    .act-scene .walk-back { animation-name: scene-walk-back; }
+    .act-scene .door { transform-box: fill-box; transform-origin: left center; animation-name: scene-door-close; }
+    .act-scene .mice { animation-name: scene-appear; animation-range: cover 38% cover 58%; }
+    /* Act 3: doors open, others join, the sun rises */
+    .act-scene .sun { animation-name: scene-sun; }
+    .act-scene .door-open { animation-name: scene-door-open; }
+    .act-scene .join { animation-name: scene-join; animation-range: entry 40% cover 58%; }
+  }
+}
+@keyframes scene-spin { from { transform: rotate(0deg); } to { transform: rotate(270deg); } }
+@keyframes scene-hour { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes scene-minute { from { transform: rotate(0deg); } to { transform: rotate(2160deg); } }
+@keyframes scene-page-fall { from { transform: none; opacity: 1; } to { transform: translate(-30px, 150px) rotate(-35deg); opacity: 0; } }
+@keyframes scene-drift-far { from { transform: translateX(-10px); } to { transform: translateX(30px); } }
+@keyframes scene-drift-mid { from { transform: translateX(-20px); } to { transform: translateX(70px); } }
+@keyframes scene-drift-near { from { transform: translateX(-30px); } to { transform: translateX(130px); } }
+@keyframes scene-walk-back { from { transform: translateX(140px); } to { transform: translateX(0); } }
+@keyframes scene-door-close { from { transform: scaleX(0.15); } to { transform: scaleX(1); } }
+@keyframes scene-appear { from { opacity: 0; } to { opacity: 1; } }
+@keyframes scene-sun { from { transform: translateY(110px); } to { transform: translateY(0); } }
+@keyframes scene-door-open { from { transform: scaleX(1); } to { transform: scaleX(0.15); } }
+@keyframes scene-join { from { transform: translateX(var(--from)); opacity: 0; } to { transform: none; opacity: 1; } }
