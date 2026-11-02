@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Text from '../components/Text.astro';
+import HeroScene from '../components/HeroScene.astro';
 import { getPage } from '../lib/content';
 import { url } from '../lib/url';
 
@@ -9,13 +10,21 @@ const home = await getPage('home', 'home');
 const { Content } = await render(home);
 const topics = (await getCollection('topics')).sort((a, b) => a.data.order - b.data.order);
 const { act1, act2, act3 } = home.data;
+
+// Highlight the second half of the headline ("living sicker") in marigold.
+const escape = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const [first, ...rest] = home.data.title.split(', ');
+const heroTitle = rest.length ? `${escape(first)}, <span class="hl">${escape(rest.join(', '))}</span>` : escape(home.data.title);
 ---
 <Base title={home.data.title} description={home.data.description}>
-  <header class="home-hero">
-    <p class="eyebrow">Women's health, in three acts</p>
-    <h1>{home.data.title}</h1>
-    <div class="home-intro"><Content /></div>
-  </header>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-text">
+      <p class="eyebrow">Women's health, in three acts</p>
+      <h1 id="hero-title" set:html={heroTitle} />
+      <div class="home-intro"><Content /></div>
+    </div>
+    <HeroScene />
+  </section>
 
   <section class="act" id="act-1" aria-labelledby="act-1-title">
     <div class="act-inner">

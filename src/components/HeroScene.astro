@@ -1,0 +1,185 @@
+---
+// Home hero scene: a woman walks along her lifeline. The final stretch,
+// shaded and hatched, stands for the years lived in ill health.
+//
+// The illustration is decorative (aria-hidden); the caption carries the
+// facts as text, so nothing depends on the animation to be understood.
+//
+// Animation: CSS scroll-driven animations only, no JavaScript. By default
+// the scene shows its finished state. Motion is added only when the browser
+// supports scroll timelines AND the visitor hasn't asked for reduced motion.
+
+// Lifeline geometry (SVG units). Healthy share = 73.8 / 85.5 years.
+const lineStart = 40;
+const lineLength = 520;
+const healthyLength = Math.round(lineLength * (73.8 / 85.5)); // 449
+const unwellStart = lineStart + healthyLength;
+const unwellLength = lineLength - healthyLength;
+const lineY = 326;
+const walkerX = 505; // where she ends up: on the shaded stretch
+const walkerStartX = 52;
+---
+<figure class="scene" style={`--walk-from: ${walkerStartX - walkerX}px`}>
+  <div class="scene-track">
+    <div class="scene-sticky">
+      <svg viewBox="0 0 600 400" aria-hidden="true" focusable="false" overflow="visible">
+        <defs>
+          <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <rect width="6" height="6" fill="#e8604c"></rect>
+            <rect width="2.5" height="6" fill="#0f3d3e" opacity="0.45"></rect>
+          </pattern>
+        </defs>
+
+        <!-- Far layer: slow -->
+        <g class="layer layer-far">
+          <!-- high sky shapes: they sit above the frame and fill the space on tall phone screens -->
+          <path d="M60,-150 C110,-196 200,-182 226,-128 C250,-80 196,-46 136,-58 C76,-70 18,-108 60,-150 Z" fill="#2f7a6e" opacity="0.45"></path>
+          <path d="M470,-110 C500,-136 548,-128 560,-96 C572,-64 540,-44 508,-52 C476,-60 446,-86 470,-110 Z" fill="#e8604c" opacity="0.9"></path>
+          <circle cx="330" cy="-70" r="4" fill="#f4b942"></circle>
+          <circle cx="410" cy="-30" r="2.5" fill="#f6d3c4"></circle>
+          <!-- main sky shapes -->
+          <path d="M18,150 C6,82 84,30 166,46 C248,62 272,150 214,200 C156,250 30,224 18,150 Z" fill="#2f7a6e" opacity="0.55"></path>
+          <path transform="translate(0 -56)" d="M282,58 C300,28 350,22 378,44 C404,64 420,84 404,112 C390,136 352,132 326,136 C296,140 270,118 270,96 C270,80 272,72 282,58 Z" fill="#f6d3c4" opacity="0.85"></path>
+          <circle cx="472" cy="96" r="5" fill="#f4b942"></circle>
+          <circle cx="548" cy="58" r="3.5" fill="#f4b942"></circle>
+          <circle cx="110" cy="262" r="4" fill="#f6d3c4" opacity="0.8"></circle>
+        </g>
+
+        <!-- Middle layer: rolling hill -->
+        <g class="layer layer-mid">
+          <path d="M-900,290 C-600,250 -300,300 -10,300 C90,248 190,262 282,284 C382,306 472,258 610,268 C800,282 1100,250 1500,276 L1500,460 L-900,460 Z" fill="#2f7a6e" opacity="0.7"></path>
+        </g>
+
+        <!-- Ground, the lifeline and the walker: fixed -->
+        <path d="M-900,318 C-500,308 -200,326 -10,320 C120,310 240,318 330,320 C430,323 520,312 610,318 C900,326 1200,310 1500,318 L1500,460 L-900,460 Z" fill="#2f7a6e"></path>
+
+        <rect x={lineStart} y={lineY - 4} width={lineLength} height="8" rx="4" fill="#0f3d3e" opacity="0.5"></rect>
+        <rect class="life-healthy" x={lineStart} y={lineY - 4} width={healthyLength} height="8" rx="4" fill="#fbf6ee"></rect>
+        <rect class="life-unwell" x={unwellStart} y={lineY - 4} width={unwellLength} height="8" rx="4" fill="url(#hatch)"></rect>
+        <circle cx={lineStart} cy={lineY} r="7" fill="#fbf6ee"></circle>
+
+        <g class="walker-move">
+          <g transform={`translate(${walkerX} ${lineY})`}>
+          <g class="walker-figure">
+            <ellipse cx="0" cy="1" rx="18" ry="3.5" fill="#0f3d3e" opacity="0.45"></ellipse>
+            <!-- legs and shoes -->
+            <rect x="-8" y="-40" width="6.5" height="40" rx="3.2" fill="#8d5a3e"></rect>
+            <rect x="2" y="-40" width="6.5" height="40" rx="3.2" fill="#8d5a3e"></rect>
+            <ellipse cx="-3.5" cy="-1.5" rx="6" ry="3" fill="#fbf6ee"></ellipse>
+            <ellipse cx="7.5" cy="-1.5" rx="6" ry="3" fill="#fbf6ee"></ellipse>
+            <!-- coat -->
+            <path d="M-14,-92 C-6,-97 6,-97 14,-92 L20,-36 C8,-31 -8,-31 -20,-36 Z" fill="#e8604c"></path>
+            <path d="M-8,-94 L8,-94 L0,-84 Z" fill="#f4b942"></path>
+            <!-- arm -->
+            <path d="M10,-88 C17,-80 19,-68 16,-56" stroke="#8d5a3e" stroke-width="7" stroke-linecap="round" fill="none"></path>
+            <!-- neck, head, hair (no face, by design) -->
+            <rect x="-3.5" y="-101" width="7" height="10" rx="3" fill="#8d5a3e"></rect>
+            <circle cx="0" cy="-111" r="13" fill="#8d5a3e"></circle>
+            <circle cx="-12" cy="-123" r="7.5" fill="#1c1b19"></circle>
+            <path d="M-13,-112 C-15,-127 2,-131 12,-121 C6,-122 -2,-118 -4,-110 C-6,-104 -9,-100 -13,-98 Z" fill="#1c1b19"></path>
+          </g>
+          </g>
+        </g>
+
+        <circle class="life-end" cx={lineStart + lineLength} cy={lineY} r="7" fill="#e8604c"></circle>
+
+        <!-- Near layer: fast -->
+        <g class="layer layer-near">
+          <!-- leaves resting on the ground, fully inside the frame -->
+          <path d="M14,396 C6,364 30,338 64,340 C62,368 44,392 14,396 Z" fill="#e8604c"></path>
+          <path d="M52,398 C58,374 84,360 108,368 C98,388 78,400 52,398 Z" fill="#f6d3c4"></path>
+          <path d="M586,396 C570,376 572,346 596,334 C606,356 604,380 586,396 Z" fill="#f4b942"></path>
+          <path d="M548,398 C544,380 556,364 576,364 C574,382 564,394 548,398 Z" fill="#e8604c" opacity="0.85"></path>
+        </g>
+      </svg>
+
+      <div class="ground">
+      <figcaption class="scene-caption">
+        <span class="key"><span class="swatch swatch-healthy"></span>Years in full health: about 73.8</span>
+        <span class="key"><span class="swatch swatch-unwell"></span>Years in ill health: about 11.7</span>
+        <span class="note">
+          Life expectancy for a girl born in Australia in 2024 is 85.5 years
+          (<a href="https://www.aihw.gov.au/reports/burden-of-disease/australian-burden-of-disease-study-2024/contents/summary">AIHW, 2024</a>).
+        </span>
+      </figcaption>
+      </div>
+    </div>
+  </div>
+</figure>
+
+<style>
+  .scene { margin: 0; }
+  /* Room above the frame for the high sky shapes (they overflow upwards). */
+  .scene-sticky { display: flex; flex-direction: column; justify-content: flex-end; padding-top: clamp(6rem, 24vw, 15rem); }
+  svg {
+    display: block;
+    width: calc(100% - 2 * var(--gutter));
+    max-width: 60rem;
+    max-height: 64svh;
+    height: auto;
+    margin-inline: auto;
+    overflow: visible; /* hills and ground run to the screen edges */
+  }
+
+  /* She is drawn small so the lifeline fits; scale her up around her feet. */
+  .walker-figure { transform-box: fill-box; transform-origin: 50% 100%; transform: scale(1.25); }
+  @media (max-width: 40rem) {
+    .walker-figure { transform: scale(1.75); }
+  }
+
+  /* The caption sits on the ground (cream on mid teal: 4.7:1). */
+  .ground { background: var(--teal-mid); }
+  .scene-caption {
+    max-width: 60rem;
+    margin-inline: auto;
+    padding: 0.75rem var(--gutter) 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.5rem;
+    font-size: var(--step--1);
+    color: var(--cream);
+  }
+  .key { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; }
+  .note { flex-basis: 100%; }
+  .scene-caption a { color: var(--cream); }
+  .swatch { width: 1.6rem; height: 0.5rem; border-radius: 1rem; flex: none; }
+  .swatch-healthy { background: var(--cream); }
+  .swatch-unwell {
+    background: repeating-linear-gradient(45deg, var(--coral) 0 3px, #8b4a3c 3px 5px);
+  }
+
+  /* ---- Motion: only with support, and only if motion is welcome ---- */
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      .scene-track { height: 190svh; view-timeline-name: --hero; }
+      .scene-sticky { position: sticky; top: 0; min-height: 100svh; }
+
+      .life-healthy,
+      .life-unwell,
+      .walker-move,
+      .life-end,
+      .layer {
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+        animation-timeline: --hero;
+      }
+      .life-healthy,
+      .life-unwell { transform-box: fill-box; transform-origin: left center; animation-name: grow; }
+      .life-healthy { animation-range: contain 0% contain 72%; }
+      .life-unwell { animation-range: contain 72% contain 92%; }
+      .life-end { transform-box: fill-box; transform-origin: center; animation-name: pop; animation-range: contain 88% contain 96%; }
+      .walker-move { animation-name: walk; animation-range: contain 0% contain 94%; }
+
+      .layer-far { animation-name: drift-far; animation-range: cover 0% cover 100%; }
+      .layer-mid { animation-name: drift-mid; animation-range: cover 0% cover 100%; }
+      .layer-near { animation-name: drift-near; animation-range: cover 0% cover 100%; }
+    }
+  }
+
+  @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes pop { from { transform: scale(0); } to { transform: scale(1); } }
+  @keyframes walk { from { transform: translateX(var(--walk-from)); } to { transform: translateX(0); } }
+  @keyframes drift-far { from { transform: translate(10px, 18px); } to { transform: translate(-10px, -18px); } }
+  @keyframes drift-mid { from { transform: translateY(30px); } to { transform: translateY(-20px); } }
+  @keyframes drift-near { from { transform: translateY(14px); } to { transform: translateY(-10px); } }
+</style>

@@ -2,20 +2,35 @@
    Design tokens: change the look of the whole site from here.
    ========================================================================== */
 :root {
-  /* Colour: near-black on off-white, one warm accent used sparingly. */
-  --bg: #faf7f2;
-  --surface: #ffffff;
-  --ink: #1c1b19;
-  --ink-muted: #5b5852; /* 6.6:1 on --bg */
-  --rule: #e2ddd3;
-  --accent: #b4462b; /* terracotta, 5.1:1 on --bg */
-  --accent-strong: #8f3520;
-  --accent-tint: #f5e6df;
+  /* Palette. Contrast ratios are against --bg (cream) unless noted.
+     Coral, marigold and blush are for shapes and large display text only:
+     marigold text fails on cream (1.65:1), so it only appears as text on teal. */
+  --teal: #0f3d3e;        /* hero panels, headings: 11.1:1; cream text on it: 11.1:1 */
+  --teal-mid: #2f7a6e;    /* secondary shapes */
+  --coral: #e8604c;       /* shapes; large display text on teal only (3.5:1) */
+  --marigold: #f4b942;    /* shapes; large display text on teal only (6.8:1) */
+  --blush: #f6d3c4;       /* shapes and soft highlights */
+  --cream: #fbf6ee;
+  --cream-soft: #e4dccd;  /* secondary text on teal: 8.8:1 */
 
-  /* Placeholders: deliberately loud yellow, distinct from the accent. */
-  --placeholder-bg: #fff1a8;
-  --placeholder-ink: #4d3b00;
-  --placeholder-rule: #b08800;
+  --bg: var(--cream);
+  --surface: #ffffff;
+  --ink: #1c1b19;         /* 16.0:1 */
+  --ink-muted: #5a534c;   /* 7.0:1 */
+  --rule: #e6dccb;
+  --accent: #a93a26;      /* dark coral for links and small accents: 5.9:1 on cream, 6.3:1 on white, 4.5:1 on blush */
+  --accent-strong: #8a2e1e;
+  --accent-tint: var(--blush);
+
+  /* Placeholders: dashed teal outline on a pale stone fill, clearly
+     different from marigold shapes and from links. */
+  --placeholder-bg: #ede4d6;   /* ink on it: 13.7:1 */
+  --placeholder-ink: var(--ink);
+  --placeholder-rule: var(--teal);
+
+  /* Subtle paper grain, as tiny tiled SVG noise (no image files to load). */
+  --grain-soft: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.11 0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --grain-strong: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 0.97 0 0 0 0 0.93 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 
   /* Type */
   --serif: var(--font-serif), Georgia, serif;
@@ -47,7 +62,7 @@ html { -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: var(--grain-soft) var(--bg);
   color: var(--ink);
   font-family: var(--sans);
   font-size: var(--step-0);
@@ -63,6 +78,7 @@ h1, h2, h3 {
   letter-spacing: -0.01em;
   text-wrap: balance;
   margin: 0 0 0.5em;
+  color: var(--teal);
 }
 h1 { font-size: var(--step-4); }
 h2 { font-size: var(--step-3); margin-top: 2.25em; }
@@ -78,7 +94,7 @@ a {
 a:hover { color: var(--accent-strong); text-decoration-thickness: 2px; }
 
 :focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--teal);
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -131,8 +147,12 @@ a:hover { color: var(--accent-strong); text-decoration-thickness: 2px; }
 .site-header nav a[aria-current='page'] { box-shadow: inset 0 -2px 0 var(--accent); }
 
 main { padding-block: clamp(2.5rem, 6vw, 4.5rem) var(--space-section); }
+main:has(> .hero) { padding-top: 0; }
 
-.site-footer { border-top: 1px solid var(--rule); color: var(--ink-muted); font-size: var(--step--1); }
+.site-footer { background: var(--grain-strong) var(--teal); color: var(--cream-soft); font-size: var(--step--1); }
+.site-footer a { color: var(--cream); }
+.site-footer a:hover { color: var(--cream); }
+.site-footer :focus-visible { outline-color: var(--marigold); }
 .site-footer .wrap { padding-block: 2rem 3rem; }
 .site-footer p { max-width: var(--measure); }
 
@@ -195,14 +215,32 @@ mark.placeholder {
 /* ==========================================================================
    Home: the opening of a long-form story
    ========================================================================== */
-.home-hero { max-width: var(--wide); margin-inline: auto; padding-inline: var(--gutter); }
-.home-hero h1 {
+.hero {
+  position: relative;
+  background: var(--grain-strong) var(--teal);
+  color: var(--cream);
+  overflow: clip; /* clips shapes at the edges without breaking sticky positioning */
+}
+.hero-text {
+  position: relative;
+  z-index: 1; /* text always sits above the illustration's shapes */
+  max-width: var(--wide);
+  margin-inline: auto;
+  padding: clamp(2.5rem, 7vw, 5rem) var(--gutter) 0;
+}
+.hero .eyebrow { color: var(--cream-soft); }
+.hero h1 {
+  color: var(--cream);
   font-size: var(--step-5);
   line-height: 1;
   letter-spacing: -0.025em;
   max-width: 12ch;
   margin-bottom: 0.4em;
 }
+.hero h1 .hl { color: var(--marigold); } /* large display text on teal: 6.8:1 */
+.hero a { color: var(--cream); }
+.hero a:hover { color: var(--cream); text-decoration-thickness: 2px; }
+.hero :focus-visible { outline-color: var(--marigold); }
 .home-intro { max-width: var(--measure); font-size: var(--step-1); line-height: 1.6; }
 
 .act {
@@ -210,7 +248,7 @@ mark.placeholder {
   margin: var(--space-section) auto 0;
   padding-inline: var(--gutter);
 }
-.act-inner { border-top: 1px solid var(--ink); padding-top: 1.5rem; }
+.act-inner { border-top: 2px solid var(--teal); padding-top: 1.5rem; }
 .act h2 { margin-top: 0; font-size: var(--step-4); }
 .act h2 a { color: inherit; text-decoration: none; }
 .act h2 a:hover { color: var(--accent); }
@@ -258,7 +296,7 @@ mark.placeholder {
 .stat {
   margin: 0;
   padding: 1.25rem 0 0;
-  border-top: 3px solid var(--accent);
+  border-top: 6px solid var(--coral); /* shape, not text */
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
@@ -270,6 +308,7 @@ mark.placeholder {
   line-height: 1;
   letter-spacing: -0.02em;
   font-variant-numeric: lining-nums tabular-nums;
+  color: var(--teal);
   margin: 0;
 }
 .stat-value mark.placeholder { font-size: 1rem; display: inline-block; line-height: 1.4; }
@@ -323,7 +362,7 @@ mark.placeholder {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--coral); /* shape */
   box-shadow: 0 0 0 4px var(--bg);
 }
 .timeline-date {
