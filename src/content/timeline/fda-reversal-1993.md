@@ -2,6 +2,7 @@
 date: "1993"
 sortYear: 1993
 title: The 1977 exclusion is reversed
+illustration: door-open
 source:
   title: Evaluation of Sex Differences in Clinical Investigations (guidance for industry)
   publisher: US Food and Drug Administration
