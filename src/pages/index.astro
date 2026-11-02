@@ -18,12 +18,10 @@ const heroTitle = rest.length ? `${escape(first)}, <span class="hl">${escape(res
 ---
 <Base title={home.data.title} description={home.data.description}>
   <section class="hero" aria-labelledby="hero-title">
+    <HeroScene titleHtml={heroTitle} eyebrow="Women's health, in three acts" />
     <div class="hero-text">
-      <p class="eyebrow">Women's health, in three acts</p>
-      <h1 id="hero-title" set:html={heroTitle} />
       <div class="home-intro"><Content /></div>
     </div>
-    <HeroScene />
   </section>
 
   <section class="act" id="act-1" aria-labelledby="act-1-title">

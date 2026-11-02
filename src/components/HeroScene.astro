@@ -1,185 +1,299 @@
 ---
-// Home hero scene: a woman walks along her lifeline. The final stretch,
-// shaded and hatched, stands for the years lived in ill health.
+// Home hero: two lifelines, hers in front and his muted behind, on one
+// scale of years. As you scroll, each figure walks and ages along their line
+// (child, adult, older, elderly). The hatched end of each line is the years
+// lived in ill health.
 //
-// The illustration is decorative (aria-hidden); the caption carries the
-// facts as text, so nothing depends on the animation to be understood.
+// Facts live in a real HTML table in the sky, inside the pinned stage, so
+// they are always readable. The drawing is decorative (aria-hidden).
 //
-// Animation: CSS scroll-driven animations only, no JavaScript. By default
-// the scene shows its finished state. Motion is added only when the browser
-// supports scroll timelines AND the visitor hasn't asked for reduced motion.
+// Motion: CSS scroll-driven animations only. The default (no support, or
+// reduced motion) is a static scene with each figure's four ages spread
+// along their line.
+import Person from './figures/Person.astro';
+import type { Stage } from './figures/Person.astro';
 
-// Lifeline geometry (SVG units). Healthy share = 73.8 / 85.5 years.
-const lineStart = 40;
-const lineLength = 520;
-const healthyLength = Math.round(lineLength * (73.8 / 85.5)); // 449
-const unwellStart = lineStart + healthyLength;
-const unwellLength = lineLength - healthyLength;
-const lineY = 326;
-const walkerX = 505; // where she ends up: on the shaded stretch
-const walkerStartX = 52;
+interface Props {
+  titleHtml: string;
+  eyebrow: string;
+}
+const { titleHtml, eyebrow } = Astro.props;
+
+// Source: AIHW, Australian Burden of Disease Study 2024 (same page, same year).
+const her = { life: 85.5, healthy: 73.8 };
+const him = { life: 81.6, healthy: 71.7 };
+const fmt = (n: number) => n.toFixed(1);
+const herIll = fmt(her.life - her.healthy); // 11.7 (calculated)
+const himIll = fmt(him.life - him.healthy); // 9.9 (calculated)
+
+// One shared scale of years, so the two lines are directly comparable.
+const x0 = 40;
+const k = 520 / her.life; // SVG units per year
+const xAt = (age: number) => +(x0 + age * k).toFixed(1);
+const herY = 338;
+const himY = 150; // on a distant ridge, so she never hides him
+
+// Scroll timing: progress (as % of the pinned scroll) when someone reaches an
+// age. Everything finishes at 85%, leaving a pause before the pin releases.
+const P = (age: number) => +((age / her.life) * 85).toFixed(2);
+const fade = 1.4; // crossfade half-width, in %
+
+type Who = 'her' | 'him';
+function stagesFor(who: Who) {
+  const p = who === 'her' ? her : him;
+  const ranges: Record<Stage, [number, number]> = {
+    child: [0, 18],
+    adult: [18, 50],
+    older: [50, p.healthy],
+    elderly: [p.healthy, p.life], // the elderly version arrives with the ill-health years
+  };
+  // Where each age stands in the static (no-motion) row
+  const staticAge: Record<Stage, number> =
+    who === 'her' ? { child: 8, adult: 33, older: 60, elderly: 80 } : { child: 8, adult: 33, older: 58, elderly: 77 };
+  return (['child', 'adult', 'older', 'elderly'] as Stage[]).map((stage) => {
+    const [a, b] = ranges[stage];
+    return {
+      stage,
+      sx: xAt(staticAge[stage]),
+      inA: P(a) - fade,
+      inB: P(a) + fade,
+      outA: P(b) - fade,
+      outB: P(b) + fade,
+      fadesIn: stage !== 'child',
+      fadesOut: stage !== 'elderly',
+    };
+  });
+}
+
+const herLook = { hair: 'bun' as const, skin: '#8d5a3e', hairColour: '#1c1b19', coat: '#e8604c', collar: '#f4b942' };
+const himLook = { hair: 'short' as const, skin: '#d9a77e', hairColour: '#5b4636', coat: '#9db4bd', legs: '#4a5d66', shoes: '#e4dccd' };
+
+// He reaches the end of his shorter line first and stays there.
+const walk = {
+  her: { x0: xAt(1), x1: xAt(83.5), a: P(1), b: P(83.5) },
+  him: { x0: xAt(1), x1: xAt(80), a: P(1), b: P(80) },
+};
+const timing = [
+  `--her-healthy-end: ${P(her.healthy)}%`,
+  `--her-end: ${P(her.life)}%`,
+  `--him-healthy-end: ${P(him.healthy)}%`,
+  `--him-end: ${P(him.life)}%`,
+].join('; ');
+const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burden-of-disease-study-2024/contents/summary';
 ---
-<figure class="scene" style={`--walk-from: ${walkerStartX - walkerX}px`}>
-  <div class="scene-track">
-    <div class="scene-sticky">
-      <svg viewBox="0 0 600 400" aria-hidden="true" focusable="false" overflow="visible">
+<div class="scene-track" style={timing}>
+  <div class="stage">
+    <div class="sky-text">
+      <div class="headline">
+        <p class="eyebrow">{eyebrow}</p>
+        <h1 id="hero-title" set:html={titleHtml} />
+      </div>
+      <div class="facts">
+        <table class="life-table">
+          <caption class="visually-hidden">Life expectancy and years in full and ill health, Australia, 2024</caption>
+          <thead>
+            <tr>
+              <td></td>
+              <th scope="col"><span class="swatch swatch-healthy" aria-hidden="true"></span>Years in full health</th>
+              <th scope="col"><span class="swatch swatch-ill" aria-hidden="true"></span>Years in ill health*</th>
+              <th scope="col">Life expectancy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row-her"><th scope="row">Women</th><td>{fmt(her.healthy)}</td><td>~{herIll}</td><td>{fmt(her.life)}</td></tr>
+            <tr class="row-him"><th scope="row">Men</th><td>{fmt(him.healthy)}</td><td>~{himIll}</td><td>{fmt(him.life)}</td></tr>
+          </tbody>
+        </table>
+        <p class="facts-note">
+          *Calculated as life expectancy minus years in full health. Source:
+          <a href={aihw}>AIHW, Australian Burden of Disease Study 2024</a> (2024 figures are projections).
+        </p>
+      </div>
+    </div>
+
+    <div class="art">
+      <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false" overflow="visible">
         <defs>
-          <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+          <pattern id="hatch-her" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
             <rect width="6" height="6" fill="#e8604c"></rect>
             <rect width="2.5" height="6" fill="#0f3d3e" opacity="0.45"></rect>
           </pattern>
+          <pattern id="hatch-him" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <rect width="6" height="6" fill="#9db4bd"></rect>
+            <rect width="2.5" height="6" fill="#0f3d3e" opacity="0.55"></rect>
+          </pattern>
         </defs>
 
-        <!-- Far layer: slow -->
         <g class="layer layer-far">
-          <!-- high sky shapes: they sit above the frame and fill the space on tall phone screens -->
-          <path d="M60,-150 C110,-196 200,-182 226,-128 C250,-80 196,-46 136,-58 C76,-70 18,-108 60,-150 Z" fill="#2f7a6e" opacity="0.45"></path>
-          <path d="M470,-110 C500,-136 548,-128 560,-96 C572,-64 540,-44 508,-52 C476,-60 446,-86 470,-110 Z" fill="#e8604c" opacity="0.9"></path>
-          <circle cx="330" cy="-70" r="4" fill="#f4b942"></circle>
-          <circle cx="410" cy="-30" r="2.5" fill="#f6d3c4"></circle>
-          <!-- main sky shapes -->
-          <path d="M18,150 C6,82 84,30 166,46 C248,62 272,150 214,200 C156,250 30,224 18,150 Z" fill="#2f7a6e" opacity="0.55"></path>
-          <path transform="translate(0 -56)" d="M282,58 C300,28 350,22 378,44 C404,64 420,84 404,112 C390,136 352,132 326,136 C296,140 270,118 270,96 C270,80 272,72 282,58 Z" fill="#f6d3c4" opacity="0.85"></path>
-          <circle cx="472" cy="96" r="5" fill="#f4b942"></circle>
-          <circle cx="548" cy="58" r="3.5" fill="#f4b942"></circle>
-          <circle cx="110" cy="262" r="4" fill="#f6d3c4" opacity="0.8"></circle>
+          <!-- High sky: fills the tall sky on phones; hidden on wider screens, where it would sit behind the text -->
+          <g class="sky-high">
+            <path d="M40,-170 C90,-214 180,-200 206,-146 C230,-98 176,-64 116,-76 C56,-88 -2,-128 40,-170 Z" fill="#2f7a6e" opacity="0.45"></path>
+            <path d="M488,-128 C516,-152 562,-144 572,-114 C582,-84 552,-64 522,-72 C492,-80 464,-104 488,-128 Z" fill="#e8604c" opacity="0.9"></path>
+            <path transform="translate(-20 -70)" d="M292,10 C310,-20 360,-26 388,-4 C414,16 430,36 414,64 C400,88 362,84 336,88 C306,92 280,70 280,48 C280,32 282,24 292,10 Z" fill="#f6d3c4" opacity="0.85"></path>
+            <circle cx="350" cy="-60" r="4" fill="#f4b942"></circle>
+          </g>
+          <!-- Wider screens: one blush shape kept inside the frame, clear of the text -->
+          <g class="sky-wide">
+            <path transform="translate(260 10) scale(0.6)" d="M292,10 C310,-20 360,-26 388,-4 C414,16 430,36 414,64 C400,88 362,84 336,88 C306,92 280,70 280,48 C280,32 282,24 292,10 Z" fill="#f6d3c4" opacity="0.85"></path>
+          </g>
+          <path d="M18,140 C6,72 84,20 166,36 C248,52 272,140 214,190 C156,240 30,214 18,140 Z" fill="#2f7a6e" opacity="0.5"></path>
+          <circle cx="470" cy="70" r="5" fill="#f4b942"></circle>
+          <circle cx="300" cy="40" r="3.5" fill="#f4b942"></circle>
         </g>
 
-        <!-- Middle layer: rolling hill -->
+        <!-- Distant ridge -->
+        <path d="M-900,162 C-500,142 -200,168 0,154 C150,136 300,146 420,148 C520,150 560,142 610,146 C900,154 1200,136 1500,146 L1500,460 L-900,460 Z" fill="#2f7a6e" opacity="0.32"></path>
+
+        <!-- His lifeline and figures: behind, muted -->
+        <g class="him-all">
+          <rect x={x0} y={himY - 3} width={xAt(him.life) - x0} height="6" rx="3" fill="#0f3d3e" opacity="0.6"></rect>
+          <rect class="line line-healthy him" x={x0} y={himY - 3} width={xAt(him.healthy) - x0} height="6" rx="3" fill="#e4dccd"></rect>
+          <rect class="line line-ill him" x={xAt(him.healthy)} y={himY - 3} width={+(xAt(him.life) - xAt(him.healthy)).toFixed(1)} height="6" rx="3" fill="url(#hatch-him)"></rect>
+          {
+            stagesFor('him').map((s) => (
+              <g class="pos" style={`--sx:${s.sx}px; --y:${himY}px; --x0:${walk.him.x0}px; --x1:${walk.him.x1}px; --wa:${walk.him.a}%; --wb:${walk.him.b}%`}>
+                <g class={s.fadesIn ? 'fade-in' : undefined} style={`--in-a:${s.inA}%; --in-b:${s.inB}%`}>
+                  <g class={s.fadesOut ? 'fade-out' : undefined} style={`--out-a:${s.outA}%; --out-b:${s.outB}%`}>
+                    <g class="fig-scale him-scale">
+                      <Person stage={s.stage} {...himLook} />
+                    </g>
+                  </g>
+                </g>
+              </g>
+            ))
+          }
+        </g>
+
         <g class="layer layer-mid">
-          <path d="M-900,290 C-600,250 -300,300 -10,300 C90,248 190,262 282,284 C382,306 472,258 610,268 C800,282 1100,250 1500,276 L1500,460 L-900,460 Z" fill="#2f7a6e" opacity="0.7"></path>
+          <path d="M-900,262 C-600,226 -300,276 -10,272 C90,226 190,240 282,258 C382,278 472,234 610,244 C800,256 1100,228 1500,252 L1500,460 L-900,460 Z" fill="#2f7a6e" opacity="0.7"></path>
         </g>
 
-        <!-- Ground, the lifeline and the walker: fixed -->
-        <path d="M-900,318 C-500,308 -200,326 -10,320 C120,310 240,318 330,320 C430,323 520,312 610,318 C900,326 1200,310 1500,318 L1500,460 L-900,460 Z" fill="#2f7a6e"></path>
+        <!-- Ground and her lifeline -->
+        <path d="M-900,326 C-500,316 -200,334 -10,328 C120,318 240,326 330,328 C430,331 520,320 610,326 C900,334 1200,318 1500,326 L1500,460 L-900,460 Z" fill="#2f7a6e"></path>
+        <rect x={x0} y={herY - 4} width="520" height="8" rx="4" fill="#0f3d3e" opacity="0.5"></rect>
+        <rect class="line line-healthy her" x={x0} y={herY - 4} width={xAt(her.healthy) - x0} height="8" rx="4" fill="#fbf6ee"></rect>
+        <rect class="line line-ill her" x={xAt(her.healthy)} y={herY - 4} width={+(xAt(her.life) - xAt(her.healthy)).toFixed(1)} height="8" rx="4" fill="url(#hatch-her)"></rect>
+        <circle cx={x0} cy={herY} r="6.5" fill="#fbf6ee"></circle>
 
-        <rect x={lineStart} y={lineY - 4} width={lineLength} height="8" rx="4" fill="#0f3d3e" opacity="0.5"></rect>
-        <rect class="life-healthy" x={lineStart} y={lineY - 4} width={healthyLength} height="8" rx="4" fill="#fbf6ee"></rect>
-        <rect class="life-unwell" x={unwellStart} y={lineY - 4} width={unwellLength} height="8" rx="4" fill="url(#hatch)"></rect>
-        <circle cx={lineStart} cy={lineY} r="7" fill="#fbf6ee"></circle>
+        {
+          stagesFor('her').map((s) => (
+            <g class="pos" style={`--sx:${s.sx}px; --y:${herY}px; --x0:${walk.her.x0}px; --x1:${walk.her.x1}px; --wa:${walk.her.a}%; --wb:${walk.her.b}%`}>
+              <g class={s.fadesIn ? 'fade-in' : undefined} style={`--in-a:${s.inA}%; --in-b:${s.inB}%`}>
+                <g class={s.fadesOut ? 'fade-out' : undefined} style={`--out-a:${s.outA}%; --out-b:${s.outB}%`}>
+                  <g class="fig-scale her-scale">
+                    <Person stage={s.stage} {...herLook} scarf={s.stage === 'older' || s.stage === 'elderly' ? '#f6d3c4' : undefined} />
+                  </g>
+                </g>
+              </g>
+            </g>
+          ))
+        }
 
-        <g class="walker-move">
-          <g transform={`translate(${walkerX} ${lineY})`}>
-          <g class="walker-figure">
-            <ellipse cx="0" cy="1" rx="18" ry="3.5" fill="#0f3d3e" opacity="0.45"></ellipse>
-            <!-- legs and shoes -->
-            <rect x="-8" y="-40" width="6.5" height="40" rx="3.2" fill="#8d5a3e"></rect>
-            <rect x="2" y="-40" width="6.5" height="40" rx="3.2" fill="#8d5a3e"></rect>
-            <ellipse cx="-3.5" cy="-1.5" rx="6" ry="3" fill="#fbf6ee"></ellipse>
-            <ellipse cx="7.5" cy="-1.5" rx="6" ry="3" fill="#fbf6ee"></ellipse>
-            <!-- coat -->
-            <path d="M-14,-92 C-6,-97 6,-97 14,-92 L20,-36 C8,-31 -8,-31 -20,-36 Z" fill="#e8604c"></path>
-            <path d="M-8,-94 L8,-94 L0,-84 Z" fill="#f4b942"></path>
-            <!-- arm -->
-            <path d="M10,-88 C17,-80 19,-68 16,-56" stroke="#8d5a3e" stroke-width="7" stroke-linecap="round" fill="none"></path>
-            <!-- neck, head, hair (no face, by design) -->
-            <rect x="-3.5" y="-101" width="7" height="10" rx="3" fill="#8d5a3e"></rect>
-            <circle cx="0" cy="-111" r="13" fill="#8d5a3e"></circle>
-            <circle cx="-12" cy="-123" r="7.5" fill="#1c1b19"></circle>
-            <path d="M-13,-112 C-15,-127 2,-131 12,-121 C6,-122 -2,-118 -4,-110 C-6,-104 -9,-100 -13,-98 Z" fill="#1c1b19"></path>
-          </g>
-          </g>
-        </g>
-
-        <circle class="life-end" cx={lineStart + lineLength} cy={lineY} r="7" fill="#e8604c"></circle>
-
-        <!-- Near layer: fast -->
         <g class="layer layer-near">
-          <!-- leaves resting on the ground, fully inside the frame -->
-          <path d="M14,396 C6,364 30,338 64,340 C62,368 44,392 14,396 Z" fill="#e8604c"></path>
-          <path d="M52,398 C58,374 84,360 108,368 C98,388 78,400 52,398 Z" fill="#f6d3c4"></path>
-          <path d="M586,396 C570,376 572,346 596,334 C606,356 604,380 586,396 Z" fill="#f4b942"></path>
-          <path d="M548,398 C544,380 556,364 576,364 C574,382 564,394 548,398 Z" fill="#e8604c" opacity="0.85"></path>
+          <path d="M14,396 C6,364 30,338 64,346 C62,370 44,392 14,396 Z" fill="#e8604c"></path>
+          <path d="M52,398 C58,376 84,364 108,372 C98,390 78,400 52,398 Z" fill="#f6d3c4"></path>
+          <path d="M588,396 C572,378 574,352 598,342 C606,362 604,382 588,396 Z" fill="#f4b942"></path>
         </g>
       </svg>
-
-      <div class="ground">
-      <figcaption class="scene-caption">
-        <span class="key"><span class="swatch swatch-healthy"></span>Years in full health: about 73.8</span>
-        <span class="key"><span class="swatch swatch-unwell"></span>Years in ill health: about 11.7</span>
-        <span class="note">
-          Life expectancy for a girl born in Australia in 2024 is 85.5 years
-          (<a href="https://www.aihw.gov.au/reports/burden-of-disease/australian-burden-of-disease-study-2024/contents/summary">AIHW, 2024</a>).
-        </span>
-      </figcaption>
-      </div>
     </div>
+    <div class="ground-strip" aria-hidden="true"></div>
   </div>
-</figure>
+</div>
 
 <style>
-  .scene { margin: 0; }
-  /* Room above the frame for the high sky shapes (they overflow upwards). */
-  .scene-sticky { display: flex; flex-direction: column; justify-content: flex-end; padding-top: clamp(6rem, 24vw, 15rem); }
-  svg {
-    display: block;
-    width: calc(100% - 2 * var(--gutter));
-    max-width: 60rem;
-    max-height: 64svh;
-    height: auto;
-    margin-inline: auto;
-    overflow: visible; /* hills and ground run to the screen edges */
-  }
+  .stage { display: flex; flex-direction: column; }
 
-  /* She is drawn small so the lifeline fits; scale her up around her feet. */
-  .walker-figure { transform-box: fill-box; transform-origin: 50% 100%; transform: scale(1.25); }
+  /* ---- Sky text: headline and the facts table ---- */
+  .sky-text {
+    position: relative;
+    z-index: 2; /* always above the illustration */
+    width: 100%;
+    max-width: var(--wide);
+    margin-inline: auto;
+    padding: clamp(1.5rem, 5vw, 3rem) var(--gutter) 0.5rem;
+    display: grid;
+    gap: 1rem 3rem;
+  }
+  @media (min-width: 52rem) {
+    .sky-text { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: end; }
+  }
+  .headline h1 { margin-bottom: 0; max-width: none; font-size: min(var(--step-5), 10svh); }
+  .art { position: relative; z-index: 0; }
+  .sky-high { display: none; }
   @media (max-width: 40rem) {
-    .walker-figure { transform: scale(1.75); }
+    .sky-high { display: inline; }
+    .sky-wide { display: none; }
   }
 
-  /* The caption sits on the ground (cream on mid teal: 4.7:1). */
-  .ground { background: var(--teal-mid); }
-  .scene-caption {
-    max-width: 60rem;
-    margin-inline: auto;
-    padding: 0.75rem var(--gutter) 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem 1.5rem;
-    font-size: var(--step--1);
-    color: var(--cream);
-  }
-  .key { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; }
-  .note { flex-basis: 100%; }
-  .scene-caption a { color: var(--cream); }
-  .swatch { width: 1.6rem; height: 0.5rem; border-radius: 1rem; flex: none; }
+  .life-table { border-collapse: collapse; width: 100%; font-size: var(--step--1); color: var(--cream); }
+  .life-table th,
+  .life-table td { padding: 0.3rem 0.5rem 0.3rem 0; text-align: left; vertical-align: bottom; }
+  .life-table thead th { font-weight: 500; color: var(--cream-soft); line-height: 1.25; font-size: 0.78rem; }
+  .life-table tbody th { font-weight: 600; white-space: nowrap; }
+  .life-table tbody td { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; font-variant-numeric: lining-nums tabular-nums; }
+  .life-table tbody tr + tr { border-top: 1px solid rgba(251, 246, 238, 0.25); }
+  .row-him { color: var(--cream-soft); }
+  .swatch { display: block; width: 1.5rem; height: 0.4rem; border-radius: 1rem; margin-bottom: 0.3rem; }
   .swatch-healthy { background: var(--cream); }
-  .swatch-unwell {
-    background: repeating-linear-gradient(45deg, var(--coral) 0 3px, #8b4a3c 3px 5px);
+  .swatch-ill { background: repeating-linear-gradient(45deg, var(--coral) 0 3px, #8b4a3c 3px 5px); }
+  .facts-note { font-size: 0.78rem; line-height: 1.4; color: var(--cream-soft); margin: 0.5rem 0 0; }
+  .facts-note a { color: var(--cream); }
+
+  /* ---- Illustration ---- */
+  .art { width: 100%; }
+  svg { display: block; width: calc(100% - 2 * var(--gutter)); max-width: 60rem; height: auto; margin-inline: auto; overflow: visible; }
+  .ground-strip { height: 1.5rem; background: var(--teal-mid); }
+
+  .him-all { opacity: 0.6; }
+  .fig-scale { transform-box: fill-box; transform-origin: 50% 100%; }
+  .her-scale { transform: scale(1.2); }
+  .him-scale { transform: scale(0.8); }
+  @media (max-width: 40rem) {
+    .her-scale { transform: scale(1.4); }
+    .him-scale { transform: scale(1); }
   }
+
+  /* Static default: each age stands at its own point along the line */
+  .pos { transform: translate(var(--sx), var(--y)); }
 
   /* ---- Motion: only with support, and only if motion is welcome ---- */
   @media (prefers-reduced-motion: no-preference) {
     @supports (animation-timeline: view()) {
-      .scene-track { height: 190svh; view-timeline-name: --hero; }
-      .scene-sticky { position: sticky; top: 0; min-height: 100svh; }
+      .scene-track { height: 240svh; view-timeline-name: --hero; }
+      .stage { position: sticky; top: 0; height: 100svh; }
+      .art { flex: 1 1 0; min-height: 0; display: flex; align-items: flex-end; }
+      svg { height: 100%; }
 
-      .life-healthy,
-      .life-unwell,
-      .walker-move,
-      .life-end,
+      .pos,
+      .fade-in,
+      .fade-out,
+      .line,
       .layer {
         animation-timing-function: linear;
         animation-fill-mode: both;
         animation-timeline: --hero;
       }
-      .life-healthy,
-      .life-unwell { transform-box: fill-box; transform-origin: left center; animation-name: grow; }
-      .life-healthy { animation-range: contain 0% contain 72%; }
-      .life-unwell { animation-range: contain 72% contain 92%; }
-      .life-end { transform-box: fill-box; transform-origin: center; animation-name: pop; animation-range: contain 88% contain 96%; }
-      .walker-move { animation-name: walk; animation-range: contain 0% contain 94%; }
+      .pos { animation-name: walk; animation-range: contain var(--wa) contain var(--wb); }
+      .fade-in { animation-name: fade-in; animation-range: contain var(--in-a) contain var(--in-b); }
+      .fade-out { animation-name: fade-out; animation-range: contain var(--out-a) contain var(--out-b); }
 
-      .layer-far { animation-name: drift-far; animation-range: cover 0% cover 100%; }
-      .layer-mid { animation-name: drift-mid; animation-range: cover 0% cover 100%; }
-      .layer-near { animation-name: drift-near; animation-range: cover 0% cover 100%; }
+      .line { transform-box: fill-box; transform-origin: left center; animation-name: grow; }
+      .line-healthy.her { animation-range: contain 0% contain var(--her-healthy-end); }
+      .line-ill.her { animation-range: contain var(--her-healthy-end) contain var(--her-end); }
+      .line-healthy.him { animation-range: contain 0% contain var(--him-healthy-end); }
+      .line-ill.him { animation-range: contain var(--him-healthy-end) contain var(--him-end); }
+
+      .layer-far { animation-name: drift-far; animation-range: contain 0% contain 100%; }
+      .layer-mid { animation-name: drift-mid; animation-range: contain 0% contain 100%; }
+      .layer-near { animation-name: drift-near; animation-range: contain 0% contain 100%; }
     }
   }
 
+  @keyframes walk { from { transform: translate(var(--x0), var(--y)); } to { transform: translate(var(--x1), var(--y)); } }
+  @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes fade-out { from { opacity: 1; } to { opacity: 0; } }
   @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
-  @keyframes pop { from { transform: scale(0); } to { transform: scale(1); } }
-  @keyframes walk { from { transform: translateX(var(--walk-from)); } to { transform: translateX(0); } }
-  @keyframes drift-far { from { transform: translate(10px, 18px); } to { transform: translate(-10px, -18px); } }
-  @keyframes drift-mid { from { transform: translateY(30px); } to { transform: translateY(-20px); } }
-  @keyframes drift-near { from { transform: translateY(14px); } to { transform: translateY(-10px); } }
+  @keyframes drift-far { from { transform: translate(8px, 14px); } to { transform: translate(-8px, -14px); } }
+  @keyframes drift-mid { from { transform: translateY(16px); } to { transform: translateY(-10px); } }
+  @keyframes drift-near { from { transform: translateY(10px); } to { transform: translateY(-8px); } }
 </style>
