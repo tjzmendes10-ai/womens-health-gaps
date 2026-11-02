@@ -2,36 +2,45 @@
    Design tokens: change the look of the whole site from here.
    ========================================================================== */
 :root {
-  /* Palette. Contrast ratios are against --bg (cream) unless noted.
-     Blush and stone are for shapes and large display text; slate and teal
-     carry small text and links. */
-  --teal: #0f3d3e;        /* hero panels, headings, links: 11.1:1; cream text on it: 11.1:1 */
-  --teal-mid: #2f7a6e;    /* secondary shapes */
-  --slate: #3e4c59;       /* small accents and outlines: 8.2:1 */
-  --stone: #cfc6b8;       /* shapes; 7.1:1 against teal */
-  --blush: #f6d3c4;       /* warm accent: shapes, large display text on teal (8.6:1) */
-  --cream: #fbf6ee;
-  --cream-soft: #e4dccd;  /* secondary text on teal: 8.8:1 */
+  /* Palette: "plum and saffron". Tokens are named by their job, so a
+     future palette change only needs new values here.
+     Contrast ratios are against --bg (cream) unless noted. */
+  --brand-deep: #3a1838;    /* plum: headings, links, header, hero, bands, footer. 14.2:1; cream on it 14.2:1 */
+  --brand-mid: #7b3f6e;     /* mid plum: secondary shapes, illustration ground. 7.0:1; 2.0:1 against plum (decorative depth only) */
+  --outline: #4a3a4f;       /* outlines on figures and small dark details */
+  --accent: #f4a93c;        /* saffron, the main highlight. On plum: 7.7:1 (text OK).
+                               On cream: 1.8:1, so never text there, only decoration */
+  --accent-soft: #e9b7c6;   /* pink: supporting shapes only. Never text, never large backgrounds */
+  --cream: #fbf5ef;
+  --cream-soft: #eadbe3;    /* secondary text on plum: 11.5:1 */
+
+  /* Figures: plum-tinted greys (his clothes, grey and white hair) */
+  --figure-grey: #b9a6b6;      /* 6.7:1 against plum sky, 3.3:1 against mid-plum ground */
+  --figure-grey-dark: #5a4a59;
+  --hair-grey: #cbbfc6;
+  --hair-white: #f4ecee;
 
   --bg: var(--cream);
   --surface: #ffffff;
-  --ink: #1c1b19;         /* 16.0:1 */
-  --ink-muted: #5a534c;   /* 7.0:1 */
-  --rule: #e6dccb;
-  --link: var(--teal);    /* links: 11.1:1 on cream, 12.0:1 on white, 8.6:1 on blush */
-  --accent: var(--slate); /* eyebrows and small accents: 8.2:1 on cream, 6.3:1 on blush */
-  --accent-strong: #26313b;
-  --accent-tint: var(--blush);
+  --ink: #1c1b19;           /* body text: 15.9:1 */
+  --ink-muted: #5d4f59;     /* secondary text: 7.1:1 (7.7:1 on white) */
+  --rule: #e7dbe1;          /* hairlines (decorative) */
+  --link: var(--brand-deep);   /* 14.2:1 on cream, 15.4:1 on white, 13.1:1 on --panel */
+  --link-hover: #24101f;       /* 16.6:1 */
+  --label: var(--brand-deep);  /* eyebrows and small labels, paired with a saffron dot */
+  --panel: #f4eaf0;         /* pale plum panel; ink on it 14.7:1 */
+  --highlight: #fce6c4;     /* pale saffron for selection and the cited source; ink on it 14.1:1, links 12.6:1 */
 
-  /* Placeholders: dashed teal outline on a pale stone fill, clearly
-     different from the illustration shapes and from links. */
-  --placeholder-bg: #ede4d6;   /* ink on it: 13.7:1 */
+  /* Placeholders: dashed plum outline on a pale plum fill, clearly
+     different from illustration shapes and from links. */
+  --placeholder-bg: #efe3ea;   /* ink on it: 13.8:1 */
   --placeholder-ink: var(--ink);
-  --placeholder-rule: var(--teal);
+  --placeholder-rule: var(--brand-deep);
 
-  /* Subtle paper grain, as tiny tiled SVG noise (no image files to load). */
-  --grain-soft: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.11 0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  --grain-strong: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 0.97 0 0 0 0 0.93 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  /* Subtle paper grain, as tiny tiled SVG noise (no image files to load).
+     Soft: plum-tinted specks on cream. Strong: warm light specks on plum. */
+  --grain-soft: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.23 0 0 0 0 0.09 0 0 0 0 0.22 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --grain-strong: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 0.95 0 0 0 0 0.93 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 
   /* Type */
   --serif: var(--font-serif), Georgia, serif;
@@ -79,7 +88,7 @@ h1, h2, h3 {
   letter-spacing: -0.01em;
   text-wrap: balance;
   margin: 0 0 0.5em;
-  color: var(--teal);
+  color: var(--brand-deep);
 }
 h1 { font-size: var(--step-4); }
 h2 { font-size: var(--step-3); margin-top: 2.25em; }
@@ -92,15 +101,15 @@ a {
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
-a:hover { color: var(--slate); text-decoration-thickness: 2px; }
+a:hover { color: var(--link-hover); text-decoration-thickness: 2px; }
 
 :focus-visible {
-  outline: 3px solid var(--teal);
+  outline: 3px solid var(--brand-deep);
   outline-offset: 3px;
   border-radius: 2px;
 }
 
-::selection { background: var(--accent-tint); }
+::selection { background: var(--highlight); }
 
 /* ==========================================================================
    Page frame
@@ -127,9 +136,9 @@ a:hover { color: var(--slate); text-decoration-thickness: 2px; }
 }
 .skip-link:focus { top: 1rem; color: var(--bg); }
 
-/* Teal header: cream text 11.1:1; blush is only used as an underline shape. */
-.site-header { background: var(--grain-strong) var(--teal); color: var(--cream); }
-.site-header :focus-visible { outline-color: var(--blush); }
+/* Plum header: cream text 14.2:1; saffron marks the current page (7.7:1). */
+.site-header { background: var(--grain-strong) var(--brand-deep); color: var(--cream); }
+.site-header :focus-visible { outline-color: var(--accent); }
 .site-header .wrap {
   display: flex;
   flex-wrap: wrap;
@@ -156,16 +165,16 @@ a:hover { color: var(--slate); text-decoration-thickness: 2px; }
 }
 .site-header nav a { color: var(--cream); text-decoration: none; padding-block: 0.35rem; display: inline-block; }
 .site-header nav a:hover { box-shadow: inset 0 -2px 0 var(--cream-soft); }
-.site-header nav a[aria-current='page'] { box-shadow: inset 0 -3px 0 var(--blush); }
+.site-header nav a[aria-current='page'] { box-shadow: inset 0 -3px 0 var(--accent); }
 
 main { padding-block: clamp(2.5rem, 6vw, 4.5rem) var(--space-section); }
 main:has(> .hero) { padding-top: 0; }
 
-.site-footer { background: var(--grain-strong) var(--teal); color: var(--cream-soft); font-size: var(--step--1); }
+.site-footer { background: var(--grain-strong) var(--brand-deep); color: var(--cream-soft); font-size: var(--step--1); }
 .site-footer a { color: var(--cream); }
-.site-footer .disclaimer { color: var(--cream-soft); } /* 8.8:1 on teal; overrides the muted-text rule used on cream */
+.site-footer .disclaimer { color: var(--cream-soft); } /* 11.5:1 on plum; overrides the muted-text rule used on cream */
 .site-footer a:hover { color: var(--cream); }
-.site-footer :focus-visible { outline-color: var(--blush); }
+.site-footer :focus-visible { outline-color: var(--accent); }
 .site-footer .wrap { padding-block: 2rem 3rem; }
 .site-footer p { max-width: var(--measure); }
 
@@ -182,8 +191,19 @@ main:has(> .hero) { padding-top: 0; }
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--label);
   margin: 0 0 0.75rem;
+}
+/* A small saffron dot carries the accent onto cream sections (decorative). */
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 0.55em;
+  height: 0.55em;
+  margin-right: 0.55em;
+  border-radius: 50%;
+  background: var(--accent);
+  vertical-align: 0.05em;
 }
 .eyebrow a { text-decoration: none; }
 
@@ -230,7 +250,7 @@ mark.placeholder {
    ========================================================================== */
 .hero {
   position: relative;
-  background: var(--grain-strong) var(--teal);
+  background: var(--grain-strong) var(--brand-deep);
   color: var(--cream);
   overflow: clip; /* clips shapes at the edges without breaking sticky positioning */
 }
@@ -250,10 +270,10 @@ mark.placeholder {
   max-width: 12ch;
   margin-bottom: 0.4em;
 }
-.hero h1 .hl { color: var(--blush); } /* large display text on teal: 8.6:1 */
+.hero h1 .hl { color: var(--accent); } /* saffron on plum: 7.7:1 */
 .hero a { color: var(--cream); }
 .hero a:hover { color: var(--cream); text-decoration-thickness: 2px; }
-.hero :focus-visible { outline-color: var(--blush); }
+.hero :focus-visible { outline-color: var(--accent); }
 .home-intro { max-width: var(--measure); font-size: var(--step-1); line-height: 1.6; }
 
 .act {
@@ -261,10 +281,10 @@ mark.placeholder {
   margin: var(--space-section) auto 0;
   padding-inline: var(--gutter);
 }
-.act-inner { border-top: 2px solid var(--teal); padding-top: 1.5rem; }
+.act-inner { border-top: 2px solid var(--brand-deep); padding-top: 1.5rem; }
 .act h2 { margin-top: 0; font-size: var(--step-4); }
 .act h2 a { color: inherit; text-decoration: none; }
-.act h2 a:hover { color: var(--accent); }
+.act h2 a:hover { color: var(--brand-mid); }
 .act-blurb { max-width: var(--measure); font-size: var(--step-1); }
 .read-more { font-weight: 600; text-decoration: none; }
 .read-more::after { content: ' →'; }
@@ -286,8 +306,23 @@ mark.placeholder {
 }
 .row-list h3 { margin: 0; font-size: var(--step-2); }
 .row-list p { margin: 0; color: var(--ink-muted); }
-.row-list a:hover h3 { color: var(--accent); }
-.row-list a h3::after { content: ' →'; color: var(--accent); }
+.row-list a:hover h3 { color: var(--brand-mid); }
+/* Topic arrows: plum arrow on a saffron badge (plum on saffron 7.7:1). */
+.row-list a h3::after {
+  content: '→';
+  display: inline-grid;
+  place-items: center;
+  width: 1.35em;
+  height: 1.35em;
+  margin-left: 0.4em;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--brand-deep);
+  font-family: var(--sans);
+  font-size: 0.7em;
+  font-weight: 700;
+  vertical-align: 0.15em;
+}
 .row-list .coming-soon h3 { color: var(--ink-muted); }
 .row-list .tag { justify-self: start; margin-bottom: 0.25rem; }
 @media (min-width: 40rem) {
@@ -309,7 +344,7 @@ mark.placeholder {
 .stat {
   margin: 0;
   padding: 1.25rem 0 0;
-  border-top: 6px solid var(--accent);
+  border-top: 6px solid var(--accent); /* saffron bar: decorative */
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
@@ -321,7 +356,7 @@ mark.placeholder {
   line-height: 1;
   letter-spacing: -0.02em;
   font-variant-numeric: lining-nums tabular-nums;
-  color: var(--teal);
+  color: var(--brand-deep);
   margin: 0;
 }
 .stat-value mark.placeholder { font-size: 1rem; display: inline-block; line-height: 1.4; }
@@ -354,7 +389,7 @@ mark.placeholder {
 .sources h2 { font-size: var(--step-1); font-family: var(--sans); font-weight: 600; margin: 0 0 1rem; }
 .sources ol { padding-left: 1.5rem; margin: 0; }
 .sources li { padding: 0.25rem 0.5rem; margin-left: -0.5rem; scroll-margin-top: 2rem; border-radius: 2px; }
-.sources li:target { background: var(--accent-tint); }
+.sources li:target { background: var(--highlight); }
 .sources li::marker { font-weight: 600; color: var(--ink-muted); }
 
 /* ==========================================================================
@@ -364,7 +399,7 @@ mark.placeholder {
 .timeline-entry {
   position: relative;
   padding: 0 0 2.75rem 1.75rem;
-  border-left: 3px solid var(--teal);
+  border-left: 3px solid var(--brand-deep);
 }
 .timeline-entry:last-child { padding-bottom: 0.5rem; }
 .timeline-entry::before {
@@ -375,7 +410,7 @@ mark.placeholder {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--slate); /* shape; every other marker is mid teal */
+  background: var(--brand-deep); /* shape; every other marker is saffron (decorative) */
   box-shadow: 0 0 0 4px var(--bg);
 }
 .timeline-date {
@@ -398,7 +433,7 @@ mark.placeholder {
   }
   .timeline-entry::before { left: calc(9rem - 5px); }
   .timeline-date { text-align: right; padding: 0.1rem 2rem 0 0; }
-  .timeline-body { border-left: 3px solid var(--teal); padding: 0 0 2.75rem 2rem; }
+  .timeline-body { border-left: 3px solid var(--brand-deep); padding: 0 0 2.75rem 2rem; }
   .timeline-entry:last-child .timeline-body { padding-bottom: 0.5rem; }
 }
 
@@ -420,7 +455,7 @@ mark.placeholder {
   font-size: var(--step-3);
   font-weight: 600;
   line-height: 1;
-  color: var(--accent);
+  color: var(--label);
 }
 .action-list h3 { font-size: var(--step-2); margin: 0 0 0.4rem; }
 .action-list p { margin: 0 0 0.5rem; max-width: var(--measure); }
@@ -428,11 +463,11 @@ mark.placeholder {
 .action-link::after { content: ' ↗'; }
 
 /* ==========================================================================
-   Title band on inner pages (teal, cream text: 11.1:1)
+   Title band on inner pages (plum, cream text: 14.2:1)
    ========================================================================== */
 main:has(> .band) { padding-top: 0; }
 .band {
-  background: var(--grain-strong) var(--teal);
+  background: var(--grain-strong) var(--brand-deep);
   color: var(--cream);
   border-bottom-left-radius: 50% 2rem;
   border-bottom-right-radius: 50% 2rem;
@@ -450,12 +485,12 @@ main:has(> .band) { padding-top: 0; }
 .band h1 { color: var(--cream); margin-bottom: 0.3em; }
 .band a { color: var(--cream); }
 .band .eyebrow, .band .breadcrumb a { color: var(--cream-soft); }
-.band :focus-visible { outline-color: var(--blush); }
+.band :focus-visible { outline-color: var(--accent); }
 .band-hook { color: var(--cream-soft); font-size: var(--step-1); line-height: 1.5; margin: 0; max-width: var(--measure); }
 .band-art svg { display: block; width: clamp(5rem, 18vw, 9.5rem); height: auto; }
 
 /* Timeline: alternate marker colours, and small spot illustrations */
-.timeline-entry:nth-child(even)::before { background: var(--teal-mid); }
+.timeline-entry:nth-child(even)::before { background: var(--accent); }
 .timeline-spot { margin: 0.25rem 0 1rem; }
 .timeline-spot svg { display: block; width: 7.5rem; height: auto; }
 @media (min-width: 46rem) {
@@ -470,13 +505,13 @@ main:has(> .band) { padding-top: 0; }
   margin-top: clamp(1rem, 4vw, 3rem);
   padding-top: 2.5rem;
   overflow: hidden;
-  background: var(--grain-strong) var(--teal); /* sky, so the blush sun stands out */
+  background: var(--grain-strong) var(--brand-deep); /* sky, so the saffron sun stands out */
   border-top-left-radius: 50% 2rem;
   border-top-right-radius: 50% 2rem;
 }
 .sunrise svg { display: block; width: 100%; height: clamp(7rem, 18vw, 12rem); overflow: visible; }
 main:has(.actions-panel) { padding-bottom: 0; }
-.actions-panel { background: var(--grain-soft) var(--blush); padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(3rem, 7vw, 5rem); }
+.actions-panel { background: var(--grain-soft) var(--panel); padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(3rem, 7vw, 5rem); }
 .actions-panel .page > h2 { margin-top: 0; }
 .action-cards { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: 1rem; counter-reset: action; }
 @media (min-width: 40rem) { .action-cards { grid-template-columns: 1fr 1fr; } }
@@ -497,7 +532,7 @@ main:has(.actions-panel) { padding-bottom: 0; }
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
-  background: var(--teal);
+  background: var(--brand-deep);
   color: var(--cream); /* 11.1:1 */
   font-family: var(--serif);
   font-weight: 700;
@@ -577,7 +612,7 @@ main:has(.actions-panel) { padding-bottom: 0; }
 .change-card {
   background: var(--surface);
   border-radius: 14px;
-  border-top: 5px solid var(--teal);
+  border-top: 5px solid var(--brand-deep);
   padding: 1.25rem 1.25rem 1.4rem;
   box-shadow: 0 10px 24px -16px rgba(15, 61, 62, 0.45);
 }

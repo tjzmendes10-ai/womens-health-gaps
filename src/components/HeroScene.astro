@@ -65,8 +65,8 @@ function stagesFor(who: Who) {
   });
 }
 
-const herLook = { hair: 'bun' as const, skin: '#8d5a3e', hairColour: '#1c1b19', coat: '#f6d3c4', collar: '#cfc6b8', outline: '#3e4c59' };
-const himLook = { hair: 'short' as const, skin: '#d9a77e', hairColour: '#5b4636', coat: '#9db4bd', legs: '#4a5d66', shoes: '#e4dccd' };
+const herLook = { hair: 'bun' as const, skin: '#8d5a3e', hairColour: '#1c1b19', coat: 'var(--accent)', collar: 'var(--accent-soft)', outline: 'var(--outline)' };
+const himLook = { hair: 'short' as const, skin: '#d9a77e', hairColour: '#5b4636', coat: 'var(--figure-grey)', legs: 'var(--figure-grey-dark)', shoes: 'var(--cream-soft)' };
 
 // He reaches the end of his shorter line first and stays there.
 const walk = {
@@ -115,39 +115,39 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
       <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false" overflow="visible">
         <defs>
           <pattern id="hatch-her" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-            <rect width="6" height="6" fill="#f6d3c4"></rect>
-            <rect width="2.5" height="6" fill="#3e4c59" opacity="0.75"></rect>
+            <rect width="6" height="6" style="fill:var(--accent)"></rect>
+            <rect width="2.5" height="6" opacity="0.75" style="fill:var(--outline)"></rect>
           </pattern>
           <pattern id="hatch-him" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-            <rect width="6" height="6" fill="#9db4bd"></rect>
-            <rect width="2.5" height="6" fill="#0f3d3e" opacity="0.55"></rect>
+            <rect width="6" height="6" style="fill:var(--figure-grey)"></rect>
+            <rect width="2.5" height="6" opacity="0.55" style="fill:var(--brand-deep)"></rect>
           </pattern>
         </defs>
 
         <g class="layer layer-far">
           <!-- High sky: fills the tall sky on phones; hidden on wider screens, where it would sit behind the text -->
           <g class="sky-high">
-            <path d="M40,-170 C90,-214 180,-200 206,-146 C230,-98 176,-64 116,-76 C56,-88 -2,-128 40,-170 Z" fill="#2f7a6e" opacity="0.45"></path>
-            <path d="M488,-128 C516,-152 562,-144 572,-114 C582,-84 552,-64 522,-72 C492,-80 464,-104 488,-128 Z" fill="#f6d3c4" opacity="0.9"></path>
-            <path transform="translate(-20 -70)" d="M292,10 C310,-20 360,-26 388,-4 C414,16 430,36 414,64 C400,88 362,84 336,88 C306,92 280,70 280,48 C280,32 282,24 292,10 Z" fill="#f6d3c4" opacity="0.85"></path>
-            <circle cx="350" cy="-60" r="4" fill="#cfc6b8"></circle>
+            <path d="M40,-170 C90,-214 180,-200 206,-146 C230,-98 176,-64 116,-76 C56,-88 -2,-128 40,-170 Z" opacity="0.45" style="fill:var(--brand-mid)"></path>
+            <path d="M488,-128 C516,-152 562,-144 572,-114 C582,-84 552,-64 522,-72 C492,-80 464,-104 488,-128 Z" opacity="0.9" style="fill:var(--accent-soft)"></path>
+            <path transform="translate(-20 -70)" d="M292,10 C310,-20 360,-26 388,-4 C414,16 430,36 414,64 C400,88 362,84 336,88 C306,92 280,70 280,48 C280,32 282,24 292,10 Z" opacity="0.85" style="fill:var(--accent-soft)"></path>
+            <circle cx="350" cy="-60" r="4" style="fill:var(--accent-soft)"></circle>
           </g>
-          <!-- Wider screens: one blush shape kept inside the frame, clear of the text -->
+          <!-- Wider screens: one soft shape kept inside the frame, clear of the text -->
           <g class="sky-wide">
-            <path transform="translate(260 10) scale(0.6)" d="M292,10 C310,-20 360,-26 388,-4 C414,16 430,36 414,64 C400,88 362,84 336,88 C306,92 280,70 280,48 C280,32 282,24 292,10 Z" fill="#f6d3c4" opacity="0.85"></path>
+            <path transform="translate(260 10) scale(0.6)" d="M292,10 C310,-20 360,-26 388,-4 C414,16 430,36 414,64 C400,88 362,84 336,88 C306,92 280,70 280,48 C280,32 282,24 292,10 Z" opacity="0.85" style="fill:var(--accent-soft)"></path>
           </g>
-          <path d="M18,140 C6,72 84,20 166,36 C248,52 272,140 214,190 C156,240 30,214 18,140 Z" fill="#2f7a6e" opacity="0.5"></path>
-          <circle cx="470" cy="70" r="5" fill="#cfc6b8"></circle>
-          <circle cx="300" cy="40" r="3.5" fill="#cfc6b8"></circle>
+          <path d="M18,140 C6,72 84,20 166,36 C248,52 272,140 214,190 C156,240 30,214 18,140 Z" opacity="0.5" style="fill:var(--brand-mid)"></path>
+          <circle cx="470" cy="70" r="5" style="fill:var(--accent-soft)"></circle>
+          <circle cx="300" cy="40" r="3.5" style="fill:var(--accent-soft)"></circle>
         </g>
 
         <!-- Distant ridge -->
-        <path d="M-900,162 C-500,142 -200,168 0,154 C150,136 300,146 420,148 C520,150 560,142 610,146 C900,154 1200,136 1500,146 L1500,460 L-900,460 Z" fill="#2f7a6e" opacity="0.32"></path>
+        <path d="M-900,162 C-500,142 -200,168 0,154 C150,136 300,146 420,148 C520,150 560,142 610,146 C900,154 1200,136 1500,146 L1500,460 L-900,460 Z" opacity="0.32" style="fill:var(--brand-mid)"></path>
 
         <!-- His lifeline and figures: behind, muted -->
         <g class="him-all">
-          <rect x={x0} y={himY - 3} width={xAt(him.life) - x0} height="6" rx="3" fill="#0f3d3e" opacity="0.6"></rect>
-          <rect class="line line-healthy him" x={x0} y={himY - 3} width={xAt(him.healthy) - x0} height="6" rx="3" fill="#e4dccd"></rect>
+          <rect x={x0} y={himY - 3} width={xAt(him.life) - x0} height="6" rx="3" opacity="0.6" style="fill:var(--brand-deep)"></rect>
+          <rect class="line line-healthy him" x={x0} y={himY - 3} width={xAt(him.healthy) - x0} height="6" rx="3" style="fill:var(--cream-soft)"></rect>
           <rect class="line line-ill him" x={xAt(him.healthy)} y={himY - 3} width={+(xAt(him.life) - xAt(him.healthy)).toFixed(1)} height="6" rx="3" fill="url(#hatch-him)"></rect>
           {
             stagesFor('him').map((s) => (
@@ -165,15 +165,15 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
         </g>
 
         <g class="layer layer-mid">
-          <path d="M-900,262 C-600,226 -300,276 -10,272 C90,226 190,240 282,258 C382,278 472,234 610,244 C800,256 1100,228 1500,252 L1500,460 L-900,460 Z" fill="#2f7a6e" opacity="0.7"></path>
+          <path d="M-900,262 C-600,226 -300,276 -10,272 C90,226 190,240 282,258 C382,278 472,234 610,244 C800,256 1100,228 1500,252 L1500,460 L-900,460 Z" opacity="0.7" style="fill:var(--brand-mid)"></path>
         </g>
 
         <!-- Ground and her lifeline -->
-        <path d="M-900,326 C-500,316 -200,334 -10,328 C120,318 240,326 330,328 C430,331 520,320 610,326 C900,334 1200,318 1500,326 L1500,460 L-900,460 Z" fill="#2f7a6e"></path>
-        <rect x={x0} y={herY - 4} width="520" height="8" rx="4" fill="#0f3d3e" opacity="0.5"></rect>
-        <rect class="line line-healthy her" x={x0} y={herY - 4} width={xAt(her.healthy) - x0} height="8" rx="4" fill="#fbf6ee"></rect>
+        <path d="M-900,326 C-500,316 -200,334 -10,328 C120,318 240,326 330,328 C430,331 520,320 610,326 C900,334 1200,318 1500,326 L1500,460 L-900,460 Z" style="fill:var(--brand-mid)"></path>
+        <rect x={x0} y={herY - 4} width="520" height="8" rx="4" opacity="0.5" style="fill:var(--brand-deep)"></rect>
+        <rect class="line line-healthy her" x={x0} y={herY - 4} width={xAt(her.healthy) - x0} height="8" rx="4" style="fill:var(--cream)"></rect>
         <rect class="line line-ill her" x={xAt(her.healthy)} y={herY - 4} width={+(xAt(her.life) - xAt(her.healthy)).toFixed(1)} height="8" rx="4" fill="url(#hatch-her)"></rect>
-        <circle cx={x0} cy={herY} r="6.5" fill="#fbf6ee"></circle>
+        <circle cx={x0} cy={herY} r="6.5" style="fill:var(--cream)"></circle>
 
         {
           stagesFor('her').map((s) => (
@@ -181,7 +181,7 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
               <g class={s.fadesIn ? 'fade-in' : undefined} style={`--in-a:${s.inA}%; --in-b:${s.inB}%`}>
                 <g class={s.fadesOut ? 'fade-out' : undefined} style={`--out-a:${s.outA}%; --out-b:${s.outB}%`}>
                   <g class="fig-scale her-scale">
-                    <Person stage={s.stage} {...herLook} scarf={s.stage === 'older' || s.stage === 'elderly' ? '#cfc6b8' : undefined} />
+                    <Person stage={s.stage} {...herLook} scarf={s.stage === 'older' || s.stage === 'elderly' ? 'var(--accent-soft)' : undefined} />
                   </g>
                 </g>
               </g>
@@ -190,9 +190,9 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
         }
 
         <g class="layer layer-near">
-          <path d="M14,396 C6,364 30,338 64,346 C62,370 44,392 14,396 Z" fill="#f6d3c4"></path>
-          <path d="M52,398 C58,376 84,364 108,372 C98,390 78,400 52,398 Z" fill="#f6d3c4"></path>
-          <path d="M588,396 C572,378 574,352 598,342 C606,362 604,382 588,396 Z" fill="#cfc6b8"></path>
+          <path d="M14,396 C6,364 30,338 64,346 C62,370 44,392 14,396 Z" style="fill:var(--accent)"></path>
+          <path d="M52,398 C58,376 84,364 108,372 C98,390 78,400 52,398 Z" style="fill:var(--accent-soft)"></path>
+          <path d="M588,396 C572,378 574,352 598,342 C606,362 604,382 588,396 Z" style="fill:var(--accent-soft)"></path>
         </g>
       </svg>
     </div>
@@ -219,10 +219,17 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
   }
   .headline h1 { margin-bottom: 0; max-width: none; font-size: min(var(--step-5), 10svh); }
   .art { position: relative; z-index: 0; }
+  /* High sky shapes only fill the tall pinned stage on phones. In the static
+     layout (reduced motion, or no scroll-animation support) there is no room
+     above the drawing, and they would sit behind the facts text. */
   .sky-high { display: none; }
   @media (max-width: 40rem) {
-    .sky-high { display: inline; }
     .sky-wide { display: none; }
+  }
+  @media (max-width: 40rem) and (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      .sky-high { display: inline; }
+    }
   }
 
   .life-table { border-collapse: collapse; width: 100%; font-size: var(--step--1); color: var(--cream); }
@@ -235,14 +242,14 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
   .row-him { color: var(--cream-soft); }
   .swatch { display: block; width: 1.5rem; height: 0.4rem; border-radius: 1rem; margin-bottom: 0.3rem; }
   .swatch-healthy { background: var(--cream); }
-  .swatch-ill { background: repeating-linear-gradient(45deg, var(--blush) 0 3px, var(--slate) 3px 5px); }
+  .swatch-ill { background: repeating-linear-gradient(45deg, var(--accent) 0 3px, var(--outline) 3px 5px); }
   .facts-note { font-size: 0.78rem; line-height: 1.4; color: var(--cream-soft); margin: 0.5rem 0 0; }
   .facts-note a { color: var(--cream); }
 
   /* ---- Illustration ---- */
   .art { width: 100%; }
   svg { display: block; width: calc(100% - 2 * var(--gutter)); max-width: 60rem; height: auto; margin-inline: auto; overflow: visible; }
-  .ground-strip { height: 1.5rem; background: var(--teal-mid); }
+  .ground-strip { height: 1.5rem; background: var(--brand-mid); }
 
   .him-all { opacity: 0.6; }
   .fig-scale { transform-box: fill-box; transform-origin: 50% 100%; }
