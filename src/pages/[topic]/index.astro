@@ -1,5 +1,5 @@
 ---
-// Hub page for a topic, e.g. /the-cycle/
+// Hub page for a topic, e.g. /dismissed-as-normal/
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Text from '../../components/Text.astro';
@@ -19,7 +19,7 @@ import PageBand from '../../components/PageBand.astro';
 import CycleSpot from '../../components/spots/CycleSpot.astro';
 ---
 <Base title={topic.data.title} description={topic.data.hook}>
-  <PageBand title={topic.data.title} hook={topic.data.hook} eyebrow="Act 1 · The problems" eyebrowHref={url('/#act-1')}>
+  <PageBand title={topic.data.title} hook={topic.data.hook} eyebrow="Act 1 · Where care falls short" eyebrowHref={url('/#act-1')}>
     <CycleSpot />
   </PageBand>
   <article class="page">

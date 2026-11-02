@@ -21,6 +21,7 @@ interface Props {
   shoes?: string;
   collar?: string;
   scarf?: string;
+  outline?: string; // optional stroke around the coat, for contrast on dark backgrounds
 }
 
 const {
@@ -35,6 +36,7 @@ const {
   shoes = '#fbf6ee',
   collar,
   scarf,
+  outline,
 } = Astro.props;
 
 // Proportions per life stage
@@ -96,7 +98,7 @@ const hy = headY;
 
   {/* Upper body leans slightly with age, pivoting at the hips */}
   <g transform={`rotate(${dims.lean} 0 ${-hip})`}>
-    <path d={torsoPath} fill={coat}></path>
+    <path d={torsoPath} fill={coat} stroke={outline} stroke-width={outline ? 1.6 : undefined} stroke-linejoin="round"></path>
     {collar && <path d={`M${-sw * 0.55},${top - 2} L${sw * 0.55},${top - 2} L0,${top + 8} Z`} fill={collar}></path>}
     {scarf && <path d={`M${-sw * 0.8},${top - 1} C${-sw * 0.3},${top + 6} ${sw * 0.3},${top + 6} ${sw * 0.8},${top - 1} L${sw * 0.5},${top + 9} L${-sw * 0.2},${top + 7} Z`} fill={scarf}></path>}
     <path d={armPath} stroke={skin} stroke-width={stage === 'child' ? 5 : 7} stroke-linecap="round" fill="none"></path>

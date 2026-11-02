@@ -1,5 +1,5 @@
 ---
-// A problem page, e.g. /the-cycle/endometriosis/
+// A problem page, e.g. /dismissed-as-normal/endometriosis/
 import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Text from '../../components/Text.astro';
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
       if (!topic) {
         throw new Error(
           `${problem.filePath} must sit inside a topic folder that matches a file in src/content/topics/ ` +
-            `(e.g. src/content/problems/the-cycle/endometriosis.md).`,
+            `(e.g. src/content/problems/dismissed-as-normal/endometriosis.md).`,
         );
       }
       return { params: { topic: topicId, problem: problemId }, props: { problem, topic } };
