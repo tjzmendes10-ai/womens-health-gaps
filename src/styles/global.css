@@ -106,6 +106,15 @@ a:hover { color: var(--accent-strong); text-decoration-thickness: 2px; }
    ========================================================================== */
 .wrap { max-width: var(--wide); margin-inline: auto; padding-inline: var(--gutter); }
 
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .skip-link {
   position: absolute;
   left: 1rem;
@@ -226,7 +235,7 @@ mark.placeholder {
   z-index: 1; /* text always sits above the illustration's shapes */
   max-width: var(--wide);
   margin-inline: auto;
-  padding: clamp(2.5rem, 7vw, 5rem) var(--gutter) 0;
+  padding: clamp(2rem, 5vw, 3.5rem) var(--gutter) clamp(2.5rem, 6vw, 4rem);
 }
 .hero .eyebrow { color: var(--cream-soft); }
 .hero h1 {

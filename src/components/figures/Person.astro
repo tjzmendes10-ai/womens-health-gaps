@@ -1,0 +1,125 @@
+---
+// One character, drawn from simple flat shapes. No face, by design.
+// Feet sit at (0, 0); the figure faces right. Use inside an <svg>.
+//
+// stage:  child | adult | older | elderly
+// pose:   stand | sit (sit is for adults, e.g. the waiting room)
+// hair:   bun | short | curly | long
+// build:  1 = average; >1 broader, <1 slighter (scales the torso width)
+
+export type Stage = 'child' | 'adult' | 'older' | 'elderly';
+
+interface Props {
+  stage?: Stage;
+  pose?: 'stand' | 'sit';
+  hair?: 'bun' | 'short' | 'curly' | 'long';
+  build?: number;
+  skin: string;
+  hairColour: string;
+  coat: string;
+  legs?: string; // trousers/tights colour; defaults to skin (bare legs)
+  shoes?: string;
+  collar?: string;
+  scarf?: string;
+}
+
+const {
+  stage = 'adult',
+  pose = 'stand',
+  hair = 'bun',
+  build = 1,
+  skin,
+  hairColour,
+  coat,
+  legs = skin,
+  shoes = '#fbf6ee',
+  collar,
+  scarf,
+} = Astro.props;
+
+// Proportions per life stage
+const dims = {
+  child: { leg: 22, torso: 30, head: 10, width: 24, hem: 0.2, lean: 0 },
+  adult: { leg: 40, torso: 56, head: 13, width: 34, hem: 0.1, lean: 0 },
+  older: { leg: 39, torso: 55, head: 13, width: 36, hem: 0.4, lean: 3 },
+  elderly: { leg: 37, torso: 55, head: 13, width: 36, hem: 0.55, lean: 6 },
+}[stage];
+
+const w = dims.width * build;
+const sw = w * 0.4; // half shoulder width
+const hw = w * 0.58; // half hem width
+const legW = stage === 'child' ? 5 : 6.5;
+const seated = pose === 'sit' && stage !== 'child';
+const hip = seated ? dims.leg * 0.62 : dims.leg; // height of the hips above the ground
+const top = -(hip + dims.torso); // shoulder line
+const hem = seated ? -hip + 2 : -(dims.leg * (1 - dims.hem)); // coat hem
+const neckTop = top - 7;
+const headY = neckTop - dims.head + 2;
+
+// Hair: base colour changes with age
+const hairBase = stage === 'elderly' ? '#f1ece4' : hairColour;
+const streak = stage === 'older' ? '#c9c2b8' : null;
+
+const torsoPath = `M${-sw},${top} C${-sw / 2},${top - 5} ${sw / 2},${top - 5} ${sw},${top} L${hw},${hem} C${hw / 2},${hem + 5} ${-hw / 2},${hem + 5} ${-hw},${hem} Z`;
+
+// Arm: elderly figures hold a walking stick slightly forward
+const armEnd = stage === 'elderly' ? { x: sw + 11, y: top + dims.torso * 0.55 } : { x: sw + 5, y: top + dims.torso * 0.62 };
+const armPath = `M${sw - 3},${top + 4} C${sw + 4},${top + 12} ${armEnd.x + 1},${armEnd.y - 12} ${armEnd.x},${armEnd.y}`;
+
+const r = dims.head;
+const hx = 0;
+const hy = headY;
+---
+<g class="person">
+  <ellipse cx="0" cy="1" rx={w * 0.55} ry="3.2" fill="#0f3d3e" opacity="0.35"></ellipse>
+
+  {/* Legs */}
+  {
+    seated ? (
+      <g>
+        <rect x={-6} y={-hip - 4} width={dims.leg * 0.62 + 8} height={legW + 1} rx={legW / 2} fill={legs}></rect>
+        <rect x={dims.leg * 0.62 - 2} y={-hip - 2} width={legW} height={hip + 2} rx={legW / 2} fill={legs}></rect>
+        <ellipse cx={dims.leg * 0.62 + 4} cy="-1.5" rx="6" ry="3" fill={shoes}></ellipse>
+      </g>
+    ) : (
+      <g>
+        <rect x={-legW - 1.5} y={-dims.leg} width={legW} height={dims.leg} rx={legW / 2} fill={legs}></rect>
+        <rect x={1.5} y={-dims.leg} width={legW} height={dims.leg} rx={legW / 2} fill={legs}></rect>
+        <ellipse cx={-legW / 2 - 1} cy="-1.5" rx={legW * 0.9} ry="3" fill={shoes}></ellipse>
+        <ellipse cx={legW / 2 + 4} cy="-1.5" rx={legW * 0.9} ry="3" fill={shoes}></ellipse>
+      </g>
+    )
+  }
+
+  {/* Walking stick, behind the coat hem but held by the hand */}
+  {stage === 'elderly' && !seated && <path d={`M${armEnd.x + 1},${armEnd.y} L${armEnd.x + 7},0`} stroke="#e4dccd" stroke-width="3" stroke-linecap="round"></path>}
+
+  {/* Upper body leans slightly with age, pivoting at the hips */}
+  <g transform={`rotate(${dims.lean} 0 ${-hip})`}>
+    <path d={torsoPath} fill={coat}></path>
+    {collar && <path d={`M${-sw * 0.55},${top - 2} L${sw * 0.55},${top - 2} L0,${top + 8} Z`} fill={collar}></path>}
+    {scarf && <path d={`M${-sw * 0.8},${top - 1} C${-sw * 0.3},${top + 6} ${sw * 0.3},${top + 6} ${sw * 0.8},${top - 1} L${sw * 0.5},${top + 9} L${-sw * 0.2},${top + 7} Z`} fill={scarf}></path>}
+    <path d={armPath} stroke={skin} stroke-width={stage === 'child' ? 5 : 7} stroke-linecap="round" fill="none"></path>
+    <rect x="-3.5" y={neckTop} width="7" height="10" rx="3" fill={skin}></rect>
+
+    {/* Head and hair */}
+    {hair === 'long' && <path d={`M${hx - r * 0.95},${hy - r * 0.2} C${hx - r * 1.3},${hy + r * 1.4} ${hx - r * 0.2},${hy + r * 1.9} ${hx + r * 0.1},${hy + r * 0.9} L${hx - r * 0.2},${hy} Z`} fill={hairBase}></path>}
+    <circle cx={hx} cy={hy} r={r} fill={skin}></circle>
+    {hair === 'bun' && <circle cx={hx - r * 0.92} cy={hy - r * 0.92} r={r * 0.58} fill={hairBase}></circle>}
+    {
+      hair === 'curly' ? (
+        <g fill={hairBase}>
+          <circle cx={hx - r * 0.55} cy={hy - r * 0.75} r={r * 0.62}></circle>
+          <circle cx={hx + r * 0.25} cy={hy - r * 0.9} r={r * 0.58}></circle>
+          <circle cx={hx - r * 0.95} cy={hy - r * 0.05} r={r * 0.55}></circle>
+        </g>
+      ) : (
+        <path
+          d={`M${hx - r},${hy - r * 0.08} C${hx - r * 1.15},${hy - r * 1.2} ${hx + r * 0.15},${hy - r * 1.5} ${hx + r * 0.9},${hy - r * 0.75} C${hx + r * 0.45},${hy - r * 0.85} ${hx - r * 0.15},${hy - r * 0.55} ${hx - r * 0.3},${hy} C${hx - r * 0.45},${hy + r * 0.45} ${hx - r * 0.7},${hy + r * 0.75} ${hx - r},${hy + r * 0.95} Z`}
+          fill={hairBase}
+        ></path>
+      )
+    }
+    {streak && <path d={`M${hx - r * 0.7},${hy - r * 0.75} C${hx - r * 0.2},${hy - r * 1.05} ${hx + r * 0.3},${hy - r * 1.0} ${hx + r * 0.6},${hy - r * 0.8}`} stroke={streak} stroke-width="2.4" stroke-linecap="round" fill="none"></path>}
+  </g>
+</g>
