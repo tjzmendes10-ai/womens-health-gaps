@@ -45,7 +45,7 @@ sources:
     publisher: InSight+, Medical Journal of Australia
     year: 2026
     url: https://insightplus.mja.com.au/2026/20/polycystic-ovary-syndrome-name-change-brings-clarity-to-misunderstood-condition
-lastReviewed: not yet reviewed
+lastReviewed: 2026-11-02T18:10:00+11:00
 ---
 
 PMOS (polyendocrine metabolic ovarian syndrome) is the new name for the condition long known as polycystic ovary syndrome, or PCOS. It affects hormones, metabolism, fertility, mental health and skin: common features include irregular or absent periods, higher levels of androgens (hormones such as testosterone) that can cause acne and unwanted hair, a higher risk of type 2 diabetes, and difficulty getting pregnant.
