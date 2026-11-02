@@ -1,0 +1,16 @@
+---
+// A row of identical lab mice.
+const xs = [12, 52, 92, 132];
+---
+<svg viewBox="0 0 160 80" aria-hidden="true" focusable="false">
+  {xs.map((x) => (
+    <g transform={`translate(${x} 40)`}>
+      <path d="M-6,8 C-14,10 -16,20 -8,22" stroke="#2f7a6e" stroke-width="2" fill="none" stroke-linecap="round"></path>
+      <ellipse cx="6" cy="6" rx="12" ry="8" fill="#9db4bd"></ellipse>
+      <circle cx="16" cy="0" r="6" fill="#9db4bd"></circle>
+      <circle cx="13" cy="-6" r="4" fill="#f6d3c4"></circle>
+      <circle cx="21" cy="1" r="1.4" fill="#0f3d3e"></circle>
+    </g>
+  ))}
+  <rect x="0" y="62" width="160" height="4" rx="2" fill="#2f7a6e" opacity="0.6"></rect>
+</svg>

@@ -6,10 +6,14 @@ import { getPage } from '../lib/content';
 
 const page = await getPage('about', 'about');
 const { Content } = await render(page);
+import PageBand from '../components/PageBand.astro';
+import CardsSpot from '../components/spots/CardsSpot.astro';
 ---
 <Base title={page.data.title} description={page.data.description}>
+  <PageBand title={page.data.title}>
+    <CardsSpot />
+  </PageBand>
   <article class="page">
-    <h1>{page.data.title}</h1>
     <Content />
     <h2>Not medical advice</h2>
     <MedicalDisclaimer />

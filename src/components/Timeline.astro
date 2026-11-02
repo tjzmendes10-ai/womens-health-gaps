@@ -2,6 +2,8 @@
 import { getCollection, render } from 'astro:content';
 import Source from './Source.astro';
 import Text from './Text.astro';
+import DoorSpot from './spots/DoorSpot.astro';
+import MiceSpot from './spots/MiceSpot.astro';
 
 const entries = (await getCollection('timeline')).sort((a, b) => a.data.sortYear - b.data.sortYear);
 const rendered = await Promise.all(entries.map(async (e) => ({ entry: e, Content: (await render(e)).Content })));
@@ -13,6 +15,11 @@ const rendered = await Promise.all(entries.map(async (e) => ({ entry: e, Content
         <p class="timeline-date">{entry.data.date}</p>
         <div class="timeline-body">
           <h2 class="timeline-title"><Text text={entry.data.title} /></h2>
+          {entry.data.illustration && (
+            <div class="timeline-spot" aria-hidden="true">
+              {entry.data.illustration === 'mice' ? <MiceSpot /> : <DoorSpot open={entry.data.illustration === 'door-open'} />}
+            </div>
+          )}
           <Content />
           <p class="timeline-source">
             Source: <Source source={entry.data.source} />

@@ -2,6 +2,7 @@
 date: "1977"
 sortYear: 1977
 title: Women who could become pregnant are kept out of early drug trials
+illustration: door-closed
 source:
   title: Guideline for the Study and Evaluation of Gender Differences in the Clinical Evaluation of Drugs (July 1993), The Embryo Project Encyclopedia (Meek C)
   publisher: Arizona State University

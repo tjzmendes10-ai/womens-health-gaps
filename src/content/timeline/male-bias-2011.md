@@ -2,6 +2,7 @@
 date: "2011"
 sortYear: 2011
 title: Most animal research still studies only males
+illustration: mice
 source:
   title: Sex bias in neuroscience and biomedical research (Beery AK, Zucker I)
   publisher: Neuroscience and Biobehavioral Reviews, 35(3)

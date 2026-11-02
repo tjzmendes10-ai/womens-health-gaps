@@ -126,7 +126,9 @@ a:hover { color: var(--accent-strong); text-decoration-thickness: 2px; }
 }
 .skip-link:focus { top: 1rem; color: var(--bg); }
 
-.site-header { border-bottom: 1px solid var(--rule); }
+/* Teal header: cream text 11.1:1; marigold is only used as an underline shape. */
+.site-header { background: var(--grain-strong) var(--teal); color: var(--cream); }
+.site-header :focus-visible { outline-color: var(--marigold); }
 .site-header .wrap {
   display: flex;
   flex-wrap: wrap;
@@ -139,7 +141,7 @@ a:hover { color: var(--accent-strong); text-decoration-thickness: 2px; }
   font-family: var(--serif);
   font-size: var(--step-1);
   font-weight: 700;
-  color: var(--ink);
+  color: var(--cream);
   text-decoration: none;
 }
 .site-header ul {
@@ -151,15 +153,16 @@ a:hover { color: var(--accent-strong); text-decoration-thickness: 2px; }
   padding: 0;
   font-size: var(--step--1);
 }
-.site-header nav a { color: var(--ink); text-decoration: none; padding-block: 0.35rem; display: inline-block; }
-.site-header nav a:hover { color: var(--accent); }
-.site-header nav a[aria-current='page'] { box-shadow: inset 0 -2px 0 var(--accent); }
+.site-header nav a { color: var(--cream); text-decoration: none; padding-block: 0.35rem; display: inline-block; }
+.site-header nav a:hover { box-shadow: inset 0 -2px 0 var(--cream-soft); }
+.site-header nav a[aria-current='page'] { box-shadow: inset 0 -3px 0 var(--marigold); }
 
 main { padding-block: clamp(2.5rem, 6vw, 4.5rem) var(--space-section); }
 main:has(> .hero) { padding-top: 0; }
 
 .site-footer { background: var(--grain-strong) var(--teal); color: var(--cream-soft); font-size: var(--step--1); }
 .site-footer a { color: var(--cream); }
+.site-footer .disclaimer { color: var(--cream-soft); } /* 8.8:1 on teal; overrides the muted-text rule used on cream */
 .site-footer a:hover { color: var(--cream); }
 .site-footer :focus-visible { outline-color: var(--marigold); }
 .site-footer .wrap { padding-block: 2rem 3rem; }
@@ -167,7 +170,7 @@ main:has(> .hero) { padding-top: 0; }
 
 /* Standard reading page: one centred column, prose at a comfortable width. */
 .page { max-width: var(--page); margin-inline: auto; padding-inline: var(--gutter); }
-.page > :not(.stats, .timeline, .action-list, .row-list) { max-width: var(--measure); }
+.page > :not(.stats, .timeline, .action-list, .action-cards, .row-list) { max-width: var(--measure); }
 
 /* ==========================================================================
    Shared text pieces
@@ -305,7 +308,7 @@ mark.placeholder {
 .stat {
   margin: 0;
   padding: 1.25rem 0 0;
-  border-top: 6px solid var(--coral); /* shape, not text */
+  border-top: 6px solid var(--accent);
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
@@ -360,7 +363,7 @@ mark.placeholder {
 .timeline-entry {
   position: relative;
   padding: 0 0 2.75rem 1.75rem;
-  border-left: 2px solid var(--rule);
+  border-left: 3px solid var(--teal);
 }
 .timeline-entry:last-child { padding-bottom: 0.5rem; }
 .timeline-entry::before {
@@ -371,7 +374,7 @@ mark.placeholder {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--coral); /* shape */
+  background: var(--coral); /* shape; every other marker is marigold */
   box-shadow: 0 0 0 4px var(--bg);
 }
 .timeline-date {
@@ -394,7 +397,7 @@ mark.placeholder {
   }
   .timeline-entry::before { left: calc(9rem - 5px); }
   .timeline-date { text-align: right; padding: 0.1rem 2rem 0 0; }
-  .timeline-body { border-left: 2px solid var(--rule); padding: 0 0 2.75rem 2rem; }
+  .timeline-body { border-left: 3px solid var(--teal); padding: 0 0 2.75rem 2rem; }
   .timeline-entry:last-child .timeline-body { padding-bottom: 0.5rem; }
 }
 
@@ -422,3 +425,86 @@ mark.placeholder {
 .action-list p { margin: 0 0 0.5rem; max-width: var(--measure); }
 .action-link { font-weight: 600; }
 .action-link::after { content: ' ↗'; }
+
+/* ==========================================================================
+   Title band on inner pages (teal, cream text: 11.1:1)
+   ========================================================================== */
+main:has(> .band) { padding-top: 0; }
+.band {
+  background: var(--grain-strong) var(--teal);
+  color: var(--cream);
+  border-bottom-left-radius: 50% 2rem;
+  border-bottom-right-radius: 50% 2rem;
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+.band-inner {
+  max-width: var(--page);
+  margin-inline: auto;
+  padding: clamp(2rem, 6vw, 3.5rem) var(--gutter) clamp(2.25rem, 6vw, 3.5rem);
+  display: grid;
+  gap: 1rem 2rem;
+  align-items: end;
+}
+.band-has-art .band-inner { grid-template-columns: minmax(0, 1fr) auto; }
+.band h1 { color: var(--cream); margin-bottom: 0.3em; }
+.band a { color: var(--cream); }
+.band .eyebrow, .band .breadcrumb a { color: var(--cream-soft); }
+.band :focus-visible { outline-color: var(--marigold); }
+.band-hook { color: var(--cream-soft); font-size: var(--step-1); line-height: 1.5; margin: 0; max-width: var(--measure); }
+.band-art svg { display: block; width: clamp(5rem, 18vw, 9.5rem); height: auto; }
+
+/* Timeline: alternate marker colours, and small spot illustrations */
+.timeline-entry:nth-child(even)::before { background: var(--marigold); }
+.timeline-spot { margin: 0.25rem 0 1rem; }
+.timeline-spot svg { display: block; width: 7.5rem; height: auto; }
+@media (min-width: 46rem) {
+  .timeline-spot { float: right; margin: 0 0 0.75rem 1.5rem; }
+  .timeline-body::after { content: ''; display: block; clear: both; }
+}
+
+/* ==========================================================================
+   Where we're headed: sunrise and action cards
+   ========================================================================== */
+.sunrise { margin-top: clamp(1rem, 4vw, 3rem); padding-top: 1.5rem; overflow: hidden; }
+.sunrise svg { display: block; width: 100%; height: clamp(7rem, 18vw, 12rem); overflow: visible; }
+main:has(.actions-panel) { padding-bottom: 0; }
+.actions-panel { background: var(--grain-soft) var(--blush); padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(3rem, 7vw, 5rem); }
+.actions-panel .page > h2 { margin-top: 0; }
+.action-cards { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: 1rem; counter-reset: action; }
+@media (min-width: 40rem) { .action-cards { grid-template-columns: 1fr 1fr; } }
+.action-card {
+  counter-increment: action;
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 1.25rem 1.25rem 1.4rem;
+  box-shadow: 0 10px 24px -16px rgba(15, 61, 62, 0.45);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.action-card::before {
+  content: counter(action);
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--teal);
+  color: var(--cream); /* 11.1:1 */
+  font-family: var(--serif);
+  font-weight: 700;
+}
+.action-card h3 { font-size: var(--step-2); margin: 0.25rem 0 0; }
+.action-card p { margin: 0; }
+.action-card .action-link { margin-top: auto; padding-top: 0.5rem; font-weight: 600; }
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .sun-disc {
+      animation: sun-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 55%;
+    }
+  }
+}
+@keyframes sun-rise { from { transform: translateY(70px); } to { transform: translateY(0); } }

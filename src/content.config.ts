@@ -143,6 +143,12 @@ const timeline = defineCollection({
     }),
     title: required('title'),
     source,
+    // Optional small drawing beside the entry.
+    illustration: z
+      .enum(['door-closed', 'door-open', 'mice'], {
+        error: '"illustration" must be one of: door-closed, door-open, mice (or leave it out)',
+      })
+      .optional(),
   }),
 });
 

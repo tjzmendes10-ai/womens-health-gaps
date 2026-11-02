@@ -1,0 +1,25 @@
+---
+// A door: closed (1977) or open with light spilling out (1993).
+interface Props { open?: boolean }
+const { open = false } = Astro.props;
+---
+<svg viewBox="0 0 160 160" aria-hidden="true" focusable="false">
+  <rect x="40" y="18" width="80" height="128" rx="6" fill="#0f3d3e"></rect>
+  {
+    open ? (
+      <>
+        <rect x="48" y="26" width="64" height="120" fill="#f4b942"></rect>
+        <path d="M48,146 L112,146 L150,158 L10,158 Z" fill="#f4b942" opacity="0.45"></path>
+        <path d="M48,26 L24,34 L24,140 L48,146 Z" fill="#e8604c"></path>
+        <circle cx="30" cy="88" r="3" fill="#fbf6ee"></circle>
+      </>
+    ) : (
+      <>
+        <rect x="48" y="26" width="64" height="120" fill="#e8604c"></rect>
+        <rect x="58" y="40" width="44" height="14" rx="3" fill="#fbf6ee"></rect>
+        <circle cx="102" cy="90" r="4" fill="#f4b942"></circle>
+      </>
+    )
+  }
+  <rect x="20" y="146" width="120" height="5" rx="2.5" fill="#2f7a6e" opacity="0.6"></rect>
+</svg>

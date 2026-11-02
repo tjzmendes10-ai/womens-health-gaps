@@ -32,12 +32,22 @@ const { problem, topic } = Astro.props as {
 };
 const { title, hook, stats, sources, mentalHealth, lastReviewed } = problem.data;
 const body = splitProblemBody(problem);
+
+// Small spot illustration per page. Mental-health pages always get the
+// quiet abstract shape: no characters, nothing playful.
+const spots: Record<string, typeof CycleSpot> = { endometriosis: ChairSpot, pmos: ClockSpot };
+const Spot = mentalHealth ? CalmSpot : (spots[problem.id.split('/')[1]] ?? CycleSpot);
+import PageBand from '../../components/PageBand.astro';
+import CycleSpot from '../../components/spots/CycleSpot.astro';
+import ChairSpot from '../../components/spots/ChairSpot.astro';
+import ClockSpot from '../../components/spots/ClockSpot.astro';
+import CalmSpot from '../../components/spots/CalmSpot.astro';
 ---
 <Base title={title} description={hook}>
+  <PageBand title={title} hook={hook} crumbLabel={topic.data.title} crumbHref={url(`/${topic.id}/`)}>
+    <Spot />
+  </PageBand>
   <article class="page">
-    <p class="breadcrumb"><a href={url(`/${topic.id}/`)}>{topic.data.title}</a></p>
-    <h1>{title}</h1>
-    <p class="hook"><Text text={hook} /></p>
 
     {mentalHealth && <Lifeline />}
 
