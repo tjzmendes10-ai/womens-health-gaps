@@ -180,7 +180,7 @@ main:has(> .hero) { padding-top: 0; }
 
 /* Standard reading page: one centred column, prose at a comfortable width. */
 .page { max-width: var(--page); margin-inline: auto; padding-inline: var(--gutter); }
-.page > :not(.stats, .timeline, .action-list, .action-cards, .change-cards, .you-list, .row-list) { max-width: var(--measure); }
+.page > :not(.stats, .timeline, .origins, .action-list, .action-cards, .change-cards, .you-list, .row-list) { max-width: var(--measure); }
 
 /* ==========================================================================
    Shared text pieces
@@ -435,6 +435,21 @@ mark.placeholder {
   .timeline-date { text-align: right; padding: 0.1rem 2rem 0 0; }
   .timeline-body { border-left: 3px solid var(--brand-deep); padding: 0 0 2.75rem 2rem; }
   .timeline-entry:last-child .timeline-body { padding-bottom: 0.5rem; }
+}
+
+/* "Where the words come from", under the timeline */
+.origins { margin-top: var(--space-section); padding-top: 2.5rem; border-top: 1px solid var(--rule); }
+.origins h2 { font-size: var(--step-3); margin: 0 0 0.75rem; }
+.origins-intro { margin: 0 0 2rem; max-width: var(--measure); }
+.origins-item dd { max-width: var(--measure); }
+.origins-list { margin: 0; display: grid; gap: 0; }
+.origins-item { padding: 1.5rem 0; border-top: 1px solid var(--rule); }
+.origins-item dt { font-family: var(--serif); font-size: var(--step-2); font-weight: 600; margin: 0 0 0.4rem; }
+.origins-item dd { margin: 0; }
+.origins-item dd > p:first-child { margin-top: 0; }
+@media (min-width: 46rem) {
+  .origins-item { display: grid; grid-template-columns: 9rem 1fr; gap: 0 2rem; }
+  .origins-item dt { margin: 0; }
 }
 
 /* ==========================================================================
