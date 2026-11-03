@@ -1,8 +1,11 @@
 # Research data
 
-Data collected for the planned "In numbers" and data explorer pages. **The website
-doesn't use any of it yet.** Astro only builds what's in `src/`, so files in
-this folder don't change the live site.
+Data collected for the site's charts and the planned data explorer.
+
+**Used by the website:** `clean/who_le_hale_by_sex.csv` feeds the global table in
+the home page hero (read at build time by `src/lib/who-global.ts`). If you
+change that file, the build re-reads it. If the World 2021 rows go missing, the
+build stops with a message. Nothing else in this folder affects the live site.
 
 - `SOURCES.md`: where each dataset came from, its licence, and the caveats to
   follow when using it on the site. **Read this before using any number.**
