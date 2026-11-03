@@ -87,8 +87,14 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
       <div class="headline">
         <p class="eyebrow">{eyebrow}</p>
         <h1 id="hero-title" set:html={titleHtml} />
+        <p class="hero-global">
+          <span class="tag tag-light">Global</span>
+          Around the world, women live longer than men but spend 25% more of their lives in poor health. The causes are global: medicine has been researched, tested and funded with men as the default. This site looks at what that means, and what it looks like in Australia.
+          (<a href="https://www.weforum.org/reports/closing-the-women-s-health-gap-a-1-trillion-opportunity-to-improve-lives-and-economies">World Economic Forum and McKinsey Health Institute, 2024</a>)
+        </p>
       </div>
       <div class="facts">
+        <p class="facts-label"><span class="tag tag-light">Australia</span> 2024</p>
         <table class="life-table">
           <caption class="visually-hidden">Life expectancy and years in full and ill health, Australia, 2024</caption>
           <thead>
@@ -217,20 +223,19 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
   @media (min-width: 52rem) {
     .sky-text { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: end; }
   }
+  .hero-global { margin: 0.75rem 0 0; max-width: 34rem; font-size: 0.95rem; line-height: 1.5; color: var(--cream-soft); }
+  .hero-global a, .facts-label { color: var(--cream); }
+  .facts-label { margin: 0 0 0.3rem; font-size: 0.78rem; }
+  .tag-light { color: var(--cream); margin-right: 0.35rem; }
   .headline h1 { margin-bottom: 0; max-width: none; font-size: min(var(--step-5), 10svh); }
   .art { position: relative; z-index: 0; }
-  /* High sky shapes only fill the tall pinned stage on phones. In the static
-     layout (reduced motion, or no scroll-animation support) there is no room
-     above the drawing, and they would sit behind the facts text. */
+  /* High sky shapes are switched off: the sky now holds the headline, the
+     global intro and the facts table, and shapes there would sit behind text. */
   .sky-high { display: none; }
   @media (max-width: 40rem) {
     .sky-wide { display: none; }
   }
-  @media (max-width: 40rem) and (prefers-reduced-motion: no-preference) {
-    @supports (animation-timeline: view()) {
-      .sky-high { display: inline; }
-    }
-  }
+
 
   .life-table { border-collapse: collapse; width: 100%; font-size: var(--step--1); color: var(--cream); }
   .life-table th,

@@ -16,8 +16,8 @@ stats:
     label: Women worldwide estimated to have PMOS, more than 170 million people. As reported in the international announcement of the name change.
     region: Global
     source: 1
-  - value: "1 in 3"
-    label: Women who waited more than 2 years for a diagnosis; nearly half saw 3 or more health professionals first. An online survey of 1,385 women, mostly in North America and Europe, recruited through support groups (2017).
+  - value: "Up to 70%"
+    label: Share of women with the condition who are estimated to be undiagnosed worldwide, according to the World Health Organization, which still uses the name PCOS.
     region: Global
     source: 4
 sources:
@@ -33,10 +33,10 @@ sources:
     publisher: Medical Journal of Australia, 196(1)
     year: 2012
     url: https://doi.org/10.5694/mja11.10553
-  - title: Delayed diagnosis and a lack of information associated with dissatisfaction in women with polycystic ovary syndrome (Gibson-Helm M et al.)
-    publisher: Journal of Clinical Endocrinology and Metabolism, 102(2)
-    year: 2017
-    url: https://doi.org/10.1210/jc.2016-2963
+  - title: Polycystic ovary syndrome (fact sheet)
+    publisher: World Health Organization
+    year: 2026
+    url: https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome
   - title: PCOS renamed to better reflect multisystem condition
     publisher: Medicine Today, 27(6)
     year: 2026
@@ -58,8 +58,8 @@ A name matters because it shapes what doctors look for. When the condition is se
 
 The renaming was led from Australia [[1]](#source-1), and the international PMOS guidelines, used in 195 countries, are also led from Monash University [[6]](#source-6). Australian data also show why the metabolic side matters: in a national study, women with PMOS were about three times as likely to develop type 2 diabetes, and the added risk was proportionally greatest in women who were not overweight [[2]](#source-2). That challenges the assumption that weight alone explains the risk.
 
-The burden is not shared equally. The one Australian study of Aboriginal and Torres Strait Islander women found PMOS in about 15% of participants [[3]](#source-3), well above the 4–8% the study's authors cited for the general population at the time [[3]](#source-3). It was a single urban sample in Darwin from more than a decade ago, so better and more recent data are needed. Health professionals are moving to the new name over a three-year transition, with patient resources such as the government-funded AskPMOS app [[5]](#source-5).
+The burden is not shared equally. The one Australian study of Aboriginal and Torres Strait Islander women found PMOS in about 15% of participants, rising to about 30% among women with obesity [[3]](#source-3). It was a single urban sample in Darwin from more than a decade ago, so better and more recent data are needed. Health professionals are moving to the new name over a three-year transition, with patient resources such as the government-funded AskPMOS app [[5]](#source-5).
 
 ## Global context
 
-Around 170 million people worldwide are estimated to have PMOS [[1]](#source-1). Long and frustrating paths to diagnosis are commonly reported: in one large international survey, a third of women waited more than two years and nearly half saw three or more health professionals [[4]](#source-4). That survey is now dated and was not a representative sample, so treat it as a signal rather than a measure.
+PMOS is common worldwide. The World Health Organization estimates that 10–13% of women of reproductive age have it, and that up to 70% of them are undiagnosed [[4]](#source-4). The international announcement of the new name put the number at around 170 million people [[1]](#source-1). Both describe the same global picture, so they are shown side by side rather than combined with the Australian figures above.
