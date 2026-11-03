@@ -35,24 +35,40 @@ const heroTitle = rest.length ? `${escape(first)}, <span class="hl">${escape(res
         <p class="act-blurb"><Text text={act1.blurb} /></p>
         <ul class="row-list">
           {
-            topics.map((t) =>
-              t.data.status === 'live' ? (
+            topics.map((t) => {
+              // Sources for figures in the card text: short "Publisher, year" links.
+              const cardSources = t.data.sources.length > 0 && (
+                <p class="card-sources">
+                  {t.data.sources.length === 1 ? 'Source' : 'Sources'}:{' '}
+                  {t.data.sources.map((s, i) => (
+                    <>
+                      {i > 0 && '; '}
+                      {s.needed ? <mark class="placeholder">[SOURCE NEEDED – {s.needed}]</mark> : <a href={s.url}>{s.publisher}{s.year ? `, ${s.year}` : ''}</a>}
+                    </>
+                  ))}
+                </p>
+              );
+              return t.data.status === 'coming-soon' ? (
+                <li class="coming-soon">
+                  <div class="row">
+                    <span class="tag">Coming soon</span>
+                    <h3>{t.data.title}</h3>
+                    <div>
+                      <p><Text text={t.data.hook} /></p>
+                      {cardSources}
+                    </div>
+                  </div>
+                </li>
+              ) : (
                 <li>
                   <a href={url(`/${t.id}/`)}>
                     <h3>{t.data.title}</h3>
                     <p><Text text={t.data.hook} /></p>
                   </a>
+                  {cardSources}
                 </li>
-              ) : (
-                <li class="coming-soon">
-                  <div class="row">
-                    <span class="tag">Coming soon</span>
-                    <h3>{t.data.title}</h3>
-                    <p><Text text={t.data.hook} /></p>
-                  </div>
-                </li>
-              ),
-            )
+              );
+            })
           }
         </ul>
         <CycleScene />

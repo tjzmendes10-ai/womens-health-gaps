@@ -1,21 +1,13 @@
 ---
-// A problem page, e.g. /dismissed-as-normal/endometriosis/
+// A condition page inside a hub, e.g. /dismissed-as-normal/endometriosis/
+// Single-page topics (e.g. heart-disease/overview.md) are served at the
+// topic's own address by [topic]/index.astro instead.
 import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
-import Base from '../../layouts/Base.astro';
-import Text from '../../components/Text.astro';
-import StatCallout from '../../components/StatCallout.astro';
-import SourcesList from '../../components/SourcesList.astro';
-import Lifeline from '../../components/Lifeline.astro';
-import { splitProblemBody } from '../../lib/content';
+import ProblemPage from '../../components/ProblemPage.astro';
 import { url } from '../../lib/url';
-import PageBand from '../../components/PageBand.astro';
-import CycleSpot from '../../components/spots/CycleSpot.astro';
-import ChairSpot from '../../components/spots/ChairSpot.astro';
-import ClockSpot from '../../components/spots/ClockSpot.astro';
-import CalmSpot from '../../components/spots/CalmSpot.astro';
 
 export async function getStaticPaths() {
-  const problems = await getCollection('problems');
+  const problems = (await getCollection('problems')).filter((p) => !p.id.endsWith('/overview'));
   return Promise.all(
     problems.map(async (problem) => {
       const [topicId, problemId] = problem.id.split('/');
@@ -35,54 +27,5 @@ const { problem, topic } = Astro.props as {
   problem: CollectionEntry<'problems'>;
   topic: CollectionEntry<'topics'>;
 };
-const { title, hook, stats, sources, mentalHealth, lastReviewed } = problem.data;
-const body = splitProblemBody(problem);
-
-// Small spot illustration per page. Mental-health pages always get the
-// quiet abstract shape: no characters, nothing playful.
-const spots: Record<string, typeof CycleSpot> = { endometriosis: ChairSpot, pmos: ClockSpot };
-const Spot = mentalHealth ? CalmSpot : (spots[problem.id.split('/')[1]] ?? CycleSpot);
-
-// "Last reviewed" shows the date, plus the time in Sydney when one is given,
-// e.g. lastReviewed: 2026-11-02T18:10:00+11:00. A date on its own
-// (2026-11-02) is read as midnight UTC, so no time is shown for it.
-const reviewedHasTime =
-  lastReviewed instanceof Date &&
-  (lastReviewed.getUTCHours() !== 0 || lastReviewed.getUTCMinutes() !== 0 || lastReviewed.getUTCSeconds() !== 0);
-const reviewedFormat: Intl.DateTimeFormatOptions = reviewedHasTime
-  ? { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'Australia/Sydney', timeZoneName: 'short' }
-  : { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' };
 ---
-<Base title={title} description={hook}>
-  <PageBand title={title} hook={hook} crumbLabel={topic.data.title} crumbHref={url(`/${topic.id}/`)}>
-    <Spot />
-  </PageBand>
-  <article class="page">
-
-    {mentalHealth && <Lifeline />}
-
-    <Fragment set:html={body.summary} />
-
-    <section class="stats" aria-label="Key statistics">
-      {stats.map((s) => <StatCallout {...s} />)}
-    </section>
-
-    <Fragment set:html={body.whyAustralia} />
-    {body.globalContext && <Fragment set:html={body.globalContext} />}
-
-    <SourcesList sources={sources} />
-
-    <p class="last-reviewed">
-      Last reviewed:{' '}
-      {
-        lastReviewed === 'not yet reviewed' ? (
-          <mark class="placeholder">[NOT YET REVIEWED]</mark>
-        ) : (
-          <time datetime={reviewedHasTime ? lastReviewed.toISOString() : lastReviewed.toISOString().slice(0, 10)}>
-            {lastReviewed.toLocaleString('en-AU', reviewedFormat)}
-          </time>
-        )
-      }
-    </p>
-  </article>
-</Base>
+<ProblemPage problem={problem} crumbLabel={topic.data.title} crumbHref={url(`/${topic.id}/`)} />
