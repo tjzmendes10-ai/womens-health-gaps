@@ -15,9 +15,10 @@ Built by Tom Mendes with [Astro](https://astro.build), deployed to GitHub Pages.
 | Part | Page | Content file(s) |
 | --- | --- | --- |
 | Home | `/` | `src/content/pages/home.md` |
-| Act 1: Where care falls short | `/dismissed-as-normal/` (hub) | `src/content/topics/dismissed-as-normal.md` |
-| | `/dismissed-as-normal/endometriosis/` etc. | `src/content/problems/dismissed-as-normal/*.md` |
-| | Heart, Bones ("coming soon" cards) | `src/content/topics/heart-disease.md`, `bones.md` |
+| Act 1: Where care falls short | `/menstrual-health/` (hub) | `src/content/topics/menstrual-health.md` |
+| | `/menstrual-health/endometriosis/` etc. | `src/content/problems/menstrual-health/*.md` |
+| | `/cardiovascular-disease/` (single page) | `src/content/topics/cardiovascular-disease.md` + `src/content/problems/cardiovascular-disease/overview.md` |
+| | Bones, Cancer ("coming soon" cards) | `src/content/topics/bones.md`, `cancer.md` |
 | Act 2: How we got here | `/history/` | `src/content/pages/history.md` (intro) + `src/content/timeline/*.md` (one file per event) |
 | Act 3: Where we're headed | `/where-were-headed/` | `src/content/pages/headed.md` |
 | About | `/about/` | `src/content/pages/about.md` |
@@ -41,7 +42,7 @@ Markdown basics: `## Heading`, `**bold**`, `*italic*`, `[link text](https://exam
 
 ## Editing a problem page
 
-File: `src/content/problems/<topic>/<page>.md`, e.g. `src/content/problems/dismissed-as-normal/pmdd.md`.
+File: `src/content/problems/<topic>/<page>.md`, e.g. `src/content/problems/menstrual-health/pmdd.md`.
 
 ```markdown
 ---
@@ -117,7 +118,7 @@ Placeholders show up **highlighted in yellow** on the site. Every build also end
 
 ```
 [WARN] [placeholder-report] 80 placeholder(s) still on the site:
-[WARN] [placeholder-report]    14  dismissed-as-normal/endometriosis/index.html
+[WARN] [placeholder-report]    14  menstrual-health/endometriosis/index.html
 ```
 
 For sources, write `needed: "what's missing"` instead of the real details. On the "Where we're headed" page, "What needs to change" is the `changes` list (who is responsible, their `points`, and `sources` for any figures); "What you can do" is the `actions` list, where a link to an organisation is optional.
@@ -127,7 +128,7 @@ For sources, write `needed: "what's missing"` instead of the real details. On th
 If a content file is missing a field or has a mistake, the build stops and tells you which file and what to fix. For example:
 
 ```
-problems → dismissed-as-normal/pmos data does not match collection schema.
+problems → menstrual-health/pmos data does not match collection schema.
   mentalHealth: Add   mentalHealth: true   or   mentalHealth: false. ...
   stats.2.region: Each stat needs   region: Australia   or   region: Global
 ```

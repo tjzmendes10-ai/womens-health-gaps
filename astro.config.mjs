@@ -8,13 +8,20 @@ export default defineConfig({
   site: 'https://tjzmendes10-ai.github.io',
   base: '/womens-health-gaps',
 
-  // Old addresses keep working after the hub was renamed (Nov 2026).
+  // Old addresses keep working after pages are renamed.
   // Destinations need the full path: Astro doesn't add `base` to them.
   redirects: {
-    '/the-cycle': '/womens-health-gaps/dismissed-as-normal/',
-    '/the-cycle/endometriosis': '/womens-health-gaps/dismissed-as-normal/endometriosis/',
-    '/the-cycle/pmos': '/womens-health-gaps/dismissed-as-normal/pmos/',
-    '/the-cycle/pmdd': '/womens-health-gaps/dismissed-as-normal/pmdd/',
+    // "The cycle" became "Dismissed as normal", then "Menstrual health".
+    '/the-cycle': '/womens-health-gaps/menstrual-health/',
+    '/the-cycle/endometriosis': '/womens-health-gaps/menstrual-health/endometriosis/',
+    '/the-cycle/pmos': '/womens-health-gaps/menstrual-health/pmos/',
+    '/the-cycle/pmdd': '/womens-health-gaps/menstrual-health/pmdd/',
+    '/dismissed-as-normal': '/womens-health-gaps/menstrual-health/',
+    '/dismissed-as-normal/endometriosis': '/womens-health-gaps/menstrual-health/endometriosis/',
+    '/dismissed-as-normal/pmos': '/womens-health-gaps/menstrual-health/pmos/',
+    '/dismissed-as-normal/pmdd': '/womens-health-gaps/menstrual-health/pmdd/',
+    // "Heart disease" became "Cardiovascular disease".
+    '/heart-disease': '/womens-health-gaps/cardiovascular-disease/',
   },
 
   markdown: {
