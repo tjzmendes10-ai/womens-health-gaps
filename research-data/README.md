@@ -9,13 +9,14 @@ this folder don't change the live site.
 - `clean/`: tidied CSV files, ready for charts. The values are exactly as
   published, only reshaped.
 - `raw/`: original downloads, kept where they're small and the licence allows
-  sharing (ABS spreadsheets, WHO CSVs).
-- `scripts/`: the scripts used to download the World Bank and ClinicalTrials.gov
-  data. They can be re-run to refresh it.
+  sharing (ABS spreadsheets, OECD and WHO CSVs).
+- `scripts/`: scripts used to download or tidy the World Bank, ClinicalTrials.gov,
+  PubMed and WHO data. They can be re-run to refresh it.
 
 ## Not in this repo
 
-- **Raw API responses from the World Bank and ClinicalTrials.gov** (about 100 MB).
+- **Raw API responses from the World Bank, ClinicalTrials.gov and the extra WHO
+  indicators** (about 140 MB).
   The CSVs in `clean/` contain the same values, and the scripts can download them
   again.
 - **IHME Global Burden of Disease files.** IHME's terms limit redistribution, so
@@ -30,4 +31,5 @@ this folder don't change the live site.
 | World Bank | CC BY 4.0 |
 | ABS | CC BY 4.0 |
 | WHO | CC BY-NC-SA 3.0 IGO (non-commercial, credit WHO, share alike) |
-| ClinicalTrials.gov | US government public data |
+| ClinicalTrials.gov, PubMed | US government public data |
+| OECD | CC BY 4.0 |

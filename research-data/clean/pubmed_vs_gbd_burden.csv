@@ -1,0 +1,20 @@
+condition,pubmed_query,papers_2015_2024,retrieved,papers_per_100k_DALYs
+Endometriosis,"""Endometriosis""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",9502,2026-11-03,498.2
+Polycystic ovarian syndrome,"""Polycystic Ovary Syndrome""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",8798,2026-11-03,1347.7
+Premenstrual syndrome,"""Premenstrual Syndrome""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",781,2026-11-03,9.5
+Uterine fibroids,"""Leiomyoma""[mh] AND ""Uterine Neoplasms""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",3639,2026-11-03,1619.7
+Female infertility,"""Infertility, Female""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",7498,2026-11-03,1199.7
+Genital prolapse,"""Pelvic Organ Prolapse""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",5540,2026-11-03,1278.3
+Migraine,"""Migraine Disorders""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",11261,2026-11-03,27.5
+Low back pain,"""Low Back Pain""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",12977,2026-11-03,18.4
+Rheumatoid arthritis,"""Arthritis, Rheumatoid""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",34986,2026-11-03,1048.3
+Osteoarthritis,"""Osteoarthritis""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",37287,2026-11-03,166.8
+Depressive disorders,"""Depressive Disorder""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",40736,2026-11-03,72.7
+Anxiety disorders,"""Anxiety Disorders""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",28175,2026-11-03,50.9
+Alzheimer's disease and other dementias,"""Dementia""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",98782,2026-11-03,248.5
+Ischemic heart disease,"""Myocardial Ischemia""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",119021,2026-11-03,61.9
+Stroke,"""Stroke""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",97374,2026-11-03,62.3
+Breast cancer,"""Breast Neoplasms""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",135395,2026-11-03,550.0
+Cervical cancer,"""Uterine Cervical Neoplasms""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",27516,2026-11-03,207.5
+Ovarian cancer,"""Ovarian Neoplasms""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",32291,2026-11-03,498.5
+Uterine cancer,"""Endometrial Neoplasms""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",11648,2026-11-03,401.7
