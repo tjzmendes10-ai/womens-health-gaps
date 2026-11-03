@@ -212,10 +212,109 @@ XT upper-middle, XN lower-middle, XM low.
 
 ---
 
-## 6. Not collected yet
+## 6. PubMed: research volume by condition (Global)
+
+- **Where from:** NCBI E-utilities, https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi
+- **Retrieved:** 3 Nov 2026, using `scripts/count_pubmed.py` (the exact search for
+  each condition is in the CSV)
+- **Licence:** public. Cite "PubMed, US National Library of Medicine; analysis by
+  Women's Health Gaps".
+- **Files:** `clean/pubmed_papers_by_condition.csv`: papers per condition published
+  2015–2024, searched by MeSH subject heading.
+  `clean/pubmed_vs_gbd_burden.csv`: papers per 100,000 DALYs, using global GBD
+  2023 burden for both sexes. The raw GBD counts are left out (IHME licence).
+
+**Caveats:**
+- Paper counts only roughly measure research attention. They don't show funding
+  or quality.
+- Searches by MeSH heading miss the newest papers that haven't been indexed yet.
+- Papers per DALY depends on GBD's burden estimate. GBD's estimates for
+  gynaecological conditions are very low, which makes endometriosis, PCOS and
+  fibroids look *well* researched per DALY. Don't present those as
+  "over-researched". The strongest figures are premenstrual syndrome (9.5 papers
+  per 100k DALYs), low back pain (18.4) and migraine (27.5). Compare heart disease
+  (61.9) and breast cancer (550).
+
+---
+
+## 7. WHO World Health Statistics: more indicators (Global)
+
+- **Where from:** `https://xmart-api-public.who.int/DATA_/RELAY_WHS`, 3 Nov 2026
+- **Licence:** CC BY-NC-SA 3.0 IGO, as in section 3
+- **File:** `clean/who_more_indicators_long.csv`, built by
+  `scripts/tidy_who_indicators.py`. The raw files (about 37 MB) are not in the repo.
+
+| Code | What it measures | Latest year | Sex split |
+|---|---|---|---|
+| SDGHPVRECEIVED | HPV vaccination coverage, girls aged 15 | 2024 | Female only |
+| SDGIPVLT | Intimate partner violence, lifetime (% of ever-partnered women) | 2023 | Female only |
+| SDGIPV12M | Intimate partner violence, last 12 months | 2023 | Female only |
+| NCD_HYP_PREVALENCE_A | Hypertension, adults 30–79 | 2019 | F / M |
+| NCD_BMI_30A | Obesity, adults 18+ | 2022 | F / M |
+| NCDMORT3070 | Chance of dying aged 30–70 from heart disease, cancer, diabetes or chronic lung disease | 2021 | F / M |
+| MDG_0000000026 | Maternal mortality ratio | 2023 | n/a |
+| FINPROTECTION_CATA_TOT_10_POP | Households spending more than 10% of their budget on health | 2021 | Not split by sex |
+
+**Caveats:**
+- HPV coverage for Australia jumps around: 79% in 2019, 57% in 2022, 73% in 2024.
+  Check WHO's definition, and the Australian Immunisation Register, before using it.
+- Intimate partner violence is a sensitive topic. If the site uses it, add support
+  information (e.g. 1800RESPECT).
+
+---
+
+## 8. ABS Patient Experiences, 2024–25 (AU)
+
+- **Where from:** https://www.abs.gov.au/statistics/health/health-services/patient-experiences/latest-release
+- **Licence:** CC BY 4.0
+- **Files:** `raw/abs/patient-experiences-2024-25/*.xlsx` (originals).
+  `clean/abs_patient_experiences_2024_25_by_sex_age.csv`: every measure for any
+  health service, GP, specialist, dental and mental health, by sex and age, with
+  95% margins of error.
+
+**Headline (2024–25, people aged 15+). Women were almost twice as likely as men
+to:**
+
+| | Women | Men |
+|---|---|---|
+| Delay or skip a GP visit because of cost | 9.9% | 5.3% |
+| Delay or skip prescribed medicine because of cost | 9.4% | 5.1% |
+| Delay or skip a specialist visit because of cost | 10.8% | 5.7% |
+| Delay or skip a dental visit because of cost | 18.0% | 13.7% |
+
+The margins of error don't overlap for any of these, so each gap is
+statistically clear.
+
+---
+
+## 9. OECD Health Statistics: cancer screening and survival (OECD countries)
+
+- **Where from:** OECD Data Explorer API, `https://sdmx.oecd.org/public/rest/data/`
+  - `OECD.ELS.HD,DSD_HEALTH_PROC@DF_SCREEN,1.2`: screening
+  - `OECD.ELS.HD,DSD_HCQO@DF_CC,2.1`: cancer care
+- **Licence:** CC BY 4.0
+- **Files:**
+  - `raw/oecd/`: as downloaded
+  - `clean/oecd_cancer_screening.csv`: breast, cervical and bowel screening by
+    country, 2010–2024
+  - `clean/oecd_cancer_survival.csv`: five-year net survival (CONCORD-3, 2010–2014)
+
+**Caveats:**
+- OECD measures breast screening at ages 50–69. Australia's BreastScreen invites
+  women aged 50–74. Australia: 52.0% (2024, programme data), about the middle of
+  the countries reported. Cervical: 77.9%, among the highest.
+- Programme data and survey data aren't comparable. Filter on `data_source`.
+- The survival data is old (patients diagnosed 2010–2014).
+
+---
+
+## 10. Not collected yet
 
 | Source | Why not | What's needed |
 |---|---|---|
 | ABS data API | `api.data.abs.gov.au` refused the connection | Not needed for now. The spreadsheets above cover it. |
 | AIHW (burden of disease, women's health reports) | `www.aihw.gov.au` returns 403 (the site blocks automated downloads) | Download the files yourself in a browser and upload them here |
+| GLOBOCAN (cancer cases and deaths by country) | Data is served from `gco-api.iarc.fr`, which isn't allowed | Add `gco-api.iarc.fr` to Allowed domains |
+| NHMRC grant data | Site didn't respond (probably blocks automated requests) | Download in a browser and upload |
+| Medicare statistics | Site returned "service unavailable" | Retry later |
 | IHME GBD: maternal disorders | Not requested yet | One small GBD Results request (Global + Australia) |

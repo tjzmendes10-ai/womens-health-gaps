@@ -1,0 +1,721 @@
+iso3,country,measure,sex,period_end,five_year_net_survival_pct
+AUS,Australia,Lung cancer five-year net survival,F,2014,22.0
+AUS,Australia,Rectal cancer five-year net survival,F,2014,73.5
+AUS,Australia,Cervical cancer five-year net survival,F,2014,66.4
+AUS,Australia,Breast cancer five-year net survival,F,2014,89.5
+AUS,Australia,Stomach cancer five-year net survival,F,2014,35.8
+AUS,Australia,Colon cancer five-year net survival,F,2014,71.7
+AUT,Austria,Rectal cancer five-year net survival,F,2014,64.3
+AUT,Austria,Stomach cancer five-year net survival,F,2014,37.9
+AUT,Austria,Lung cancer five-year net survival,F,2014,24.0
+AUT,Austria,Cervical cancer five-year net survival,F,2014,63.9
+AUT,Austria,Breast cancer five-year net survival,F,2014,84.8
+AUT,Austria,Colon cancer five-year net survival,F,2014,63.5
+BEL,Belgium,Colon cancer five-year net survival,F,2014,69.4
+BEL,Belgium,Stomach cancer five-year net survival,F,2014,44.3
+BEL,Belgium,Breast cancer five-year net survival,F,2014,86.4
+BEL,Belgium,Cervical cancer five-year net survival,F,2014,65.4
+BEL,Belgium,Lung cancer five-year net survival,F,2014,21.9
+BEL,Belgium,Rectal cancer five-year net survival,F,2014,67.3
+CAN,Canada,Colon cancer five-year net survival,F,2014,67.5
+CAN,Canada,Lung cancer five-year net survival,F,2014,24.4
+CAN,Canada,Rectal cancer five-year net survival,F,2014,68.7
+CAN,Canada,Cervical cancer five-year net survival,F,2014,67.3
+CAN,Canada,Breast cancer five-year net survival,F,2014,88.6
+CAN,Canada,Stomach cancer five-year net survival,F,2014,31.3
+CHL,Chile,Breast cancer five-year net survival,F,2014,75.5
+CHL,Chile,Colon cancer five-year net survival,F,2014,40.3
+CHL,Chile,Rectal cancer five-year net survival,F,2014,42.2
+CHL,Chile,Lung cancer five-year net survival,F,2014,7.7
+CHL,Chile,Stomach cancer five-year net survival,F,2014,17.6
+CHL,Chile,Cervical cancer five-year net survival,F,2014,56.7
+COL,Colombia,Colon cancer five-year net survival,F,2014,33.7
+COL,Colombia,Stomach cancer five-year net survival,F,2014,19.5
+COL,Colombia,Breast cancer five-year net survival,F,2014,72.1
+COL,Colombia,Cervical cancer five-year net survival,F,2014,49.4
+COL,Colombia,Rectal cancer five-year net survival,F,2014,42.8
+COL,Colombia,Lung cancer five-year net survival,F,2014,9.6
+CRI,Costa Rica,Stomach cancer five-year net survival,F,2014,47.2
+CRI,Costa Rica,Breast cancer five-year net survival,F,2014,86.7
+CRI,Costa Rica,Rectal cancer five-year net survival,F,2014,60.8
+CRI,Costa Rica,Lung cancer five-year net survival,F,2014,23.4
+CRI,Costa Rica,Cervical cancer five-year net survival,F,2014,78.0
+CRI,Costa Rica,Colon cancer five-year net survival,F,2014,60.0
+CZE,Czechia,Colon cancer five-year net survival,F,2014,57.0
+CZE,Czechia,Breast cancer five-year net survival,F,2014,81.4
+CZE,Czechia,Cervical cancer five-year net survival,F,2014,61.0
+CZE,Czechia,Stomach cancer five-year net survival,F,2014,23.0
+CZE,Czechia,Lung cancer five-year net survival,F,2014,14.1
+CZE,Czechia,Rectal cancer five-year net survival,F,2014,54.7
+DNK,Denmark,Colon cancer five-year net survival,F,2014,62.9
+DNK,Denmark,Breast cancer five-year net survival,F,2014,86.1
+DNK,Denmark,Rectal cancer five-year net survival,F,2014,66.6
+DNK,Denmark,Lung cancer five-year net survival,F,2014,19.6
+DNK,Denmark,Stomach cancer five-year net survival,F,2014,19.8
+DNK,Denmark,Cervical cancer five-year net survival,F,2014,69.5
+EST,Estonia,Stomach cancer five-year net survival,F,2014,33.6
+EST,Estonia,Lung cancer five-year net survival,F,2014,20.9
+EST,Estonia,Colon cancer five-year net survival,F,2014,60.6
+EST,Estonia,Rectal cancer five-year net survival,F,2014,61.5
+EST,Estonia,Cervical cancer five-year net survival,F,2014,66.5
+EST,Estonia,Breast cancer five-year net survival,F,2014,78.1
+FIN,Finland,Stomach cancer five-year net survival,F,2014,28.6
+FIN,Finland,Colon cancer five-year net survival,F,2014,65.3
+FIN,Finland,Rectal cancer five-year net survival,F,2014,66.5
+FIN,Finland,Lung cancer five-year net survival,F,2014,16.8
+FIN,Finland,Breast cancer five-year net survival,F,2014,88.5
+FIN,Finland,Cervical cancer five-year net survival,F,2014,67.4
+FRA,France,Colon cancer five-year net survival,F,2014,64.1
+FRA,France,Lung cancer five-year net survival,F,2014,21.3
+FRA,France,Cervical cancer five-year net survival,F,2014,65.0
+FRA,France,Stomach cancer five-year net survival,F,2014,32.8
+FRA,France,Breast cancer five-year net survival,F,2014,86.7
+FRA,France,Rectal cancer five-year net survival,F,2014,61.9
+DEU,Germany,Colon cancer five-year net survival,F,2014,65.6
+DEU,Germany,Stomach cancer five-year net survival,F,2014,35.3
+DEU,Germany,Rectal cancer five-year net survival,F,2014,63.9
+DEU,Germany,Lung cancer five-year net survival,F,2014,22.3
+DEU,Germany,Cervical cancer five-year net survival,F,2014,65.2
+DEU,Germany,Breast cancer five-year net survival,F,2014,86.0
+ISL,Iceland,Stomach cancer five-year net survival,F,2014,30.7
+ISL,Iceland,Colon cancer five-year net survival,F,2014,68.7
+ISL,Iceland,Rectal cancer five-year net survival,F,2014,68.0
+ISL,Iceland,Lung cancer five-year net survival,F,2014,24.5
+ISL,Iceland,Breast cancer five-year net survival,F,2014,89.1
+IRL,Ireland,Breast cancer five-year net survival,F,2014,82.0
+IRL,Ireland,Cervical cancer five-year net survival,F,2014,63.6
+IRL,Ireland,Rectal cancer five-year net survival,F,2014,62.3
+IRL,Ireland,Colon cancer five-year net survival,F,2014,61.2
+IRL,Ireland,Stomach cancer five-year net survival,F,2014,28.8
+IRL,Ireland,Lung cancer five-year net survival,F,2014,20.6
+ISR,Israel,Breast cancer five-year net survival,F,2014,88.0
+ISR,Israel,Rectal cancer five-year net survival,F,2014,66.6
+ISR,Israel,Lung cancer five-year net survival,F,2014,35.3
+ISR,Israel,Stomach cancer five-year net survival,F,2014,32.7
+ISR,Israel,Cervical cancer five-year net survival,F,2014,66.6
+ISR,Israel,Colon cancer five-year net survival,F,2014,71.1
+ITA,Italy,Lung cancer five-year net survival,F,2014,20.1
+ITA,Italy,Rectal cancer five-year net survival,F,2014,61.9
+ITA,Italy,Colon cancer five-year net survival,F,2014,64.7
+ITA,Italy,Stomach cancer five-year net survival,F,2014,32.4
+ITA,Italy,Cervical cancer five-year net survival,F,2014,66.8
+ITA,Italy,Breast cancer five-year net survival,F,2014,86.0
+JPN,Japan,Stomach cancer five-year net survival,F,2014,60.0
+JPN,Japan,Colon cancer five-year net survival,F,2014,67.4
+JPN,Japan,Breast cancer five-year net survival,F,2014,89.4
+JPN,Japan,Cervical cancer five-year net survival,F,2014,71.4
+JPN,Japan,Lung cancer five-year net survival,F,2014,45.2
+JPN,Japan,Rectal cancer five-year net survival,F,2014,66.5
+KOR,Korea,Cervical cancer five-year net survival,F,2014,77.3
+KOR,Korea,Rectal cancer five-year net survival,F,2014,72.0
+KOR,Korea,Breast cancer five-year net survival,F,2014,86.6
+KOR,Korea,Lung cancer five-year net survival,F,2014,33.1
+KOR,Korea,Stomach cancer five-year net survival,F,2014,69.5
+KOR,Korea,Colon cancer five-year net survival,F,2014,69.5
+LVA,Latvia,Stomach cancer five-year net survival,F,2014,28.8
+LVA,Latvia,Breast cancer five-year net survival,F,2014,76.9
+LVA,Latvia,Cervical cancer five-year net survival,F,2014,53.9
+LVA,Latvia,Rectal cancer five-year net survival,F,2014,52.1
+LVA,Latvia,Lung cancer five-year net survival,F,2014,25.7
+LVA,Latvia,Colon cancer five-year net survival,F,2014,48.9
+LTU,Lithuania,Cervical cancer five-year net survival,F,2014,59.2
+LTU,Lithuania,Lung cancer five-year net survival,F,2014,20.2
+LTU,Lithuania,Stomach cancer five-year net survival,F,2014,29.1
+LTU,Lithuania,Colon cancer five-year net survival,F,2014,57.0
+LTU,Lithuania,Breast cancer five-year net survival,F,2014,73.5
+LTU,Lithuania,Rectal cancer five-year net survival,F,2014,53.9
+NLD,Netherlands,Breast cancer five-year net survival,F,2014,86.6
+NLD,Netherlands,Colon cancer five-year net survival,F,2014,63.6
+NLD,Netherlands,Stomach cancer five-year net survival,F,2014,26.6
+NLD,Netherlands,Lung cancer five-year net survival,F,2014,19.0
+NLD,Netherlands,Cervical cancer five-year net survival,F,2014,67.5
+NLD,Netherlands,Rectal cancer five-year net survival,F,2014,65.9
+NZL,New Zealand,Lung cancer five-year net survival,F,2014,16.9
+NZL,New Zealand,Breast cancer five-year net survival,F,2014,87.6
+NZL,New Zealand,Colon cancer five-year net survival,F,2014,63.5
+NZL,New Zealand,Rectal cancer five-year net survival,F,2014,69.3
+NZL,New Zealand,Cervical cancer five-year net survival,F,2014,67.4
+NZL,New Zealand,Stomach cancer five-year net survival,F,2014,27.8
+NOR,Norway,Lung cancer five-year net survival,F,2014,21.0
+NOR,Norway,Stomach cancer five-year net survival,F,2014,25.1
+NOR,Norway,Colon cancer five-year net survival,F,2014,66.5
+NOR,Norway,Rectal cancer five-year net survival,F,2014,69.6
+NOR,Norway,Cervical cancer five-year net survival,F,2014,73.2
+NOR,Norway,Breast cancer five-year net survival,F,2014,87.2
+POL,Poland,Breast cancer five-year net survival,F,2014,76.5
+POL,Poland,Rectal cancer five-year net survival,F,2014,50.2
+POL,Poland,Lung cancer five-year net survival,F,2014,17.8
+POL,Poland,Stomach cancer five-year net survival,F,2014,24.8
+POL,Poland,Colon cancer five-year net survival,F,2014,53.7
+POL,Poland,Cervical cancer five-year net survival,F,2014,55.1
+PRT,Portugal,Breast cancer five-year net survival,F,2014,87.6
+PRT,Portugal,Lung cancer five-year net survival,F,2014,26.0
+PRT,Portugal,Colon cancer five-year net survival,F,2014,64.9
+PRT,Portugal,Cervical cancer five-year net survival,F,2014,66.2
+PRT,Portugal,Rectal cancer five-year net survival,F,2014,60.2
+PRT,Portugal,Stomach cancer five-year net survival,F,2014,34.7
+SVK,Slovak Republic,Lung cancer five-year net survival,F,2014,16.6
+SVK,Slovak Republic,Cervical cancer five-year net survival,F,2014,60.5
+SVK,Slovak Republic,Rectal cancer five-year net survival,F,2014,56.8
+SVK,Slovak Republic,Breast cancer five-year net survival,F,2014,75.5
+SVK,Slovak Republic,Stomach cancer five-year net survival,F,2014,26.2
+SVK,Slovak Republic,Colon cancer five-year net survival,F,2014,51.3
+SVN,Slovenia,Colon cancer five-year net survival,F,2014,62.3
+SVN,Slovenia,Lung cancer five-year net survival,F,2014,19.5
+SVN,Slovenia,Breast cancer five-year net survival,F,2014,83.5
+SVN,Slovenia,Stomach cancer five-year net survival,F,2014,31.4
+SVN,Slovenia,Rectal cancer five-year net survival,F,2014,60.5
+SVN,Slovenia,Cervical cancer five-year net survival,F,2014,65.5
+ESP,Spain,Lung cancer five-year net survival,F,2014,17.6
+ESP,Spain,Breast cancer five-year net survival,F,2014,85.3
+ESP,Spain,Colon cancer five-year net survival,F,2014,64.4
+ESP,Spain,Rectal cancer five-year net survival,F,2014,61.4
+ESP,Spain,Stomach cancer five-year net survival,F,2014,28.4
+ESP,Spain,Cervical cancer five-year net survival,F,2014,64.6
+SWE,Sweden,Colon cancer five-year net survival,F,2014,66.1
+SWE,Sweden,Lung cancer five-year net survival,F,2014,22.1
+SWE,Sweden,Breast cancer five-year net survival,F,2014,88.8
+SWE,Sweden,Stomach cancer five-year net survival,F,2014,26.6
+SWE,Sweden,Rectal cancer five-year net survival,F,2014,66.7
+SWE,Sweden,Cervical cancer five-year net survival,F,2014,68.3
+CHE,Switzerland,Rectal cancer five-year net survival,F,2014,68.7
+CHE,Switzerland,Stomach cancer five-year net survival,F,2014,37.8
+CHE,Switzerland,Colon cancer five-year net survival,F,2014,67.6
+CHE,Switzerland,Cervical cancer five-year net survival,F,2014,71.4
+CHE,Switzerland,Lung cancer five-year net survival,F,2014,23.9
+CHE,Switzerland,Breast cancer five-year net survival,F,2014,86.2
+TUR,Türkiye,Lung cancer five-year net survival,F,2014,20.5
+TUR,Türkiye,Colon cancer five-year net survival,F,2014,54.6
+TUR,Türkiye,Rectal cancer five-year net survival,F,2014,51.9
+TUR,Türkiye,Cervical cancer five-year net survival,F,2014,60.7
+TUR,Türkiye,Breast cancer five-year net survival,F,2014,82.1
+TUR,Türkiye,Stomach cancer five-year net survival,F,2014,27.8
+GBR,United Kingdom,Colon cancer five-year net survival,F,2014,59.7
+GBR,United Kingdom,Lung cancer five-year net survival,F,2014,15.4
+GBR,United Kingdom,Breast cancer five-year net survival,F,2014,85.6
+GBR,United Kingdom,Stomach cancer five-year net survival,F,2014,22.3
+GBR,United Kingdom,Cervical cancer five-year net survival,F,2014,63.8
+GBR,United Kingdom,Rectal cancer five-year net survival,F,2014,64.4
+USA,United States,Cervical cancer five-year net survival,F,2014,62.4
+USA,United States,Rectal cancer five-year net survival,F,2014,66.3
+USA,United States,Breast cancer five-year net survival,F,2014,90.2
+USA,United States,Stomach cancer five-year net survival,F,2014,38.4
+USA,United States,Colon cancer five-year net survival,F,2014,66.0
+USA,United States,Lung cancer five-year net survival,F,2014,25.0
+BRA,Brazil,Breast cancer five-year net survival,F,2014,74.9
+BRA,Brazil,Cervical cancer five-year net survival,F,2014,59.9
+BRA,Brazil,Stomach cancer five-year net survival,F,2014,23.8
+BRA,Brazil,Lung cancer five-year net survival,F,2014,9.3
+BRA,Brazil,Rectal cancer five-year net survival,F,2014,43.6
+BRA,Brazil,Colon cancer five-year net survival,F,2014,49.4
+BGR,Bulgaria,Lung cancer five-year net survival,F,2014,12.2
+BGR,Bulgaria,Cervical cancer five-year net survival,F,2014,54.8
+BGR,Bulgaria,Breast cancer five-year net survival,F,2014,78.3
+BGR,Bulgaria,Colon cancer five-year net survival,F,2014,54.1
+BGR,Bulgaria,Rectal cancer five-year net survival,F,2014,46.6
+BGR,Bulgaria,Stomach cancer five-year net survival,F,2014,18.3
+CHN,China (People’s Republic of),Cervical cancer five-year net survival,F,2014,67.6
+CHN,China (People’s Republic of),Colon cancer five-year net survival,F,2014,57.2
+CHN,China (People’s Republic of),Stomach cancer five-year net survival,F,2014,36.8
+CHN,China (People’s Republic of),Lung cancer five-year net survival,F,2014,23.6
+CHN,China (People’s Republic of),Rectal cancer five-year net survival,F,2014,57.7
+CHN,China (People’s Republic of),Breast cancer five-year net survival,F,2014,83.2
+HRV,Croatia,Stomach cancer five-year net survival,F,2014,22.5
+HRV,Croatia,Rectal cancer five-year net survival,F,2014,49.1
+HRV,Croatia,Cervical cancer five-year net survival,F,2014,63.2
+HRV,Croatia,Colon cancer five-year net survival,F,2014,50.6
+HRV,Croatia,Lung cancer five-year net survival,F,2014,12.2
+HRV,Croatia,Breast cancer five-year net survival,F,2014,78.6
+CYP,Cyprus,Lung cancer five-year net survival,F,2014,23.7
+CYP,Cyprus,Colon cancer five-year net survival,F,2014,73.6
+CYP,Cyprus,Breast cancer five-year net survival,F,2014,92.8
+CYP,Cyprus,Stomach cancer five-year net survival,F,2014,35.5
+CYP,Cyprus,Cervical cancer five-year net survival,F,2014,73.3
+CYP,Cyprus,Rectal cancer five-year net survival,F,2014,71.7
+IND,India,Cervical cancer five-year net survival,F,2014,59.0
+IND,India,Breast cancer five-year net survival,F,2014,66.1
+MLT,Malta,Stomach cancer five-year net survival,F,2014,32.1
+MLT,Malta,Rectal cancer five-year net survival,F,2014,55.0
+MLT,Malta,Breast cancer five-year net survival,F,2014,86.9
+MLT,Malta,Colon cancer five-year net survival,F,2014,56.5
+MLT,Malta,Cervical cancer five-year net survival,F,2014,57.4
+MLT,Malta,Lung cancer five-year net survival,F,2014,21.4
+ROU,Romania,Stomach cancer five-year net survival,F,2014,20.5
+ROU,Romania,Breast cancer five-year net survival,F,2014,74.8
+ROU,Romania,Colon cancer five-year net survival,F,2014,47.3
+ROU,Romania,Lung cancer five-year net survival,F,2014,13.7
+ROU,Romania,Rectal cancer five-year net survival,F,2014,53.1
+ROU,Romania,Cervical cancer five-year net survival,F,2014,65.3
+SGP,Singapore,Colon cancer five-year net survival,F,2014,60.3
+SGP,Singapore,Rectal cancer five-year net survival,F,2014,64.3
+SGP,Singapore,Cervical cancer five-year net survival,F,2014,63.4
+SGP,Singapore,Breast cancer five-year net survival,F,2014,80.3
+SGP,Singapore,Stomach cancer five-year net survival,F,2014,30.2
+SGP,Singapore,Lung cancer five-year net survival,F,2014,20.0
+ZAF,South Africa,Breast cancer five-year net survival,F,2014,40.1
+ZAF,South Africa,Cervical cancer five-year net survival,F,2014,37.1
+AUS,Australia,Colon cancer five-year net survival,_T,2014,70.7
+AUT,Austria,Colon cancer five-year net survival,_T,2014,63.7
+BEL,Belgium,Colon cancer five-year net survival,_T,2014,67.9
+CAN,Canada,Colon cancer five-year net survival,_T,2014,67.0
+CHL,Chile,Colon cancer five-year net survival,_T,2014,43.9
+COL,Colombia,Colon cancer five-year net survival,_T,2014,34.5
+CRI,Costa Rica,Colon cancer five-year net survival,_T,2014,60.1
+CZE,Czechia,Colon cancer five-year net survival,_T,2014,56.1
+DNK,Denmark,Colon cancer five-year net survival,_T,2014,61.6
+EST,Estonia,Colon cancer five-year net survival,_T,2014,58.4
+FIN,Finland,Colon cancer five-year net survival,_T,2014,64.9
+FRA,France,Colon cancer five-year net survival,_T,2014,63.7
+DEU,Germany,Colon cancer five-year net survival,_T,2014,64.8
+ISL,Iceland,Colon cancer five-year net survival,_T,2014,68.2
+IRL,Ireland,Colon cancer five-year net survival,_T,2014,60.5
+ISR,Israel,Colon cancer five-year net survival,_T,2014,71.7
+ITA,Italy,Colon cancer five-year net survival,_T,2014,64.2
+JPN,Japan,Colon cancer five-year net survival,_T,2014,67.8
+KOR,Korea,Colon cancer five-year net survival,_T,2014,71.8
+LVA,Latvia,Colon cancer five-year net survival,_T,2014,48.8
+LTU,Lithuania,Colon cancer five-year net survival,_T,2014,56.9
+NLD,Netherlands,Colon cancer five-year net survival,_T,2014,63.1
+NZL,New Zealand,Colon cancer five-year net survival,_T,2014,64.0
+NOR,Norway,Colon cancer five-year net survival,_T,2014,64.9
+POL,Poland,Colon cancer five-year net survival,_T,2014,52.9
+PRT,Portugal,Colon cancer five-year net survival,_T,2014,60.9
+SVK,Slovak Republic,Colon cancer five-year net survival,_T,2014,51.8
+SVN,Slovenia,Colon cancer five-year net survival,_T,2014,61.9
+ESP,Spain,Colon cancer five-year net survival,_T,2014,63.3
+SWE,Sweden,Colon cancer five-year net survival,_T,2014,64.9
+CHE,Switzerland,Colon cancer five-year net survival,_T,2014,67.3
+TUR,Türkiye,Colon cancer five-year net survival,_T,2014,55.2
+GBR,United Kingdom,Colon cancer five-year net survival,_T,2014,60.0
+USA,United States,Colon cancer five-year net survival,_T,2014,64.9
+BRA,Brazil,Colon cancer five-year net survival,_T,2014,48.3
+BGR,Bulgaria,Colon cancer five-year net survival,_T,2014,52.4
+CHN,China (People’s Republic of),Colon cancer five-year net survival,_T,2014,57.6
+HRV,Croatia,Colon cancer five-year net survival,_T,2014,51.1
+CYP,Cyprus,Colon cancer five-year net survival,_T,2014,72.1
+IND,India,Colon cancer five-year net survival,_T,2014,38.9
+MLT,Malta,Colon cancer five-year net survival,_T,2014,57.5
+ROU,Romania,Colon cancer five-year net survival,_T,2014,52.2
+SGP,Singapore,Colon cancer five-year net survival,_T,2014,61.7
+ZAF,South Africa,Colon cancer five-year net survival,_T,2014,12.3
+AUS,Australia,Rectal cancer five-year net survival,_T,2014,71.0
+AUT,Austria,Rectal cancer five-year net survival,_T,2014,64.2
+BEL,Belgium,Rectal cancer five-year net survival,_T,2014,66.6
+CAN,Canada,Rectal cancer five-year net survival,_T,2014,67.1
+CHL,Chile,Rectal cancer five-year net survival,_T,2014,32.7
+COL,Colombia,Rectal cancer five-year net survival,_T,2014,38.0
+CRI,Costa Rica,Rectal cancer five-year net survival,_T,2014,53.9
+CZE,Czechia,Rectal cancer five-year net survival,_T,2014,52.3
+DNK,Denmark,Rectal cancer five-year net survival,_T,2014,64.8
+EST,Estonia,Rectal cancer five-year net survival,_T,2014,54.8
+FIN,Finland,Rectal cancer five-year net survival,_T,2014,64.4
+FRA,France,Rectal cancer five-year net survival,_T,2014,60.9
+DEU,Germany,Rectal cancer five-year net survival,_T,2014,62.3
+ISL,Iceland,Rectal cancer five-year net survival,_T,2014,63.0
+IRL,Ireland,Rectal cancer five-year net survival,_T,2014,61.7
+ISR,Israel,Rectal cancer five-year net survival,_T,2014,67.8
+ITA,Italy,Rectal cancer five-year net survival,_T,2014,61.3
+JPN,Japan,Rectal cancer five-year net survival,_T,2014,64.8
+KOR,Korea,Rectal cancer five-year net survival,_T,2014,71.1
+LVA,Latvia,Rectal cancer five-year net survival,_T,2014,49.5
+LTU,Lithuania,Rectal cancer five-year net survival,_T,2014,52.7
+NLD,Netherlands,Rectal cancer five-year net survival,_T,2014,65.3
+NZL,New Zealand,Rectal cancer five-year net survival,_T,2014,66.0
+NOR,Norway,Rectal cancer five-year net survival,_T,2014,68.3
+POL,Poland,Rectal cancer five-year net survival,_T,2014,48.4
+PRT,Portugal,Rectal cancer five-year net survival,_T,2014,59.6
+SVK,Slovak Republic,Rectal cancer five-year net survival,_T,2014,48.6
+SVN,Slovenia,Rectal cancer five-year net survival,_T,2014,60.3
+ESP,Spain,Rectal cancer five-year net survival,_T,2014,59.5
+SWE,Sweden,Rectal cancer five-year net survival,_T,2014,64.7
+CHE,Switzerland,Rectal cancer five-year net survival,_T,2014,67.3
+TUR,Türkiye,Rectal cancer five-year net survival,_T,2014,52.6
+GBR,United Kingdom,Rectal cancer five-year net survival,_T,2014,62.5
+USA,United States,Rectal cancer five-year net survival,_T,2014,64.1
+BRA,Brazil,Rectal cancer five-year net survival,_T,2014,42.6
+BGR,Bulgaria,Rectal cancer five-year net survival,_T,2014,45.9
+CHN,China (People’s Republic of),Rectal cancer five-year net survival,_T,2014,56.9
+HRV,Croatia,Rectal cancer five-year net survival,_T,2014,48.2
+CYP,Cyprus,Rectal cancer five-year net survival,_T,2014,75.9
+IND,India,Rectal cancer five-year net survival,_T,2014,30.0
+MLT,Malta,Rectal cancer five-year net survival,_T,2014,56.1
+ROU,Romania,Rectal cancer five-year net survival,_T,2014,58.4
+SGP,Singapore,Rectal cancer five-year net survival,_T,2014,60.5
+ZAF,South Africa,Rectal cancer five-year net survival,_T,2014,9.1
+AUS,Australia,Stomach cancer five-year net survival,_T,2014,31.8
+AUT,Austria,Stomach cancer five-year net survival,_T,2014,35.4
+BEL,Belgium,Stomach cancer five-year net survival,_T,2014,37.5
+CAN,Canada,Stomach cancer five-year net survival,_T,2014,29.5
+CHL,Chile,Stomach cancer five-year net survival,_T,2014,16.7
+COL,Colombia,Stomach cancer five-year net survival,_T,2014,17.1
+CRI,Costa Rica,Stomach cancer five-year net survival,_T,2014,40.6
+CZE,Czechia,Stomach cancer five-year net survival,_T,2014,20.6
+DNK,Denmark,Stomach cancer five-year net survival,_T,2014,19.9
+EST,Estonia,Stomach cancer five-year net survival,_T,2014,29.2
+FIN,Finland,Stomach cancer five-year net survival,_T,2014,25.7
+FRA,France,Stomach cancer five-year net survival,_T,2014,26.7
+DEU,Germany,Stomach cancer five-year net survival,_T,2014,33.5
+ISL,Iceland,Stomach cancer five-year net survival,_T,2014,28.1
+IRL,Ireland,Stomach cancer five-year net survival,_T,2014,27.6
+ISR,Israel,Stomach cancer five-year net survival,_T,2014,32.3
+ITA,Italy,Stomach cancer five-year net survival,_T,2014,30.5
+JPN,Japan,Stomach cancer five-year net survival,_T,2014,60.3
+KOR,Korea,Stomach cancer five-year net survival,_T,2014,68.9
+LVA,Latvia,Stomach cancer five-year net survival,_T,2014,25.1
+LTU,Lithuania,Stomach cancer five-year net survival,_T,2014,27.0
+NLD,Netherlands,Stomach cancer five-year net survival,_T,2014,25.0
+NZL,New Zealand,Stomach cancer five-year net survival,_T,2014,25.7
+NOR,Norway,Stomach cancer five-year net survival,_T,2014,26.2
+POL,Poland,Stomach cancer five-year net survival,_T,2014,20.9
+PRT,Portugal,Stomach cancer five-year net survival,_T,2014,32.2
+SVK,Slovak Republic,Stomach cancer five-year net survival,_T,2014,21.1
+SVN,Slovenia,Stomach cancer five-year net survival,_T,2014,28.8
+ESP,Spain,Stomach cancer five-year net survival,_T,2014,27.2
+SWE,Sweden,Stomach cancer five-year net survival,_T,2014,24.8
+CHE,Switzerland,Stomach cancer five-year net survival,_T,2014,32.2
+TUR,Türkiye,Stomach cancer five-year net survival,_T,2014,24.6
+GBR,United Kingdom,Stomach cancer five-year net survival,_T,2014,20.7
+USA,United States,Stomach cancer five-year net survival,_T,2014,33.1
+BRA,Brazil,Stomach cancer five-year net survival,_T,2014,20.5
+BGR,Bulgaria,Stomach cancer five-year net survival,_T,2014,16.0
+CHN,China (People’s Republic of),Stomach cancer five-year net survival,_T,2014,35.9
+HRV,Croatia,Stomach cancer five-year net survival,_T,2014,20.0
+CYP,Cyprus,Stomach cancer five-year net survival,_T,2014,35.6
+IND,India,Stomach cancer five-year net survival,_T,2014,8.9
+MLT,Malta,Stomach cancer five-year net survival,_T,2014,23.8
+ROU,Romania,Stomach cancer five-year net survival,_T,2014,26.0
+SGP,Singapore,Stomach cancer five-year net survival,_T,2014,30.3
+ZAF,South Africa,Stomach cancer five-year net survival,_T,2014,25.6
+AUS,Australia,Lung cancer five-year net survival,_T,2014,19.4
+AUT,Austria,Lung cancer five-year net survival,_T,2014,19.7
+BEL,Belgium,Lung cancer five-year net survival,_T,2014,18.2
+CAN,Canada,Lung cancer five-year net survival,_T,2014,21.3
+CHL,Chile,Lung cancer five-year net survival,_T,2014,4.6
+COL,Colombia,Lung cancer five-year net survival,_T,2014,8.7
+CRI,Costa Rica,Lung cancer five-year net survival,_T,2014,20.1
+CZE,Czechia,Lung cancer five-year net survival,_T,2014,10.6
+DNK,Denmark,Lung cancer five-year net survival,_T,2014,16.6
+EST,Estonia,Lung cancer five-year net survival,_T,2014,16.9
+FIN,Finland,Lung cancer five-year net survival,_T,2014,13.0
+FRA,France,Lung cancer five-year net survival,_T,2014,17.3
+DEU,Germany,Lung cancer five-year net survival,_T,2014,18.3
+ISL,Iceland,Lung cancer five-year net survival,_T,2014,20.2
+IRL,Ireland,Lung cancer five-year net survival,_T,2014,17.5
+ISR,Israel,Lung cancer five-year net survival,_T,2014,26.6
+ITA,Italy,Lung cancer five-year net survival,_T,2014,15.9
+JPN,Japan,Lung cancer five-year net survival,_T,2014,32.9
+KOR,Korea,Lung cancer five-year net survival,_T,2014,25.1
+LVA,Latvia,Lung cancer five-year net survival,_T,2014,18.3
+LTU,Lithuania,Lung cancer five-year net survival,_T,2014,9.9
+NLD,Netherlands,Lung cancer five-year net survival,_T,2014,17.3
+NZL,New Zealand,Lung cancer five-year net survival,_T,2014,15.3
+NOR,Norway,Lung cancer five-year net survival,_T,2014,18.1
+POL,Poland,Lung cancer five-year net survival,_T,2014,14.4
+PRT,Portugal,Lung cancer five-year net survival,_T,2014,15.7
+SVK,Slovak Republic,Lung cancer five-year net survival,_T,2014,11.2
+SVN,Slovenia,Lung cancer five-year net survival,_T,2014,14.8
+ESP,Spain,Lung cancer five-year net survival,_T,2014,13.5
+SWE,Sweden,Lung cancer five-year net survival,_T,2014,19.5
+CHE,Switzerland,Lung cancer five-year net survival,_T,2014,20.4
+TUR,Türkiye,Lung cancer five-year net survival,_T,2014,14.9
+GBR,United Kingdom,Lung cancer five-year net survival,_T,2014,13.3
+USA,United States,Lung cancer five-year net survival,_T,2014,21.2
+BRA,Brazil,Lung cancer five-year net survival,_T,2014,8.1
+BGR,Bulgaria,Lung cancer five-year net survival,_T,2014,7.7
+CHN,China (People’s Republic of),Lung cancer five-year net survival,_T,2014,19.8
+HRV,Croatia,Lung cancer five-year net survival,_T,2014,10.0
+CYP,Cyprus,Lung cancer five-year net survival,_T,2014,18.7
+IND,India,Lung cancer five-year net survival,_T,2014,3.7
+MLT,Malta,Lung cancer five-year net survival,_T,2014,14.9
+ROU,Romania,Lung cancer five-year net survival,_T,2014,11.1
+SGP,Singapore,Lung cancer five-year net survival,_T,2014,15.5
+ZAF,South Africa,Lung cancer five-year net survival,_T,2014,15.0
+AUS,Australia,Lung cancer five-year net survival,M,2014,17.4
+AUT,Austria,Lung cancer five-year net survival,M,2014,17.0
+BEL,Belgium,Lung cancer five-year net survival,M,2014,16.6
+CAN,Canada,Lung cancer five-year net survival,M,2014,18.4
+CHL,Chile,Lung cancer five-year net survival,M,2014,2.1
+COL,Colombia,Lung cancer five-year net survival,M,2014,7.6
+CRI,Costa Rica,Lung cancer five-year net survival,M,2014,18.5
+CZE,Czechia,Lung cancer five-year net survival,M,2014,8.9
+DNK,Denmark,Lung cancer five-year net survival,M,2014,13.7
+EST,Estonia,Lung cancer five-year net survival,M,2014,15.3
+FIN,Finland,Lung cancer five-year net survival,M,2014,10.8
+FRA,France,Lung cancer five-year net survival,M,2014,16.0
+DEU,Germany,Lung cancer five-year net survival,M,2014,16.6
+ISL,Iceland,Lung cancer five-year net survival,M,2014,16.4
+IRL,Ireland,Lung cancer five-year net survival,M,2014,15.2
+ISR,Israel,Lung cancer five-year net survival,M,2014,21.9
+ITA,Italy,Lung cancer five-year net survival,M,2014,14.2
+JPN,Japan,Lung cancer five-year net survival,M,2014,27.6
+KOR,Korea,Lung cancer five-year net survival,M,2014,21.9
+LVA,Latvia,Lung cancer five-year net survival,M,2014,16.3
+LTU,Lithuania,Lung cancer five-year net survival,M,2014,7.7
+NLD,Netherlands,Lung cancer five-year net survival,M,2014,16.0
+NZL,New Zealand,Lung cancer five-year net survival,M,2014,13.6
+NOR,Norway,Lung cancer five-year net survival,M,2014,15.6
+POL,Poland,Lung cancer five-year net survival,M,2014,12.9
+PRT,Portugal,Lung cancer five-year net survival,M,2014,12.7
+SVK,Slovak Republic,Lung cancer five-year net survival,M,2014,9.3
+SVN,Slovenia,Lung cancer five-year net survival,M,2014,12.6
+ESP,Spain,Lung cancer five-year net survival,M,2014,12.5
+SWE,Sweden,Lung cancer five-year net survival,M,2014,16.8
+CHE,Switzerland,Lung cancer five-year net survival,M,2014,18.0
+TUR,Türkiye,Lung cancer five-year net survival,M,2014,14.0
+GBR,United Kingdom,Lung cancer five-year net survival,M,2014,11.5
+USA,United States,Lung cancer five-year net survival,M,2014,17.9
+BRA,Brazil,Lung cancer five-year net survival,M,2014,8.4
+BGR,Bulgaria,Lung cancer five-year net survival,M,2014,6.7
+CHN,China (People’s Republic of),Lung cancer five-year net survival,M,2014,17.6
+HRV,Croatia,Lung cancer five-year net survival,M,2014,9.1
+CYP,Cyprus,Lung cancer five-year net survival,M,2014,17.0
+IND,India,Lung cancer five-year net survival,M,2014,4.5
+MLT,Malta,Lung cancer five-year net survival,M,2014,12.0
+ROU,Romania,Lung cancer five-year net survival,M,2014,11.1
+SGP,Singapore,Lung cancer five-year net survival,M,2014,13.1
+AUS,Australia,Rectal cancer five-year net survival,M,2014,69.6
+AUT,Austria,Rectal cancer five-year net survival,M,2014,64.4
+BEL,Belgium,Rectal cancer five-year net survival,M,2014,66.1
+CAN,Canada,Rectal cancer five-year net survival,M,2014,66.1
+CHL,Chile,Rectal cancer five-year net survival,M,2014,26.0
+COL,Colombia,Rectal cancer five-year net survival,M,2014,32.0
+CRI,Costa Rica,Rectal cancer five-year net survival,M,2014,49.3
+CZE,Czechia,Rectal cancer five-year net survival,M,2014,51.2
+DNK,Denmark,Rectal cancer five-year net survival,M,2014,63.4
+EST,Estonia,Rectal cancer five-year net survival,M,2014,48.9
+FIN,Finland,Rectal cancer five-year net survival,M,2014,62.6
+FRA,France,Rectal cancer five-year net survival,M,2014,60.2
+DEU,Germany,Rectal cancer five-year net survival,M,2014,61.4
+ISL,Iceland,Rectal cancer five-year net survival,M,2014,56.8
+IRL,Ireland,Rectal cancer five-year net survival,M,2014,61.3
+ISR,Israel,Rectal cancer five-year net survival,M,2014,68.8
+ITA,Italy,Rectal cancer five-year net survival,M,2014,61.1
+JPN,Japan,Rectal cancer five-year net survival,M,2014,64.5
+KOR,Korea,Rectal cancer five-year net survival,M,2014,71.0
+LVA,Latvia,Rectal cancer five-year net survival,M,2014,46.5
+LTU,Lithuania,Rectal cancer five-year net survival,M,2014,51.3
+NLD,Netherlands,Rectal cancer five-year net survival,M,2014,65.0
+NZL,New Zealand,Rectal cancer five-year net survival,M,2014,63.6
+NOR,Norway,Rectal cancer five-year net survival,M,2014,67.4
+POL,Poland,Rectal cancer five-year net survival,M,2014,47.4
+PRT,Portugal,Rectal cancer five-year net survival,M,2014,59.1
+SVK,Slovak Republic,Rectal cancer five-year net survival,M,2014,43.8
+SVN,Slovenia,Rectal cancer five-year net survival,M,2014,60.4
+ESP,Spain,Rectal cancer five-year net survival,M,2014,58.9
+SWE,Sweden,Rectal cancer five-year net survival,M,2014,63.2
+CHE,Switzerland,Rectal cancer five-year net survival,M,2014,66.1
+TUR,Türkiye,Rectal cancer five-year net survival,M,2014,53.2
+GBR,United Kingdom,Rectal cancer five-year net survival,M,2014,61.3
+USA,United States,Rectal cancer five-year net survival,M,2014,62.4
+BRA,Brazil,Rectal cancer five-year net survival,M,2014,41.4
+BGR,Bulgaria,Rectal cancer five-year net survival,M,2014,45.7
+CHN,China (People’s Republic of),Rectal cancer five-year net survival,M,2014,56.5
+HRV,Croatia,Rectal cancer five-year net survival,M,2014,48.0
+CYP,Cyprus,Rectal cancer five-year net survival,M,2014,78.7
+IND,India,Rectal cancer five-year net survival,M,2014,22.0
+MLT,Malta,Rectal cancer five-year net survival,M,2014,57.4
+ROU,Romania,Rectal cancer five-year net survival,M,2014,62.2
+SGP,Singapore,Rectal cancer five-year net survival,M,2014,57.6
+AUS,Australia,Colon cancer five-year net survival,M,2014,69.7
+AUT,Austria,Colon cancer five-year net survival,M,2014,63.8
+BEL,Belgium,Colon cancer five-year net survival,M,2014,66.6
+CAN,Canada,Colon cancer five-year net survival,M,2014,66.6
+CHL,Chile,Colon cancer five-year net survival,M,2014,46.8
+COL,Colombia,Colon cancer five-year net survival,M,2014,35.5
+CRI,Costa Rica,Colon cancer five-year net survival,M,2014,60.0
+CZE,Czechia,Colon cancer five-year net survival,M,2014,55.6
+DNK,Denmark,Colon cancer five-year net survival,M,2014,60.2
+EST,Estonia,Colon cancer five-year net survival,M,2014,55.3
+FIN,Finland,Colon cancer five-year net survival,M,2014,64.7
+FRA,France,Colon cancer five-year net survival,M,2014,63.5
+DEU,Germany,Colon cancer five-year net survival,M,2014,64.3
+ISL,Iceland,Colon cancer five-year net survival,M,2014,67.7
+IRL,Ireland,Colon cancer five-year net survival,M,2014,59.9
+ISR,Israel,Colon cancer five-year net survival,M,2014,72.3
+ITA,Italy,Colon cancer five-year net survival,M,2014,63.8
+JPN,Japan,Colon cancer five-year net survival,M,2014,68.3
+KOR,Korea,Colon cancer five-year net survival,M,2014,73.9
+LVA,Latvia,Colon cancer five-year net survival,M,2014,48.7
+LTU,Lithuania,Colon cancer five-year net survival,M,2014,56.4
+NLD,Netherlands,Colon cancer five-year net survival,M,2014,62.6
+NZL,New Zealand,Colon cancer five-year net survival,M,2014,64.4
+NOR,Norway,Colon cancer five-year net survival,M,2014,63.2
+POL,Poland,Colon cancer five-year net survival,M,2014,52.3
+PRT,Portugal,Colon cancer five-year net survival,M,2014,58.0
+SVK,Slovak Republic,Colon cancer five-year net survival,M,2014,51.8
+SVN,Slovenia,Colon cancer five-year net survival,M,2014,61.9
+ESP,Spain,Colon cancer five-year net survival,M,2014,62.7
+SWE,Sweden,Colon cancer five-year net survival,M,2014,63.6
+CHE,Switzerland,Colon cancer five-year net survival,M,2014,67.2
+TUR,Türkiye,Colon cancer five-year net survival,M,2014,55.7
+GBR,United Kingdom,Colon cancer five-year net survival,M,2014,60.3
+USA,United States,Colon cancer five-year net survival,M,2014,63.9
+BRA,Brazil,Colon cancer five-year net survival,M,2014,47.0
+BGR,Bulgaria,Colon cancer five-year net survival,M,2014,51.1
+CHN,China (People’s Republic of),Colon cancer five-year net survival,M,2014,58.0
+HRV,Croatia,Colon cancer five-year net survival,M,2014,51.6
+CYP,Cyprus,Colon cancer five-year net survival,M,2014,71.1
+MLT,Malta,Colon cancer five-year net survival,M,2014,58.5
+ROU,Romania,Colon cancer five-year net survival,M,2014,57.7
+SGP,Singapore,Colon cancer five-year net survival,M,2014,63.3
+AUS,Australia,Stomach cancer five-year net survival,M,2014,30.0
+AUT,Austria,Stomach cancer five-year net survival,M,2014,34.2
+BEL,Belgium,Stomach cancer five-year net survival,M,2014,33.9
+CAN,Canada,Stomach cancer five-year net survival,M,2014,28.8
+CHL,Chile,Stomach cancer five-year net survival,M,2014,15.3
+COL,Colombia,Stomach cancer five-year net survival,M,2014,15.6
+CRI,Costa Rica,Stomach cancer five-year net survival,M,2014,36.2
+CZE,Czechia,Stomach cancer five-year net survival,M,2014,19.4
+DNK,Denmark,Stomach cancer five-year net survival,M,2014,20.1
+EST,Estonia,Stomach cancer five-year net survival,M,2014,27.1
+FIN,Finland,Stomach cancer five-year net survival,M,2014,23.6
+FRA,France,Stomach cancer five-year net survival,M,2014,24.0
+DEU,Germany,Stomach cancer five-year net survival,M,2014,32.4
+ISL,Iceland,Stomach cancer five-year net survival,M,2014,26.2
+IRL,Ireland,Stomach cancer five-year net survival,M,2014,26.9
+ISR,Israel,Stomach cancer five-year net survival,M,2014,32.0
+ITA,Italy,Stomach cancer five-year net survival,M,2014,29.5
+JPN,Japan,Stomach cancer five-year net survival,M,2014,60.6
+KOR,Korea,Stomach cancer five-year net survival,M,2014,69.2
+LVA,Latvia,Stomach cancer five-year net survival,M,2014,22.3
+LTU,Lithuania,Stomach cancer five-year net survival,M,2014,26.1
+NLD,Netherlands,Stomach cancer five-year net survival,M,2014,24.1
+NZL,New Zealand,Stomach cancer five-year net survival,M,2014,24.7
+NOR,Norway,Stomach cancer five-year net survival,M,2014,26.5
+POL,Poland,Stomach cancer five-year net survival,M,2014,18.8
+PRT,Portugal,Stomach cancer five-year net survival,M,2014,30.8
+SVK,Slovak Republic,Stomach cancer five-year net survival,M,2014,17.4
+SVN,Slovenia,Stomach cancer five-year net survival,M,2014,28.0
+ESP,Spain,Stomach cancer five-year net survival,M,2014,26.8
+SWE,Sweden,Stomach cancer five-year net survival,M,2014,23.5
+CHE,Switzerland,Stomach cancer five-year net survival,M,2014,29.3
+TUR,Türkiye,Stomach cancer five-year net survival,M,2014,23.0
+GBR,United Kingdom,Stomach cancer five-year net survival,M,2014,20.0
+USA,United States,Stomach cancer five-year net survival,M,2014,30.0
+BRA,Brazil,Stomach cancer five-year net survival,M,2014,18.4
+BGR,Bulgaria,Stomach cancer five-year net survival,M,2014,14.5
+CHN,China (People’s Republic of),Stomach cancer five-year net survival,M,2014,35.6
+HRV,Croatia,Stomach cancer five-year net survival,M,2014,18.5
+CYP,Cyprus,Stomach cancer five-year net survival,M,2014,35.2
+IND,India,Stomach cancer five-year net survival,M,2014,5.3
+MLT,Malta,Stomach cancer five-year net survival,M,2014,18.9
+ROU,Romania,Stomach cancer five-year net survival,M,2014,27.3
+SGP,Singapore,Stomach cancer five-year net survival,M,2014,30.3
+AUS,Australia,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,90.3
+BEL,Belgium,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,90.6
+CAN,Canada,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,93.0
+CHL,Chile,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,71.2
+COL,Colombia,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,68.0
+CRI,Costa Rica,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,82.4
+CZE,Czechia,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,89.3
+DNK,Denmark,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,95.2
+EST,Estonia,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,74.6
+FIN,Finland,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,94.9
+FRA,France,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,89.0
+DEU,Germany,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,93.9
+GRC,Greece,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,82.5
+IRL,Ireland,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,84.4
+ISR,Israel,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,86.5
+ITA,Italy,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,88.2
+JPN,Japan,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,88.5
+KOR,Korea,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,83.0
+LVA,Latvia,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,78.8
+LTU,Lithuania,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,77.8
+MEX,Mexico,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,54.2
+NLD,Netherlands,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,89.1
+NZL,New Zealand,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,89.7
+NOR,Norway,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,82.6
+POL,Poland,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,85.1
+PRT,Portugal,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,88.2
+SVK,Slovak Republic,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,90.1
+ESP,Spain,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,82.7
+SWE,Sweden,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,91.4
+CHE,Switzerland,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,90.8
+TUR,Türkiye,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,78.9
+GBR,United Kingdom,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,92.4
+USA,United States,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,90.1
+BRA,Brazil,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,69.9
+BGR,Bulgaria,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,75.1
+CHN,China (People’s Republic of),Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,64.8
+HRV,Croatia,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,83.7
+SGP,Singapore,Childhood acute lymphoblastic leukaemia five-year net survival,M,2014,85.1
+AUS,Australia,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,92.0
+BEL,Belgium,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,91.4
+CAN,Canada,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,93.0
+CHL,Chile,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,62.5
+COL,Colombia,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,81.7
+CRI,Costa Rica,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,85.8
+CZE,Czechia,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,86.0
+DNK,Denmark,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,90.2
+EST,Estonia,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,100.0
+FIN,Finland,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,95.8
+FRA,France,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,87.9
+DEU,Germany,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,87.4
+GRC,Greece,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,86.4
+IRL,Ireland,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,94.7
+ISR,Israel,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,90.4
+ITA,Italy,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,87.2
+JPN,Japan,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,85.9
+KOR,Korea,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,86.3
+LTU,Lithuania,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,72.5
+MEX,Mexico,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,51.5
+NLD,Netherlands,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,92.4
+NZL,New Zealand,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,94.7
+NOR,Norway,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,85.2
+POL,Poland,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,89.4
+PRT,Portugal,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,93.8
+SVK,Slovak Republic,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,85.0
+ESP,Spain,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,86.6
+SWE,Sweden,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,86.3
+CHE,Switzerland,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,89.6
+TUR,Türkiye,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,83.0
+GBR,United Kingdom,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,91.9
+USA,United States,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,88.7
+BRA,Brazil,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,55.7
+BGR,Bulgaria,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,81.8
+CHN,China (People’s Republic of),Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,48.2
+HRV,Croatia,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,86.8
+SGP,Singapore,Childhood acute lymphoblastic leukaemia five-year net survival,F,2014,94.6
+AUS,Australia,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,90.7
+BEL,Belgium,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,90.8
+CAN,Canada,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,93.0
+CHL,Chile,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,63.9
+COL,Colombia,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,68.9
+CRI,Costa Rica,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,80.0
+CZE,Czechia,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,88.2
+DNK,Denmark,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,94.0
+EST,Estonia,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,87.7
+FIN,Finland,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,95.2
+FRA,France,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,88.6
+DEU,Germany,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,91.1
+GRC,Greece,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,84.2
+IRL,Ireland,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,88.3
+ISR,Israel,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,87.9
+ITA,Italy,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,87.8
+JPN,Japan,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,87.6
+KOR,Korea,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,84.4
+LVA,Latvia,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,84.1
+LTU,Lithuania,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,74.7
+MEX,Mexico,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,52.7
+NLD,Netherlands,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,90.4
+NZL,New Zealand,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,91.4
+NOR,Norway,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,83.0
+POL,Poland,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,86.9
+PRT,Portugal,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,89.8
+SVK,Slovak Republic,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,87.0
+ESP,Spain,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,84.7
+SWE,Sweden,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,89.0
+CHE,Switzerland,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,90.3
+TUR,Türkiye,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,80.9
+GBR,United Kingdom,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,92.2
+USA,United States,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,89.5
+BRA,Brazil,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,66.6
+BGR,Bulgaria,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,78.3
+CHN,China (People’s Republic of),Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,57.7
+HRV,Croatia,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,85.2
+CYP,Cyprus,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,86.6
+IND,India,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,69.9
+SGP,Singapore,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,88.6
+ISL,Iceland,Cervical cancer five-year net survival,F,2014,80.1
+ISL,Iceland,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,92.4
+ROU,Romania,Childhood acute lymphoblastic leukaemia five-year net survival,_T,2014,53.9

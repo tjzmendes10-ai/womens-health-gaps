@@ -1,0 +1,20 @@
+condition,pubmed_query,papers_2015_2024,retrieved
+Endometriosis,"""Endometriosis""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",9502,2026-11-03
+Polycystic ovarian syndrome,"""Polycystic Ovary Syndrome""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",8798,2026-11-03
+Premenstrual syndrome,"""Premenstrual Syndrome""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",781,2026-11-03
+Uterine fibroids,"""Leiomyoma""[mh] AND ""Uterine Neoplasms""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",3639,2026-11-03
+Female infertility,"""Infertility, Female""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",7498,2026-11-03
+Genital prolapse,"""Pelvic Organ Prolapse""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",5540,2026-11-03
+Migraine,"""Migraine Disorders""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",11261,2026-11-03
+Low back pain,"""Low Back Pain""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",12977,2026-11-03
+Rheumatoid arthritis,"""Arthritis, Rheumatoid""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",34986,2026-11-03
+Osteoarthritis,"""Osteoarthritis""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",37287,2026-11-03
+Depressive disorders,"""Depressive Disorder""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",40736,2026-11-03
+Anxiety disorders,"""Anxiety Disorders""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",28175,2026-11-03
+Alzheimer's disease and other dementias,"""Dementia""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",98782,2026-11-03
+Ischemic heart disease,"""Myocardial Ischemia""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",119021,2026-11-03
+Stroke,"""Stroke""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",97374,2026-11-03
+Breast cancer,"""Breast Neoplasms""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",135395,2026-11-03
+Cervical cancer,"""Uterine Cervical Neoplasms""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",27516,2026-11-03
+Ovarian cancer,"""Ovarian Neoplasms""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",32291,2026-11-03
+Uterine cancer,"""Endometrial Neoplasms""[mh] AND (""2015/01/01""[dp] : ""2024/12/31""[dp])",11648,2026-11-03
