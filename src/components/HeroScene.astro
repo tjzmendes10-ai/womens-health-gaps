@@ -12,6 +12,8 @@
 // along their line.
 import Person from './figures/Person.astro';
 import type { Stage } from './figures/Person.astro';
+import { worldLife, WHO_YEAR, WHO_URL } from '../lib/who-global';
+import LifeTable from './LifeTable.astro';
 
 interface Props {
   titleHtml: string;
@@ -25,6 +27,10 @@ const him = { life: 81.6, healthy: 71.7 };
 const fmt = (n: number) => n.toFixed(1);
 const herIll = fmt(her.life - her.healthy); // 11.7 (calculated)
 const himIll = fmt(him.life - him.healthy); // 9.9 (calculated)
+
+// Global figures, a separate source (WHO), shown in their own table.
+const world = worldLife();
+const globalNote = `*Life expectancy minus healthy life expectancy. Source: <a href="${WHO_URL}">WHO Global Health Estimates</a>. A different method from the Australian figures, so the two tables aren't directly comparable.`;
 
 // One shared scale of years, so the two lines are directly comparable.
 const x0 = 40;
@@ -94,26 +100,15 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
         </p>
       </div>
       <div class="facts">
-        <p class="facts-label"><span class="tag tag-light">Australia</span> 2024</p>
-        <table class="life-table">
-          <caption class="visually-hidden">Life expectancy and years in full and ill health, Australia, 2024</caption>
-          <thead>
-            <tr>
-              <td></td>
-              <th scope="col"><span class="swatch swatch-healthy" aria-hidden="true"></span>Years in full health</th>
-              <th scope="col"><span class="swatch swatch-ill" aria-hidden="true"></span>Years in ill health*</th>
-              <th scope="col">Life expectancy</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="row-her"><th scope="row">Women</th><td>{fmt(her.healthy)}</td><td>~{herIll}</td><td>{fmt(her.life)}</td></tr>
-            <tr class="row-him"><th scope="row">Men</th><td>{fmt(him.healthy)}</td><td>~{himIll}</td><td>{fmt(him.life)}</td></tr>
-          </tbody>
-        </table>
-        <p class="facts-note">
+        <div class="global-in-stage">
+          <LifeTable tag="Global" year={WHO_YEAR} caption={`Life expectancy and years in full and ill health, world, ${WHO_YEAR}`} women={world.women} men={world.men}>
+            <Fragment set:html={globalNote} />
+          </LifeTable>
+        </div>
+        <LifeTable tag="Australia" year={2024} caption="Life expectancy and years in full and ill health, Australia, 2024" women={{ healthy: her.healthy, ill: +herIll, life: her.life }} men={{ healthy: him.healthy, ill: +himIll, life: him.life }}>
           *Calculated as life expectancy minus years in full health. Source:
           <a href={aihw}>AIHW, Australian Burden of Disease Study 2024</a> (2024 figures are projections).
-        </p>
+        </LifeTable>
       </div>
     </div>
 
@@ -205,6 +200,13 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
     <div class="ground-strip" aria-hidden="true"></div>
   </div>
 </div>
+<!-- On small screens the global table sits below the scene, so the pinned
+     stage still has room for the lifelines. Only one copy shows at a time. -->
+<div class="global-after">
+  <LifeTable tag="Global" year={WHO_YEAR} caption={`Life expectancy and years in full and ill health, world, ${WHO_YEAR}`} women={world.women} men={world.men}>
+    <Fragment set:html={globalNote} />
+  </LifeTable>
+</div>
 
 <style>
   .stage { display: flex; flex-direction: column; }
@@ -223,10 +225,9 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
   @media (min-width: 52rem) {
     .sky-text { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: end; }
   }
+  .hero-global a { color: var(--cream); }
+  .hero-global .tag-light { color: var(--cream); margin-right: 0.35rem; }
   .hero-global { margin: 0.75rem 0 0; max-width: 34rem; font-size: 0.95rem; line-height: 1.5; color: var(--cream-soft); }
-  .hero-global a, .facts-label { color: var(--cream); }
-  .facts-label { margin: 0 0 0.3rem; font-size: 0.78rem; }
-  .tag-light { color: var(--cream); margin-right: 0.35rem; }
   .headline h1 { margin-bottom: 0; max-width: none; font-size: min(var(--step-5), 10svh); }
   .art { position: relative; z-index: 0; }
   /* High sky shapes are switched off: the sky now holds the headline, the
@@ -237,19 +238,12 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
   }
 
 
-  .life-table { border-collapse: collapse; width: 100%; font-size: var(--step--1); color: var(--cream); }
-  .life-table th,
-  .life-table td { padding: 0.3rem 0.5rem 0.3rem 0; text-align: left; vertical-align: bottom; }
-  .life-table thead th { font-weight: 500; color: var(--cream-soft); line-height: 1.25; font-size: 0.78rem; }
-  .life-table tbody th { font-weight: 600; white-space: nowrap; }
-  .life-table tbody td { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; font-variant-numeric: lining-nums tabular-nums; }
-  .life-table tbody tr + tr { border-top: 1px solid rgba(251, 246, 238, 0.25); }
-  .row-him { color: var(--cream-soft); }
-  .swatch { display: block; width: 1.5rem; height: 0.4rem; border-radius: 1rem; margin-bottom: 0.3rem; }
-  .swatch-healthy { background: var(--cream); }
-  .swatch-ill { background: repeating-linear-gradient(45deg, var(--accent) 0 3px, var(--outline) 3px 5px); }
-  .facts-note { font-size: 0.78rem; line-height: 1.4; color: var(--cream-soft); margin: 0.5rem 0 0; }
-  .facts-note a { color: var(--cream); }
+  .facts { display: grid; gap: 1.1rem; }
+  .global-after { display: none; }
+  @media (max-width: 40rem) {
+    .global-in-stage { display: none; }
+    .global-after { display: block; padding: 1.5rem var(--gutter) 0; }
+  }
 
   /* ---- Illustration ---- */
   .art { width: 100%; }

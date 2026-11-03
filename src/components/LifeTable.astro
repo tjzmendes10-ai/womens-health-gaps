@@ -1,0 +1,52 @@
+---
+// One "years in full health / ill health / life expectancy" table for the
+// home hero. Used for both the Australian (AIHW) and global (WHO) figures,
+// which always stay in separate tables because their methods differ.
+interface Row { healthy: number; ill: number; life: number }
+interface Props {
+  tag: string;      // e.g. "Australia" or "Global"
+  year: number;
+  caption: string;  // read by screen readers
+  women: Row;
+  men: Row;
+}
+const { tag, year, caption, women, men } = Astro.props;
+const fmt = (n: number) => n.toFixed(1);
+---
+<div class="facts-panel">
+  <p class="facts-label"><span class="tag tag-light">{tag}</span> {year}</p>
+  <table class="life-table">
+    <caption class="visually-hidden">{caption}</caption>
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col"><span class="swatch swatch-healthy" aria-hidden="true"></span>Years in full health</th>
+        <th scope="col"><span class="swatch swatch-ill" aria-hidden="true"></span>Years in ill health*</th>
+        <th scope="col">Life expectancy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="row-her"><th scope="row">Women</th><td>{fmt(women.healthy)}</td><td>~{fmt(women.ill)}</td><td>{fmt(women.life)}</td></tr>
+      <tr class="row-him"><th scope="row">Men</th><td>{fmt(men.healthy)}</td><td>~{fmt(men.ill)}</td><td>{fmt(men.life)}</td></tr>
+    </tbody>
+  </table>
+  <p class="facts-note"><slot /></p>
+</div>
+
+<style>
+  .facts-label { margin: 0 0 0.3rem; font-size: 0.78rem; color: var(--cream); }
+  .tag-light { color: var(--cream); margin-right: 0.35rem; }
+  .life-table { border-collapse: collapse; width: 100%; font-size: var(--step--1); color: var(--cream); }
+  .life-table th,
+  .life-table td { padding: 0.3rem 0.5rem 0.3rem 0; text-align: left; vertical-align: bottom; }
+  .life-table thead th { font-weight: 500; color: var(--cream-soft); line-height: 1.25; font-size: 0.78rem; }
+  .life-table tbody th { font-weight: 600; white-space: nowrap; }
+  .life-table tbody td { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; font-variant-numeric: lining-nums tabular-nums; }
+  .life-table tbody tr + tr { border-top: 1px solid rgba(251, 246, 238, 0.25); }
+  .row-him { color: var(--cream-soft); }
+  .swatch { display: block; width: 1.5rem; height: 0.4rem; border-radius: 1rem; margin-bottom: 0.3rem; }
+  .swatch-healthy { background: var(--cream); }
+  .swatch-ill { background: repeating-linear-gradient(45deg, var(--accent) 0 3px, var(--outline) 3px 5px); }
+  .facts-note { font-size: 0.78rem; line-height: 1.4; color: var(--cream-soft); margin: 0.5rem 0 0; }
+  .facts-note :global(a) { color: var(--cream); }
+</style>
