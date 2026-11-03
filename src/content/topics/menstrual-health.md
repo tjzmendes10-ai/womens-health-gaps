@@ -1,5 +1,5 @@
 ---
-title: Dismissed as normal
+title: Menstrual health
 hook: Periods are part of everyday life. Severe pain, years-long waits for a diagnosis, and conditions nobody recognises are not.
 order: 1
 status: live

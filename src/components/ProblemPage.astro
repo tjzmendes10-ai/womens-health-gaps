@@ -2,8 +2,8 @@
 // The template for every condition page: title band, hook, Lifeline box
 // (mental-health pages), summary, stat callouts, "Why it matters in
 // Australia", optional global context, numbered sources, last reviewed.
-// Used for pages inside a hub (e.g. /dismissed-as-normal/endometriosis/)
-// and for single-page topics (e.g. /heart-disease/).
+// Used for pages inside a hub (e.g. /menstrual-health/endometriosis/)
+// and for single-page topics (e.g. /cardiovascular-disease/).
 import type { CollectionEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import StatCallout from './StatCallout.astro';
@@ -32,7 +32,7 @@ const body = splitProblemBody(problem);
 // (whose file is <topic>/overview.md).
 const [topicId, pageId] = problem.id.split('/');
 const spotKey = pageId === 'overview' ? topicId : pageId;
-const spots: Record<string, typeof CycleSpot> = { endometriosis: ChairSpot, pmos: ClockSpot, 'heart-disease': HeartSpot };
+const spots: Record<string, typeof CycleSpot> = { endometriosis: ChairSpot, pmos: ClockSpot, 'cardiovascular-disease': HeartSpot };
 const Spot = mentalHealth ? CalmSpot : (spots[spotKey] ?? CycleSpot);
 
 // "Last reviewed" shows the date, plus the time in Sydney when one is given,

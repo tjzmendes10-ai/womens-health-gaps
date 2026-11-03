@@ -96,7 +96,7 @@ const stat = z.object({
 // Collections
 // ---------------------------------------------------------------------------
 
-/** Act 1 topics: "Dismissed as normal", "Heart disease", "Bones". */
+/** Act 1 topics: "Menstrual health", "Cardiovascular disease", "Bones", "Cancer". */
 const topics = defineCollection({
   loader: glob({ base: './src/content/topics', pattern: '*.md' }),
   schema: z.object({
