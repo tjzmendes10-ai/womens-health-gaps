@@ -1,0 +1,45 @@
+"This tab contains the top 20 leading underlying causes of death for females in 2025 by Aboriginal and Torres Strait Islander origin in NSW, Qld, SA, WA and NT. It ranges from cell A1 to K45.",,,,,,,,,,
+"Table 12.3 Underlying causes of death, Top 20 leading causes by Aboriginal and Torres Strait Islander origin, Females, NSW, Qld, SA, WA and NT, 2025 (a)(b)(c)(d)(e)",,,,,,,,,,
+"Causes of Death, Australia, 2025",,,,,,,,,,
+Cause of death and ICD-10 code (f),Aboriginal and Torres Strait Islander ,,,,Non-Indigenous,,,,Rate ratio (m),Rate difference (n)
+,no. (c),Ranking (g)(h),Rate (SDR) (i)(j)(k),Median Age (l),no. (c),Ranking (g)(h),Rate (SDR) (i)(j)(k),Median Age (l),,
+All causes,2418,..,914.5,66.6,60770,..,433.9,84.9,2.1,480.5
+Leading causes of death,,,,,,,,,,
+Diabetes (E10-E14),199,1,75.2,67.6,1747,8,12.4,84.9,6.1,62.8
+Ischaemic heart diseases (I20-I25),189,2,76.1,68.9,4155,2,28.7,88.2,2.7,47.4
+Chronic lower respiratory diseases (J40-J47),179,3,69,68.7,3154,4,22.1,81.3,3.1,46.9
+"Malignant neoplasm of trachea, bronchus and lung (C33, C34)",152,4,57,67.5,2687,5,19.5,75.8,2.9,37.5
+"Dementia, including Alzheimer's disease (F01, F03, G30, G31.0, G31.8)",128,5,71.3,84,8330,1,55.8,89.4,1.3,15.4
+"Intentional self-harm [suicide] (X60-X84, Y87.0)",96,6,21.8,31,518,29,5.4,45.8,4.1,16.5
+Cerebrovascular diseases (I60-I69),90,7,39.2,73.5,3522,3,24.4,87.1,1.6,14.8
+Diseases of the urinary system (N00-N39),73,8,31.1,71.8,1698,10,11.6,88,2.7,19.5
+Malignant neoplasms of breast (C50),65,9,22.6,65.6,2189,6,16.8,76.3,1.4,5.9
+Accidental poisoning (X40-X49),65,9,17.8,44.8,235,44,2.5,50.1,7.2,15.4
+Influenza and pneumonia (J09-J18),57,11,23.8,71.5,1452,12,10.1,89.4,2.3,13.7
+Cirrhosis and other diseases of liver (K70-K76),53,12,15.8,56.2,651,21,5.5,67.8,2.9,10.4
+"Malignant neoplasm of colon, sigmoid, rectum and anus (C18-C21, C26.0)",52,13,20.6,71.5,1802,7,13.3,80.7,1.5,7.3
+Malignant neoplasm of pancreas (C25),41,14,14.5,65.3,1260,15,9.1,77.1,1.6,5.4
+Malignant neoplasm of uterus (C53-C55),41,14,13.4,61.3,619,24,4.9,72.5,2.8,8.6
+Certain conditions originating in the perinatal period (P00-P96),39,16,5.1,0.5,160,50,2.2,0.5,2.3,2.9
+Heart failure and complications and ill-defined heart disease (I50-I51),37,17,15.4,71.5,1467,11,9.9,90.5,1.6,5.5
+"Malignant neoplasms of lymphoid, haematopoietic and related tissue (C81-C96)",36,18,15.3,72,1419,13,10,80.9,1.5,5.3
+"Accidental falls including fractures (W00-W19, X59.0)",34,19,17.2,78.5,1744,9,11.8,89.2,1.5,5.4
+Malignant neoplasm of liver and intrahepatic bile ducts (C22),33,20,11.5,65.8,593,26,4.4,75.9,2.6,7.1
+"Land transport accidents (V01-V89, Y85)",33,20,9.1,42.5,202,46,1.9,60,4.8,7.2
+Footnotes,,,,,,,,,,
+. . not applicable,,,,,,,,,,
+(a) Causes of death data for recent years is preliminary and subject to a revisions process. ,,,,,,,,,,
+(b) Data is by date of registration. ,,,,,,,,,,
+(c) Small values are randomly assigned to protect the confidentiality of individuals. Zero values have not been affected. Some totals will not equal the sum of their components. ,,,,,,,,,,
+"(d) Data is reported by usual residence for NSW, Qld, WA, SA and NT only. Data for Vic, Tas and ACT is excluded in line with national reporting guidelines.",,,,,,,,,,
+(e) Excludes data for Aboriginal and Torres Strait Islander origin not stated.,,,,,,,,,,
+(f) Causes listed are based on an update to the WHO recommended tabulation of leading causes. The ABS implemented a significant update with expanded and new groups in 2025. See the Data processing part of the methodology for more information.,,,,,,,,,,
+(g) Leading causes are ranked based on the number of deaths for Aboriginal and Torres Strait Islander people. Causes with fewer than 5 deaths are not included in rankings.,,,,,,,,,,
+"(h) Chapter XVIII: Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00-R99) is not included in analysis, due to the unspecified nature of these causes. These deaths are also likely to be heavily affected by the revisions process.",,,,,,,,,,
+"(i) Age-standardised death rates (SDRs) are per 100,000 estimated resident population as at 30 June as standardised to reflect the population age structure of a standard year. SDRs enable the comparison of death rates between populations with different age structures by relating them to a standard population. The current standard population is all persons in the Australian population at 30 June 2001. ",,,,,,,,,,
+(j) Rates based on fewer than 20 deaths have not been published as they are volatile and unreliable. These rates appear as 'np'. ,,,,,,,,,,
+(k) Rates by indigenous status use population estimates and projections based on the 2021 Census. ,,,,,,,,,,
+"(l) Median age is the age at death where half the people were older, and half were younger.",,,,,,,,,,
+(m) Rate ratio is the Aboriginal and Torres Strait Islander rate divided by the non-Indigenous rate.,,,,,,,,,,
+(n) Rate difference is the Aboriginal and Torres Strait Islander rate less the non-Indigenous rate.,,,,,,,,,,
+© Commonwealth of Australia,,,,,,,,,,

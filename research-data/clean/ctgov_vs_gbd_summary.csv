@@ -1,0 +1,10 @@
+condition,trials,participants,women_pct_all,women_pct_excl_largest,median_trial_women_pct,largest_trial_share,women_pct_DALYs,ratio_median_trial_to_burden
+Alzheimers disease and other dementias,862,414614,58.36,57.77,55.56,0.25,65.64,0.85
+Anxiety disorders,600,85473,55.55,55.55,63.01,0.13,60.93,1.03
+Depressive disorders,1277,421616,63.22,63.22,65.05,0.12,60.42,1.08
+Ischaemic heart disease,684,628413,34.94,34.94,28.47,0.08,38.84,0.73
+Low back pain,230,279013,56.54,50.75,55.35,0.86,62.54,0.89
+Migraine,290,100342,83.92,83.92,83.93,0.05,68.91,1.22
+Osteoarthritis,549,113166,61.73,61.73,60.05,0.06,61.04,0.98
+Rheumatoid arthritis,450,137482,79.36,79.36,80.12,0.03,72.12,1.11
+Stroke,636,504832,42.3,42.3,40.0,0.1,45.22,0.88

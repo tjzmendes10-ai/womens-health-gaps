@@ -1,0 +1,129 @@
+age_group,cause,deaths_male,deaths_female,deaths_persons,asdr_male,asdr_female,asdr_persons
+All persons (h),All causes,98762,89659,188421,720.4,644.8,682.3
+All persons (h),"Dementia, including Alzheimer's disease (F01, F03, G30, G31.0, G31.8)",7391,11628,19019,53.9,83.6,68.9
+All persons (h),Ischaemic heart diseases (I20-I25),10263,5965,16228,74.9,42.9,58.8
+All persons (h),Cerebrovascular diseases (I60-I69),4091,5172,9263,29.8,37.2,33.5
+All persons (h),"Malignant neoplasm of trachea, bronchus and lung (C33, C34)",5122,4012,9134,37.4,28.9,33.1
+All persons (h),Chronic lower respiratory diseases (J40-J47),4495,4560,9055,32.8,32.8,32.8
+All persons (h),Diabetes (E10-E14),3217,2671,5888,23.5,19.2,21.3
+All persons (h),"Accidental falls including fractures (W00-W19, X59.0)",2810,2709,5519,20.5,19.5,20
+All persons (h),"Malignant neoplasm of colon, sigmoid, rectum and anus (C18-C21, C26.0)",2819,2620,5439,20.6,18.8,19.7
+All persons (h),"Malignant neoplasms of lymphoid, haematopoietic and related tissue (C81-C96)",3118,2071,5189,22.7,14.9,18.8
+All persons (h),Diseases of the urinary system (N00-N39),2386,2730,5116,17.4,19.6,18.5
+Under 1 year (i),All causes,568,451,1019,3.8,3.2,3.5
+Under 1 year (i),Certain conditions originating in the perinatal period (P00-P96),335,255,590,2.2,1.8,2
+Under 1 year (i),"Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)",131,106,237,0.9,0.7,0.8
+Under 1 year (i),"Symptoms, signs and ill-defined conditions (R00-R99) (e)",52,48,100,0.3,0.3,0.3
+Under 1 year (i),Ill-defined and unknown causes of mortality (R95-R99),52,48,100,0.3,0.3,0.3
+Under 1 year (i),Accidental threats to breathing (W75-W84),4,7,11,np,—,—
+Under 1 year (i),Cardiomyopathy (I42),3,3,6,np,np,—
+1–14 years,All causes,242,183,425,10.5,8.4,9.4
+1–14 years,"Land transport accidents (V01-V89, Y85)",27,16,43,1.2,0.7,1
+1–14 years,"Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)",24,14,38,1,0.6,0.8
+1–14 years,Malignant neoplasm of brain (C71),18,15,33,0.8,0.7,0.7
+1–14 years,Accidental drowning and submersion (W65-W74),20,10,30,0.9,0.5,0.7
+1–14 years,"Intentional self-harm [suicide] (X60-X84, Y87.0)",10,18,28,0.4,0.8,0.6
+1–14 years,"Malignant neoplasms of lymphoid, haematopoietic and related tissue (C81-C96)",13,9,22,0.6,0.4,0.5
+1–14 years,Influenza and pneumonia (J09-J18),5,10,15,0.2,0.5,0.3
+1–14 years,Malignant neoplasms of soft tissue (C46-C49),5,4,9,0.2,np,0.2
+1–14 years,"Assault [homicide] (X85-Y09, Y87.1)",4,5,9,np,0.2,0.2
+1–14 years,"Epilepsy and status epilepticus (G40, G41)",5,3,8,0.2,np,0.2
+15–24 years,All causes,794,302,1096,43.6,17.8,31.1
+15–24 years,"Intentional self-harm [suicide] (X60-X84, Y87.0)",254,118,372,14,6.9,10.6
+15–24 years,"Land transport accidents (V01-V89, Y85)",171,32,203,9.4,1.9,5.8
+15–24 years,Accidental poisoning (X40-X49),57,19,76,3.1,1.1,2.2
+15–24 years,Event of undetermined intent (Y10-Y34),32,6,38,1.8,0.4,1.1
+15–24 years,"Assault [homicide] (X85-Y09, Y87.1)",25,7,32,1.4,0.4,0.9
+15–24 years,Accidental drowning and submersion (W65-W74),29,1,30,1.6,np,0.9
+15–24 years,"Malignant neoplasms of lymphoid, haematopoietic and related tissue (C81-C96)",14,9,23,0.8,0.5,0.7
+15–24 years,"Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)",14,9,23,0.8,0.5,0.7
+15–24 years,"Epilepsy and status epilepticus (G40, G41)",14,8,22,0.8,0.5,0.6
+15–24 years,Malignant neoplasm of brain (C71),11,4,15,0.6,np,0.4
+25–34 years,All causes,1371,633,2004,66.6,31.1,49
+25–34 years,"Intentional self-harm [suicide] (X60-X84, Y87.0)",440,161,601,21.4,7.9,14.7
+25–34 years,Accidental poisoning (X40-X49),173,61,234,8.4,3,5.7
+25–34 years,"Land transport accidents (V01-V89, Y85)",156,43,199,7.6,2.1,4.9
+25–34 years,Event of undetermined intent (Y10-Y34),48,16,64,2.3,0.8,1.6
+25–34 years,Ischaemic heart diseases (I20-I25),37,12,49,1.8,0.6,1.2
+25–34 years,"Assault [homicide] (X85-Y09, Y87.1)",32,9,41,1.6,0.4,1
+25–34 years,Diabetes (E10-E14),22,18,40,1.1,0.9,1
+25–34 years,"Malignant neoplasm of colon, sigmoid, rectum and anus (C18-C21, C26.0)",24,14,38,1.2,0.7,0.9
+25–34 years,Malignant neoplasm of brain (C71),25,8,33,1.2,0.4,0.8
+25–34 years,Cirrhosis and other diseases of liver (K70-K76),25,7,32,1.2,0.3,0.8
+35–44 years,All causes,2279,1309,3588,116.8,66.1,91.2
+35–44 years,"Intentional self-harm [suicide] (X60-X84, Y87.0)",481,157,638,24.6,7.9,16.2
+35–44 years,Accidental poisoning (X40-X49),283,93,376,14.5,4.7,9.6
+35–44 years,Ischaemic heart diseases (I20-I25),165,36,201,8.5,1.8,5.1
+35–44 years,Cirrhosis and other diseases of liver (K70-K76),118,73,191,6,3.7,4.9
+35–44 years,"Land transport accidents (V01-V89, Y85)",131,41,172,6.7,2.1,4.4
+35–44 years,"Malignant neoplasm of colon, sigmoid, rectum and anus (C18-C21, C26.0)",83,83,166,4.3,4.2,4.2
+35–44 years,Malignant neoplasms of breast (C50),0,104,104,—,5.3,2.6
+35–44 years,Cerebrovascular diseases (I60-I69),50,39,89,2.6,2,2.3
+35–44 years,Diabetes (E10-E14),43,39,82,2.2,2,2.1
+35–44 years,"Malignant neoplasm of trachea, bronchus and lung (C33, C34)",46,29,75,2.4,1.5,1.9
+45–54 years,All causes,4613,2668,7281,280.7,157.4,218.1
+45–54 years,Ischaemic heart diseases (I20-I25),525,104,629,31.9,6.1,18.8
+45–54 years,"Intentional self-harm [suicide] (X60-X84, Y87.0)",440,140,580,26.8,8.3,17.4
+45–54 years,Accidental poisoning (X40-X49),374,123,497,22.8,7.3,14.9
+45–54 years,Cirrhosis and other diseases of liver (K70-K76),281,154,435,17.1,9.1,13
+45–54 years,"Malignant neoplasm of colon, sigmoid, rectum and anus (C18-C21, C26.0)",204,150,354,12.4,8.9,10.6
+45–54 years,"Malignant neoplasm of trachea, bronchus and lung (C33, C34)",200,132,332,12.2,7.8,9.9
+45–54 years,Malignant neoplasms of breast (C50),2,266,268,np,15.7,8
+45–54 years,Cerebrovascular diseases (I60-I69),146,100,246,8.9,5.9,7.4
+45–54 years,Diabetes (E10-E14),143,82,225,8.7,4.8,6.7
+45–54 years,Chronic lower respiratory diseases (J40-J47),121,88,209,7.4,5.2,6.3
+55–64 years,All causes,9216,5642,14858,610.2,356.9,480.7
+55–64 years,Ischaemic heart diseases (I20-I25),1224,296,1520,81,18.7,49.2
+55–64 years,"Malignant neoplasm of trachea, bronchus and lung (C33, C34)",697,542,1239,46.1,34.3,40.1
+55–64 years,Chronic lower respiratory diseases (J40-J47),412,323,735,27.3,20.4,23.8
+55–64 years,"Malignant neoplasm of colon, sigmoid, rectum and anus (C18-C21, C26.0)",380,275,655,25.2,17.4,21.2
+55–64 years,Cirrhosis and other diseases of liver (K70-K76),403,201,604,26.7,12.7,19.5
+55–64 years,Malignant neoplasm of pancreas (C25),322,229,551,21.3,14.5,17.8
+55–64 years,Diabetes (E10-E14),344,173,517,22.8,10.9,16.7
+55–64 years,Malignant neoplasms of breast (C50),3,493,496,np,31.2,16
+55–64 years,"Intentional self-harm [suicide] (X60-X84, Y87.0)",351,127,478,23.2,8,15.5
+55–64 years,Cerebrovascular diseases (I60-I69),280,177,457,18.5,11.2,14.8
+65–74 years,All causes,17397,11893,29290,1410.3,882.7,1134.9
+65–74 years,"Malignant neoplasm of trachea, bronchus and lung (C33, C34)",1545,1246,2791,125.2,92.5,108.1
+65–74 years,Ischaemic heart diseases (I20-I25),2037,656,2693,165.1,48.7,104.3
+65–74 years,Chronic lower respiratory diseases (J40-J47),960,870,1830,77.8,64.6,70.9
+65–74 years,"Malignant neoplasms of lymphoid, haematopoietic and related tissue (C81-C96)",692,429,1121,56.1,31.8,43.4
+65–74 years,Malignant neoplasm of pancreas (C25),580,497,1077,47,36.9,41.7
+65–74 years,Cerebrovascular diseases (I60-I69),551,526,1077,44.7,39,41.7
+65–74 years,"Malignant neoplasm of colon, sigmoid, rectum and anus (C18-C21, C26.0)",607,468,1075,49.2,34.7,41.7
+65–74 years,"Dementia, including Alzheimer's disease (F01, F03, G30, G31.0, G31.8)",548,517,1065,44.4,38.4,41.3
+65–74 years,Diabetes (E10-E14),655,391,1046,53.1,29,40.5
+65–74 years,Malignant neoplasm of liver and intrahepatic bile ducts (C22),519,243,762,42.1,18,29.5
+75–84 years,All causes,29385,22995,52380,3771.4,2623.3,3163.6
+75–84 years,"Dementia, including Alzheimer's disease (F01, F03, G30, G31.0, G31.8)",2402,2751,5153,308.3,313.8,311.2
+75–84 years,Ischaemic heart diseases (I20-I25),2858,1298,4156,366.8,148.1,251
+75–84 years,Chronic lower respiratory diseases (J40-J47),1626,1614,3240,208.7,184.1,195.7
+75–84 years,"Malignant neoplasm of trachea, bronchus and lung (C33, C34)",1738,1362,3100,223.1,155.4,187.2
+75–84 years,Cerebrovascular diseases (I60-I69),1369,1299,2668,175.7,148.2,161.1
+75–84 years,"Malignant neoplasms of lymphoid, haematopoietic and related tissue (C81-C96)",1189,762,1951,152.6,86.9,117.8
+75–84 years,Diabetes (E10-E14),1024,680,1704,131.4,77.6,102.9
+75–84 years,"Malignant neoplasm of colon, sigmoid, rectum and anus (C18-C21, C26.0)",824,677,1501,105.8,77.2,90.7
+75–84 years,"Accidental falls including fractures (W00-W19, X59.0)",826,630,1456,106,71.9,87.9
+75–84 years,Diseases of the urinary system (N00-N39),742,646,1388,95.2,73.7,83.8
+85–94 years,All causes,27553,32020,59573,12193.1,10051.6,10940.3
+85–94 years,"Dementia, including Alzheimer's disease (F01, F03, G30, G31.0, G31.8)",3631,5945,9576,1606.8,1866.2,1758.6
+85–94 years,Ischaemic heart diseases (I20-I25),2796,2467,5263,1237.3,774.4,966.5
+85–94 years,Cerebrovascular diseases (I60-I69),1410,2211,3621,624,694.1,665
+85–94 years,"Accidental falls including fractures (W00-W19, X59.0)",1265,1315,2580,559.8,412.8,473.8
+85–94 years,Chronic lower respiratory diseases (J40-J47),1122,1314,2436,496.5,412.5,447.4
+85–94 years,Diseases of the urinary system (N00-N39),997,1187,2184,441.2,372.6,401.1
+85–94 years,Heart failure and complications and ill-defined heart disease (I50-I51),906,1189,2095,400.9,373.2,384.7
+85–94 years,Diabetes (E10-E14),861,1011,1872,381,317.4,343.8
+85–94 years,Influenza and pneumonia (J09-J18),838,984,1822,370.8,308.9,334.6
+85–94 years,"Malignant neoplasm of trachea, bronchus and lung (C33, C34)",834,623,1457,369.1,195.6,267.6
+95 years and over,All causes,5342,11562,16904,28512,29228.7,28998.3
+95 years and over,"Dementia, including Alzheimer's disease (F01, F03, G30, G31.0, G31.8)",720,2339,3059,3842.9,5913,5247.6
+95 years and over,Ischaemic heart diseases (I20-I25),616,1095,1711,3287.8,2768.2,2935.2
+95 years and over,Cerebrovascular diseases (I60-I69),264,801,1065,1409.1,2024.9,1827
+95 years and over,Heart failure and complications and ill-defined heart disease (I50-I51),250,537,787,1334.3,1357.5,1350.1
+95 years and over,"Accidental falls including fractures (W00-W19, X59.0)",262,516,778,1398.4,1304.4,1334.6
+95 years and over,Diseases of the urinary system (N00-N39),232,543,775,1238.3,1372.7,1329.5
+95 years and over,Influenza and pneumonia (J09-J18),269,498,767,1435.7,1258.9,1315.8
+95 years and over,Cardiac arrhythmias (I47-I49),146,419,565,779.2,1059.2,969.2
+95 years and over,Hypertensive diseases (I10-I15),131,431,562,699.2,1089.6,964.1
+95 years and over,Chronic lower respiratory diseases (J40-J47),219,317,536,1168.9,801.4,919.5

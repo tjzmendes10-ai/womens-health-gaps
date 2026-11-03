@@ -1,0 +1,1948 @@
+cause,deaths_male,deaths_female,deaths_persons,crude_rate_male,crude_rate_female,crude_rate_persons,sdr_male,sdr_female,sdr_persons,ypll_male,ypll_female,ypll_persons
+Total deaths,98762,89659,188421,720.4,644.8,682.3,581.3,418.4,495.5,641461,364331,1002710
+CHAPTER I Certain infectious and parasitic diseases (A00-B99),1611,1669,3280,11.8,12,11.9,9.3,7.5,8.3,6926,4788,11669
+Intestinal infectious diseases  (A00-A09),159,244,403,1.2,1.8,1.5,0.9,1.1,1,435,640,1082
+Cholera (A00),0,0,0,—,—,—,—,—,—,—,—,—
+Typhoid and paratyphoid fevers (A01),1,0,1,np,—,np,np,—,np,np,—,np
+Other salmonella infections (A02),1,4,5,np,np,—,np,np,np,np,np,np
+Shigellosis (A03),0,2,2,—,np,np,—,np,np,—,np,np
+Other bacterial intestinal infections (A04),41,49,90,0.3,0.4,0.3,0.2,0.2,0.2,185,141,329
+"Other bacterial foodborne intoxications, not elsewhere classified (A05)",1,1,2,np,np,np,np,np,np,—,np,np
+Amoebiasis (A06),1,0,1,np,—,np,np,—,np,np,—,np
+Other protozoal intestinal diseases (A07),0,0,0,—,—,—,—,—,—,—,—,—
+Viral and other specified intestinal infections (A08),13,11,24,0.1,0.1,0.1,np,np,0.1,np,np,67
+Other gastroenteritis and colitis of infectious and unspecified origin (A09),101,177,278,0.7,1.3,1,0.6,0.8,0.7,207,365,578
+Tuberculosis  (A15-A19),19,14,33,0.1,0.1,0.1,np,np,0.1,347,112,457
+"Respiratory tuberculosis, bacteriologically and histologically confirmed (A15)",1,1,2,np,np,np,np,np,np,np,np,np
+"Respiratory tuberculosis, not confirmed bacteriologically or histologically (A16)",13,11,24,0.1,0.1,0.1,np,np,0.1,227,51,276
+Tuberculosis of nervous system (A17),1,0,1,np,—,np,np,—,np,np,—,np
+Tuberculosis of other organs (A18),1,0,1,np,—,np,np,—,np,—,—,—
+Miliary tuberculosis (A19),3,2,5,np,np,—,np,np,np,np,np,np
+Certain zoonotic bacterial diseases  (A20-A28),22,17,39,0.2,0.1,0.1,0.1,np,0.1,165,184,348
+Plague (A20),0,0,0,—,—,—,—,—,—,—,—,—
+Tularaemia (A21),0,0,0,—,—,—,—,—,—,—,—,—
+Anthrax (A22),0,0,0,—,—,—,—,—,—,—,—,—
+Brucellosis (A23),0,0,0,—,—,—,—,—,—,—,—,—
+Glanders and melioidosis (A24),21,16,37,0.2,0.1,0.1,0.1,np,0.1,164,182,345
+Rat-bite fevers (A25),0,0,0,—,—,—,—,—,—,—,—,—
+Erysipeloid (A26),0,0,0,—,—,—,—,—,—,—,—,—
+Leptospirosis (A27),0,0,0,—,—,—,—,—,—,—,—,—
+"Other zoonotic bacterial diseases, not elsewhere classified (A28)",1,1,2,np,np,np,np,np,np,np,np,np
+Other bacterial diseases  (A30-A49),992,1031,2023,7.2,7.4,7.3,5.7,4.5,5,2857,2506,5340
+Leprosy [Hansen's disease] (A30),0,0,0,—,—,—,—,—,—,—,—,—
+Infection due to other mycobacteria (A31),17,12,29,0.1,0.1,0.1,np,np,0.1,180,np,209
+Listeriosis (A32),2,0,2,np,—,np,np,—,np,np,—,np
+Tetanus neonatorum (A33),0,0,0,—,—,—,—,—,—,—,—,—
+Obstetrical tetanus (A34),0,0,0,—,—,—,—,—,—,—,—,—
+Other tetanus (A35),0,0,0,—,—,—,—,—,—,—,—,—
+Diphtheria (A36),0,0,0,—,—,—,—,—,—,—,—,—
+Whooping cough (A37),0,5,5,—,—,—,—,np,np,—,np,np
+Scarlet fever (A38),0,0,0,—,—,—,—,—,—,—,—,—
+Meningococcal infection (A39),3,4,7,np,np,—,np,np,np,np,np,np
+Streptococcal sepsis (A40),29,23,52,0.2,0.2,0.2,0.2,0.1,0.1,114,280,395
+Other sepsis (A41),762,878,1640,5.6,6.3,5.9,4.3,3.8,4.1,1901,1674,3561
+Actinomycosis (A42),0,1,1,—,np,np,—,np,np,—,—,—
+Nocardiosis (A43),4,0,4,np,—,np,np,—,np,np,—,np
+Bartonellosis (A44),0,0,0,—,—,—,—,—,—,—,—,—
+Erysipelas (A46),1,1,2,np,np,np,np,np,np,np,—,np
+"Other bacterial diseases, not elsewhere classified (A48)",19,6,25,0.1,—,0.1,np,np,0.1,79,np,185
+Bacterial infection of unspecified site (A49),155,101,256,1.1,0.7,0.9,0.9,0.5,0.6,426,328,750
+Infections with a predominantly sexual mode of transmission  (A50-A64),2,0,2,np,—,np,np,—,np,—,—,—
+Congenital syphilis (A50),0,0,0,—,—,—,—,—,—,—,—,—
+Early syphilis (A51),0,0,0,—,—,—,—,—,—,—,—,—
+Late syphilis (A52),2,0,2,np,—,np,np,—,np,—,—,—
+Other and unspecified syphilis (A53),0,0,0,—,—,—,—,—,—,—,—,—
+Gonococcal infection (A54),0,0,0,—,—,—,—,—,—,—,—,—
+Chlamydial lymphogranuloma (venereum) (A55),0,0,0,—,—,—,—,—,—,—,—,—
+Other sexually transmitted chlamydial diseases (A56),0,0,0,—,—,—,—,—,—,—,—,—
+Chancroid (A57),0,0,0,—,—,—,—,—,—,—,—,—
+Granuloma inguinale (A58),0,0,0,—,—,—,—,—,—,—,—,—
+Trichomoniasis (A59),0,0,0,—,—,—,—,—,—,—,—,—
+Anogenital herpesviral [herpes simplex] infection (A60),0,0,0,—,—,—,—,—,—,—,—,—
+"Other predominantly sexually transmitted diseases, not elsewhere classified (A63)",0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified sexually transmitted disease (A64),0,0,0,—,—,—,—,—,—,—,—,—
+Other spirochaetal diseases  (A65-A69),0,0,0,—,—,—,—,—,—,—,—,—
+Nonvenereal syphilis (A65),0,0,0,—,—,—,—,—,—,—,—,—
+Yaws (A66),0,0,0,—,—,—,—,—,—,—,—,—
+Pinta [carate] (A67),0,0,0,—,—,—,—,—,—,—,—,—
+Relapsing fevers (A68),0,0,0,—,—,—,—,—,—,—,—,—
+Other spirochaetal infections (A69),0,0,0,—,—,—,—,—,—,—,—,—
+Other diseases caused by chlamydiae  (A70-A74),0,0,0,—,—,—,—,—,—,—,—,—
+Chlamydia psittaci infection (A70),0,0,0,—,—,—,—,—,—,—,—,—
+Trachoma (A71),0,0,0,—,—,—,—,—,—,—,—,—
+Other diseases caused by chlamydiae (A74),0,0,0,—,—,—,—,—,—,—,—,—
+Rickettsioses  (A75-A79),1,2,3,np,np,np,np,np,np,np,np,np
+Typhus fever (A75),0,0,0,—,—,—,—,—,—,—,—,—
+Spotted fever [tick-borne rickettsioses] (A77),1,1,2,np,np,np,np,np,np,np,np,np
+Q fever (A78),0,0,0,—,—,—,—,—,—,—,—,—
+Other rickettsioses (A79),0,1,1,—,np,np,—,np,np,—,—,—
+Viral infections of the central nervous system  (A80-A89),53,40,93,0.4,0.3,0.3,0.3,0.2,0.3,366,343,702
+Acute poliomyelitis (A80),0,0,0,—,—,—,—,—,—,—,—,—
+Slow virus infections of central nervous system (A81),42,33,75,0.3,0.2,0.3,0.2,0.2,0.2,284,193,475
+Rabies (A82),1,0,1,np,—,np,np,—,np,np,—,np
+Mosquito-borne viral encephalitis (A83),5,1,6,—,np,—,np,np,np,44,np,64
+Tick-borne viral encephalitis (A84),0,0,0,—,—,—,—,—,—,—,—,—
+"Other viral encephalitis, not elsewhere classified (A85)",0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified viral encephalitis (A86),5,6,11,—,—,—,np,np,np,np,np,144
+Viral meningitis (A87),0,0,0,—,—,—,—,—,—,—,—,—
+"Other viral infections of central nervous system, not elsewhere classified (A88)",0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified viral infection of central nervous system (A89),0,0,0,—,—,—,—,—,—,—,—,—
+Arthropod-borne viral fevers and viral haemorrhagic fevers (A90-A99),0,0,0,—,—,—,—,—,—,—,—,—
+Dengue fever [classical dengue] (A90),0,0,0,—,—,—,—,—,—,—,—,—
+Dengue haemorrhagic fever (A91),0,0,0,—,—,—,—,—,—,—,—,—
+Other mosquito-borne viral fevers (A92),0,0,0,—,—,—,—,—,—,—,—,—
+"Other arthropod-borne viral fevers, not elsewhere classified (A93)",0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified arthropod-borne viral fever (A94),0,0,0,—,—,—,—,—,—,—,—,—
+Yellow fever (A95),0,0,0,—,—,—,—,—,—,—,—,—
+Arenaviral haemorrhagic fever (A96),0,0,0,—,—,—,—,—,—,—,—,—
+Dengue (A97),0,0,0,—,—,—,—,—,—,—,—,—
+"Other viral haemorrhagic fevers, not elsewhere classified (A98)",0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified viral haemorrhagic fever (A99),0,0,0,—,—,—,—,—,—,—,—,—
+Viral infections characterized by skin and mucous membrane lesions (B00-B09),28,30,58,0.2,0.2,0.2,0.2,0.1,0.1,39,11,48
+Herpesviral [herpes simplex] infections (B00),9,8,17,0.1,0.1,0.1,np,np,np,31,np,37
+Varicella [chickenpox] (B01),1,1,2,np,np,np,np,np,np,—,—,—
+Zoster [herpes zoster] (B02),17,21,38,0.1,0.2,0.1,np,0.1,0.1,np,np,np
+Smallpox (B03),0,0,0,—,—,—,—,—,—,—,—,—
+Monkeypox (B04),0,0,0,—,—,—,—,—,—,—,—,—
+Measles (B05),0,0,0,—,—,—,—,—,—,—,—,—
+Rubella [German measles] (B06),0,0,0,—,—,—,—,—,—,—,—,—
+Viral warts (B07),0,0,0,—,—,—,—,—,—,—,—,—
+"Other viral infections characterized by skin and mucous membrane lesions, not elsewhere classified (B08)",1,0,1,np,—,np,np,—,np,—,—,—
+Unspecified viral infection characterized by skin and mucous membrane lesions (B09),0,0,0,—,—,—,—,—,—,—,—,—
+Viral hepatitis  (B15-B19),67,26,93,0.5,0.2,0.3,0.4,0.2,0.3,1008,350,1347
+Acute hepatitis A (B15),0,0,0,—,—,—,—,—,—,—,—,—
+Acute hepatitis B (B16),0,1,1,—,np,np,—,np,np,—,np,np
+Other acute viral hepatitis (B17),4,1,5,np,np,—,np,np,np,np,—,np
+Chronic viral hepatitis (B18),63,24,87,0.5,0.2,0.3,0.4,0.1,0.3,974,318,1280
+Unspecified viral hepatitis (B19),0,0,0,—,—,—,—,—,—,—,—,—
+Human immunodeficiency virus [HIV] disease  (B20-B24),31,7,38,0.2,0.1,0.1,0.2,np,0.1,493,157,643
+Human immunodeficiency virus [HIV] disease resulting in infectious and parasitic diseases (B20),13,3,16,0.1,np,0.1,np,np,np,221,np,304
+Human immunodeficiency virus [HIV] disease resulting in malignant neoplasms (B21),7,2,9,0.1,np,—,np,np,np,108,np,172
+Human immunodeficiency virus [HIV] disease resulting in other specified diseases (B22),2,0,2,np,—,np,np,—,np,np,—,np
+Human immunodeficiency virus [HIV] disease resulting in other conditions (B23),3,1,4,np,np,np,np,np,np,np,np,np
+Unspecified human immunodeficiency virus [HIV] disease (B24),6,1,7,—,np,—,np,np,np,np,—,np
+Other viral diseases  (B25-B34),140,165,305,1,1.2,1.1,0.8,0.7,0.8,634,124,760
+Cytomegaloviral disease (B25),0,3,3,—,np,np,—,np,np,—,np,np
+Mumps (B26),0,0,0,—,—,—,—,—,—,—,—,—
+Infectious mononucleosis (B27),2,2,4,np,np,np,np,np,np,np,np,np
+Viral conjunctivitis (B30),0,0,0,—,—,—,—,—,—,—,—,—
+"Other viral diseases, not elsewhere classified (B33)",1,1,2,np,np,np,np,np,np,np,np,np
+Viral infection of unspecified site (B34),137,159,296,1,1.1,1.1,0.8,0.7,0.7,604,109,714
+Mycoses  (B35-B49),64,35,99,0.5,0.3,0.4,0.4,0.2,0.3,388,281,662
+Dermatophytosis (B35),0,0,0,—,—,—,—,—,—,—,—,—
+Other superficial mycoses (B36),0,0,0,—,—,—,—,—,—,—,—,—
+Candidiasis (B37),16,5,21,0.1,—,0.1,np,np,0.1,48,np,47
+Coccidioidomycosis (B38),0,0,0,—,—,—,—,—,—,—,—,—
+Histoplasmosis (B39),0,0,0,—,—,—,—,—,—,—,—,—
+Blastomycosis (B40),0,0,0,—,—,—,—,—,—,—,—,—
+Paracoccidioidomycosis (B41),0,0,0,—,—,—,—,—,—,—,—,—
+Sporotrichosis (B42),0,0,0,—,—,—,—,—,—,—,—,—
+Chromomycosis and phaeomycotic abscess (B43),0,0,0,—,—,—,—,—,—,—,—,—
+Aspergillosis (B44),16,9,25,0.1,0.1,0.1,np,np,0.1,166,141,303
+Cryptococcosis (B45),9,4,13,0.1,np,—,np,np,np,85,np,129
+Zygomycosis (B46),1,1,2,np,np,np,np,np,np,np,—,np
+Mycetoma (B47),0,0,0,—,—,—,—,—,—,—,—,—
+"Other mycoses, not elsewhere classified (B48)",15,10,25,0.1,0.1,0.1,np,np,0.1,54,39,93
+Unspecified mycosis (B49),7,6,13,0.1,—,—,np,np,np,np,np,85
+Protozoal diseases  (B50-B64),1,1,2,np,np,np,np,np,np,np,np,np
+Plasmodium falciparum malaria (B50),0,0,0,—,—,—,—,—,—,—,—,—
+Plasmodium vivax malaria (B51),0,0,0,—,—,—,—,—,—,—,—,—
+Plasmodium malariae malaria (B52),0,0,0,—,—,—,—,—,—,—,—,—
+Other parasitologically confirmed malaria (B53),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified malaria (B54),0,1,1,—,np,np,—,np,np,—,np,np
+Leishmaniasis (B55),0,0,0,—,—,—,—,—,—,—,—,—
+African trypanosomiasis (B56),0,0,0,—,—,—,—,—,—,—,—,—
+Chagas' disease (B57),0,0,0,—,—,—,—,—,—,—,—,—
+Toxoplasmosis (B58),0,0,0,—,—,—,—,—,—,—,—,—
+Pneumocystosis (B59),0,0,0,—,—,—,—,—,—,—,—,—
+"Other protozoal diseases, not elsewhere classified (B60)",1,0,1,np,—,np,np,—,np,np,—,np
+Unspecified protozoal disease (B64),0,0,0,—,—,—,—,—,—,—,—,—
+Helminthiases  (B65-B83),0,0,0,—,—,—,—,—,—,—,—,—
+Schistosomiasis [bilharziasis] (B65),0,0,0,—,—,—,—,—,—,—,—,—
+Other fluke infections (B66),0,0,0,—,—,—,—,—,—,—,—,—
+Echinococcosis (B67),0,0,0,—,—,—,—,—,—,—,—,—
+Taeniasis (B68),0,0,0,—,—,—,—,—,—,—,—,—
+Cysticercosis (B69),0,0,0,—,—,—,—,—,—,—,—,—
+Diphyllobothriasis and sparganosis (B70),0,0,0,—,—,—,—,—,—,—,—,—
+Other cestode infections (B71),0,0,0,—,—,—,—,—,—,—,—,—
+Dracunculiasis (B72),0,0,0,—,—,—,—,—,—,—,—,—
+Onchocerciasis (B73),0,0,0,—,—,—,—,—,—,—,—,—
+Filariasis (B74),0,0,0,—,—,—,—,—,—,—,—,—
+Trichinellosis (B75),0,0,0,—,—,—,—,—,—,—,—,—
+Hookworm diseases (B76),0,0,0,—,—,—,—,—,—,—,—,—
+Ascariasis (B77),0,0,0,—,—,—,—,—,—,—,—,—
+Strongyloidiasis (B78),0,0,0,—,—,—,—,—,—,—,—,—
+Trichuriasis (B79),0,0,0,—,—,—,—,—,—,—,—,—
+Enterobiasis (B80),0,0,0,—,—,—,—,—,—,—,—,—
+"Other intestinal helminthiases, not elsewhere classified (B81)",0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified intestinal parasitism (B82),0,0,0,—,—,—,—,—,—,—,—,—
+Other helminthiases (B83),0,0,0,—,—,—,—,—,—,—,—,—
+"Pediculosis, acariasis and other infestations  (B85-B89)",0,2,2,—,np,np,—,np,np,—,—,—
+Pediculosis and phthiriasis (B85),0,0,0,—,—,—,—,—,—,—,—,—
+Scabies (B86),0,2,2,—,np,np,—,np,np,—,—,—
+Myiasis (B87),0,0,0,—,—,—,—,—,—,—,—,—
+Other infestations (B88),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified parasitic disease (B89),0,0,0,—,—,—,—,—,—,—,—,—
+Sequelae of infectious and parasitic diseases  (B90-B94),12,14,26,0.1,0.1,0.1,np,np,0.1,np,23,43
+Sequelae of tuberculosis (B90),0,3,3,—,np,np,—,np,np,—,np,np
+Sequelae of poliomyelitis (B91),7,6,13,0.1,—,—,np,np,np,—,np,np
+Sequelae of leprosy (B92),0,0,0,—,—,—,—,—,—,—,—,—
+Sequelae of other and unspecified infectious and parasitic diseases (B94),5,5,10,—,—,—,np,np,np,np,np,33
+"Bacterial,viral and other infectious agents (B95-B98)",0,0,0,—,—,—,—,—,—,—,—,—
+Streptococcus and staphylococcus as the cause of diseases classified to other chapters (B95),0,0,0,—,—,—,—,—,—,—,—,—
+Other bacterial agents as the cause of diseases classified to other chapters (B96),0,0,0,—,—,—,—,—,—,—,—,—
+Viral agents as the cause of diseases classified to other chapters (B97),0,0,0,—,—,—,—,—,—,—,—,—
+Other specified infectious agents as the cause of diseases classified to other chapters (B98),0,0,0,—,—,—,—,—,—,—,—,—
+Other infectious diseases  (B99),20,41,61,0.1,0.3,0.2,0.1,0.2,0.1,33,22,55
+Other and unspecified infectious diseases (B99),20,41,61,0.1,0.3,0.2,0.1,0.2,0.1,33,22,55
+CHAPTER II Neoplasms (C00-D48),29727,23512,53239,216.8,169.1,192.8,172.5,117.9,142.7,168978,140797,308901
+Malignant neoplasms  (C00-C97),28908,22900,51808,210.9,164.7,187.6,167.8,115.1,139,166334,138874,304350
+"Malignant neoplasms of lip, oral cavity and pharynx  (C00-C14)",785,309,1094,5.7,2.2,4,4.6,1.5,3,6291,1714,7891
+Malignant neoplasm of lip (C00),6,2,8,—,np,—,np,np,np,np,—,np
+Malignant neoplasm of base of tongue (C01),49,19,68,0.4,0.1,0.2,0.3,np,0.2,593,132,711
+Malignant neoplasm of other and unspecified parts of tongue (C02),130,77,207,0.9,0.6,0.7,0.8,0.4,0.6,1120,471,1575
+Malignant neoplasm of gum (C03),34,28,62,0.2,0.2,0.2,0.2,0.1,0.2,211,63,271
+Malignant neoplasm of floor of mouth (C04),11,5,16,0.1,—,0.1,np,np,np,66,np,106
+Malignant neoplasm of palate (C05),14,11,25,0.1,0.1,0.1,np,np,0.1,133,45,176
+Malignant neoplasm of other and unspecified parts of mouth (C06),67,47,114,0.5,0.3,0.4,0.4,0.2,0.3,601,209,802
+Malignant neoplasm of parotid gland (C07),70,21,91,0.5,0.2,0.3,0.4,0.1,0.2,139,np,177
+Malignant neoplasm of other and unspecified major salivary glands (C08),21,7,28,0.2,0.1,0.1,0.1,np,0.1,256,22,277
+Malignant neoplasm of tonsil (C09),92,18,110,0.7,0.1,0.4,0.5,np,0.3,685,181,850
+Malignant neoplasm of oropharynx (C10),131,34,165,1,0.2,0.6,0.8,0.2,0.5,1132,163,1270
+Malignant neoplasm of nasopharynx (C11),39,18,57,0.3,0.1,0.2,0.2,np,0.2,566,169,731
+Malignant neoplasm of pyriform sinus (C12),5,0,5,—,—,—,np,—,np,38,—,37
+Malignant neoplasm of hypopharynx (C13),49,9,58,0.4,0.1,0.2,0.3,np,0.2,355,109,456
+"Malignant neoplasm of other and ill-defined sites in the lip, oral cavity and pharynx (C14)",67,13,80,0.5,0.1,0.3,0.4,np,0.2,360,68,418
+Malignant neoplasms of digestive organs  (C15-C26),8668,6595,15263,63.2,47.4,55.3,50.9,32.8,41.4,61879,37410,98687
+Malignant neoplasm of oesophagus (C15),1003,390,1393,7.3,2.8,5,5.9,1.9,3.8,7145,1756,8763
+Malignant neoplasm of stomach (C16),784,430,1214,5.7,3.1,4.4,4.7,2.2,3.4,6713,3447,10084
+Malignant neoplasm of small intestine (C17),94,77,171,0.7,0.6,0.6,0.5,0.4,0.5,633,340,968
+Malignant neoplasm of colon (C18),690,795,1485,5,5.7,5.4,4.1,3.8,4,4833,3910,8729
+Malignant neoplasm of rectosigmoid junction (C19),1214,1006,2220,8.9,7.2,8,7.3,5.2,6.2,10429,7722,18087
+Malignant neoplasm of rectum (C20),479,287,766,3.5,2.1,2.8,2.9,1.5,2.1,4138,1972,6075
+Malignant neoplasm of anus and anal canal (C21),63,94,157,0.5,0.7,0.6,0.4,0.5,0.4,510,874,1389
+Malignant neoplasm of liver and intrahepatic bile ducts (C22),1664,916,2580,12.1,6.6,9.3,9.7,4.7,7,11945,5492,17259
+Malignant neoplasm of gallbladder (C23),69,139,208,0.5,1,0.8,0.4,0.7,0.6,302,777,1090
+Malignant neoplasm of other and unspecified parts of biliary tract (C24),86,71,157,0.6,0.5,0.6,0.5,0.3,0.4,542,255,792
+Malignant neoplasm of pancreas (C25),2037,1848,3885,14.9,13.3,14.1,11.8,9.2,10.4,12461,9123,21495
+Malignant neoplasm of other and ill-defined digestive organs (C26),485,542,1027,3.5,3.9,3.7,2.8,2.5,2.6,2229,1741,3956
+Malignant neoplasms of respiratory and intrathoracic organs  (C30-C39),5396,4086,9482,39.4,29.4,34.3,31.2,20.6,25.5,31656,22352,53749
+Malignant neoplasm of nasal cavity and middle ear (C30),10,3,13,0.1,np,—,np,np,np,111,np,163
+Malignant neoplasm of accessory sinuses (C31),37,19,56,0.3,0.1,0.2,0.2,np,0.2,377,179,549
+Malignant neoplasm of larynx (C32),189,22,211,1.4,0.2,0.8,1.1,0.1,0.6,1146,142,1262
+Malignant neoplasm of trachea (C33),2,2,4,np,np,np,np,np,np,np,np,np
+Malignant neoplasm of bronchus and lung (C34),5120,4010,9130,37.3,28.8,33.1,29.6,20.2,24.5,29745,21672,51196
+Malignant neoplasm of thymus (C37),18,14,32,0.1,0.1,0.1,np,np,0.1,210,231,439
+"Malignant neoplasm of heart, mediastinum and pleura (C38)",19,15,34,0.1,0.1,0.1,np,np,0.1,56,66,121
+Malignant neoplasm of other and ill-defined sites in the respiratory system and intrathoracic organs (C39),1,1,2,np,np,np,np,np,np,np,np,np
+Malignant neoplasms of bone and articular cartilage  (C40-C41),56,43,99,0.4,0.3,0.4,0.4,0.3,0.3,1280,970,2262
+Malignant neoplasm of bone and articular cartilage of limbs (C40),7,5,12,0.1,—,—,np,np,np,335,np,419
+Malignant neoplasm of bone and articular cartilage of other and unspecified sites (C41),49,38,87,0.4,0.3,0.3,0.3,0.2,0.3,946,891,1843
+Melanoma and other malignant neoplasms of skin  (C43-C44),1582,849,2431,11.5,6.1,8.8,9.1,4,6.3,6555,3793,10258
+Malignant melanoma of skin (C43),999,553,1552,7.3,4,5.6,5.8,2.8,4.1,4859,3336,8139
+Other malignant neoplasms of skin (C44),583,296,879,4.3,2.1,3.2,3.3,1.3,2.2,1696,458,2119
+Malignant neoplasms of mesothelial and soft tissue  (C45-C49),824,367,1191,6,2.6,4.3,4.8,1.9,3.2,3949,3243,7169
+Mesothelioma (C45),551,139,690,4,1,2.5,3.1,0.7,1.8,1248,573,1799
+Kaposi sarcoma (C46),4,1,5,np,np,—,np,np,np,np,—,np
+Malignant neoplasm of peripheral nerves and autonomic nervous system (C47),6,2,8,—,np,—,np,np,np,167,np,216
+Malignant neoplasm of retroperitoneum and peritoneum (C48),21,55,76,0.2,0.4,0.3,0.1,0.3,0.2,191,374,570
+Malignant neoplasm of other connective and soft tissue (C49),242,170,412,1.8,1.2,1.5,1.5,1,1.2,2343,2249,4583
+Malignant neoplasm of breast  (C50-C50),29,3244,3273,0.2,23.3,11.9,0.2,16.9,9.1,152,25503,26142
+Malignant neoplasm of breast (C50),29,3244,3273,0.2,23.3,11.9,0.2,16.9,9.1,152,25503,26142
+Malignant neoplasms of female genital organs  (C51-C58),1,2252,2253,np,16.2,8.2,np,11.9,6.3,np,18110,18496
+Malignant neoplasm of vulva (C51),0,102,102,—,0.7,0.4,—,0.5,0.3,—,452,463
+Malignant neoplasm of vagina (C52),0,34,34,—,0.2,0.1,—,0.2,0.1,—,230,235
+Malignant neoplasm of cervix uteri (C53),0,250,250,—,1.8,0.9,—,1.5,0.8,—,4427,4488
+Malignant neoplasm of corpus uteri (C54),0,499,499,—,3.6,1.8,—,2.6,1.4,—,3384,3462
+"Malignant neoplasm of uterus, part unspecified (C55)",0,194,194,—,1.4,0.7,—,1,0.5,—,1443,1475
+Malignant neoplasm of ovary (C56),0,1043,1043,—,7.5,3.8,—,5.4,2.9,—,7356,7514
+Malignant neoplasm of other and unspecified female genital organs (C57),0,130,130,—,0.9,0.5,—,0.7,0.4,—,818,837
+Malignant neoplasm of placenta (C58),1,0,1,np,—,np,np,—,np,np,—,np
+Malignant neoplasms of male genital organs  (C60-C63),3803,0,3803,27.7,—,13.8,21.5,—,9.6,8503,—,8245
+Malignant neoplasm of penis (C60),29,0,29,0.2,—,0.1,0.2,—,0.1,217,—,214
+Malignant neoplasm of prostate (C61),3749,0,3749,27.3,—,13.6,21.1,—,9.4,7514,—,7259
+Malignant neoplasm of testis (C62),21,0,21,0.2,—,0.1,0.2,—,0.1,710,—,711
+Malignant neoplasm of other and unspecified male genital organs (C63),4,0,4,np,—,np,np,—,np,np,—,np
+Malignant neoplasms of urinary tract  (C64-C68),1906,873,2779,13.9,6.3,10.1,11,4.1,7.3,8975,3393,12209
+"Malignant neoplasm of kidney, except renal pelvis (C64)",623,324,947,4.5,2.3,3.4,3.7,1.6,2.6,4532,1798,6254
+Malignant neoplasm of renal pelvis (C65),7,2,9,0.1,np,—,np,np,np,np,np,np
+Malignant neoplasm of ureter (C66),12,13,25,0.1,0.1,0.1,np,np,0.1,30,np,42
+Malignant neoplasm of bladder (C67),798,325,1123,5.8,2.3,4.1,4.5,1.5,2.8,2249,831,3038
+Malignant neoplasm of other and unspecified urinary organs (C68),466,209,675,3.4,1.5,2.4,2.7,1,1.8,2160,738,2859
+"Malignant neoplasms of eye, brain and other parts of central nervous system (C69-C72)",1063,696,1759,7.8,5,6.4,6.5,3.9,5.1,13883,8346,22176
+Malignant neoplasm of eye and adnexa (C69),34,29,63,0.2,0.2,0.2,0.2,0.1,0.2,277,83,357
+Malignant neoplasm of meninges (C70),5,3,8,—,np,—,np,np,np,np,np,np
+Malignant neoplasm of brain (C71),1010,660,1670,7.4,4.7,6,6.2,3.7,4.9,13208,8247,21399
+"Malignant neoplasm of spinal cord, cranial nerves and other parts of central nervous system (C72)",14,4,18,0.1,np,0.1,np,np,np,376,—,382
+Malignant neoplasms of thyroid and other endocrine glands  (C73-C75),95,112,207,0.7,0.8,0.7,0.6,0.6,0.6,1629,708,2367
+Malignant neoplasm of thyroid gland (C73),69,88,157,0.5,0.6,0.6,0.4,0.4,0.4,384,313,694
+Malignant neoplasm of adrenal gland (C74),20,19,39,0.1,0.1,0.1,0.1,np,0.1,1078,309,1414
+Malignant neoplasm of other endocrine glands and related structures (C75),6,5,11,—,—,—,np,np,np,np,np,258
+"Malignant neoplasms of ill-defined, secondary and unspecified sites (C76-C80)",1582,1403,2985,11.5,10.1,10.8,9.1,6.6,7.7,6905,5298,12148
+Malignant neoplasm of other and ill-defined sites (C76),81,88,169,0.6,0.6,0.6,0.5,0.4,0.4,303,336,633
+Secondary and unspecified malignant neoplasm of lymph nodes (C77),0,0,0,—,—,—,—,—,—,—,—,—
+Secondary malignant neoplasm of respiratory and digestive organs (C78),0,0,0,—,—,—,—,—,—,—,—,—
+Secondary malignant neoplasm of other and unspecified sites (C79),0,0,0,—,—,—,—,—,—,—,—,—
+"Malignant neoplasm, without specification of site (C80)",1501,1315,2816,10.9,9.5,10.2,8.6,6.2,7.3,6603,4962,11515
+"Malignant neoplasms, stated or presumed to be primary, of lymphoid, haematopoietic and related tissue (C81-C96)",3118,2071,5189,22.7,14.9,18.8,18,9.9,13.6,14654,8035,22551
+Hodgkin lymphoma (C81),48,45,93,0.4,0.3,0.3,0.3,0.2,0.2,364,158,524
+Follicular lymphoma (C82),54,37,91,0.4,0.3,0.3,0.3,0.2,0.2,169,87,253
+Non-follicular lymphoma (C83),453,240,693,3.3,1.7,2.5,2.6,1.2,1.8,1930,1061,2967
+Mature T/NK-cell lymphomas (C84),104,42,146,0.8,0.3,0.5,0.6,0.2,0.4,745,348,1082
+Other and unspecified types of non-Hodgkin lymphoma (C85),432,330,762,3.2,2.4,2.8,2.5,1.5,1.9,1521,810,2305
+Other specified types of T/NK-cell lymphoma (C86),21,17,38,0.2,0.1,0.1,0.1,np,0.1,129,177,303
+Malignant immunoproliferative diseases (C88),37,18,55,0.3,0.1,0.2,0.2,np,0.1,22,np,35
+Multiple myeloma and malignant plasma cell neoplasms (C90),587,450,1037,4.3,3.2,3.8,3.4,2.1,2.7,2187,1171,3334
+Lymphoid leukaemia (C91),302,189,491,2.2,1.4,1.8,1.8,0.9,1.3,1784,1161,2938
+Myeloid leukaemia (C92),857,563,1420,6.3,4,5.1,5,2.8,3.8,4847,2809,7613
+Monocytic leukaemia (C93),118,61,179,0.9,0.4,0.6,0.7,0.3,0.4,267,86,348
+Other leukaemias of specified cell type (C94),9,3,12,0.1,np,—,np,np,np,63,np,74
+Leukaemia of unspecified cell type (C95),65,49,114,0.5,0.4,0.4,0.4,0.2,0.3,517,59,585
+"Other and unspecified malignant neoplasms of lymphoid, haematopoietic and related tissue (C96)",31,27,58,0.2,0.2,0.2,0.2,0.1,0.1,109,82,190
+Malignant neoplasms of independent (primary) multiple sites  (C97-C97),0,0,0,—,—,—,—,—,—,—,—,—
+Malignant neoplasms of independent (primary) multiple sites (C97),0,0,0,—,—,—,—,—,—,—,—,—
+Other Neoplasms (D00-D48),819,612,1431,6,4.4,5.2,4.7,2.8,3.7,2644,1923,4552
+In situ neoplasms (D00-D09),0,0,0,—,—,—,—,—,—,—,—,—
+"Carcinoma in situ of oral cavity, oesophagus and stomach (D00)",0,0,0,—,—,—,—,—,—,—,—,—
+Carcinoma in situ of other and unspecified digestive organs (D01),0,0,0,—,—,—,—,—,—,—,—,—
+Carcinoma in situ of middle ear and respiratory system (D02),0,0,0,—,—,—,—,—,—,—,—,—
+Melanoma in situ (D03),0,0,0,—,—,—,—,—,—,—,—,—
+Carcinoma in situ of skin (D04),0,0,0,—,—,—,—,—,—,—,—,—
+Carcinoma in situ of breast (D05),0,0,0,—,—,—,—,—,—,—,—,—
+Carcinoma in situ of cervix uteri (D06),0,0,0,—,—,—,—,—,—,—,—,—
+Carcinoma in situ of other and unspecified genital organs (D07),0,0,0,—,—,—,—,—,—,—,—,—
+Carcinoma in situ of other and unspecified sites (D09),0,0,0,—,—,—,—,—,—,—,—,—
+Benign neoplasms (D10-D36),80,101,181,0.6,0.7,0.7,0.5,0.5,0.5,332,748,1080
+Benign neoplasm of mouth and pharynx (D10),0,0,0,—,—,—,—,—,—,—,—,—
+Benign neoplasm of major salivary glands (D11),0,1,1,—,np,np,—,np,np,—,—,—
+"Benign neoplasm of colon, rectum, anus and anal canal (D12)",0,2,2,—,np,np,—,np,np,—,—,—
+Benign neoplasm of other and ill-defined parts of digestive system (D13),1,4,5,np,np,—,np,np,np,—,np,np
+Benign neoplasm of middle ear and respiratory system (D14),1,0,1,np,—,np,np,—,np,—,—,—
+Benign neoplasm of other and unspecified intrathoracic organs (D15),1,2,3,np,np,np,np,np,np,np,np,np
+Benign neoplasm of bone and articular cartilage (D16),0,0,0,—,—,—,—,—,—,—,—,—
+Benign lipomatous neoplasm (D17),0,1,1,—,np,np,—,np,np,—,—,—
+"Haemangioma and lymphangioma, any site (D18)",9,4,13,0.1,np,—,np,np,np,36,np,50
+Benign neoplasm of mesothelial tissue (D19),0,0,0,—,—,—,—,—,—,—,—,—
+Benign neoplasm of soft tissue of retroperitoneum and peritoneum (D20),0,0,0,—,—,—,—,—,—,—,—,—
+Other benign neoplasms of connective and other soft tissue (D21),1,1,2,np,np,np,np,np,np,np,np,np
+Melanocytic naevi (D22),0,0,0,—,—,—,—,—,—,—,—,—
+Other benign neoplasms of skin (D23),1,0,1,np,—,np,np,—,np,—,—,—
+Benign neoplasm of breast (D24),0,0,0,—,—,—,—,—,—,—,—,—
+Leiomyoma of uterus (D25),0,1,1,—,np,np,—,np,np,—,np,np
+Other benign neoplasms of uterus (D26),0,0,0,—,—,—,—,—,—,—,—,—
+Benign neoplasm of ovary (D27),0,2,2,—,np,np,—,np,np,—,np,np
+Benign neoplasm of other and unspecified female genital organs (D28),0,0,0,—,—,—,—,—,—,—,—,—
+Benign neoplasm of male genital organs (D29),1,0,1,np,—,np,np,—,np,—,—,—
+Benign neoplasm of urinary organs (D30),0,0,0,—,—,—,—,—,—,—,—,—
+Benign neoplasm of eye and adnexa (D31),0,0,0,—,—,—,—,—,—,—,—,—
+Benign neoplasm of meninges (D32),56,70,126,0.4,0.5,0.5,0.3,0.4,0.3,129,457,586
+Benign neoplasm of brain and other parts of central nervous system (D33),4,4,8,np,np,—,np,np,np,np,np,np
+Benign neoplasm of thyroid gland (D34),1,0,1,np,—,np,np,—,np,—,—,—
+Benign neoplasm of other and unspecified endocrine glands (D35),4,6,10,np,—,—,np,np,np,np,np,np
+Benign neoplasm of other and unspecified sites (D36),0,3,3,—,np,np,—,np,np,—,np,np
+Neoplasms of uncertain or unknown behaviour (D37-D48),739,511,1250,5.4,3.7,4.5,4.2,2.3,3.2,2312,1175,3471
+Neoplasm of uncertain or unknown behaviour of oral cavity and digestive organs (D37),53,62,115,0.4,0.4,0.4,0.3,0.3,0.3,120,161,282
+Neoplasm of uncertain or unknown behaviour of middle ear and respiratory and intrathoracic organs (D38),13,13,26,0.1,0.1,0.1,np,np,0.1,np,np,117
+Neoplasm of uncertain or unknown behaviour of female genital organs (D39),0,6,6,—,—,—,—,np,np,—,np,np
+Neoplasm of uncertain or unknown behaviour of male genital organs (D40),1,0,1,np,—,np,np,—,np,—,—,—
+Neoplasm of uncertain or unknown behaviour of urinary organs (D41),12,12,24,0.1,0.1,0.1,np,np,0.1,np,np,np
+Neoplasm of uncertain or unknown behaviour of meninges (D42),1,2,3,np,np,np,np,np,np,—,np,np
+Neoplasm of uncertain or unknown behaviour of brain and central nervous system (D43),62,51,113,0.5,0.4,0.4,0.4,0.3,0.3,552,226,781
+Neoplasm of uncertain or unknown behaviour of endocrine glands (D44),8,4,12,0.1,np,—,np,np,np,np,np,81
+Polycythaemia vera (D45),17,13,30,0.1,0.1,0.1,np,np,0.1,36,np,43
+Myelodysplastic syndromes (D46),342,184,526,2.5,1.3,1.9,1.9,0.8,1.3,548,370,912
+"Other neoplasms of uncertain or unknown behaviour of lymphoid, haematopoietic and related tissue (D47)",205,134,339,1.5,1,1.2,1.2,0.6,0.9,704,195,886
+Neoplasm of uncertain or unknown behaviour of other and unspecified sites (D48),25,30,55,0.2,0.2,0.2,0.2,0.1,0.1,180,121,299
+CHAPTER III Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89),302,281,583,2.2,2,2.1,1.8,1.3,1.5,2145,1538,3668
+Nutritional anaemias (D50-D53),18,28,46,0.1,0.2,0.2,np,0.1,0.1,—,np,np
+Iron deficiency anaemia (D50),13,26,39,0.1,0.2,0.1,np,0.1,0.1,—,np,np
+Vitamin B12 deficiency anaemia (D51),1,1,2,np,np,np,np,np,np,—,—,—
+Folate deficiency anaemia (D52),4,1,5,np,np,—,np,np,np,—,—,—
+Other nutritional anaemias (D53),0,0,0,—,—,—,—,—,—,—,—,—
+Haemolytic anaemias (D55-D59),12,12,24,0.1,0.1,0.1,np,np,0.1,62,np,75
+Anaemia due to enzyme disorders (D55),1,0,1,np,—,np,np,—,np,np,—,np
+Thalassaemia (D56),0,1,1,—,np,np,—,np,np,—,—,—
+Sickle-cell disorders (D57),1,1,2,np,np,np,np,np,np,np,np,np
+Other hereditary haemolytic anaemias (D58),1,2,3,np,np,np,np,np,np,—,—,—
+Acquired haemolytic anaemia (D59),9,8,17,0.1,0.1,0.1,np,np,np,np,np,22
+Aplastic and other anaemias (D60-D64),85,101,186,0.6,0.7,0.7,0.5,0.4,0.5,182,204,381
+Acquired pure red cell aplasia [erythroblastopenia] (D60),2,0,2,np,—,np,np,—,np,—,—,—
+Other aplastic anaemias (D61),35,22,57,0.3,0.2,0.2,0.2,0.1,0.1,146,51,194
+Acute posthaemorrhagic anaemia (D62),0,0,0,—,—,—,—,—,—,—,—,—
+Other anaemias (D64),48,79,127,0.4,0.6,0.5,0.3,0.3,0.3,37,153,187
+"Coagulation defects, purpura and other haemorrhagic conditions (D65-D69)",70,52,122,0.5,0.4,0.4,0.4,0.3,0.3,568,413,976
+Disseminated intravascular coagulation [defibrination syndrome] (D65),8,6,14,0.1,—,0.1,np,np,np,138,59,197
+Hereditary factor VIII deficiency (D66),5,5,10,—,—,—,np,np,np,np,np,np
+Hereditary factor IX deficiency (D67),0,0,0,—,—,—,—,—,—,—,—,—
+Other coagulation defects (D68),30,22,52,0.2,0.2,0.2,0.2,0.1,0.2,301,310,607
+Purpura and other haemorrhagic conditions (D69),27,19,46,0.2,0.1,0.2,0.2,np,0.1,73,39,111
+Other diseases of blood and blood-forming organs (D70-D77),51,36,87,0.4,0.3,0.3,0.3,0.2,0.2,484,336,822
+Agranulocytosis (D70),19,15,34,0.1,0.1,0.1,np,np,0.1,75,170,246
+Functional disorders of polymorphonuclear neutrophils (D71),1,1,2,np,np,np,np,np,np,np,np,np
+Other disorders of white blood cells (D72),2,4,6,np,np,—,np,np,np,—,np,np
+Diseases of spleen (D73),7,2,9,0.1,np,—,np,np,np,np,—,np
+Methaemoglobinaemia (D74),0,1,1,—,np,np,—,np,np,—,np,np
+Other diseases of blood and blood-forming organs (D75),8,5,13,0.1,—,—,np,np,np,44,np,48
+Other specified diseases with participation of lymphoreticular tissue and reticulohistiocytic tissue (D76),14,8,22,0.1,0.1,0.1,np,np,0.1,223,148,372
+Certain disorders involving the immune mechanism (D80-D89),66,52,118,0.5,0.4,0.4,0.4,0.3,0.3,849,564,1406
+Immunodeficiency with predominantly antibody defects (D80),4,1,5,np,np,—,np,np,np,np,—,np
+Combined immunodeficiencies (D81),2,2,4,np,np,np,np,np,np,np,np,np
+Immunodeficiency associated with other major defects (D82),2,3,5,np,np,—,np,np,np,np,np,np
+Common variable immunodeficiency (D83),2,5,7,np,—,—,np,np,np,np,68,78
+Other immunodeficiencies (D84),11,9,20,0.1,0.1,0.1,np,np,0.1,118,171,290
+Sarcoidosis (D86),36,24,60,0.3,0.2,0.2,0.2,0.1,0.2,364,104,462
+"Other disorders involving the immune mechanism, not elsewhere classified (D89)",9,8,17,0.1,0.1,0.1,np,np,np,75,np,104
+"CHAPTER IV Endocrine, nutritional and metabolic diseases (E00-E90)",4447,3985,8432,32.4,28.7,30.5,26,18.7,22.2,26330,17142,43268
+Disorders of thyroid gland (E00-E07),38,102,140,0.3,0.7,0.5,0.2,0.4,0.3,110,151,263
+Congenital iodine-deficiency syndrome (E00),0,0,0,—,—,—,—,—,—,—,—,—
+Iodine-deficiency-related thyroid disorders and allied conditions (E01),0,0,0,—,—,—,—,—,—,—,—,—
+Subclinical iodine-deficiency hypothyroidism (E02),0,0,0,—,—,—,—,—,—,—,—,—
+Other hypothyroidism (E03),20,59,79,0.1,0.4,0.3,0.1,0.2,0.2,np,np,36
+Other nontoxic goitre (E04),5,13,18,—,0.1,0.1,np,np,np,—,np,np
+Thyrotoxicosis [hyperthyroidism] (E05),12,27,39,0.1,0.2,0.1,np,0.1,0.1,94,90,185
+Thyroiditis (E06),0,1,1,—,np,np,—,np,np,—,—,—
+Other disorders of thyroid (E07),1,2,3,np,np,np,np,np,np,—,np,np
+Diabetes mellitus (E10-E14),3217,2671,5888,23.5,19.2,21.3,18.7,12.4,15.4,17415,10335,27574
+Insulin-dependent diabetes mellitus (E10),198,170,368,1.4,1.2,1.3,1.3,1,1.1,3275,2511,5771
+Non-insulin-dependent diabetes mellitus (E11),1825,1566,3391,13.3,11.3,12.3,10.6,7.2,8.8,9022,5300,14232
+Malnutrition-related diabetes mellitus (E12),2,0,2,np,—,np,np,—,np,np,—,np
+Other specified diabetes mellitus (E13),4,2,6,np,np,—,np,np,np,np,np,130
+Unspecified diabetes mellitus (E14),1188,933,2121,8.7,6.7,7.7,6.8,4.2,5.4,4988,2458,7377
+Other disorders of glucose regulation and pancreatic internal secretion (E15-E16),7,13,20,0.1,0.1,0.1,np,np,—,np,30,39
+Nondiabetic hypoglycaemic coma (E15),0,1,1,—,np,np,—,np,np,—,—,—
+Other disorders of pancreatic internal secretion (E16),7,12,19,0.1,0.1,0.1,np,np,np,np,30,39
+Disorders of other endocrine glands (E20-E35),27,54,81,0.2,0.4,0.3,0.2,0.2,0.2,227,128,355
+Hypoparathyroidism (E20),0,0,0,—,—,—,—,—,—,—,—,—
+Hyperparathyroidism and other disorders of parathyroid gland (E21),1,15,16,np,0.1,0.1,np,np,np,—,np,np
+Hyperfunction of pituitary gland (E22),3,4,7,np,np,—,np,np,np,np,np,np
+Hypofunction and other disorders of pituitary gland (E23),3,8,11,np,0.1,—,np,np,np,np,np,56
+Cushing syndrome (E24),1,3,4,np,np,np,np,np,np,—,np,np
+Adrenogenital disorders (E25),0,2,2,—,np,np,—,np,np,—,np,np
+Hyperaldosteronism (E26),3,3,6,np,np,—,np,np,np,np,np,109
+Other disorders of adrenal gland (E27),15,18,33,0.1,0.1,0.1,np,np,0.1,91,27,117
+Ovarian dysfunction (E28),0,0,0,—,—,—,—,—,—,—,—,—
+Testicular dysfunction (E29),0,0,0,—,—,—,—,—,—,—,—,—
+"Disorders of puberty, not elsewhere classified (E30)",0,0,0,—,—,—,—,—,—,—,—,—
+Polyglandular dysfunction (E31),0,0,0,—,—,—,—,—,—,—,—,—
+Diseases of thymus (E32),0,0,0,—,—,—,—,—,—,—,—,—
+Other endocrine disorders (E34),1,1,2,np,np,np,np,np,np,—,—,—
+Malnutrition (E40-E46),73,79,152,0.5,0.6,0.6,0.4,0.4,0.4,193,380,571
+Kwashiorkor (E40),0,0,0,—,—,—,—,—,—,—,—,—
+Nutritional marasmus (E41),0,0,0,—,—,—,—,—,—,—,—,—
+Marasmic kwashiorkor (E42),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified severe protein-energy malnutrition (E43),17,14,31,0.1,0.1,0.1,np,np,0.1,22,155,179
+Protein-energy malnutrition of moderate and mild degree (E44),0,0,0,—,—,—,—,—,—,—,—,—
+Retarded development following protein-energy malnutrition (E45),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified protein-energy malnutrition (E46),56,65,121,0.4,0.5,0.4,0.3,0.3,0.3,171,225,392
+Other nutritional deficiencies (E50-E64),8,16,24,0.1,0.1,0.1,np,np,0.1,np,33,53
+Vitamin A deficiency (E50),0,0,0,—,—,—,—,—,—,—,—,—
+Thiamine deficiency (E51),6,5,11,—,—,—,np,np,np,np,np,44
+Niacin deficiency [pellagra] (E52),0,0,0,—,—,—,—,—,—,—,—,—
+Deficiency of other B group vitamins (E53),1,2,3,np,np,np,np,np,np,—,np,np
+Ascorbic acid deficiency (E54),0,0,0,—,—,—,—,—,—,—,—,—
+Vitamin D deficiency (E55),0,0,0,—,—,—,—,—,—,—,—,—
+Other vitamin deficiencies (E56),0,1,1,—,np,np,—,np,np,—,—,—
+Dietary calcium deficiency (E58),0,0,0,—,—,—,—,—,—,—,—,—
+Dietary selenium deficiency (E59),0,0,0,—,—,—,—,—,—,—,—,—
+Dietary zinc deficiency (E60),0,0,0,—,—,—,—,—,—,—,—,—
+Deficiency of other nutrient elements (E61),0,4,4,—,np,np,—,np,np,—,np,np
+Other nutritional deficiencies (E63),1,3,4,np,np,np,np,np,np,—,—,—
+Sequelae of malnutrition and other nutritional deficiencies (E64),0,1,1,—,np,np,—,np,np,—,—,—
+Obesity and other hyperalimentation (E65-E68),232,211,443,1.7,1.5,1.6,1.5,1.3,1.4,4426,3302,7715
+Localized adiposity (E65),0,0,0,—,—,—,—,—,—,—,—,—
+Obesity (E66),232,211,443,1.7,1.5,1.6,1.5,1.3,1.4,4426,3302,7715
+Other hyperalimentation (E67),0,0,0,—,—,—,—,—,—,—,—,—
+Sequelae of hyperalimentation (E68),0,0,0,—,—,—,—,—,—,—,—,—
+Metabolic disorders (E70-E90),845,839,1684,6.2,6,6.1,4.9,3.8,4.3,3931,2784,6699
+Disorders of aromatic amino-acid metabolism (E70),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of branched-chain amino-acid metabolism and fatty-acid metabolism (E71),0,3,3,—,np,np,—,np,np,—,np,np
+Other disorders of amino-acid metabolism (E72),8,1,9,0.1,np,—,np,np,np,152,np,182
+Lactose intolerance (E73),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of carbohydrate metabolism (E74),0,2,2,—,np,np,—,np,np,—,np,np
+Disorders of sphingolipid metabolism and other lipid storage disorders (E75),13,9,22,0.1,0.1,0.1,np,np,0.1,564,431,996
+Disorders of glycosaminoglycan metabolism (E76),1,2,3,np,np,np,np,np,np,np,np,np
+Disorders of glycoprotein metabolism (E77),1,1,2,np,np,np,np,np,np,np,np,np
+Disorders of lipoprotein metabolism and other lipidaemias (E78),338,371,709,2.5,2.7,2.6,1.9,1.6,1.8,1264,612,1858
+Disorders of purine and pyrimidine metabolism (E79),1,0,1,np,—,np,np,—,np,np,—,np
+Disorders of porphyrin and bilirubin metabolism (E80),0,1,1,—,np,np,—,np,np,—,—,—
+Disorders of mineral metabolism (E83),31,27,58,0.2,0.2,0.2,0.2,0.1,0.1,98,44,141
+Cystic fibrosis (E84),10,8,18,0.1,0.1,0.1,np,np,np,435,324,761
+Amyloidosis (E85),259,172,431,1.9,1.2,1.6,1.5,0.8,1.1,351,279,627
+Volume depletion (E86),27,63,90,0.2,0.5,0.3,0.2,0.3,0.2,np,61,66
+"Other disorders of fluid, electrolyte and acid-base balance (E87)",120,139,259,0.9,1,0.9,0.7,0.6,0.6,473,234,705
+Other metabolic disorders (E88),36,40,76,0.3,0.3,0.3,0.2,0.2,0.2,419,509,928
+"Postprocedural endocrine and metabolic disorders, not elsewhere classified (E89)",0,0,0,—,—,—,—,—,—,—,—,—
+CHAPTER V Mental and behavioural disorders (F00-F99),5020,7575,12595,36.6,54.5,45.6,28.5,31.5,30.4,9779,5659,15328
+"Organic, including symptomatic, mental disorders (F00-F09)",4557,7293,11850,33.2,52.4,42.9,25.6,29.9,28.2,2526,2048,4553
+Vascular dementia (F01),1033,1132,2165,7.5,8.1,7.8,5.8,4.7,5.2,591,319,898
+Unspecified dementia (F03),3500,6108,9608,25.5,43.9,34.8,19.6,25,22.8,1918,1718,3628
+"Organic amnesic syndrome, not induced by alcohol and other psychoactive substances (F04)",2,0,2,np,—,np,np,—,np,np,—,np
+"Delirium, not induced by alcohol and other psychoactive substances (F05)",17,52,69,0.1,0.4,0.2,np,0.2,0.2,—,np,np
+Other mental disorders due to brain damage and dysfunction and to physical disease (F06),3,1,4,np,np,np,np,np,np,—,—,—
+"Personality and behavioural disorders due to brain disease, damage and dysfunction (F07)",2,0,2,np,—,np,np,—,np,np,—,np
+Unspecified organic or symptomatic mental disorder (F09),0,0,0,—,—,—,—,—,—,—,—,—
+Mental and behavioural disorders due to psychoactive substance use (F10-F19),380,120,500,2.8,0.9,1.8,2.5,0.8,1.6,6793,2353,9070
+Mental and behavioural disorders due to use of alcohol (F10),343,107,450,2.5,0.8,1.6,2.2,0.7,1.4,5926,1965,7823
+Mental and behavioural disorders due to use of opioids (F11),5,3,8,—,np,—,np,np,np,77,np,171
+Mental and behavioural disorders due to use of cannabinoids (F12),0,2,2,—,np,np,—,np,np,—,np,np
+Mental and behavioural disorders due to use of sedatives or hypnotics (F13),0,0,0,—,—,—,—,—,—,—,—,—
+Mental and behavioural disorders due to use of cocaine (F14),0,0,0,—,—,—,—,—,—,—,—,—
+"Mental and behavioural disorders due to use of other stimulants, including caffeine (F15)",10,1,11,0.1,np,—,np,np,np,331,np,378
+Mental and behavioural disorders due to use of hallucinogens (F16),0,0,0,—,—,—,—,—,—,—,—,—
+Mental and behavioural disorders due to use of tobacco (F17),6,1,7,—,np,—,np,np,np,np,np,np
+Mental and behavioural disorders due to use of volatile solvents (F18),0,0,0,—,—,—,—,—,—,—,—,—
+Mental and behavioural disorders due to multiple drug use and use of other psychoactive substances (F19),16,6,22,0.1,—,0.1,np,np,0.1,437,164,597
+"Schizophrenia, schizotypal and delusional disorders (F20-F29)",38,43,81,0.3,0.3,0.3,0.2,0.2,0.2,230,159,387
+Schizophrenia (F20),36,30,66,0.3,0.2,0.2,0.2,0.1,0.2,204,112,315
+Schizotypal disorder (F21),0,0,0,—,—,—,—,—,—,—,—,—
+Persistent delusional disorders (F22),0,2,2,—,np,np,—,np,np,—,—,—
+Acute and transient psychotic disorders (F23),0,0,0,—,—,—,—,—,—,—,—,—
+Induced delusional disorder (F24),0,0,0,—,—,—,—,—,—,—,—,—
+Schizoaffective disorders (F25),1,9,10,np,0.1,—,np,np,np,np,np,np
+Other nonorganic psychotic disorders (F28),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified nonorganic psychosis (F29),1,2,3,np,np,np,np,np,np,—,np,np
+Mood [affective] disorders (F30-F39),22,70,92,0.2,0.5,0.3,0.1,0.3,0.2,11,105,119
+Manic episode (F30),0,1,1,—,np,np,—,np,np,—,np,np
+Bipolar affective disorder (F31),3,11,14,np,0.1,0.1,np,np,np,np,np,np
+Depressive episode (F32),19,56,75,0.1,0.4,0.3,np,0.2,0.2,np,40,46
+Recurrent depressive disorder (F33),0,1,1,—,np,np,—,np,np,—,np,np
+Persistent mood [affective] disorders (F34),0,1,1,—,np,np,—,np,np,—,—,—
+Other mood [affective] disorders (F38),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified mood [affective] disorder (F39),0,0,0,—,—,—,—,—,—,—,—,—
+"Neurotic, stress-related and somatoform disorders (F40-F48)",5,17,22,—,0.1,0.1,np,np,0.1,np,np,np
+Phobic anxiety disorders (F40),0,0,0,—,—,—,—,—,—,—,—,—
+Other anxiety disorders (F41),2,13,15,np,0.1,0.1,np,np,np,—,np,np
+Obsessive-compulsive disorder (F42),1,0,1,np,—,np,np,—,np,np,—,np
+"Reaction to severe stress, and adjustment disorders (F43)",2,4,6,np,np,—,np,np,np,np,np,np
+Dissociative [conversion] disorders (F44),0,0,0,—,—,—,—,—,—,—,—,—
+Somatoform disorders (F45),0,0,0,—,—,—,—,—,—,—,—,—
+Other neurotic disorders (F48),0,0,0,—,—,—,—,—,—,—,—,—
+Behavioural syndromes associated with physiological disturbances and physical factors (F50-F59),1,14,15,np,0.1,0.1,np,np,np,np,379,419
+Eating disorders (F50),0,14,14,—,0.1,0.1,—,np,np,—,379,380
+Nonorganic sleep disorders (F51),0,0,0,—,—,—,—,—,—,—,—,—
+"Sexual dysfunction, not caused by organic disorder or disease (F52)",0,0,0,—,—,—,—,—,—,—,—,—
+"Mental and behavioural disorders associated with the puerperium, not elsewhere classified (F53)",0,0,0,—,—,—,—,—,—,—,—,—
+Psychological and behavioural factors associated with disorders or diseases classified elsewhere (F54),0,0,0,—,—,—,—,—,—,—,—,—
+Abuse of non-dependence-producing substances (F55),1,0,1,np,—,np,np,—,np,np,—,np
+Unspecified behavioural syndromes associated with physiological disturbances and physical factors (F59),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of adult personality and behaviour (F60-F69),0,0,0,—,—,—,—,—,—,—,—,—
+Specific personality disorders (F60),0,0,0,—,—,—,—,—,—,—,—,—
+Mixed and other personality disorders (F61),0,0,0,—,—,—,—,—,—,—,—,—
+"Enduring personality changes, not attributable to brain damage and disease (F62)",0,0,0,—,—,—,—,—,—,—,—,—
+Habit and impulse disorders (F63),0,0,0,—,—,—,—,—,—,—,—,—
+Gender identity disorders (F64),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of sexual preference (F65),0,0,0,—,—,—,—,—,—,—,—,—
+Psychological and behavioural disorders associated with sexual development and orientation (F66),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of adult personality and behaviour (F68),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified disorder of adult personality and behaviour (F69),0,0,0,—,—,—,—,—,—,—,—,—
+Mental retardation (F70-F79),16,8,24,0.1,0.1,0.1,np,np,0.1,86,104,187
+Mild mental retardation (F70),0,0,0,—,—,—,—,—,—,—,—,—
+Moderate mental retardation (F71),0,0,0,—,—,—,—,—,—,—,—,—
+Severe mental retardation (F72),0,0,0,—,—,—,—,—,—,—,—,—
+Profound mental retardation (F73),0,0,0,—,—,—,—,—,—,—,—,—
+Other mental retardation (F78),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified mental retardation (F79),16,8,24,0.1,0.1,0.1,np,np,0.1,86,104,187
+Disorders of psychological development (F80-F89),1,10,11,np,0.1,—,np,np,np,np,504,540
+Specific developmental disorders of speech and language (F80),0,0,0,—,—,—,—,—,—,—,—,—
+Specific developmental disorders of scholastic skills (F81),0,0,0,—,—,—,—,—,—,—,—,—
+Specific developmental disorder of motor function (F82),0,0,0,—,—,—,—,—,—,—,—,—
+Mixed specific developmental disorders (F83),0,0,0,—,—,—,—,—,—,—,—,—
+Pervasive developmental disorders (F84),0,10,10,—,0.1,—,—,np,np,—,504,491
+Other disorders of psychological development (F88),1,0,1,np,—,np,np,—,np,np,—,np
+Unspecified disorder of psychological development (F89),0,0,0,—,—,—,—,—,—,—,—,—
+Behavioural and emotional disorders with onset usually occurring in childhood and adolescence (F90-F98),0,0,0,—,—,—,—,—,—,—,—,—
+Hyperkinetic disorders (F90),0,0,0,—,—,—,—,—,—,—,—,—
+Conduct disorders (F91),0,0,0,—,—,—,—,—,—,—,—,—
+Mixed disorders of conduct and emotions (F92),0,0,0,—,—,—,—,—,—,—,—,—
+Emotional disorders with onset specific to childhood (F93),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of social functioning with onset specific to childhood and adolescence (F94),0,0,0,—,—,—,—,—,—,—,—,—
+Tic disorders (F95),0,0,0,—,—,—,—,—,—,—,—,—
+Other behavioural and emotional disorders with onset usually occurring in childhood and adolescence (F98),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified mental disorder (F99-F99),0,0,0,—,—,—,—,—,—,—,—,—
+"Mental disorder, not otherwise specified (F99)",0,0,0,—,—,—,—,—,—,—,—,—
+CHAPTER VI Diseases of the nervous system (G00-G99),6248,6863,13111,45.6,49.4,47.5,35.9,30.9,33.3,24096,16866,40918
+Inflammatory diseases of the central nervous system (G00-G09),67,65,132,0.5,0.5,0.5,0.4,0.4,0.4,665,749,1406
+"Bacterial meningitis, not elsewhere classified (G00)",8,8,16,0.1,0.1,0.1,np,np,np,157,60,220
+Meningitis due to other and unspecified causes (G03),3,3,6,np,np,—,np,np,np,np,np,102
+"Encephalitis, myelitis and encephalomyelitis (G04)",28,38,66,0.2,0.3,0.2,0.2,0.2,0.2,245,545,780
+Intracranial and intraspinal abscess and granuloma (G06),20,11,31,0.1,0.1,0.1,0.1,np,0.1,61,65,126
+Intracranial and intraspinal phlebitis and thrombophlebitis (G08),3,3,6,np,np,—,np,np,np,np,np,122
+Sequelae of inflammatory diseases of central nervous system (G09),5,2,7,—,np,—,np,np,np,np,np,57
+Systemic atrophies primarily affecting the central nervous system (G10-G14),527,470,997,3.8,3.4,3.6,3.1,2.5,2.8,4827,3607,8411
+Huntington disease (G10),45,45,90,0.3,0.3,0.3,0.3,0.3,0.3,667,574,1238
+Hereditary ataxia (G11),25,31,56,0.2,0.2,0.2,0.2,0.2,0.2,398,417,817
+Spinal muscular atrophy and related syndromes (G12),456,383,839,3.3,2.8,3,2.7,2,2.3,3760,2616,6353
+Postpolio syndrome (G14),1,11,12,np,0.1,—,np,np,np,np,np,np
+Extrapyramidal and movement disorders (G20-G26),1916,1203,3119,14,8.7,11.3,10.8,5.4,7.8,2962,1568,4478
+Parkinson disease (G20),1649,1000,2649,12,7.2,9.6,9.3,4.4,6.6,1851,792,2597
+Secondary parkinsonism (G21),24,7,31,0.2,0.1,0.1,0.1,np,0.1,101,np,110
+Other degenerative diseases of basal ganglia (G23),241,185,426,1.8,1.3,1.5,1.4,0.9,1.1,1010,696,1699
+Dystonia (G24),1,4,5,np,np,—,np,np,np,—,np,np
+Other extrapyramidal and movement disorders (G25),1,7,8,np,0.1,—,np,np,np,—,63,63
+Other degenerative diseases of the nervous system (G30-G32),2935,4444,7379,21.4,32,26.7,16.5,18.9,18,3420,3223,6628
+Alzheimer disease (G30),2401,4041,6442,17.5,29.1,23.3,13.5,17.1,15.5,1718,1976,3705
+"Other degenerative diseases of nervous system, not elsewhere classified (G31)",534,403,937,3.9,2.9,3.4,3,1.9,2.4,1702,1247,2923
+Demyelinating diseases of the central nervous system (G35-G37),58,128,186,0.4,0.9,0.7,0.4,0.7,0.5,683,1024,1718
+Multiple sclerosis (G35),44,119,163,0.3,0.9,0.6,0.3,0.6,0.5,509,861,1382
+Other acute disseminated demyelination (G36),4,1,5,np,np,—,np,np,np,np,np,np
+Other demyelinating diseases of central nervous system (G37),10,8,18,0.1,0.1,0.1,np,np,np,120,141,261
+Episodic and paroxysmal disorders (G40-G47),230,184,414,1.7,1.3,1.5,1.5,1,1.2,4539,2384,6930
+Epilepsy (G40),141,99,240,1,0.7,0.9,1,0.6,0.8,3744,1759,5517
+Status epilepticus (G41),30,47,77,0.2,0.3,0.3,0.2,0.2,0.2,366,338,701
+Migraine (G43),0,0,0,—,—,—,—,—,—,—,—,—
+Other headache syndromes (G44),0,0,0,—,—,—,—,—,—,—,—,—
+Transient cerebral ischaemic attacks and related syndromes (G45),10,10,20,0.1,0.1,0.1,np,np,—,np,np,np
+Sleep disorders (G47),49,28,77,0.4,0.2,0.3,0.3,0.2,0.2,395,282,675
+"Nerve, nerve root and plexus disorders (G50-G59)",4,4,8,np,np,—,np,np,np,np,—,np
+Disorders of trigeminal nerve (G50),0,1,1,—,np,np,—,np,np,—,—,—
+Facial nerve disorders (G51),1,0,1,np,—,np,np,—,np,—,—,—
+Disorders of other cranial nerves (G52),1,1,2,np,np,np,np,np,np,—,—,—
+Nerve root and plexus disorders (G54),0,0,0,—,—,—,—,—,—,—,—,—
+Mononeuropathies of upper limb (G56),0,0,0,—,—,—,—,—,—,—,—,—
+Mononeuropathies of lower limb (G57),0,0,0,—,—,—,—,—,—,—,—,—
+Other mononeuropathies (G58),2,2,4,np,np,np,np,np,np,np,—,np
+Polyneuropathies and other disorders of the peripheral nervous system (G60-G64),54,24,78,0.4,0.2,0.3,0.3,0.1,0.2,290,52,341
+Hereditary and idiopathic neuropathy (G60),8,3,11,0.1,np,—,np,np,np,53,np,51
+Inflammatory polyneuropathy (G61),21,12,33,0.2,0.1,0.1,0.1,np,0.1,87,35,125
+Other polyneuropathies (G62),25,9,34,0.2,0.1,0.1,0.1,np,0.1,151,np,165
+Other disorders of peripheral nervous system (G64),0,0,0,—,—,—,—,—,—,—,—,—
+Diseases of myoneural junction and muscle (G70-G73),139,107,246,1,0.8,0.9,0.9,0.6,0.7,1718,858,2589
+Myasthenia gravis and other myoneural disorders (G70),24,32,56,0.2,0.2,0.2,0.1,0.1,0.1,62,171,227
+Primary disorders of muscles (G71),70,40,110,0.5,0.3,0.4,0.5,0.2,0.4,1438,507,1962
+Other myopathies (G72),45,35,80,0.3,0.3,0.3,0.3,0.2,0.2,218,180,399
+Cerebral palsy and other paralytic syndromes (G80-G83),110,68,178,0.8,0.5,0.6,0.7,0.4,0.6,2966,1801,4788
+Cerebral palsy (G80),68,52,120,0.5,0.4,0.4,0.5,0.4,0.4,2500,1659,4187
+Hemiplegia (G81),4,3,7,np,np,—,np,np,np,—,np,np
+Paraplegia and tetraplegia (G82),37,10,47,0.3,0.1,0.2,0.2,np,0.1,466,136,594
+Other paralytic syndromes (G83),1,3,4,np,np,np,np,np,np,—,np,np
+Other disorders of the nervous system (G90-G99),208,166,374,1.5,1.2,1.4,1.2,0.9,1.1,1982,1600,3587
+Disorders of autonomic nervous system (G90),12,9,21,0.1,0.1,0.1,np,np,0.1,98,np,157
+Hydrocephalus (G91),41,30,71,0.3,0.2,0.3,0.2,0.1,0.2,117,135,247
+Toxic encephalopathy (G92),1,3,4,np,np,np,np,np,np,np,np,np
+Other disorders of brain (G93),121,86,207,0.9,0.6,0.7,0.8,0.5,0.6,1674,1048,2725
+Other diseases of spinal cord (G95),21,18,39,0.2,0.1,0.1,0.1,np,0.1,np,91,119
+Other disorders of central nervous system (G96),11,19,30,0.1,0.1,0.1,np,np,0.1,65,256,323
+"Postprocedural disorders of nervous system, not elsewhere classified (G97)",0,0,0,—,—,—,—,—,—,—,—,—
+"Other disorders of nervous system, not elsewhere classified (G98)",1,1,2,np,np,np,np,np,np,—,—,—
+CHAPTER VII Diseases of the eye and adnexa (H00-H59),8,7,15,0.1,0.1,0.1,np,np,np,np,—,np
+"Disorders of eyelid, lacrimal system and orbit (H00-H06)",2,1,3,np,np,np,np,np,np,—,—,—
+Hordeolum and chalazion (H00),0,0,0,—,—,—,—,—,—,—,—,—
+Other inflammation of eyelid (H01),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of eyelid (H02),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of lacrimal system (H04),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of orbit (H05),2,1,3,np,np,np,np,np,np,—,—,—
+Disorders of conjunctiva (H10-H13),0,0,0,—,—,—,—,—,—,—,—,—
+Conjunctivitis (H10),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of conjunctiva (H11),0,0,0,—,—,—,—,—,—,—,—,—
+"Disorders of sclera, cornea, iris and ciliary body (H15-H22)",1,0,1,np,—,np,np,—,np,np,—,np
+Disorders of sclera (H15),0,0,0,—,—,—,—,—,—,—,—,—
+Keratitis (H16),1,0,1,np,—,np,np,—,np,np,—,np
+Corneal scars and opacities (H17),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of cornea (H18),0,0,0,—,—,—,—,—,—,—,—,—
+Iridocyclitis (H20),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of iris and ciliary body (H21),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of lens (H25-H28),0,0,0,—,—,—,—,—,—,—,—,—
+Senile cataract (H25),0,0,0,—,—,—,—,—,—,—,—,—
+Other cataract (H26),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of lens (H27),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of choroid and retina (H30-H36),1,4,5,np,np,—,np,np,np,—,—,—
+Chorioretinal inflammation (H30),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of choroid (H31),0,0,0,—,—,—,—,—,—,—,—,—
+Retinal detachments and breaks (H33),0,0,0,—,—,—,—,—,—,—,—,—
+Retinal vascular occlusions (H34),0,0,0,—,—,—,—,—,—,—,—,—
+Other retinal disorders (H35),1,4,5,np,np,—,np,np,np,—,—,—
+Glaucoma (H40-H42),1,0,1,np,—,np,np,—,np,—,—,—
+Glaucoma (H40),1,0,1,np,—,np,np,—,np,—,—,—
+Disorders of vitreous body and globe (H43-H45),2,1,3,np,np,np,np,np,np,—,—,—
+Disorders of vitreous body (H43),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of globe (H44),2,1,3,np,np,np,np,np,np,—,—,—
+Disorders of optic nerve and visual pathways (H46-H48),1,0,1,np,—,np,np,—,np,np,—,np
+Optic neuritis (H46),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of optic [2nd] nerve and visual pathways (H47),1,0,1,np,—,np,np,—,np,np,—,np
+"Disorders of ocular muscles, binocular movement, accommodation and refraction (H49-H52)",0,0,0,—,—,—,—,—,—,—,—,—
+Paralytic strabismus (H49),0,0,0,—,—,—,—,—,—,—,—,—
+Other strabismus (H50),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of binocular movement (H51),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of refraction and accommodation (H52),0,0,0,—,—,—,—,—,—,—,—,—
+Visual disturbances and blindness (H53-H54),0,1,1,—,np,np,—,np,np,—,—,—
+Visual disturbances (H53),0,0,0,—,—,—,—,—,—,—,—,—
+Visual impairment including blindness (binocular or monocular) (H54),0,1,1,—,np,np,—,np,np,—,—,—
+Other disorders of eye and adnexa (H55-H59),0,0,0,—,—,—,—,—,—,—,—,—
+Nystagmus and other irregular eye movements (H55),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of eye and adnexa (H57),0,0,0,—,—,—,—,—,—,—,—,—
+"Postprocedural disorders of eye and adnexa, not elsewhere classified (H59)",0,0,0,—,—,—,—,—,—,—,—,—
+CHAPTER VIII Diseases of the ear and mastoid process (H60-H95),6,6,12,—,—,—,np,np,np,np,np,np
+Diseases of external ear (H60-H62),2,0,2,np,—,np,np,—,np,np,—,np
+Otitis externa (H60),2,0,2,np,—,np,np,—,np,np,—,np
+Other disorders of external ear (H61),0,0,0,—,—,—,—,—,—,—,—,—
+Diseases of middle ear and mastoid (H65-H75),3,4,7,np,np,—,np,np,np,np,np,np
+Nonsuppurative otitis media (H65),0,0,0,—,—,—,—,—,—,—,—,—
+Suppurative and unspecified otitis media (H66),3,1,4,np,np,np,np,np,np,np,—,np
+Eustachian salpingitis and obstruction (H68),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of Eustachian tube (H69),0,0,0,—,—,—,—,—,—,—,—,—
+Mastoiditis and related conditions (H70),0,3,3,—,np,np,—,np,np,—,np,np
+Cholesteatoma of middle ear (H71),0,0,0,—,—,—,—,—,—,—,—,—
+Perforation of tympanic membrane (H72),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of tympanic membrane (H73),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of middle ear and mastoid (H74),0,0,0,—,—,—,—,—,—,—,—,—
+Diseases of inner ear (H80-H83),0,0,0,—,—,—,—,—,—,—,—,—
+Otosclerosis (H80),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of vestibular function (H81),0,0,0,—,—,—,—,—,—,—,—,—
+Other diseases of inner ear (H83),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of ear (H90-H95),1,2,3,np,np,np,np,np,np,—,—,—
+Conductive and sensorineural hearing loss (H90),0,0,0,—,—,—,—,—,—,—,—,—
+Other hearing loss (H91),1,2,3,np,np,np,np,np,np,—,—,—
+Otalgia and effusion of ear (H92),0,0,0,—,—,—,—,—,—,—,—,—
+"Other disorders of ear, not elsewhere classified (H93)",0,0,0,—,—,—,—,—,—,—,—,—
+"Postprocedural disorders of ear and mastoid process, not elsewhere classified (H95)",0,0,0,—,—,—,—,—,—,—,—,—
+CHAPTER IX Diseases of the circulatory system (I00-I99),22415,20284,42699,163.5,145.9,154.6,130.3,88.9,108.7,112076,43717,154405
+Acute rheumatic fever (I00-I02),13,19,32,0.1,0.1,0.1,np,np,0.1,113,96,206
+Rheumatic fever without mention of heart involvement (I00),1,0,1,np,—,np,np,—,np,—,—,—
+Rheumatic fever with heart involvement (I01),12,19,31,0.1,0.1,0.1,np,np,0.1,113,96,206
+Rheumatic chorea (I02),0,0,0,—,—,—,—,—,—,—,—,—
+Chronic rheumatic heart diseases (I05-I09),141,234,375,1,1.7,1.4,0.8,1.1,1,1109,1324,2431
+Rheumatic mitral valve diseases (I05),57,77,134,0.4,0.6,0.5,0.3,0.4,0.4,349,386,731
+Rheumatic aortic valve diseases (I06),2,0,2,np,—,np,np,—,np,np,—,np
+Rheumatic tricuspid valve diseases (I07),20,44,64,0.1,0.3,0.2,0.1,0.2,0.2,162,76,238
+Multiple valve diseases (I08),45,70,115,0.3,0.5,0.4,0.3,0.3,0.3,292,128,421
+Other rheumatic heart diseases (I09),17,43,60,0.1,0.3,0.2,np,0.3,0.2,259,734,995
+Hypertensive diseases (I10-I15),1247,1760,3007,9.1,12.7,10.9,7.3,7.5,7.5,6172,2315,8421
+Essential (primary) hypertension (I10),323,577,900,2.4,4.1,3.3,1.9,2.4,2.2,1334,475,1792
+Hypertensive heart disease (I11),514,651,1165,3.7,4.7,4.2,3.1,2.8,3,3848,1378,5187
+Hypertensive renal disease (I12),184,268,452,1.3,1.9,1.6,1.1,1.1,1.1,528,152,670
+Hypertensive heart and renal disease (I13),226,263,489,1.6,1.9,1.8,1.3,1.1,1.2,463,310,772
+Secondary hypertension (I15),0,1,1,—,np,np,—,np,np,—,—,—
+Ischaemic heart diseases (I20-I25),10263,5965,16228,74.9,42.9,58.8,59.9,26.3,42,59054,13959,72039
+Angina pectoris (I20),13,11,24,0.1,0.1,0.1,np,np,0.1,78,np,78
+Acute myocardial infarction (I21),3260,2166,5426,23.8,15.6,19.6,19,9.5,14,17845,4125,21684
+Subsequent myocardial infarction (I22),0,0,0,—,—,—,—,—,—,—,—,—
+Certain current complications following acute myocardial infarction (I23),0,0,0,—,—,—,—,—,—,—,—,—
+Other acute ischaemic heart diseases (I24),269,202,471,2,1.5,1.7,1.6,0.9,1.2,1359,464,1799
+Chronic ischaemic heart disease (I25),6721,3586,10307,49,25.8,37.3,39.2,15.9,26.8,39772,9368,48478
+Pulmonary heart disease and diseases of pulmonary circulation (I26-I28),342,555,897,2.5,4,3.2,2,2.6,2.4,2417,2351,4771
+Pulmonary embolism (I26),168,217,385,1.2,1.6,1.4,1,1,1,1549,1191,2735
+Other pulmonary heart diseases (I27),170,337,507,1.2,2.4,1.8,1,1.6,1.3,781,1160,1950
+Other diseases of pulmonary vessels (I28),4,1,5,np,np,—,np,np,np,np,—,np
+Other forms of heart disease (I30-I52),5061,5571,10632,36.9,40.1,38.5,29.2,23.7,26.4,19979,8606,28395
+Acute pericarditis (I30),1,0,1,np,—,np,np,—,np,np,—,np
+Other diseases of pericardium (I31),78,64,142,0.6,0.5,0.5,0.5,0.3,0.4,756,171,923
+Acute and subacute endocarditis (I33),144,85,229,1.1,0.6,0.8,0.9,0.5,0.7,1424,931,2344
+Nonrheumatic mitral valve disorders (I34),106,120,226,0.8,0.9,0.8,0.6,0.5,0.6,299,141,437
+Nonrheumatic aortic valve disorders (I35),592,594,1186,4.3,4.3,4.3,3.4,2.5,2.9,1370,373,1728
+Nonrheumatic tricuspid valve disorders (I36),0,3,3,—,np,np,—,np,np,—,—,—
+Pulmonary valve disorders (I37),0,1,1,—,np,np,—,np,np,—,—,—
+"Endocarditis, valve unspecified (I38)",173,220,393,1.3,1.6,1.4,1,1,1,841,336,1168
+Acute myocarditis (I40),12,5,17,0.1,—,0.1,np,np,np,276,np,346
+Cardiomyopathy (I42),719,391,1110,5.2,2.8,4,4.4,2,3.1,8296,2942,11150
+Atrioventricular and left bundle-branch block (I44),43,66,109,0.3,0.5,0.4,0.2,0.3,0.3,73,27,99
+Other conduction disorders (I45),43,42,85,0.3,0.3,0.3,0.2,0.2,0.2,129,np,186
+Cardiac arrest (I46),8,10,18,0.1,0.1,0.1,np,np,np,58,40,98
+Paroxysmal tachycardia (I47),19,16,35,0.1,0.1,0.1,np,np,0.1,51,np,51
+Atrial fibrillation and flutter (I48),1000,1525,2525,7.3,11,9.1,5.6,6.2,6,980,574,1543
+Other cardiac arrhythmias (I49),126,115,241,0.9,0.8,0.9,0.7,0.5,0.6,734,543,1274
+Heart failure (I50),1722,2064,3786,12.6,14.8,13.7,9.7,8.5,9.1,2358,1311,3635
+Complications and ill-defined descriptions of heart disease (I51),275,250,525,2,1.8,1.9,1.6,1.1,1.4,2323,1086,3403
+Cerebrovascular diseases (I60-I69),4091,5172,9263,29.8,37.2,33.5,23.6,22.9,23.4,15975,11710,27599
+Subarachnoid haemorrhage (I60),239,358,597,1.7,2.6,2.2,1.6,1.9,1.8,4035,3705,7753
+Intracerebral haemorrhage (I61),699,761,1460,5.1,5.5,5.3,4.1,3.6,3.8,3972,2434,6380
+Other nontraumatic intracranial haemorrhage (I62),564,560,1124,4.1,4,4.1,3.3,2.6,2.9,2635,1787,4415
+Cerebral infarction (I63),749,894,1643,5.5,6.4,5.9,4.3,3.9,4.1,2398,1598,3968
+"Stroke, not specified as haemorrhage or infarction (I64)",1261,1867,3128,9.2,13.4,11.3,7.1,7.8,7.6,1815,1162,2950
+"Occlusion and stenosis of precerebral arteries, not resulting in cerebral infarction (I65)",0,0,0,—,—,—,—,—,—,—,—,—
+"Occlusion and stenosis of cerebral arteries, not resulting in cerebral infarction (I66)",0,0,0,—,—,—,—,—,—,—,—,—
+Other cerebrovascular diseases (I67),194,302,496,1.4,2.2,1.8,1.1,1.3,1.2,484,685,1166
+Sequelae of cerebrovascular disease (I69),385,430,815,2.8,3.1,3,2.2,1.8,2,636,338,967
+"Diseases of arteries, arterioles and capillaries (I70-I79)",1106,850,1956,8.1,6.1,7.1,6.4,3.8,5,5735,2105,7780
+Atherosclerosis (I70),19,21,40,0.1,0.2,0.1,np,0.1,0.1,46,np,108
+Aortic aneurysm and dissection (I71),630,421,1051,4.6,3,3.8,3.7,1.9,2.8,4063,931,4949
+Other aneurysm and dissection (I72),42,31,73,0.3,0.2,0.3,0.2,0.2,0.2,269,288,555
+Other peripheral vascular diseases (I73),314,292,606,2.3,2.1,2.2,1.8,1.2,1.5,676,327,991
+Arterial embolism and thrombosis (I74),29,13,42,0.2,0.1,0.2,0.2,np,0.1,215,np,288
+Other disorders of arteries and arterioles (I77),68,66,134,0.5,0.5,0.5,0.4,0.3,0.4,453,388,844
+Diseases of capillaries (I78),4,6,10,np,—,—,np,np,np,np,np,46
+"Diseases of veins, lymphatic vessels and lymph nodes, not elsewhere classified (I80-I89)",136,139,275,1,1,1,0.8,0.7,0.8,1496,1191,2678
+Phlebitis and thrombophlebitis (I80),84,87,171,0.6,0.6,0.6,0.5,0.5,0.5,1169,845,2006
+Portal vein thrombosis (I81),12,4,16,0.1,np,0.1,np,np,np,141,np,212
+Other venous embolism and thrombosis (I82),8,9,17,0.1,0.1,0.1,np,np,np,np,np,174
+Varicose veins of lower extremities (I83),16,14,30,0.1,0.1,0.1,np,np,0.1,45,np,97
+Haemorrhoids (I84),0,0,0,—,—,—,—,—,—,—,—,—
+Oesophageal varices (I85),4,6,10,np,—,—,np,np,np,np,np,55
+Varicose veins of other sites (I86),0,1,1,—,np,np,—,np,np,—,—,—
+Other disorders of veins (I87),5,7,12,—,0.1,—,np,np,np,np,np,np
+Nonspecific lymphadenitis (I88),0,0,0,—,—,—,—,—,—,—,—,—
+Other noninfective disorders of lymphatic vessels and lymph nodes (I89),7,11,18,0.1,0.1,0.1,np,np,np,27,96,123
+Other and unspecified disorders of the circulatory system (I95-I99),15,19,34,0.1,0.1,0.1,np,np,0.1,25,61,85
+Hypotension (I95),4,5,9,np,—,—,np,np,np,np,np,np
+"Postprocedural disorders of circulatory system, not elsewhere classified (I97)",0,0,0,—,—,—,—,—,—,—,—,—
+Other and unspecified disorders of circulatory system (I99),11,14,25,0.1,0.1,0.1,np,np,0.1,17,39,56
+CHAPTER X Diseases of the respiratory system (J00-J99),9119,8742,17861,66.5,62.9,64.7,52.2,39.9,45.5,32031,24018,55831
+Acute upper respiratory infections (J00-J06),8,8,16,0.1,0.1,0.1,np,np,np,262,np,340
+Acute nasopharyngitis [common cold] (J00),0,0,0,—,—,—,—,—,—,—,—,—
+Acute sinusitis (J01),0,1,1,—,np,np,—,np,np,—,np,np
+Acute pharyngitis (J02),0,0,0,—,—,—,—,—,—,—,—,—
+Acute tonsillitis (J03),1,1,2,np,np,np,np,np,np,np,—,np
+Acute laryngitis and tracheitis (J04),0,0,0,—,—,—,—,—,—,—,—,—
+Acute obstructive laryngitis [croup] and epiglottitis (J05),2,0,2,np,—,np,np,—,np,np,—,np
+Acute upper respiratory infections of multiple and unspecified sites (J06),5,6,11,—,—,—,np,np,np,np,—,np
+Influenza and pneumonia (J09-J18),2073,2309,4382,15.1,16.6,15.9,12,10.1,11,7707,6079,13731
+Influenza due to certain identified influenza virus (J09),1,0,1,np,—,np,np,—,np,np,—,np
+Influenza due to other identified influenza virus (J10),592,641,1233,4.3,4.6,4.5,3.5,3,3.2,3423,3107,6497
+"Influenza, virus not identified (J11)",75,112,187,0.5,0.8,0.7,0.5,0.5,0.5,649,274,928
+"Viral pneumonia, not elsewhere classified (J12)",86,118,204,0.6,0.8,0.7,0.5,0.5,0.5,310,311,616
+Pneumonia due to Streptococcus pneumoniae (J13),9,8,17,0.1,0.1,0.1,np,np,np,154,100,253
+Pneumonia due to Haemophilus influenzae (J14),3,2,5,np,np,—,np,np,np,np,—,np
+"Bacterial pneumonia, not elsewhere classified (J15)",63,38,101,0.5,0.3,0.4,0.4,0.2,0.3,501,322,824
+"Pneumonia due to other infectious organisms, not elsewhere classified (J16)",0,0,0,—,—,—,—,—,—,—,—,—
+"Pneumonia, organism unspecified (J18)",1244,1390,2634,9.1,10,9.5,7.1,5.9,6.4,2623,1965,4568
+Other acute lower respiratory infections (J20-J22),112,149,261,0.8,1.1,0.9,0.6,0.6,0.6,394,310,699
+Acute bronchitis (J20),0,5,5,—,—,—,—,np,np,—,—,—
+Acute bronchiolitis (J21),2,0,2,np,—,np,np,—,np,np,—,np
+Unspecified acute lower respiratory infection (J22),110,144,254,0.8,1,0.9,0.6,0.6,0.6,385,310,690
+Other diseases of upper respiratory tract (J30-J39),28,18,46,0.2,0.1,0.2,0.2,np,0.1,111,50,160
+Vasomotor and allergic rhinitis (J30),0,0,0,—,—,—,—,—,—,—,—,—
+"Chronic rhinitis, nasopharyngitis and pharyngitis (J31)",0,0,0,—,—,—,—,—,—,—,—,—
+Chronic sinusitis (J32),1,4,5,np,np,—,np,np,np,—,—,—
+Nasal polyp (J33),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of nose and nasal sinuses (J34),0,0,0,—,—,—,—,—,—,—,—,—
+Chronic diseases of tonsils and adenoids (J35),0,1,1,—,np,np,—,np,np,—,np,np
+Peritonsillar abscess (J36),0,1,1,—,np,np,—,np,np,—,—,—
+Chronic laryngitis and laryngotracheitis (J37),0,0,0,—,—,—,—,—,—,—,—,—
+"Diseases of vocal cords and larynx, not elsewhere classified (J38)",16,6,22,0.1,—,0.1,np,np,0.1,58,np,69
+Other diseases of upper respiratory tract (J39),11,6,17,0.1,—,0.1,np,np,np,np,np,87
+Chronic lower respiratory diseases (J40-J47),4495,4560,9055,32.8,32.8,32.8,25.8,21.5,23.5,18424,14539,32872
+"Bronchitis, not specified as acute or chronic (J40)",3,5,8,np,—,—,np,np,np,np,np,np
+Simple and mucopurulent chronic bronchitis (J41),1,0,1,np,—,np,np,—,np,—,—,—
+Unspecified chronic bronchitis (J42),2,3,5,np,np,—,np,np,np,—,—,—
+Emphysema (J43),400,273,673,2.9,2,2.4,2.3,1.3,1.8,1949,1265,3192
+Other chronic obstructive pulmonary disease (J44),3792,3655,7447,27.7,26.3,27,21.6,17.2,19.2,13904,10494,24307
+Asthma (J45),167,310,477,1.2,2.2,1.7,1,1.5,1.3,1893,2016,3926
+Status asthmaticus (J46),2,5,7,np,—,—,np,np,np,np,176,291
+Bronchiectasis (J47),128,309,437,0.9,2.2,1.6,0.7,1.4,1.1,562,586,1153
+Lung diseases due to external agents (J60-J70),1018,656,1674,7.4,4.7,6.1,5.7,2.8,4,1180,667,1830
+Coalworker's pneumoconiosis (J60),1,0,1,np,—,np,np,—,np,np,—,np
+Pneumoconiosis due to asbestos and other mineral fibres (J61),117,9,126,0.9,0.1,0.5,0.7,np,0.3,65,np,70
+Pneumoconiosis due to dust containing silica (J62),3,0,3,np,—,np,np,—,np,np,—,np
+Pneumoconiosis due to other inorganic dusts (J63),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified pneumoconiosis (J64),2,0,2,np,—,np,np,—,np,np,—,np
+Pneumoconiosis associated with tuberculosis (J65),0,0,0,—,—,—,—,—,—,—,—,—
+Airway disease due to specific organic dust (J66),0,0,0,—,—,—,—,—,—,—,—,—
+Hypersensitivity pneumonitis due to organic dust (J67),16,18,34,0.1,0.1,0.1,np,np,0.1,60,46,107
+"Respiratory conditions due to inhalation of chemicals, gases, fumes and vapours (J68)",0,1,1,—,np,np,—,np,np,—,np,np
+Pneumonitis due to solids and liquids (J69),867,621,1488,6.3,4.5,5.4,4.9,2.6,3.6,957,539,1481
+Respiratory conditions due to other external agents (J70),12,7,19,0.1,0.1,0.1,np,np,np,15,72,88
+Other respiratory diseases principally affecting the interstitium (J80-J84),1129,768,1897,8.2,5.5,6.9,6.4,3.5,4.8,2774,1487,4213
+Adult respiratory distress syndrome (J80),2,1,3,np,np,np,np,np,np,np,—,np
+Pulmonary oedema (J81),23,37,60,0.2,0.3,0.2,0.1,0.2,0.1,68,np,80
+"Pulmonary eosinophilia, not elsewhere classified (J82)",4,9,13,np,0.1,—,np,np,np,np,79,84
+Other interstitial pulmonary diseases (J84),1100,721,1821,8,5.2,6.6,6.2,3.3,4.6,2687,1396,4036
+Suppurative and necrotic conditions of lower respiratory tract (J85-J86),39,25,64,0.3,0.2,0.2,0.2,0.1,0.2,360,71,426
+Abscess of lung and mediastinum (J85),15,8,23,0.1,0.1,0.1,np,np,0.1,206,np,208
+Pyothorax (J86),24,17,41,0.2,0.1,0.1,0.1,np,0.1,153,65,218
+Other diseases of pleura (J90-J94),68,51,119,0.5,0.4,0.4,0.4,0.2,0.3,166,112,281
+"Pleural effusion, not elsewhere classified (J90)",45,37,82,0.3,0.3,0.3,0.3,0.2,0.2,39,53,92
+Pleural plaque (J92),6,1,7,—,np,—,np,np,np,np,np,np
+Pneumothorax (J93),10,9,19,0.1,0.1,0.1,np,np,np,32,45,77
+Other pleural conditions (J94),7,4,11,0.1,np,—,np,np,np,np,np,103
+Other diseases of the respiratory system (J95-J99),149,198,347,1.1,1.4,1.3,0.9,0.9,0.9,653,626,1280
+"Postprocedural respiratory disorders, not elsewhere classified (J95)",0,0,0,—,—,—,—,—,—,—,—,—
+"Respiratory failure, not elsewhere classified (J96)",29,54,83,0.2,0.4,0.3,0.2,0.2,0.2,73,68,142
+Other respiratory disorders (J98),120,144,264,0.9,1,1,0.7,0.7,0.7,580,558,1138
+CHAPTER XI Diseases of the digestive system (K00-K93),4176,3984,8160,30.5,28.7,29.5,25,18.9,21.9,33776,18664,52163
+"Diseases of oral cavity, salivary glands and jaws (K00-K14)",18,22,40,0.1,0.2,0.1,np,0.1,0.1,65,27,91
+Disorders of tooth development and eruption (K00),0,0,0,—,—,—,—,—,—,—,—,—
+Embedded and impacted teeth (K01),0,0,0,—,—,—,—,—,—,—,—,—
+Dental caries (K02),0,0,0,—,—,—,—,—,—,—,—,—
+Other diseases of hard tissues of teeth (K03),0,1,1,—,np,np,—,np,np,—,—,—
+Diseases of pulp and periapical tissues (K04),6,5,11,—,—,—,np,np,np,np,np,np
+Gingivitis and periodontal diseases (K05),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of gingiva and edentulous alveolar ridge (K06),0,0,0,—,—,—,—,—,—,—,—,—
+Dentofacial anomalies [including malocclusion] (K07),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of teeth and supporting structures (K08),1,1,2,np,np,np,np,np,np,np,np,np
+"Cysts of oral region, not elsewhere classified (K09)",0,0,0,—,—,—,—,—,—,—,—,—
+Other diseases of jaws (K10),1,0,1,np,—,np,np,—,np,—,—,—
+Diseases of salivary glands (K11),8,11,19,0.1,0.1,0.1,np,np,np,np,np,np
+Stomatitis and related lesions (K12),2,4,6,np,np,—,np,np,np,np,—,np
+Other diseases of lip and oral mucosa (K13),0,0,0,—,—,—,—,—,—,—,—,—
+Diseases of tongue (K14),0,0,0,—,—,—,—,—,—,—,—,—
+"Diseases of oesophagus, stomach and duodenum (K20-K31)",355,300,655,2.6,2.2,2.4,2.1,1.3,1.7,1938,761,2674
+Oesophagitis (K20),9,3,12,0.1,np,—,np,np,np,116,np,143
+Gastro-oesophageal reflux disease (K21),38,45,83,0.3,0.3,0.3,0.2,0.2,0.2,21,26,48
+Other diseases of oesophagus (K22),97,88,185,0.7,0.6,0.7,0.6,0.4,0.5,324,155,473
+Gastric ulcer (K25),31,29,60,0.2,0.2,0.2,0.2,0.1,0.2,238,100,335
+Duodenal ulcer (K26),99,54,153,0.7,0.4,0.6,0.6,0.2,0.4,937,246,1172
+"Peptic ulcer, site unspecified (K27)",37,28,65,0.3,0.2,0.2,0.2,0.1,0.2,204,62,264
+Gastrojejunal ulcer (K28),5,2,7,—,np,—,np,np,np,np,np,np
+Gastritis and duodenitis (K29),10,12,22,0.1,0.1,0.1,np,np,0.1,31,np,66
+Dyspepsia (K30),0,0,0,—,—,—,—,—,—,—,—,—
+Other diseases of stomach and duodenum (K31),29,39,68,0.2,0.3,0.2,0.2,0.2,0.2,54,103,157
+Diseases of appendix (K35-K38),24,20,44,0.2,0.1,0.2,0.1,0.1,0.1,310,np,337
+Acute appendicitis (K35),18,12,30,0.1,0.1,0.1,np,np,0.1,298,np,323
+Other appendicitis (K36),0,1,1,—,np,np,—,np,np,—,—,—
+Unspecified appendicitis (K37),6,6,12,—,—,—,np,np,np,np,np,np
+Other diseases of appendix (K38),0,1,1,—,np,np,—,np,np,—,—,—
+Hernia (K40-K46),150,193,343,1.1,1.4,1.2,0.9,0.8,0.9,362,269,630
+Inguinal hernia (K40),54,21,75,0.4,0.2,0.3,0.3,0.1,0.2,95,np,95
+Femoral hernia (K41),3,11,14,np,0.1,0.1,np,np,np,—,np,np
+Umbilical hernia (K42),9,6,15,0.1,—,0.1,np,np,np,np,np,np
+Ventral hernia (K43),20,36,56,0.1,0.3,0.2,0.1,0.2,0.1,79,154,236
+Diaphragmatic hernia (K44),36,87,123,0.3,0.6,0.4,0.2,0.4,0.3,107,49,155
+Other abdominal hernia (K45),0,4,4,—,np,np,—,np,np,—,np,np
+Unspecified abdominal hernia (K46),28,28,56,0.2,0.2,0.2,0.2,0.1,0.1,59,np,111
+Noninfective enteritis and colitis (K50-K52),57,82,139,0.4,0.6,0.5,0.3,0.4,0.4,274,146,419
+Crohn disease [regional enteritis] (K50),22,32,54,0.2,0.2,0.2,0.1,0.1,0.1,185,51,236
+Ulcerative colitis (K51),16,18,34,0.1,0.1,0.1,np,np,0.1,29,np,58
+Other noninfective gastroenteritis and colitis (K52),19,32,51,0.1,0.2,0.2,np,0.1,0.1,60,65,125
+Other diseases of intestines (K55-K64),939,1354,2293,6.8,9.7,8.3,5.4,6,5.7,2805,2495,5288
+Vascular disorders of intestine (K55),194,281,475,1.4,2,1.7,1.1,1.3,1.2,809,874,1679
+Paralytic ileus and intestinal obstruction without hernia (K56),464,671,1135,3.4,4.8,4.1,2.6,2.9,2.8,1061,863,1921
+Diverticular disease of intestine (K57),134,210,344,1,1.5,1.2,0.8,0.9,0.9,373,238,607
+Irritable bowel syndrome (K58),0,1,1,—,np,np,—,np,np,—,—,—
+Other functional intestinal disorders (K59),19,20,39,0.1,0.1,0.1,np,0.1,0.1,81,135,214
+Fissure and fistula of anal and rectal regions (K60),1,3,4,np,np,np,np,np,np,np,np,np
+Abscess of anal and rectal regions (K61),9,4,13,0.1,np,—,np,np,np,56,np,75
+Other diseases of anus and rectum (K62),29,37,66,0.2,0.3,0.2,0.2,0.2,0.2,53,60,113
+Other diseases of intestine (K63),88,124,212,0.6,0.9,0.8,0.5,0.6,0.5,367,280,646
+Haemorrhoids and perianal venous thrombosis (K64),1,3,4,np,np,np,np,np,np,—,np,np
+Diseases of peritoneum (K65-K67),57,33,90,0.4,0.2,0.3,0.3,0.2,0.2,300,158,454
+Peritonitis (K65),30,17,47,0.2,0.1,0.2,0.2,np,0.1,159,87,243
+Other disorders of peritoneum (K66),27,16,43,0.2,0.1,0.2,0.2,np,0.1,141,71,211
+Diseases of liver (K70-K77),1625,976,2601,11.9,7,9.4,10.4,5.6,7.9,24239,12842,36881
+Alcoholic liver disease (K70),748,341,1089,5.5,2.5,3.9,5.1,2.3,3.6,15664,7579,23123
+Toxic liver disease (K71),5,2,7,—,np,—,np,np,np,72,—,71
+"Hepatic failure, not elsewhere classified (K72)",129,103,232,0.9,0.7,0.8,0.8,0.6,0.7,1289,1068,2345
+"Chronic hepatitis, not elsewhere classified (K73)",1,0,1,np,—,np,np,—,np,—,—,—
+Fibrosis and cirrhosis of liver (K74),583,366,949,4.3,2.6,3.4,3.5,2,2.7,5913,3143,8994
+Other inflammatory liver diseases (K75),41,59,100,0.3,0.4,0.4,0.2,0.3,0.3,178,263,443
+Other diseases of liver (K76),118,105,223,0.9,0.8,0.8,0.7,0.6,0.6,1122,789,1905
+"Disorders of gallbladder, biliary tract and pancreas (K80-K87)",605,571,1176,4.4,4.1,4.3,3.5,2.6,3,2662,1517,4151
+Cholelithiasis (K80),69,73,142,0.5,0.5,0.5,0.4,0.3,0.3,122,127,250
+Cholecystitis (K81),159,159,318,1.2,1.1,1.2,0.9,0.7,0.8,261,72,328
+Other diseases of gallbladder (K82),16,15,31,0.1,0.1,0.1,np,np,0.1,77,np,96
+Other diseases of biliary tract (K83),146,154,300,1.1,1.1,1.1,0.8,0.7,0.8,421,309,731
+Acute pancreatitis (K85),170,136,306,1.2,1,1.1,1,0.7,0.8,1314,824,2121
+Other diseases of pancreas (K86),45,34,79,0.3,0.2,0.3,0.3,0.2,0.2,466,165,625
+Other diseases of the digestive system (K90-K93),346,433,779,2.5,3.1,2.8,2,1.8,1.9,821,424,1240
+Intestinal malabsorption (K90),5,13,18,—,0.1,0.1,np,np,np,np,63,114
+"Postprocedural disorders of digestive system, not elsewhere classified (K91)",0,0,0,—,—,—,—,—,—,—,—,—
+Other diseases of digestive system (K92),341,420,761,2.5,3,2.8,1.9,1.8,1.9,771,361,1126
+CHAPTER XII Diseases of the skin and subcutaneous tissue (L00-L99),340,433,773,2.5,3.1,2.8,1.9,1.9,1.9,1146,840,1985
+Infections of the skin and subcutaneous tissue (L00-L08),235,261,496,1.7,1.9,1.8,1.3,1.1,1.2,729,412,1138
+Staphylococcal scalded skin syndrome (L00),0,1,1,—,np,np,—,np,np,—,np,np
+Impetigo (L01),0,0,0,—,—,—,—,—,—,—,—,—
+"Cutaneous abscess, furuncle and carbuncle (L02)",12,9,21,0.1,0.1,0.1,np,np,0.1,33,38,70
+Cellulitis (L03),193,214,407,1.4,1.5,1.5,1.1,0.9,1,645,351,993
+Acute lymphadenitis (L04),0,0,0,—,—,—,—,—,—,—,—,—
+Pilonidal cyst (L05),0,0,0,—,—,—,—,—,—,—,—,—
+Other local infections of skin and subcutaneous tissue (L08),30,37,67,0.2,0.3,0.2,0.2,0.2,0.2,52,np,75
+Bullous disorders (L10-L14),9,15,24,0.1,0.1,0.1,np,np,0.1,np,np,np
+Pemphigus (L10),0,5,5,—,—,—,—,np,np,—,np,np
+Other acantholytic disorders (L11),0,0,0,—,—,—,—,—,—,—,—,—
+Pemphigoid (L12),8,10,18,0.1,0.1,0.1,np,np,np,np,—,np
+Other bullous disorders (L13),1,0,1,np,—,np,np,—,np,—,—,—
+Dermatitis and eczema (L20-L30),3,4,7,np,np,—,np,np,np,np,np,np
+Atopic dermatitis (L20),2,0,2,np,—,np,np,—,np,np,—,np
+Seborrhoeic dermatitis (L21),0,0,0,—,—,—,—,—,—,—,—,—
+Diaper [napkin] dermatitis (L22),0,0,0,—,—,—,—,—,—,—,—,—
+Allergic contact dermatitis (L23),0,0,0,—,—,—,—,—,—,—,—,—
+Irritant contact dermatitis (L24),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified contact dermatitis (L25),0,0,0,—,—,—,—,—,—,—,—,—
+Exfoliative dermatitis (L26),0,0,0,—,—,—,—,—,—,—,—,—
+Dermatitis due to substances taken internally (L27),0,2,2,—,np,np,—,np,np,—,—,—
+Lichen simplex chronicus and prurigo (L28),0,0,0,—,—,—,—,—,—,—,—,—
+Pruritus (L29),0,0,0,—,—,—,—,—,—,—,—,—
+Other dermatitis (L30),1,2,3,np,np,np,np,np,np,—,np,np
+Papulosquamous disorders (L40-L45),3,10,13,np,0.1,—,np,np,np,np,np,np
+Psoriasis (L40),3,10,13,np,0.1,—,np,np,np,np,np,np
+Parapsoriasis (L41),0,0,0,—,—,—,—,—,—,—,—,—
+Pityriasis rosea (L42),0,0,0,—,—,—,—,—,—,—,—,—
+Lichen planus (L43),0,0,0,—,—,—,—,—,—,—,—,—
+Other papulosquamous disorders (L44),0,0,0,—,—,—,—,—,—,—,—,—
+Urticaria and erythema (L50-L54),5,6,11,—,—,—,np,np,np,np,np,np
+Urticaria (L50),1,0,1,np,—,np,np,—,np,np,—,np
+Erythema multiforme (L51),3,4,7,np,np,—,np,np,np,np,np,np
+Erythema nodosum (L52),0,0,0,—,—,—,—,—,—,—,—,—
+Other erythematous conditions (L53),1,2,3,np,np,np,np,np,np,—,—,—
+Radiation-related disorders of the skin and subcutaneous tissue (L55-L59),0,0,0,—,—,—,—,—,—,—,—,—
+Sunburn (L55),0,0,0,—,—,—,—,—,—,—,—,—
+Other acute skin changes due to ultraviolet radiation (L56),0,0,0,—,—,—,—,—,—,—,—,—
+Skin changes due to chronic exposure to nonionizing radiation (L57),0,0,0,—,—,—,—,—,—,—,—,—
+Radiodermatitis (L58),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of skin and subcutaneous tissue related to radiation (L59),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of skin appendages (L60-L75),1,0,1,np,—,np,np,—,np,np,—,np
+Nail disorders (L60),0,0,0,—,—,—,—,—,—,—,—,—
+Alopecia areata (L63),0,0,0,—,—,—,—,—,—,—,—,—
+Androgenic alopecia (L64),0,0,0,—,—,—,—,—,—,—,—,—
+Other nonscarring hair loss (L65),0,0,0,—,—,—,—,—,—,—,—,—
+Cicatricial alopecia [scarring hair loss] (L66),0,0,0,—,—,—,—,—,—,—,—,—
+Hair colour and hair shaft abnormalities (L67),1,0,1,np,—,np,np,—,np,np,—,np
+Hypertrichosis (L68),0,0,0,—,—,—,—,—,—,—,—,—
+Acne (L70),0,0,0,—,—,—,—,—,—,—,—,—
+Rosacea (L71),0,0,0,—,—,—,—,—,—,—,—,—
+Follicular cysts of skin and subcutaneous tissue (L72),0,0,0,—,—,—,—,—,—,—,—,—
+Other follicular disorders (L73),0,0,0,—,—,—,—,—,—,—,—,—
+Eccrine sweat disorders (L74),0,0,0,—,—,—,—,—,—,—,—,—
+Apocrine sweat disorders (L75),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of the skin and subcutaneous tissue (L80-L99),84,137,221,0.6,1,0.8,0.5,0.6,0.5,272,337,612
+Vitiligo (L80),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of pigmentation (L81),0,0,0,—,—,—,—,—,—,—,—,—
+Seborrhoeic keratosis (L82),0,0,0,—,—,—,—,—,—,—,—,—
+Acanthosis nigricans (L83),0,0,0,—,—,—,—,—,—,—,—,—
+Corns and callosities (L84),0,0,0,—,—,—,—,—,—,—,—,—
+Other epidermal thickening (L85),0,0,0,—,—,—,—,—,—,—,—,—
+Transepidermal elimination disorders (L87),0,0,0,—,—,—,—,—,—,—,—,—
+Pyoderma gangrenosum (L88),0,2,2,—,np,np,—,np,np,—,—,—
+Decubitus ulcer (L89),21,47,68,0.2,0.3,0.2,0.1,0.2,0.2,66,110,178
+Atrophic disorders of skin (L90),0,1,1,—,np,np,—,np,np,—,np,np
+Hypertrophic disorders of skin (L91),0,0,0,—,—,—,—,—,—,—,—,—
+Granulomatous disorders of skin and subcutaneous tissue (L92),2,1,3,np,np,np,np,np,np,np,—,np
+Lupus erythematosus (L93),2,3,5,np,np,—,np,np,np,np,np,np
+Other localized connective tissue disorders (L94),1,0,1,np,—,np,np,—,np,np,—,np
+"Vasculitis limited to skin, not elsewhere classified (L95)",0,0,0,—,—,—,—,—,—,—,—,—
+"Ulcer of lower limb, not elsewhere classified (L97)",42,51,93,0.3,0.4,0.3,0.2,0.2,0.2,98,24,121
+"Other disorders of skin and subcutaneous tissue, not elsewhere classified (L98)",16,32,48,0.1,0.2,0.2,np,0.1,0.1,26,155,183
+CHAPTER XIII Diseases of the musculoskeletal system and connective tissue (M00-M99),664,1023,1687,4.8,7.4,6.1,3.8,4.6,4.3,2762,2886,5652
+Arthropathies (M00-M25),240,358,598,1.8,2.6,2.2,1.4,1.5,1.5,540,385,922
+Infectious arthropathies (M00-M03),103,71,174,0.8,0.5,0.6,0.6,0.3,0.4,212,89,298
+Pyogenic arthritis (M00),103,71,174,0.8,0.5,0.6,0.6,0.3,0.4,212,89,298
+Reactive arthropathies (M02),0,0,0,—,—,—,—,—,—,—,—,—
+Inflammatory polyarthropathies (M05-M14),88,182,270,0.6,1.3,1,0.5,0.8,0.7,243,238,481
+Seropositive rheumatoid arthritis (M05),5,6,11,—,—,—,np,np,np,np,np,27
+Other rheumatoid arthritis (M06),68,154,222,0.5,1.1,0.8,0.4,0.7,0.6,204,225,430
+Juvenile arthritis (M08),0,1,1,—,np,np,—,np,np,—,np,np
+Gout (M10),13,6,19,0.1,—,0.1,np,np,np,np,np,np
+Other crystal arthropathies (M11),0,2,2,—,np,np,—,np,np,—,—,—
+Other specific arthropathies (M12),0,0,0,—,—,—,—,—,—,—,—,—
+Other arthritis (M13),2,13,15,np,0.1,0.1,np,np,np,—,—,—
+Arthrosis (M15-M19),27,84,111,0.2,0.6,0.4,0.2,0.3,0.3,13,np,52
+Polyarthrosis (M15),0,1,1,—,np,np,—,np,np,—,—,—
+Coxarthrosis [arthrosis of hip] (M16),2,2,4,np,np,np,np,np,np,np,—,np
+Gonarthrosis [arthrosis of knee] (M17),1,4,5,np,np,—,np,np,np,np,np,np
+Arthrosis of first carpometacarpal joint (M18),0,0,0,—,—,—,—,—,—,—,—,—
+Other arthrosis (M19),24,77,101,0.2,0.6,0.4,0.1,0.3,0.2,np,np,40
+Other joint disorders (M20-M25),22,21,43,0.2,0.2,0.2,0.1,0.1,0.1,72,np,91
+Acquired deformities of fingers and toes (M20),0,0,0,—,—,—,—,—,—,—,—,—
+Other acquired deformities of limbs (M21),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of patella (M22),0,0,0,—,—,—,—,—,—,—,—,—
+Internal derangement of knee (M23),0,0,0,—,—,—,—,—,—,—,—,—
+Other specific joint derangements (M24),0,0,0,—,—,—,—,—,—,—,—,—
+"Other joint disorders, not elsewhere classified (M25)",22,21,43,0.2,0.2,0.2,0.1,0.1,0.1,72,np,91
+Systemic connective tissue disorders (M30-M36),88,239,327,0.6,1.7,1.2,0.5,1.2,0.9,787,1663,2475
+Polyarteritis nodosa and related conditions (M30),2,6,8,np,—,—,np,np,np,np,np,25
+Other necrotizing vasculopathies (M31),24,22,46,0.2,0.2,0.2,0.1,0.1,0.1,262,40,303
+Systemic lupus erythematosus (M32),15,37,52,0.1,0.3,0.2,np,0.2,0.1,129,330,462
+Dermatopolymyositis (M33),5,13,18,—,0.1,0.1,np,np,np,np,98,104
+Systemic sclerosis (M34),24,117,141,0.2,0.8,0.5,0.2,0.6,0.4,242,946,1202
+Other systemic involvement of connective tissue (M35),18,44,62,0.1,0.3,0.2,np,0.2,0.2,142,231,377
+Dorsopathies (M40-M54),50,73,123,0.4,0.5,0.4,0.3,0.3,0.3,216,139,353
+Deforming dorsopathies (M40-M43),6,12,18,—,0.1,0.1,np,np,np,34,19,53
+Kyphosis and lordosis (M40),0,3,3,—,np,np,—,np,np,—,np,np
+Scoliosis (M41),3,6,9,np,—,—,np,np,np,np,np,np
+Spinal osteochondrosis (M42),0,0,0,—,—,—,—,—,—,—,—,—
+Other deforming dorsopathies (M43),3,3,6,np,np,—,np,np,np,np,np,np
+Spondylopathies (M45-M49),40,54,94,0.3,0.4,0.3,0.2,0.2,0.2,151,120,270
+Ankylosing spondylitis (M45),5,3,8,—,np,—,np,np,np,np,np,44
+Other inflammatory spondylopathies (M46),29,35,64,0.2,0.3,0.2,0.2,0.2,0.2,100,85,185
+Spondylosis (M47),0,6,6,—,—,—,—,np,np,—,np,np
+Other spondylopathies (M48),6,10,16,—,0.1,0.1,np,np,np,np,np,38
+Other dorsopathies (M50-M54),4,7,11,np,0.1,—,np,np,np,np,—,np
+Cervical disc disorders (M50),0,0,0,—,—,—,—,—,—,—,—,—
+Other intervertebral disc disorders (M51),1,5,6,np,—,—,np,np,np,np,—,np
+"Other dorsopathies, not elsewhere classified (M53)",0,0,0,—,—,—,—,—,—,—,—,—
+Dorsalgia (M54),3,2,5,np,np,—,np,np,np,np,—,np
+Soft tissue disorders (M60-M79),80,87,167,0.6,0.6,0.6,0.5,0.4,0.5,648,538,1182
+Disorders of muscles (M60-M63),37,56,93,0.3,0.4,0.3,0.2,0.2,0.2,119,188,306
+Myositis (M60),9,9,18,0.1,0.1,0.1,np,np,np,59,np,113
+Calcification and ossification of muscle (M61),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of muscle (M62),28,47,75,0.2,0.3,0.3,0.2,0.2,0.2,60,134,193
+Disorders of synovium and tendon (M65-M68),0,0,0,—,—,—,—,—,—,—,—,—
+Synovitis and tenosynovitis (M65),0,0,0,—,—,—,—,—,—,—,—,—
+Spontaneous rupture of synovium and tendon (M66),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of synovium and tendon (M67),0,0,0,—,—,—,—,—,—,—,—,—
+Other soft tissue disorders (M70-M79),43,31,74,0.3,0.2,0.3,0.3,0.2,0.2,529,350,875
+"Soft tissue disorders related to use, overuse and pressure (M70)",0,0,0,—,—,—,—,—,—,—,—,—
+Other bursopathies (M71),1,0,1,np,—,np,np,—,np,np,—,np
+Fibroblastic disorders (M72),36,27,63,0.3,0.2,0.2,0.2,0.2,0.2,487,343,827
+Shoulder lesions (M75),0,0,0,—,—,—,—,—,—,—,—,—
+"Enthesopathies of lower limb, excluding foot (M76)",0,0,0,—,—,—,—,—,—,—,—,—
+Other enthesopathies (M77),0,0,0,—,—,—,—,—,—,—,—,—
+"Other soft tissue disorders, not elsewhere classified (M79)",6,4,10,—,np,—,np,np,np,np,np,np
+Osteopathies and chondropathies (M80-M94),206,264,470,1.5,1.9,1.7,1.2,1.1,1.1,571,158,719
+Disorders of bone density and structure (M80-M85),40,162,202,0.3,1.2,0.7,0.2,0.6,0.5,43,29,72
+Osteoporosis with pathological fracture (M80),16,62,78,0.1,0.4,0.3,np,0.2,0.2,24,np,33
+Osteoporosis without pathological fracture (M81),19,94,113,0.1,0.7,0.4,np,0.4,0.3,np,np,19
+Adult osteomalacia (M83),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of continuity of bone (M84),5,5,10,—,—,—,np,np,np,np,np,np
+Other disorders of bone density and structure (M85),0,1,1,—,np,np,—,np,np,—,—,—
+Other osteopathies (M86-M90),166,102,268,1.2,0.7,1,1,0.4,0.7,528,129,647
+Osteomyelitis (M86),158,94,252,1.2,0.7,0.9,0.9,0.4,0.6,485,83,559
+Osteonecrosis (M87),3,4,7,np,np,—,np,np,np,np,np,np
+Paget disease of bone [osteitis deformans] (M88),3,2,5,np,np,—,np,np,np,np,—,np
+Other disorders of bone (M89),2,2,4,np,np,np,np,np,np,np,np,np
+Chondropathies (M91-M94),0,0,0,—,—,—,—,—,—,—,—,—
+Juvenile osteochondrosis of hip and pelvis (M91),0,0,0,—,—,—,—,—,—,—,—,—
+Other juvenile osteochondrosis (M92),0,0,0,—,—,—,—,—,—,—,—,—
+Other osteochondropathies (M93),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of cartilage (M94),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of the musculoskeletal system and connective tissue (M95-M99),0,2,2,—,np,np,—,np,np,—,np,np
+Other acquired deformities of musculoskeletal system and connective tissue (M95),0,2,2,—,np,np,—,np,np,—,np,np
+"Postprocedural musculoskeletal disorders, not elsewhere classified (M96)",0,0,0,—,—,—,—,—,—,—,—,—
+"Biomechanical lesions, not elsewhere classified (M99)",0,0,0,—,—,—,—,—,—,—,—,—
+CHAPTER XIV Diseases of the genitourinary system (N00-N99),2517,2783,5300,18.4,20,19.2,14.3,12,13.1,5635,4426,10033
+Glomerular diseases (N00-N08),67,52,119,0.5,0.4,0.4,0.4,0.2,0.3,425,213,637
+Acute nephritic syndrome (N00),19,27,46,0.1,0.2,0.2,np,0.1,0.1,37,13,50
+Rapidly progressive nephritic syndrome (N01),2,0,2,np,—,np,np,—,np,np,—,np
+Recurrent and persistent haematuria (N02),20,6,26,0.1,—,0.1,0.1,np,0.1,200,78,275
+Chronic nephritic syndrome (N03),2,1,3,np,np,np,np,np,np,—,np,np
+Nephrotic syndrome (N04),9,8,17,0.1,0.1,0.1,np,np,np,np,29,128
+Unspecified nephritic syndrome (N05),15,10,25,0.1,0.1,0.1,np,np,0.1,71,87,158
+Isolated proteinuria with specified morphological lesion (N06),0,0,0,—,—,—,—,—,—,—,—,—
+"Hereditary nephropathy, not elsewhere classified (N07)",0,0,0,—,—,—,—,—,—,—,—,—
+Renal tubulo-interstitial diseases (N10-N16),80,90,170,0.6,0.6,0.6,0.5,0.4,0.4,307,316,623
+Acute tubulo-interstitial nephritis (N10),4,6,10,np,—,—,np,np,np,np,77,132
+Chronic tubulo-interstitial nephritis (N11),0,1,1,—,np,np,—,np,np,—,—,—
+"Tubulo-interstitial nephritis, not specified as acute or chronic (N12)",20,34,54,0.1,0.2,0.2,0.1,0.2,0.1,86,83,169
+Obstructive and reflux uropathy (N13),45,42,87,0.3,0.3,0.3,0.3,0.2,0.2,156,120,274
+Drug- and heavy-metal-induced tubulo-interstitial and tubular conditions (N14),8,3,11,0.1,np,—,np,np,np,np,np,np
+Other renal tubulo-interstitial diseases (N15),3,4,7,np,np,—,np,np,np,np,np,np
+Renal failure (N17-N19),1657,1739,3396,12.1,12.5,12.3,9.4,7.5,8.4,3661,2380,6017
+Acute renal failure (N17),219,246,465,1.6,1.8,1.7,1.2,1,1.1,381,304,682
+Chronic kidney disease (N18),1222,1217,2439,8.9,8.8,8.8,6.9,5.3,6,2846,1827,4658
+Unspecified kidney failure (N19),216,276,492,1.6,2,1.8,1.2,1.2,1.2,434,248,677
+Urolithiasis (N20-N23),41,46,87,0.3,0.3,0.3,0.2,0.2,0.2,105,130,237
+Calculus of kidney and ureter (N20),40,46,86,0.3,0.3,0.3,0.2,0.2,0.2,105,130,237
+Calculus of lower urinary tract (N21),1,0,1,np,—,np,np,—,np,—,—,—
+Unspecified renal colic (N23),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of kidney and ureter (N25-N29),42,33,75,0.3,0.2,0.3,0.2,0.2,0.2,188,345,528
+Disorders resulting from impaired renal tubular function (N25),1,1,2,np,np,np,np,np,np,—,np,np
+Unspecified contracted kidney (N26),8,6,14,0.1,—,0.1,np,np,np,np,np,113
+Small kidney of unknown cause (N27),0,0,0,—,—,—,—,—,—,—,—,—
+"Other disorders of kidney and ureter, not elsewhere classified (N28)",33,26,59,0.2,0.2,0.2,0.2,0.1,0.2,146,178,322
+Other diseases of urinary system (N30-N39),499,770,1269,3.6,5.5,4.6,2.8,3.3,3.1,551,744,1300
+Cystitis (N30),12,8,20,0.1,0.1,0.1,np,np,—,np,np,np
+"Neuromuscular dysfunction of bladder, not elsewhere classified (N31)",3,1,4,np,np,np,np,np,np,—,—,—
+Other disorders of bladder (N32),17,17,34,0.1,0.1,0.1,np,np,0.1,21,np,68
+Urethritis and urethral syndrome (N34),0,0,0,—,—,—,—,—,—,—,—,—
+Urethral stricture (N35),1,0,1,np,—,np,np,—,np,—,—,—
+Other disorders of urethra (N36),1,1,2,np,np,np,np,np,np,—,—,—
+Other disorders of urinary system (N39),465,743,1208,3.4,5.3,4.4,2.6,3.2,2.9,525,688,1217
+Diseases of male genital organs (N40-N51),131,0,131,1,—,0.5,0.7,—,0.3,398,—,389
+Hyperplasia of prostate (N40),85,0,85,0.6,—,0.3,0.5,—,0.2,61,—,58
+Inflammatory diseases of prostate (N41),13,0,13,0.1,—,—,np,—,np,58,—,57
+Other disorders of prostate (N42),3,0,3,np,—,np,np,—,np,np,—,np
+Hydrocele and spermatocele (N43),0,0,0,—,—,—,—,—,—,—,—,—
+Torsion of testis (N44),0,0,0,—,—,—,—,—,—,—,—,—
+Orchitis and epididymitis (N45),4,0,4,np,—,np,np,—,np,np,—,np
+Male infertility (N46),0,0,0,—,—,—,—,—,—,—,—,—
+"Redundant prepuce, phimosis and paraphimosis (N47)",0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of penis (N48),3,0,3,np,—,np,np,—,np,np,—,np
+"Inflammatory disorders of male genital organs, not elsewhere classified (N49)",22,0,22,0.2,—,0.1,0.1,—,0.1,179,—,175
+Other disorders of male genital organs (N50),1,0,1,np,—,np,np,—,np,np,—,np
+Disorders of breast (N60-N64),0,4,4,—,np,np,—,np,np,—,np,np
+Benign mammary dysplasia (N60),0,0,0,—,—,—,—,—,—,—,—,—
+Inflammatory disorders of breast (N61),0,1,1,—,np,np,—,np,np,—,—,—
+Hypertrophy of breast (N62),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified lump in breast (N63),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of breast (N64),0,3,3,—,np,np,—,np,np,—,np,np
+Inflammatory diseases of female pelvic organs (N70-N77),0,13,13,—,0.1,—,—,np,np,—,102,104
+Salpingitis and oophoritis (N70),0,1,1,—,np,np,—,np,np,—,np,np
+"Inflammatory disease of uterus, except cervix (N71)",0,2,2,—,np,np,—,np,np,—,np,np
+Inflammatory disease of cervix uteri (N72),0,0,0,—,—,—,—,—,—,—,—,—
+Other female pelvic inflammatory diseases (N73),0,7,7,—,0.1,—,—,np,np,—,np,np
+Diseases of Bartholin gland (N75),0,0,0,—,—,—,—,—,—,—,—,—
+Other inflammation of vagina and vulva (N76),0,3,3,—,np,np,—,np,np,—,np,np
+Noninflammatory disorders of female genital tract (N80-N98),0,36,36,—,0.3,0.1,—,0.2,0.1,—,185,185
+Endometriosis (N80),0,2,2,—,np,np,—,np,np,—,np,np
+Female genital prolapse (N81),0,9,9,—,0.1,—,—,np,np,—,np,np
+Fistulae involving female genital tract (N82),0,11,11,—,0.1,—,—,np,np,—,9,9
+"Noninflammatory disorders of ovary, fallopian tube and broad ligament (N83)",0,5,5,—,—,—,—,np,np,—,np,np
+Polyp of female genital tract (N84),0,0,0,—,—,—,—,—,—,—,—,—
+"Other noninflammatory disorders of uterus, except cervix (N85)",0,6,6,—,—,—,—,np,np,—,np,np
+Erosion and ectropion of cervix uteri (N86),0,0,0,—,—,—,—,—,—,—,—,—
+Dysplasia of cervix uteri (N87),0,0,0,—,—,—,—,—,—,—,—,—
+Other noninflammatory disorders of cervix uteri (N88),0,0,0,—,—,—,—,—,—,—,—,—
+Other noninflammatory disorders of vagina (N89),0,0,0,—,—,—,—,—,—,—,—,—
+Other noninflammatory disorders of vulva and perineum (N90),0,0,0,—,—,—,—,—,—,—,—,—
+"Absent, scanty and rare menstruation (N91)",0,0,0,—,—,—,—,—,—,—,—,—
+"Excessive, frequent and irregular menstruation (N92)",0,0,0,—,—,—,—,—,—,—,—,—
+Other abnormal uterine and vaginal bleeding (N93),0,3,3,—,np,np,—,np,np,—,np,np
+Pain and other conditions associated with female genital organs and menstrual cycle (N94),0,0,0,—,—,—,—,—,—,—,—,—
+Menopausal and other perimenopausal disorders (N95),0,0,0,—,—,—,—,—,—,—,—,—
+Habitual aborter (N96),0,0,0,—,—,—,—,—,—,—,—,—
+Female infertility (N97),0,0,0,—,—,—,—,—,—,—,—,—
+Complications associated with artificial fertilization (N98),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of the genitourinary system (N99-N99),0,0,0,—,—,—,—,—,—,—,—,—
+"Postprocedural disorders of genitourinary system, not elsewhere classified (N99)",0,0,0,—,—,—,—,—,—,—,—,—
+"CHAPTER XV Pregnancy, childbirth and the puerperium (O00-O99)",0,10,10,—,0.1,—,—,np,np,—,465,463
+Pregnancy with abortive outcome (O00-O08),0,0,0,—,—,—,—,—,—,—,—,—
+Ectopic pregnancy (O00),0,0,0,—,—,—,—,—,—,—,—,—
+Hydatidiform mole (O01),0,0,0,—,—,—,—,—,—,—,—,—
+Other abnormal products of conception (O02),0,0,0,—,—,—,—,—,—,—,—,—
+Spontaneous abortion (O03),0,0,0,—,—,—,—,—,—,—,—,—
+Medical abortion (O04),0,0,0,—,—,—,—,—,—,—,—,—
+Other abortion (O05),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified abortion (O06),0,0,0,—,—,—,—,—,—,—,—,—
+Failed attempted abortion (O07),0,0,0,—,—,—,—,—,—,—,—,—
+Complications following abortion and ectopic and molar pregnancy (O08),0,0,0,—,—,—,—,—,—,—,—,—
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",0,0,0,—,—,—,—,—,—,—,—,—
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",0,0,0,—,—,—,—,—,—,—,—,—
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),0,0,0,—,—,—,—,—,—,—,—,—
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),0,0,0,—,—,—,—,—,—,—,—,—
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),0,0,0,—,—,—,—,—,—,—,—,—
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),0,0,0,—,—,—,—,—,—,—,—,—
+Eclampsia (O15),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified maternal hypertension (O16),0,0,0,—,—,—,—,—,—,—,—,—
+Other maternal disorders predominantly related to pregnancy (O20-O29),0,2,2,—,np,np,—,np,np,—,np,np
+Haemorrhage in early pregnancy (O20),0,0,0,—,—,—,—,—,—,—,—,—
+Excessive vomiting in pregnancy (O21),0,0,0,—,—,—,—,—,—,—,—,—
+Venous complications in pregnancy (O22),0,1,1,—,np,np,—,np,np,—,np,np
+Infections of genitourinary tract in pregnancy (O23),0,0,0,—,—,—,—,—,—,—,—,—
+Diabetes mellitus in pregnancy (O24),0,1,1,—,np,np,—,np,np,—,np,np
+Malnutrition in pregnancy (O25),0,0,0,—,—,—,—,—,—,—,—,—
+Maternal care for other conditions predominantly related to pregnancy (O26),0,0,0,—,—,—,—,—,—,—,—,—
+Abnormal findings on antenatal screening of mother (O28),0,0,0,—,—,—,—,—,—,—,—,—
+Complications of anaesthesia during pregnancy (O29),0,0,0,—,—,—,—,—,—,—,—,—
+Maternal care related to the fetus and amniotic cavity and possible delivery problems (O30-O48),0,1,1,—,np,np,—,np,np,—,np,np
+Multiple gestation (O30),0,0,0,—,—,—,—,—,—,—,—,—
+Complications specific to multiple gestation (O31),0,1,1,—,np,np,—,np,np,—,np,np
+Maternal care for known or suspected malpresentation of fetus (O32),0,0,0,—,—,—,—,—,—,—,—,—
+Maternal care for known or suspected disproportion (O33),0,0,0,—,—,—,—,—,—,—,—,—
+Maternal care for known or suspected abnormality of pelvic organs (O34),0,0,0,—,—,—,—,—,—,—,—,—
+Maternal care for known or suspected fetal abnormality and damage (O35),0,0,0,—,—,—,—,—,—,—,—,—
+Maternal care for other known or suspected fetal problems (O36),0,0,0,—,—,—,—,—,—,—,—,—
+Polyhydramnios (O40),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of amniotic fluid and membranes (O41),0,0,0,—,—,—,—,—,—,—,—,—
+Premature rupture of membranes (O42),0,0,0,—,—,—,—,—,—,—,—,—
+Placental disorders (O43),0,0,0,—,—,—,—,—,—,—,—,—
+Placenta praevia (O44),0,0,0,—,—,—,—,—,—,—,—,—
+Premature separation of placenta [abruptio placentae] (O45),0,0,0,—,—,—,—,—,—,—,—,—
+"Antepartum haemorrhage, not elsewhere classified (O46)",0,0,0,—,—,—,—,—,—,—,—,—
+False labour (O47),0,0,0,—,—,—,—,—,—,—,—,—
+Prolonged pregnancy (O48),0,0,0,—,—,—,—,—,—,—,—,—
+Complications of labour and delivery (O60-O75),0,3,3,—,np,np,—,np,np,—,np,np
+Preterm labour and delivery (O60),0,0,0,—,—,—,—,—,—,—,—,—
+Failed induction of labour (O61),0,0,0,—,—,—,—,—,—,—,—,—
+Abnormalities of forces of labour (O62),0,0,0,—,—,—,—,—,—,—,—,—
+Long labour (O63),0,0,0,—,—,—,—,—,—,—,—,—
+Obstructed labour due to malposition and malpresentation of fetus (O64),0,0,0,—,—,—,—,—,—,—,—,—
+Obstructed labour due to maternal pelvic abnormality (O65),0,0,0,—,—,—,—,—,—,—,—,—
+Other obstructed labour (O66),0,0,0,—,—,—,—,—,—,—,—,—
+"Labour and delivery complicated by intrapartum haemorrhage, not elsewhere classified (O67)",0,0,0,—,—,—,—,—,—,—,—,—
+Labour and delivery complicated by fetal stress [distress] (O68),0,0,0,—,—,—,—,—,—,—,—,—
+Labour and delivery complicated by umbilical cord complications (O69),0,0,0,—,—,—,—,—,—,—,—,—
+Perineal laceration during delivery (O70),0,0,0,—,—,—,—,—,—,—,—,—
+Other obstetric trauma (O71),0,0,0,—,—,—,—,—,—,—,—,—
+Postpartum haemorrhage (O72),0,2,2,—,np,np,—,np,np,—,np,np
+"Retained placenta and membranes, without haemorrhage (O73)",0,1,1,—,np,np,—,np,np,—,np,np
+Complications of anaesthesia during labour and delivery (O74),0,0,0,—,—,—,—,—,—,—,—,—
+"Other complications of labour and delivery, not elsewhere classified (O75)",0,0,0,—,—,—,—,—,—,—,—,—
+Delivery (O80-O84),0,0,0,—,—,—,—,—,—,—,—,—
+Single spontaneous delivery (O80),0,0,0,—,—,—,—,—,—,—,—,—
+Single delivery by forceps and vacuum extractor (O81),0,0,0,—,—,—,—,—,—,—,—,—
+Single delivery by caesarean section (O82),0,0,0,—,—,—,—,—,—,—,—,—
+Other assisted single delivery (O83),0,0,0,—,—,—,—,—,—,—,—,—
+Multiple delivery (O84),0,0,0,—,—,—,—,—,—,—,—,—
+Complications predominantly related to the puerperium (O85-O92),0,2,2,—,np,np,—,np,np,—,np,np
+Puerperal sepsis (O85),0,0,0,—,—,—,—,—,—,—,—,—
+Other puerperal infections (O86),0,0,0,—,—,—,—,—,—,—,—,—
+Venous complications in the puerperium (O87),0,0,0,—,—,—,—,—,—,—,—,—
+Obstetric embolism (O88),0,1,1,—,np,np,—,np,np,—,np,np
+Complications of anaesthesia during the puerperium (O89),0,0,0,—,—,—,—,—,—,—,—,—
+"Complications of the puerperium, not elsewhere classified (O90)",0,1,1,—,np,np,—,np,np,—,np,np
+Infections of breast associated with childbirth (O91),0,0,0,—,—,—,—,—,—,—,—,—
+Other disorders of breast and lactation associated with childbirth (O92),0,0,0,—,—,—,—,—,—,—,—,—
+Other obstetric conditions (O95-O99),0,2,2,—,np,np,—,np,np,—,np,np
+Obstetric death of unspecified cause (O95),0,1,1,—,np,np,—,np,np,—,np,np
+Death from any obstetric cause occurring more than 42 days but less than one year after delivery (O96),0,0,0,—,—,—,—,—,—,—,—,—
+Death from sequelae of direct obstetric causes (O97),0,0,0,—,—,—,—,—,—,—,—,—
+"Maternal infectious and parasitic diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium (O98)",0,0,0,—,—,—,—,—,—,—,—,—
+"Other maternal diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium (O99)",0,1,1,—,np,np,—,np,np,—,np,np
+CHAPTER XVI Certain conditions originating in the perinatal period (P00-P96),339,261,600,2.5,1.9,2.2,2.9,2.3,2.6,np,np,603
+"Fetus and newborn affected by maternal factors and by complications of pregnancy, labour and delivery (P00-P04)",182,132,314,1.3,0.9,1.1,1.5,1.2,1.4,—,—,—
+Fetus and newborn affected by maternal conditions that may be unrelated to present pregnancy (P00),29,17,46,0.2,0.1,0.2,0.2,np,0.2,—,—,—
+Fetus and newborn affected by maternal complications of pregnancy (P01),84,55,139,0.6,0.4,0.5,0.7,0.5,0.6,—,—,—
+"Fetus and newborn affected by complications of placenta, cord and membranes (P02)",50,43,93,0.4,0.3,0.3,0.4,0.4,0.4,—,—,—
+Fetus and newborn affected by other complications of labour and delivery (P03),18,17,35,0.1,0.1,0.1,np,np,0.2,—,—,—
+Fetus and newborn affected by noxious influences transmitted via placenta or breast milk (P04),1,0,1,np,—,np,np,—,np,—,—,—
+Disorders related to length of gestation and fetal growth (P05-P08),46,33,79,0.3,0.2,0.3,0.4,0.3,0.3,np,—,np
+Slow fetal growth and fetal malnutrition (P05),3,3,6,np,np,—,np,np,np,—,—,—
+"Disorders related to short gestation and low birth weight, not elsewhere classified (P07)",43,30,73,0.3,0.2,0.3,0.4,0.3,0.3,np,—,np
+Disorders related to long gestation and high birth weight (P08),0,0,0,—,—,—,—,—,—,—,—,—
+Birth trauma (P10-P15),3,2,5,np,np,—,np,np,np,—,—,—
+Intracranial laceration and haemorrhage due to birth injury (P10),0,1,1,—,np,np,—,np,np,—,—,—
+Other birth injuries to central nervous system (P11),3,1,4,np,np,np,np,np,np,—,—,—
+Birth injury to scalp (P12),0,0,0,—,—,—,—,—,—,—,—,—
+Birth injury to skeleton (P13),0,0,0,—,—,—,—,—,—,—,—,—
+Birth injury to peripheral nervous system (P14),0,0,0,—,—,—,—,—,—,—,—,—
+Other birth injuries (P15),0,0,0,—,—,—,—,—,—,—,—,—
+Respiratory and cardiovascular disorders specific to the perinatal period (P20-P29),26,23,49,0.2,0.2,0.2,0.2,0.2,0.2,np,np,np
+Intrauterine hypoxia (P20),0,0,0,—,—,—,—,—,—,—,—,—
+Birth asphyxia (P21),3,2,5,np,np,—,np,np,np,—,—,—
+Respiratory distress of newborn (P22),2,6,8,np,—,—,np,np,np,—,—,—
+Congenital pneumonia (P23),2,1,3,np,np,np,np,np,np,—,—,—
+Neonatal aspiration syndromes (P24),0,2,2,—,np,np,—,np,np,—,—,—
+Interstitial emphysema and related conditions originating in the perinatal period (P25),4,2,6,np,np,—,np,np,np,—,—,—
+Pulmonary haemorrhage originating in the perinatal period (P26),4,0,4,np,—,np,np,—,np,—,—,—
+Chronic respiratory disease originating in the perinatal period (P27),4,3,7,np,np,—,np,np,np,—,—,—
+Other respiratory conditions originating in the perinatal period (P28),3,4,7,np,np,—,np,np,np,np,np,np
+Cardiovascular disorders originating in the perinatal period (P29),4,3,7,np,np,—,np,np,np,—,—,—
+Infections specific to the perinatal period (P35-P39),11,8,19,0.1,0.1,0.1,np,np,np,np,np,np
+Congenital viral diseases (P35),2,1,3,np,np,np,np,np,np,np,np,np
+Bacterial sepsis of newborn (P36),6,6,12,—,—,—,np,np,np,—,—,—
+Other congenital infectious and parasitic diseases (P37),3,1,4,np,np,np,np,np,np,—,—,—
+Omphalitis of newborn with or without mild haemorrhage (P38),0,0,0,—,—,—,—,—,—,—,—,—
+Other infections specific to the perinatal period (P39),0,0,0,—,—,—,—,—,—,—,—,—
+Haemorrhagic and haematological disorders of fetus and newborn (P50-P61),20,14,34,0.1,0.1,0.1,0.2,np,0.1,—,np,np
+Fetal blood loss (P50),0,2,2,—,np,np,—,np,np,—,—,—
+Umbilical haemorrhage of newborn (P51),0,0,0,—,—,—,—,—,—,—,—,—
+Intracranial nontraumatic haemorrhage of fetus and newborn (P52),13,9,22,0.1,0.1,0.1,np,np,0.1,—,—,—
+Haemorrhagic disease of fetus and newborn (P53),0,1,1,—,np,np,—,np,np,—,—,—
+Other neonatal haemorrhages (P54),0,0,0,—,—,—,—,—,—,—,—,—
+Haemolytic disease of fetus and newborn (P55),1,0,1,np,—,np,np,—,np,—,—,—
+Hydrops fetalis due to haemolytic disease (P56),1,0,1,np,—,np,np,—,np,—,—,—
+Kernicterus (P57),0,1,1,—,np,np,—,np,np,—,np,np
+Neonatal jaundice due to other excessive haemolysis (P58),0,0,0,—,—,—,—,—,—,—,—,—
+Neonatal jaundice from other and unspecified causes (P59),1,0,1,np,—,np,np,—,np,—,—,—
+Disseminated intravascular coagulation of fetus and newborn (P60),0,1,1,—,np,np,—,np,np,—,—,—
+Other perinatal haematological disorders (P61),4,0,4,np,—,np,np,—,np,—,—,—
+Transitory endocrine and metabolic disorders specific to fetus and newborn (P70-P74),2,0,2,np,—,np,np,—,np,—,—,—
+Transitory disorders of carbohydrate metabolism specific to fetus and newborn (P70),2,0,2,np,—,np,np,—,np,—,—,—
+Transitory neonatal disorders of calcium and magnesium metabolism (P71),0,0,0,—,—,—,—,—,—,—,—,—
+Other transitory neonatal endocrine disorders (P72),0,0,0,—,—,—,—,—,—,—,—,—
+Other transitory neonatal electrolyte and metabolic disturbances (P74),0,0,0,—,—,—,—,—,—,—,—,—
+Digestive system disorders of fetus and newborn (P75-P78),14,7,21,0.1,0.1,0.1,np,np,0.1,—,—,—
+Other intestinal obstruction of newborn (P76),2,0,2,np,—,np,np,—,np,—,—,—
+Necrotizing enterocolitis of fetus and newborn (P77),8,7,15,0.1,0.1,0.1,np,np,np,—,—,—
+Other perinatal digestive system disorders (P78),4,0,4,np,—,np,np,—,np,—,—,—
+Conditions involving the integument and temperature regulation of fetus and newborn (P80-P83),1,1,2,np,np,np,np,np,np,—,—,—
+Hypothermia of newborn (P80),0,0,0,—,—,—,—,—,—,—,—,—
+Other disturbances of temperature regulation of newborn (P81),0,0,0,—,—,—,—,—,—,—,—,—
+Other conditions of integument specific to fetus and newborn (P83),1,1,2,np,np,np,np,np,np,—,—,—
+Other disorders originating in the perinatal period (P90-P96),34,41,75,0.2,0.3,0.3,0.3,0.4,0.3,np,np,np
+Convulsions of newborn (P90),0,0,0,—,—,—,—,—,—,—,—,—
+Other disturbances of cerebral status of newborn (P91),11,21,32,0.1,0.2,0.1,np,0.2,0.1,np,np,np
+Feeding problems of newborn (P92),0,0,0,—,—,—,—,—,—,—,—,—
+Reactions and intoxications due to drugs administered to fetus and newborn (P93),0,0,0,—,—,—,—,—,—,—,—,—
+Disorders of muscle tone of newborn (P94),0,0,0,—,—,—,—,—,—,—,—,—
+Fetal death of unspecified cause (P95),0,0,0,—,—,—,—,—,—,—,—,—
+Other conditions originating in the perinatal period (P96),23,20,43,0.2,0.1,0.2,0.2,0.2,0.2,—,—,—
+"CHAPTER XVII Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)",360,351,711,2.6,2.5,2.6,2.7,2.5,2.6,6216,5738,11985
+Congenital malformations of the nervous system (Q00-Q07),25,36,61,0.2,0.3,0.2,0.2,0.3,0.2,420,694,1113
+Anencephaly and similar malformations (Q00),2,5,7,np,—,—,np,np,np,—,—,—
+Encephalocele (Q01),0,1,1,—,np,np,—,np,np,—,np,np
+Microcephaly (Q02),2,3,5,np,np,—,np,np,np,np,np,274
+Congenital hydrocephalus (Q03),1,1,2,np,np,np,np,np,np,—,—,—
+Other congenital malformations of brain (Q04),9,12,21,0.1,0.1,0.1,np,np,0.1,np,290,524
+Spina bifida (Q05),8,12,20,0.1,0.1,0.1,np,np,0.1,128,141,269
+Other congenital malformations of spinal cord (Q06),1,0,1,np,—,np,np,—,np,np,—,np
+Other congenital malformations of nervous system (Q07),2,2,4,np,np,np,np,np,np,—,np,np
+"Congenital malformations of eye, ear, face and neck (Q10-Q18)",0,0,0,—,—,—,—,—,—,—,—,—
+"Congenital malformations of eyelid, lacrimal apparatus and orbit (Q10)",0,0,0,—,—,—,—,—,—,—,—,—
+"Anophthalmos, microphthalmos and macrophthalmos (Q11)",0,0,0,—,—,—,—,—,—,—,—,—
+Congenital lens malformations (Q12),0,0,0,—,—,—,—,—,—,—,—,—
+Congenital malformations of anterior segment of eye (Q13),0,0,0,—,—,—,—,—,—,—,—,—
+Congenital malformations of posterior segment of eye (Q14),0,0,0,—,—,—,—,—,—,—,—,—
+Other congenital malformations of eye (Q15),0,0,0,—,—,—,—,—,—,—,—,—
+Congenital malformations of ear causing impairment of hearing (Q16),0,0,0,—,—,—,—,—,—,—,—,—
+Other congenital malformations of ear (Q17),0,0,0,—,—,—,—,—,—,—,—,—
+Other congenital malformations of face and neck (Q18),0,0,0,—,—,—,—,—,—,—,—,—
+Congenital malformations of the circulatory system (Q20-Q28),103,82,185,0.8,0.6,0.7,0.8,0.6,0.7,2258,1297,3572
+Congenital malformations of cardiac chambers and connections (Q20),7,5,12,0.1,—,—,np,np,np,np,—,np
+Congenital malformations of cardiac septa (Q21),12,16,28,0.1,0.1,0.1,np,np,0.1,76,287,363
+Congenital malformations of pulmonary and tricuspid valves (Q22),4,8,12,np,0.1,—,np,np,np,np,np,175
+Congenital malformations of aortic and mitral valves (Q23),32,8,40,0.2,0.1,0.1,0.2,np,0.2,722,np,828
+Other congenital malformations of heart (Q24),28,20,48,0.2,0.1,0.2,0.2,0.1,0.2,993,353,1357
+Congenital malformations of great arteries (Q25),9,5,14,0.1,—,0.1,np,np,np,133,np,173
+Congenital malformations of great veins (Q26),1,3,4,np,np,np,np,np,np,—,np,np
+Other congenital malformations of peripheral vascular system (Q27),6,10,16,—,0.1,0.1,np,np,np,np,216,239
+Other congenital malformations of circulatory system (Q28),4,7,11,np,0.1,—,np,np,np,np,151,243
+Congenital malformations of the respiratory system (Q30-Q34),9,9,18,0.1,0.1,0.1,np,np,np,—,np,np
+Congenital malformations of nose (Q30),0,0,0,—,—,—,—,—,—,—,—,—
+Congenital malformations of larynx (Q31),1,0,1,np,—,np,np,—,np,—,—,—
+Congenital malformations of trachea and bronchus (Q32),1,2,3,np,np,np,np,np,np,—,—,—
+Congenital malformations of lung (Q33),5,7,12,—,0.1,—,np,np,np,—,np,np
+Other congenital malformations of respiratory system (Q34),2,0,2,np,—,np,np,—,np,—,—,—
+Cleft lip and cleft palate (Q35-Q37),1,0,1,np,—,np,np,—,np,—,—,—
+Cleft palate (Q35),0,0,0,—,—,—,—,—,—,—,—,—
+Cleft lip (Q36),0,0,0,—,—,—,—,—,—,—,—,—
+Cleft palate with cleft lip (Q37),1,0,1,np,—,np,np,—,np,—,—,—
+Other congenital malformations of the digestive system (Q38-Q45),7,7,14,0.1,0.1,0.1,np,np,np,np,np,np
+"Other congenital malformations of tongue, mouth and pharynx (Q38)",0,1,1,—,np,np,—,np,np,—,—,—
+Congenital malformations of oesophagus (Q39),2,3,5,np,np,—,np,np,np,np,np,np
+Other congenital malformations of upper alimentary tract (Q40),0,0,0,—,—,—,—,—,—,—,—,—
+"Congenital absence, atresia and stenosis of small intestine (Q41)",0,0,0,—,—,—,—,—,—,—,—,—
+"Congenital absence, atresia and stenosis of large intestine (Q42)",1,0,1,np,—,np,np,—,np,—,—,—
+Other congenital malformations of intestine (Q43),2,1,3,np,np,np,np,np,np,—,np,np
+"Congenital malformations of gallbladder, bile ducts and liver (Q44)",2,1,3,np,np,np,np,np,np,np,—,np
+Other congenital malformations of digestive system (Q45),0,1,1,—,np,np,—,np,np,—,—,—
+Congenital malformations of genital organs (Q50-Q56),0,1,1,—,np,np,—,np,np,—,np,np
+"Congenital malformations of ovaries, fallopian tubes and broad ligaments (Q50)",0,0,0,—,—,—,—,—,—,—,—,—
+Congenital malformations of uterus and cervix (Q51),0,1,1,—,np,np,—,np,np,—,np,np
+Other congenital malformations of female genitalia (Q52),0,0,0,—,—,—,—,—,—,—,—,—
+Undescended testicle (Q53),0,0,0,—,—,—,—,—,—,—,—,—
+Hypospadias (Q54),0,0,0,—,—,—,—,—,—,—,—,—
+Other congenital malformations of male genital organs (Q55),0,0,0,—,—,—,—,—,—,—,—,—
+Indeterminate sex and pseudohermaphroditism (Q56),0,0,0,—,—,—,—,—,—,—,—,—
+Congenital malformations of the urinary system (Q60-Q64),42,34,76,0.3,0.2,0.3,0.3,0.2,0.2,252,171,421
+Renal agenesis and other reduction defects of kidney (Q60),5,5,10,—,—,—,np,np,np,np,np,109
+Cystic kidney disease (Q61),29,26,55,0.2,0.2,0.2,0.2,0.1,0.2,177,126,301
+Congenital obstructive defects of renal pelvis and congenital malformations of ureter (Q62),2,2,4,np,np,np,np,np,np,—,np,np
+Other congenital malformations of kidney (Q63),4,0,4,np,—,np,np,—,np,np,—,np
+Other congenital malformations of urinary system (Q64),2,1,3,np,np,np,np,np,np,—,—,—
+Congenital malformations and deformations of the musculoskeletal system (Q65-Q79),15,20,35,0.1,0.1,0.1,np,0.2,0.1,np,364,413
+Congenital deformities of hip (Q65),0,0,0,—,—,—,—,—,—,—,—,—
+Congenital deformities of feet (Q66),0,0,0,—,—,—,—,—,—,—,—,—
+"Congenital musculoskeletal deformities of head, face, spine and chest (Q67)",0,1,1,—,np,np,—,np,np,—,np,np
+Other congenital musculoskeletal deformities (Q68),0,0,0,—,—,—,—,—,—,—,—,—
+Polydactyly (Q69),0,0,0,—,—,—,—,—,—,—,—,—
+Syndactyly (Q70),0,0,0,—,—,—,—,—,—,—,—,—
+Reduction defects of upper limb (Q71),0,0,0,—,—,—,—,—,—,—,—,—
+Reduction defects of lower limb (Q72),0,0,0,—,—,—,—,—,—,—,—,—
+Reduction defects of unspecified limb (Q73),0,0,0,—,—,—,—,—,—,—,—,—
+Other congenital malformations of limb(s) (Q74),0,1,1,—,np,np,—,np,np,—,np,np
+Other congenital malformations of skull and face bones (Q75),0,1,1,—,np,np,—,np,np,—,—,—
+Congenital malformations of spine and bony thorax (Q76),0,2,2,—,np,np,—,np,np,—,np,np
+Osteochondrodysplasia with defects of growth of tubular bones and spine (Q77),1,4,5,np,np,—,np,np,np,—,np,np
+Other osteochondrodysplasias (Q78),2,3,5,np,np,—,np,np,np,—,np,np
+"Congenital malformations of the musculoskeletal system, not elsewhere classified (Q79)",12,8,20,0.1,0.1,0.1,np,np,0.1,np,np,np
+Other congenital malformations (Q80-Q89),60,41,101,0.4,0.3,0.4,0.4,0.3,0.4,1737,907,2676
+Congenital ichthyosis (Q80),0,0,0,—,—,—,—,—,—,—,—,—
+Epidermolysis bullosa (Q81),0,1,1,—,np,np,—,np,np,—,np,np
+Other congenital malformations of skin (Q82),0,0,0,—,—,—,—,—,—,—,—,—
+Congenital malformations of breast (Q83),0,0,0,—,—,—,—,—,—,—,—,—
+Other congenital malformations of integument (Q84),0,0,0,—,—,—,—,—,—,—,—,—
+"Phakomatoses, not elsewhere classified (Q85)",8,5,13,0.1,—,—,np,np,np,142,176,317
+"Congenital malformation syndromes due to known exogenous causes, not elsewhere classified (Q86)",0,1,1,—,np,np,—,np,np,—,—,—
+Other specified congenital malformation syndromes affecting multiple systems (Q87),33,24,57,0.2,0.2,0.2,0.2,0.2,0.2,1265,628,1919
+"Other congenital malformations, not elsewhere classified (Q89)",19,10,29,0.1,0.1,0.1,np,np,0.1,np,np,352
+"Chromosomal abnormalities, not elsewhere classified (Q90-Q99)",98,121,219,0.7,0.9,0.8,0.7,0.8,0.8,1496,2142,3628
+Down syndrome (Q90),74,81,155,0.5,0.6,0.6,0.5,0.5,0.5,1282,1337,2622
+Edwards syndrome and Patau syndrome (Q91),6,17,23,—,0.1,0.1,np,np,0.1,—,np,np
+"Other trisomies and partial trisomies of the autosomes, not elsewhere classified (Q92)",1,5,6,np,—,—,np,np,np,—,np,np
+"Monosomies and deletions from the autosomes, not elsewhere classified (Q93)",6,9,15,—,0.1,0.1,np,np,np,np,305,422
+"Balanced rearrangements and structural markers, not elsewhere classified (Q95)",0,0,0,—,—,—,—,—,—,—,—,—
+Turner syndrome (Q96),0,1,1,—,np,np,—,np,np,—,np,np
+"Other sex chromosome abnormalities, female phenotype, not elsewhere classified (Q97)",0,1,1,—,np,np,—,np,np,—,np,np
+"Other sex chromosome abnormalities, male phenotype, not elsewhere classified (Q98)",4,0,4,np,—,np,np,—,np,np,—,np
+"Other chromosome abnormalities, not elsewhere classified (Q99)",7,7,14,0.1,0.1,0.1,np,np,np,np,np,228
+"CHAPTER XVIII Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00-R99)",1633,2052,3685,11.9,14.8,13.3,10.1,9.3,9.9,17375,8087,25397
+Symptoms and signs involving the circulatory and respiratory systems (R00-R09),40,44,84,0.3,0.3,0.3,0.2,0.2,0.2,84,45,128
+Abnormalities of heart beat (R00),1,4,5,np,np,—,np,np,np,np,np,np
+Cardiac murmurs and other cardiac sounds (R01),0,0,0,—,—,—,—,—,—,—,—,—
+"Gangrene, not elsewhere classified (R02)",3,3,6,np,np,—,np,np,np,np,—,np
+"Abnormal blood-pressure reading, without diagnosis (R03)",0,0,0,—,—,—,—,—,—,—,—,—
+Haemorrhage from respiratory passages (R04),1,0,1,np,—,np,np,—,np,—,—,—
+Cough (R05),0,0,0,—,—,—,—,—,—,—,—,—
+Abnormalities of breathing (R06),0,2,2,—,np,np,—,np,np,—,—,—
+Pain in throat and chest (R07),0,0,0,—,—,—,—,—,—,—,—,—
+Other symptoms and signs involving the circulatory and respiratory systems (R09),35,35,70,0.3,0.3,0.3,0.2,0.1,0.2,70,42,111
+Symptoms and signs involving the digestive system and abdomen (R10-R19),8,16,24,0.1,0.1,0.1,np,np,0.1,np,np,np
+Abdominal and pelvic pain (R10),1,1,2,np,np,np,np,np,np,—,—,—
+Nausea and vomiting (R11),0,2,2,—,np,np,—,np,np,—,np,np
+Heartburn (R12),0,0,0,—,—,—,—,—,—,—,—,—
+Dysphagia (R13),4,5,9,np,—,—,np,np,np,—,—,—
+Flatulence and related conditions (R14),0,0,0,—,—,—,—,—,—,—,—,—
+Faecal incontinence (R15),0,0,0,—,—,—,—,—,—,—,—,—
+"Hepatomegaly and splenomegaly, not elsewhere classified (R16)",0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified jaundice (R17),0,0,0,—,—,—,—,—,—,—,—,—
+Ascites (R18),0,0,0,—,—,—,—,—,—,—,—,—
+Other symptoms and signs involving the digestive system and abdomen (R19),3,8,11,np,0.1,—,np,np,np,np,np,np
+Symptoms and signs involving the skin and subcutaneous tissue (R20-R23),0,0,0,—,—,—,—,—,—,—,—,—
+Disturbances of skin sensation (R20),0,0,0,—,—,—,—,—,—,—,—,—
+Rash and other nonspecific skin eruption (R21),0,0,0,—,—,—,—,—,—,—,—,—
+"Localized swelling, mass and lump of skin and subcutaneous tissue (R22)",0,0,0,—,—,—,—,—,—,—,—,—
+Other skin changes (R23),0,0,0,—,—,—,—,—,—,—,—,—
+Symptoms and signs involving the nervous and musculoskeletal systems (R25-R29),2,3,5,np,np,—,np,np,np,np,—,np
+Abnormal involuntary movements (R25),0,0,0,—,—,—,—,—,—,—,—,—
+Abnormalities of gait and mobility (R26),0,0,0,—,—,—,—,—,—,—,—,—
+Other lack of coordination (R27),0,0,0,—,—,—,—,—,—,—,—,—
+Other symptoms and signs involving the nervous and musculoskeletal systems (R29),2,3,5,np,np,—,np,np,np,np,—,np
+Symptoms and signs involving the urinary system (R30-R39),0,1,1,—,np,np,—,np,np,—,—,—
+Pain associated with micturition (R30),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified haematuria (R31),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified urinary incontinence (R32),0,0,0,—,—,—,—,—,—,—,—,—
+Retention of urine (R33),0,1,1,—,np,np,—,np,np,—,—,—
+Anuria and oliguria (R34),0,0,0,—,—,—,—,—,—,—,—,—
+Polyuria (R35),0,0,0,—,—,—,—,—,—,—,—,—
+Urethral discharge (R36),0,0,0,—,—,—,—,—,—,—,—,—
+Other symptoms and signs involving the urinary system (R39),0,0,0,—,—,—,—,—,—,—,—,—
+"Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)",15,33,48,0.1,0.2,0.2,np,0.1,0.1,np,np,np
+"Somnolence, stupor and coma (R40)",0,0,0,—,—,—,—,—,—,—,—,—
+Other symptoms and signs involving cognitive functions and awareness (R41),15,33,48,0.1,0.2,0.2,np,0.1,0.1,np,np,np
+Dizziness and giddiness (R42),0,0,0,—,—,—,—,—,—,—,—,—
+Disturbances of smell and taste (R43),0,0,0,—,—,—,—,—,—,—,—,—
+Other symptoms and signs involving general sensations and perceptions (R44),0,0,0,—,—,—,—,—,—,—,—,—
+Symptoms and signs involving emotional state (R45),0,0,0,—,—,—,—,—,—,—,—,—
+Symptoms and signs involving appearance and behaviour (R46),0,0,0,—,—,—,—,—,—,—,—,—
+Symptoms and signs involving speech and voice (R47-R49),0,3,3,—,np,np,—,np,np,—,np,np
+"Speech disturbances, not elsewhere classified (R47)",0,3,3,—,np,np,—,np,np,—,np,np
+"Dyslexia and other symbolic dysfunctions, not elsewhere classified (R48)",0,0,0,—,—,—,—,—,—,—,—,—
+Voice disturbances (R49),0,0,0,—,—,—,—,—,—,—,—,—
+General symptoms and signs (R50-R69),476,1228,1704,3.5,8.8,6.2,2.7,4.8,4,232,145,376
+Fever of unknown origin (R50),0,0,0,—,—,—,—,—,—,—,—,—
+Headache (R51),0,0,0,—,—,—,—,—,—,—,—,—
+"Pain, not elsewhere classified (R52)",0,2,2,—,np,np,—,np,np,—,—,—
+Malaise and fatigue (R53),108,308,416,0.8,2.2,1.5,0.6,1.2,1,36,36,72
+Senility (R54),227,654,881,1.7,4.7,3.2,1.3,2.5,2,np,12,20
+Syncope and collapse (R55),1,0,1,np,—,np,np,—,np,—,—,—
+"Convulsions, not elsewhere classified (R56)",2,3,5,np,np,—,np,np,np,np,—,np
+"Shock, not elsewhere classified (R57)",6,14,20,—,0.1,0.1,np,np,—,—,52,53
+"Haemorrhage, not elsewhere classified (R58)",2,2,4,np,np,np,np,np,np,np,np,np
+Enlarged lymph nodes (R59),0,0,0,—,—,—,—,—,—,—,—,—
+"Oedema, not elsewhere classified (R60)",0,0,0,—,—,—,—,—,—,—,—,—
+Hyperhidrosis (R61),0,0,0,—,—,—,—,—,—,—,—,—
+Lack of expected normal physiological development (R62),0,0,0,—,—,—,—,—,—,—,—,—
+Symptoms and signs concerning food and fluid intake (R63),6,14,20,—,0.1,0.1,np,np,—,np,—,np
+Cachexia (R64),8,28,36,0.1,0.2,0.1,np,0.1,0.1,—,—,—
+Systemic Inflammatory Response Syndrome [SIRS] (R65),0,0,0,—,—,—,—,—,—,—,—,—
+Other general symptoms and signs (R68),116,203,319,0.8,1.5,1.2,0.7,0.8,0.8,121,42,161
+Unknown and unspecified causes of morbidity (R69),0,0,0,—,—,—,—,—,—,—,—,—
+"Abnormal findings on examination of blood, without diagnosis (R70-R79)",0,0,0,—,—,—,—,—,—,—,—,—
+Elevated erythrocyte sedimentation rate and abnormality of plasma viscosity (R70),0,0,0,—,—,—,—,—,—,—,—,—
+Abnormality of red blood cells (R71),0,0,0,—,—,—,—,—,—,—,—,—
+"Abnormality of white blood cells, not elsewhere classified (R72)",0,0,0,—,—,—,—,—,—,—,—,—
+Elevated blood glucose level (R73),0,0,0,—,—,—,—,—,—,—,—,—
+Abnormal serum enzyme levels (R74),0,0,0,—,—,—,—,—,—,—,—,—
+Laboratory evidence of human immunodeficiency virus [HIV] (R75),0,0,0,—,—,—,—,—,—,—,—,—
+Other abnormal immunological findings in serum (R76),0,0,0,—,—,—,—,—,—,—,—,—
+Other abnormalities of plasma proteins (R77),0,0,0,—,—,—,—,—,—,—,—,—
+"Findings of drugs and other substances, not normally found in blood (R78)",0,0,0,—,—,—,—,—,—,—,—,—
+Other abnormal findings of blood chemistry (R79),0,0,0,—,—,—,—,—,—,—,—,—
+"Abnormal findings on examination of urine, without diagnosis (R80-R82)",0,0,0,—,—,—,—,—,—,—,—,—
+Isolated proteinuria (R80),0,0,0,—,—,—,—,—,—,—,—,—
+Glycosuria (R81),0,0,0,—,—,—,—,—,—,—,—,—
+Other abnormal findings in urine (R82),0,0,0,—,—,—,—,—,—,—,—,—
+"Abnormal findings on examination of other body fluids, substances and tissues, without diagnosis (R83-R89)",0,0,0,—,—,—,—,—,—,—,—,—
+Abnormal findings in cerebrospinal fluid (R83),0,0,0,—,—,—,—,—,—,—,—,—
+Abnormal findings in specimens from respiratory organs and thorax (R84),0,0,0,—,—,—,—,—,—,—,—,—
+Abnormal findings in specimens from digestive organs and abdominal cavity (R85),0,0,0,—,—,—,—,—,—,—,—,—
+Abnormal findings in specimens from male genital organs (R86),0,0,0,—,—,—,—,—,—,—,—,—
+Abnormal findings in specimens from female genital organs (R87),0,0,0,—,—,—,—,—,—,—,—,—
+"Abnormal findings in specimens from other organs, systems and tissues (R89)",0,0,0,—,—,—,—,—,—,—,—,—
+"Abnormal findings on diagnostic imaging and in function studies, without diagnosis (R90-R94)",4,2,6,np,np,—,np,np,np,np,—,np
+Abnormal findings on diagnostic imaging of central nervous system (R90),1,1,2,np,np,np,np,np,np,np,—,np
+Abnormal findings on diagnostic imaging of lung (R91),3,1,4,np,np,np,np,np,np,np,—,np
+Abnormal findings on diagnostic imaging of breast (R92),0,0,0,—,—,—,—,—,—,—,—,—
+Abnormal findings on diagnostic imaging of other body structures (R93),0,0,0,—,—,—,—,—,—,—,—,—
+Abnormal results of function studies (R94),0,0,0,—,—,—,—,—,—,—,—,—
+Ill-defined and unknown causes of mortality (R95-R99),1088,722,1810,7.9,5.2,6.6,7,4,5.5,16978,7867,24781
+Sudden infant death syndrome (R95),7,5,12,0.1,—,—,np,np,np,—,—,—
+"Other sudden death, cause unknown (R96)",0,0,0,—,—,—,—,—,—,—,—,—
+Unattended death (R98),0,0,0,—,—,—,—,—,—,—,—,—
+Other ill-defined and unspecified causes of mortality (R99),1081,717,1798,7.9,5.2,6.5,7,4,5.4,16978,7867,24781
+CHAPTER XX External causes of morbidity and mortality (V01-Y98),8836,4957,13793,64.5,35.6,49.9,58.4,26.4,42,189761,66947,256877
+Transport accidents (V01-V99),1087,332,1419,7.9,2.4,5.1,7.5,2.1,4.8,33446,9173,42857
+Pedestrian injured in transport accident (V01-V09),166,73,239,1.2,0.5,0.9,1.1,0.5,0.8,4231,1778,6016
+Pedestrian injured in collision with pedal cycle (V01),0,3,3,—,np,np,—,np,np,—,np,np
+Pedestrian injured in collision with two- or three-wheeled motor vehicle (V02),2,1,3,np,np,np,np,np,np,np,np,np
+"Pedestrian injured in collision with car, pick-up truck or van (V03)",97,50,147,0.7,0.4,0.5,0.7,0.3,0.5,2637,1128,3776
+Pedestrian injured in collision with heavy transport vehicle or bus (V04),17,7,24,0.1,0.1,0.1,np,np,0.1,517,158,676
+Pedestrian injured in collision with railway train or railway vehicle (V05),5,1,6,—,np,—,np,np,np,113,np,206
+Pedestrian injured in collision with other nonmotor vehicle (V06),2,0,2,np,—,np,np,—,np,np,—,np
+Pedestrian injured in other and unspecified transport accidents (V09),43,11,54,0.3,0.1,0.2,0.3,np,0.2,917,343,1259
+Pedal cyclist injured in transport accident (V10-V19),38,3,41,0.3,np,0.1,0.3,np,0.1,819,np,899
+Pedal cyclist injured in collision with pedestrian or animal (V10),1,0,1,np,—,np,np,—,np,np,—,np
+Pedal cyclist injured in collision with other pedal cycle (V11),1,1,2,np,np,np,np,np,np,np,np,np
+Pedal cyclist injured in collision with two- or three-wheeled motor vehicle (V12),0,0,0,—,—,—,—,—,—,—,—,—
+"Pedal cyclist injured in collision with car, pick-up truck or van (V13)",14,1,15,0.1,np,0.1,np,np,np,411,np,472
+Pedal cyclist injured in collision with heavy transport vehicle or bus (V14),4,0,4,np,—,np,np,—,np,np,—,np
+Pedal cyclist injured in collision with railway train or railway vehicle (V15),2,0,2,np,—,np,np,—,np,np,—,np
+Pedal cyclist injured in collision with other nonmotor vehicle (V16),0,0,0,—,—,—,—,—,—,—,—,—
+Pedal cyclist injured in collision with fixed or stationary object (V17),7,1,8,0.1,np,—,np,np,np,73,np,83
+Pedal cyclist injured in noncollision transport accident (V18),6,0,6,—,—,—,np,—,np,76,—,74
+Pedal cyclist injured in other and unspecified transport accidents (V19),3,0,3,np,—,np,np,—,np,np,—,np
+Motorcycle rider injured in transport accident (V20-V29),239,21,260,1.7,0.2,0.9,1.7,0.1,0.9,8815,729,9646
+Motorcycle rider injured in collision with pedestrian or animal (V20),5,1,6,—,np,—,np,np,np,178,np,247
+Motorcycle rider injured in collision with pedal cycle (V21),0,0,0,—,—,—,—,—,—,—,—,—
+Motorcycle rider injured in collision with two- or three-wheeled motor vehicle (V22),4,1,5,np,np,—,np,np,np,np,np,314
+"Motorcycle rider injured in collision with car, pick-up truck or van (V23)",115,9,124,0.8,0.1,0.4,0.8,np,0.4,4312,236,4591
+Motorcycle rider injured in collision with heavy transport vehicle or bus (V24),14,2,16,0.1,np,0.1,np,np,np,448,np,551
+Motorcycle rider injured in collision with railway train or railway vehicle (V25),0,0,0,—,—,—,—,—,—,—,—,—
+Motorcycle rider injured in collision with other nonmotor vehicle (V26),0,0,0,—,—,—,—,—,—,—,—,—
+Motorcycle rider injured in collision with fixed or stationary object (V27),65,6,71,0.5,—,0.3,0.5,np,0.3,2366,228,2620
+Motorcycle rider injured in noncollision transport accident (V28),20,1,21,0.1,np,0.1,0.1,np,0.1,577,np,627
+Motorcycle rider injured in other and unspecified transport accidents (V29),16,1,17,0.1,np,0.1,np,np,np,671,np,697
+Occupant of three-wheeled motor vehicle injured in transport accident (V30-V39),2,0,2,np,—,np,np,—,np,np,—,np
+Occupant of three-wheeled motor vehicle injured in collision with pedestrian or animal (V30),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of three-wheeled motor vehicle injured in collision with pedal cycle (V31),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of three-wheeled motor vehicle injured in collision with two- or three-wheeled motor vehicle (V32),0,0,0,—,—,—,—,—,—,—,—,—
+"Occupant of three-wheeled motor vehicle injured in collision with car, pick-up truck or van (V33)",1,0,1,np,—,np,np,—,np,—,—,—
+Occupant of three-wheeled motor vehicle injured in collision with heavy transport vehicle or bus (V34),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of three-wheeled motor vehicle injured in collision with railway train or railway vehicle (V35),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of three-wheeled motor vehicle injured in collision with other nonmotor vehicle (V36),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of three-wheeled motor vehicle injured in collision with fixed or stationary object (V37),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of three-wheeled motor vehicle injured in noncollision transport accident (V38),1,0,1,np,—,np,np,—,np,np,—,np
+Occupant of three-wheeled motor vehicle injured in other and unspecified transport accidents (V39),0,0,0,—,—,—,—,—,—,—,—,—
+Car occupant injured in transport accident (V40-V49),442,199,641,3.2,1.4,2.3,3.1,1.3,2.2,14517,5643,20289
+Car occupant injured in collision with pedestrian or animal (V40),5,0,5,—,—,—,np,—,np,281,—,290
+Car occupant injured in collision with pedal cycle (V41),0,0,0,—,—,—,—,—,—,—,—,—
+Car occupant injured in collision with two- or three-wheeled motor vehicle (V42),1,0,1,np,—,np,np,—,np,—,—,—
+"Car occupant injured in collision with car, pick-up truck or van (V43)",111,83,194,0.8,0.6,0.7,0.8,0.5,0.6,3155,2380,5531
+Car occupant injured in collision with heavy transport vehicle or bus (V44),46,20,66,0.3,0.1,0.2,0.3,0.1,0.2,1472,530,2025
+Car occupant injured in collision with railway train or railway vehicle (V45),2,1,3,np,np,np,np,np,np,np,np,np
+Car occupant injured in collision with other nonmotor vehicle (V46),0,0,0,—,—,—,—,—,—,—,—,—
+Car occupant injured in collision with fixed or stationary object (V47),197,66,263,1.4,0.5,1,1.4,0.4,0.9,6873,1982,8923
+Car occupant injured in noncollision transport accident (V48),62,22,84,0.5,0.2,0.3,0.4,0.1,0.3,1875,512,2402
+Car occupant injured in other and unspecified transport accidents (V49),18,7,25,0.1,0.1,0.1,np,np,0.1,821,188,1027
+Occupant of pick-up truck or van injured in transport accident (V50-V59),5,1,6,—,np,—,np,np,np,166,—,164
+Occupant of pick-up truck or van injured in collision with pedestrian or animal (V50),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of pick-up truck or van injured in collision with pedal cycle (V51),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of pick-up truck or van injured in collision with two- or three-wheeled motor vehicle (V52),0,0,0,—,—,—,—,—,—,—,—,—
+"Occupant of pick-up truck or van injured in collision with car, pick-up truck or van (V53)",1,0,1,np,—,np,np,—,np,np,—,np
+Occupant of pick-up truck or van injured in collision with heavy transport vehicle or bus (V54),2,1,3,np,np,np,np,np,np,np,—,np
+Occupant of pick-up truck or van injured in collision with railway train or railway vehicle (V55),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of pick-up truck or van injured in collision with other nonmotor vehicle (V56),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of pick-up truck or van injured in collision with fixed or stationary object (V57),2,0,2,np,—,np,np,—,np,np,—,np
+Occupant of pick-up truck or van injured in noncollision transport accident (V58),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of pick-up truck or van injured in other and unspecified transport accidents (V59),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of heavy transport vehicle injured in transport accident (V60-V69),38,1,39,0.3,np,0.1,0.3,np,0.1,1123,np,1171
+Occupant of heavy transport vehicle injured in collision with pedestrian or animal (V60),1,0,1,np,—,np,np,—,np,np,—,np
+Occupant of heavy transport vehicle injured in collision with pedal cycle (V61),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of heavy transport vehicle injured in collision with two- or three-wheeled motor vehicle (V62),0,0,0,—,—,—,—,—,—,—,—,—
+"Occupant of heavy transport vehicle injured in collision with car, pick-up truck or van (V63)",4,0,4,np,—,np,np,—,np,np,—,np
+Occupant of heavy transport vehicle injured in collision with heavy transport vehicle or bus (V64),10,0,10,0.1,—,—,np,—,np,319,—,320
+Occupant of heavy transport vehicle injured in collision with railway train or railway vehicle (V65),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of heavy transport vehicle injured in collision with other nonmotor vehicle (V66),0,0,0,—,—,—,—,—,—,—,—,—
+Occupant of heavy transport vehicle injured in collision with fixed or stationary object (V67),12,0,12,0.1,—,—,np,—,np,331,—,327
+Occupant of heavy transport vehicle injured in noncollision transport accident (V68),10,0,10,0.1,—,—,np,—,np,279,—,278
+Occupant of heavy transport vehicle injured in other and unspecified transport accidents (V69),1,1,2,np,np,np,np,np,np,np,np,np
+Bus occupant injured in transport accident (V70-V79),4,1,5,np,np,—,np,np,np,np,np,np
+Bus occupant injured in collision with pedestrian or animal (V70),0,0,0,—,—,—,—,—,—,—,—,—
+Bus occupant injured in collision with pedal cycle (V71),0,0,0,—,—,—,—,—,—,—,—,—
+Bus occupant injured in collision with two- or three-wheeled motor vehicle (V72),0,0,0,—,—,—,—,—,—,—,—,—
+"Bus occupant injured in collision with car, pick-up truck or van (V73)",0,0,0,—,—,—,—,—,—,—,—,—
+Bus occupant injured in collision with heavy transport vehicle or bus (V74),1,0,1,np,—,np,np,—,np,np,—,np
+Bus occupant injured in collision with railway train or railway vehicle (V75),0,0,0,—,—,—,—,—,—,—,—,—
+Bus occupant injured in collision with other nonmotor vehicle (V76),0,0,0,—,—,—,—,—,—,—,—,—
+Bus occupant injured in collision with fixed or stationary object (V77),0,0,0,—,—,—,—,—,—,—,—,—
+Bus occupant injured in noncollision transport accident (V78),3,1,4,np,np,np,np,np,np,np,np,np
+Bus occupant injured in other and unspecified transport accidents (V79),0,0,0,—,—,—,—,—,—,—,—,—
+Other land transport accidents (V80-V89),88,28,116,0.6,0.2,0.4,0.6,0.2,0.4,2159,671,2848
+Animal-rider or occupant of animal-drawn vehicle injured in transport accident (V80),2,3,5,np,np,—,np,np,np,np,np,70
+Occupant of railway train or railway vehicle injured in transport accident (V81),1,0,1,np,—,np,np,—,np,np,—,np
+Occupant of streetcar injured in transport accident (V82),1,0,1,np,—,np,np,—,np,np,—,np
+Occupant of special vehicle mainly used on industrial premises injured in transport accident (V83),5,0,5,—,—,—,np,—,np,180,—,182
+Occupant of special vehicle mainly used in agriculture injured in transport accident (V84),24,1,25,0.2,np,0.1,0.1,np,0.1,265,np,325
+Occupant of special construction vehicle injured in transport accident (V85),1,0,1,np,—,np,np,—,np,np,—,np
+"Occupant of special all-terrain or other motor vehicle designed primarily for off-road use, injured in transport accident (V86)",18,6,24,0.1,—,0.1,np,np,0.1,514,274,792
+Traffic accident of specified type but victim's mode of transport unknown (V87),0,0,0,—,—,—,—,—,—,—,—,—
+Nontraffic accident of specified type but victim's mode of transport unknown (V88),0,0,0,—,—,—,—,—,—,—,—,—
+"Motor- or nonmotor-vehicle accident, type of vehicle unspecified (V89)",36,18,54,0.3,0.1,0.2,0.2,np,0.2,1133,275,1423
+Water transport accidents (V90-V94),39,2,41,0.3,np,0.1,0.3,np,0.1,875,np,931
+Accident to watercraft causing drowning and submersion (V90),21,1,22,0.2,np,0.1,0.1,np,0.1,570,np,602
+Accident to watercraft causing other injury (V91),4,0,4,np,—,np,np,—,np,np,—,np
+Water-transport-related drowning and submersion without accident to watercraft (V92),9,1,10,0.1,np,—,np,np,np,97,np,122
+"Accident on board watercraft without accident to watercraft, not causing drowning and submersion (V93)",3,0,3,np,—,np,np,—,np,np,—,np
+Other and unspecified water transport accidents (V94),2,0,2,np,—,np,np,—,np,np,—,np
+Air and space transport accidents (V95-V97),26,3,29,0.2,np,0.1,0.2,np,0.1,652,np,729
+Accident to powered aircraft causing injury to occupant (V95),25,3,28,0.2,np,0.1,0.2,np,0.1,640,np,718
+Accident to nonpowered aircraft causing injury to occupant (V96),1,0,1,np,—,np,np,—,np,np,—,np
+Other specified air transport accidents (V97),0,0,0,—,—,—,—,—,—,—,—,—
+Other and unspecified transport accidents (V98-V99),0,0,0,—,—,—,—,—,—,—,—,—
+Other specified transport accidents (V98),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified transport accident (V99),0,0,0,—,—,—,—,—,—,—,—,—
+Other external causes of accidental injury (W00-X59),4678,3506,8184,34.1,25.2,29.6,29.2,16.6,22.6,60444,21688,82028
+Falls (W00-W19),2427,2254,4681,17.7,16.2,17,13.8,9.6,11.5,6070,2775,8800
+Fall on same level involving ice and snow (W00),0,0,0,—,—,—,—,—,—,—,—,—
+"Fall on same level from slipping, tripping and stumbling (W01)",177,161,338,1.3,1.2,1.2,1,0.7,0.8,520,289,806
+"Fall involving ice-skates, skis, roller-skates or skateboards (W02)",1,0,1,np,—,np,np,—,np,np,—,np
+"Other fall on same level due to collision with, or pushing by, another person (W03)",1,0,1,np,—,np,np,—,np,—,—,—
+Fall while being carried or supported by other persons (W04),0,1,1,—,np,np,—,np,np,—,np,np
+Fall involving wheelchair (W05),9,4,13,0.1,np,—,np,np,np,np,—,np
+Fall involving bed (W06),61,57,118,0.4,0.4,0.4,0.3,0.2,0.3,93,56,147
+Fall involving chair (W07),30,29,59,0.2,0.2,0.2,0.2,0.1,0.1,86,32,118
+Fall involving other furniture (W08),5,1,6,—,np,—,np,np,np,np,np,np
+Fall involving playground equipment (W09),1,0,1,np,—,np,np,—,np,np,—,np
+Fall on and from stairs and steps (W10),68,35,103,0.5,0.3,0.4,0.4,0.2,0.3,435,209,641
+Fall on and from ladder (W11),34,2,36,0.2,np,0.1,0.2,np,0.1,320,np,337
+Fall on and from scaffolding (W12),0,0,0,—,—,—,—,—,—,—,—,—
+"Fall from, out of or through building or structure (W13)",38,8,46,0.3,0.1,0.2,0.2,np,0.1,434,136,565
+Fall from tree (W14),2,0,2,np,—,np,np,—,np,np,—,np
+Fall from cliff (W15),9,2,11,0.1,np,—,np,np,np,354,np,487
+Diving or jumping into water causing injury other than drowning or submersion (W16),4,0,4,np,—,np,np,—,np,np,—,np
+Other fall from one level to another (W17),17,4,21,0.1,np,0.1,np,np,0.1,229,—,226
+Other fall on same level (W18),139,152,291,1,1.1,1.1,0.8,0.6,0.7,239,48,283
+Unspecified fall (W19),1831,1798,3629,13.4,12.9,13.1,10.4,7.6,8.8,2974,1845,4796
+Exposure to inanimate mechanical forces (W20-W49),79,21,100,0.6,0.2,0.4,0.5,0.1,0.3,2173,497,2667
+"Struck by thrown, projected or falling object (W20)",23,6,29,0.2,—,0.1,0.2,np,0.1,617,265,879
+Striking against or struck by sports equipment (W21),3,0,3,np,—,np,np,—,np,np,—,np
+Striking against or struck by other objects (W22),5,4,9,—,np,—,np,np,np,124,np,178
+"Caught, crushed, jammed or pinched in or between objects (W23)",6,1,7,—,np,—,np,np,np,138,np,157
+"Contact with lifting and transmission devices, not elsewhere classified (W24)",5,0,5,—,—,—,np,—,np,np,—,np
+Contact with sharp glass (W25),4,0,4,np,—,np,np,—,np,np,—,np
+"Contact with knife, sword or dagger (W26)",1,5,6,np,—,—,np,np,np,np,np,np
+Contact with nonpowered hand tool (W27),0,0,0,—,—,—,—,—,—,—,—,—
+Contact with powered lawnmower (W28),0,0,0,—,—,—,—,—,—,—,—,—
+Contact with other powered hand tools and household machinery (W29),2,0,2,np,—,np,np,—,np,np,—,np
+Contact with agricultural machinery (W30),1,0,1,np,—,np,np,—,np,np,—,np
+Contact with other and unspecified machinery (W31),17,0,17,0.1,—,0.1,np,—,np,467,—,465
+Handgun discharge (W32),1,0,1,np,—,np,np,—,np,np,—,np
+"Rifle, shotgun and larger firearm discharge (W33)",1,0,1,np,—,np,np,—,np,np,—,np
+Discharge from other and unspecified firearms (W34),0,0,0,—,—,—,—,—,—,—,—,—
+Explosion and rupture of boiler (W35),0,0,0,—,—,—,—,—,—,—,—,—
+Explosion and rupture of gas cylinder (W36),2,0,2,np,—,np,np,—,np,np,—,np
+"Explosion and rupture of pressurized tyre, pipe or hose (W37)",1,0,1,np,—,np,np,—,np,np,—,np
+Explosion and rupture of other specified pressurized devices (W38),0,0,0,—,—,—,—,—,—,—,—,—
+Discharge of firework (W39),1,0,1,np,—,np,np,—,np,np,—,np
+Explosion of other materials (W40),2,1,3,np,np,np,np,np,np,np,np,np
+Exposure to high-pressure jet (W41),0,0,0,—,—,—,—,—,—,—,—,—
+Exposure to noise (W42),0,0,0,—,—,—,—,—,—,—,—,—
+Exposure to vibration (W43),0,0,0,—,—,—,—,—,—,—,—,—
+Foreign body entering into or through eye or natural orifice (W44),3,4,7,np,np,—,np,np,np,np,np,np
+Foreign body or object entering through skin (W45),0,0,0,—,—,—,—,—,—,—,—,—
+Contact with hypodermic needle (W46),1,0,1,np,—,np,np,—,np,np,—,np
+Exposure to other and unspecified inanimate mechanical forces (W49),0,0,0,—,—,—,—,—,—,—,—,—
+Exposure to animate mechanical forces (W50-W64),16,12,28,0.1,0.1,0.1,np,np,0.1,431,434,856
+"Hit, struck, kicked, twisted, bitten or scratched by another person (W50)",2,0,2,np,—,np,np,—,np,np,—,np
+Striking against or bumped into by another person (W51),0,0,0,—,—,—,—,—,—,—,—,—
+"Crushed, pushed or stepped on by crowd or human stampede (W52)",0,0,0,—,—,—,—,—,—,—,—,—
+Bitten by rat (W53),0,0,0,—,—,—,—,—,—,—,—,—
+Bitten or struck by dog (W54),2,4,6,np,np,—,np,np,np,np,np,np
+Bitten or struck by other mammals (W55),6,5,11,—,—,—,np,np,np,73,165,235
+Contact with marine animal (W56),4,2,6,np,np,—,np,np,np,np,np,275
+Bitten or stung by nonvenomous insect and other nonvenomous arthropods (W57),0,0,0,—,—,—,—,—,—,—,—,—
+Bitten or struck by crocodile or alligator (W58),2,1,3,np,np,np,np,np,np,np,np,np
+Bitten or crushed by other reptiles (W59),0,0,0,—,—,—,—,—,—,—,—,—
+Contact with plant thorns and spines and sharp leaves (W60),0,0,0,—,—,—,—,—,—,—,—,—
+Exposure to other and unspecified animate mechanical forces (W64),0,0,0,—,—,—,—,—,—,—,—,—
+Accidental drowning and submersion (W65-W74),187,38,225,1.4,0.3,0.8,1.3,0.3,0.8,6296,1575,7932
+Drowning and submersion while in bath-tub (W65),7,9,16,0.1,0.1,0.1,np,np,np,284,317,604
+Drowning and submersion following fall into bath-tub (W66),1,0,1,np,—,np,np,—,np,np,—,np
+Drowning and submersion while in swimming-pool (W67),17,7,24,0.1,0.1,0.1,np,np,0.1,432,378,807
+Drowning and submersion following fall into swimming-pool (W68),10,3,13,0.1,np,—,np,np,np,430,np,580
+Drowning and submersion while in natural water (W69),93,10,103,0.7,0.1,0.4,0.6,np,0.4,2931,286,3241
+Drowning and submersion following fall into natural water (W70),27,6,33,0.2,—,0.1,0.2,np,0.1,901,208,1119
+Other specified drowning and submersion (W73),14,2,16,0.1,np,0.1,np,np,np,430,np,628
+Unspecified drowning and submersion (W74),18,1,19,0.1,np,0.1,np,np,np,877,np,943
+Other accidental threats to breathing (W75-W84),147,113,260,1.1,0.8,0.9,0.9,0.6,0.7,1881,811,2699
+Accidental suffocation and strangulation in bed (W75),3,4,7,np,np,—,np,np,np,—,—,—
+Other accidental hanging and strangulation (W76),9,6,15,0.1,—,0.1,np,np,np,445,234,683
+"Threat to breathing due to cave-in, falling earth and other substances (W77)",0,0,0,—,—,—,—,—,—,—,—,—
+Inhalation of gastric contents (W78),2,4,6,np,np,—,np,np,np,np,np,np
+Inhalation and ingestion of food causing obstruction of respiratory tract (W79),34,30,64,0.2,0.2,0.2,0.2,0.2,0.2,592,184,783
+Inhalation and ingestion of other objects causing obstruction of respiratory tract (W80),85,63,148,0.6,0.5,0.5,0.5,0.3,0.4,539,177,721
+Confined to or trapped in a low-oxygen environment (W81),1,0,1,np,—,np,np,—,np,np,—,np
+Other specified threats to breathing (W83),12,6,18,0.1,—,0.1,np,np,np,278,np,370
+Unspecified threat to breathing (W84),1,0,1,np,—,np,np,—,np,np,—,np
+"Exposure to electric current, radiation and extreme ambient air temperature and pressure (W85-W99)",9,1,10,0.1,np,—,np,np,np,352,—,350
+Exposure to electric transmission lines (W85),2,0,2,np,—,np,np,—,np,np,—,np
+Exposure to other specified electric current (W86),3,1,4,np,np,np,np,np,np,np,—,np
+Exposure to unspecified electric current (W87),4,0,4,np,—,np,np,—,np,np,—,np
+Exposure to ionizing radiation (W88),0,0,0,—,—,—,—,—,—,—,—,—
+Exposure to man-made visible and ultraviolet light (W89),0,0,0,—,—,—,—,—,—,—,—,—
+Exposure to other nonionizing radiation (W90),0,0,0,—,—,—,—,—,—,—,—,—
+Exposure to unspecified type of radiation (W91),0,0,0,—,—,—,—,—,—,—,—,—
+Exposure to excessive heat of man-made origin (W92),0,0,0,—,—,—,—,—,—,—,—,—
+Exposure to excessive cold of man-made origin (W93),0,0,0,—,—,—,—,—,—,—,—,—
+Exposure to high and low air pressure and changes in air pressure (W94),0,0,0,—,—,—,—,—,—,—,—,—
+Exposure to other and unspecified man-made environmental factors (W99),0,0,0,—,—,—,—,—,—,—,—,—
+"Exposure to smoke, fire and flames (X00-X09)",43,25,68,0.3,0.2,0.2,0.3,0.2,0.2,810,650,1458
+Exposure to uncontrolled fire in building or structure (X00),27,21,48,0.2,0.2,0.2,0.2,0.1,0.2,672,610,1282
+"Exposure to uncontrolled fire, not in building or structure (X01)",2,0,2,np,—,np,np,—,np,np,—,np
+Exposure to controlled fire in building or structure (X02),0,1,1,—,np,np,—,np,np,—,np,np
+"Exposure to controlled fire, not in building or structure (X03)",2,0,2,np,—,np,np,—,np,np,—,np
+Exposure to ignition of highly flammable material (X04),2,2,4,np,np,np,np,np,np,np,np,np
+Exposure to ignition or melting of nightwear (X05),2,0,2,np,—,np,np,—,np,np,—,np
+Exposure to ignition or melting of other clothing and apparel (X06),2,1,3,np,np,np,np,np,np,np,np,np
+"Exposure to other specified smoke, fire and flames (X08)",0,0,0,—,—,—,—,—,—,—,—,—
+"Exposure to unspecified smoke, fire and flames (X09)",6,0,6,—,—,—,np,—,np,np,—,np
+Contact with heat and hot substances (X10-X19),2,4,6,np,np,—,np,np,np,—,np,np
+"Contact with hot drinks, food, fats and cooking oils (X10)",0,1,1,—,np,np,—,np,np,—,np,np
+Contact with hot tap-water (X11),2,2,4,np,np,np,np,np,np,—,—,—
+Contact with other hot fluids (X12),0,1,1,—,np,np,—,np,np,—,np,np
+Contact with steam and hot vapours (X13),0,0,0,—,—,—,—,—,—,—,—,—
+Contact with hot air and gases (X14),0,0,0,—,—,—,—,—,—,—,—,—
+Contact with hot household appliances (X15),0,0,0,—,—,—,—,—,—,—,—,—
+"Contact with hot heating appliances, radiators and pipes (X16)",0,0,0,—,—,—,—,—,—,—,—,—
+"Contact with hot engines, machinery and tools (X17)",0,0,0,—,—,—,—,—,—,—,—,—
+Contact with other hot metals (X18),0,0,0,—,—,—,—,—,—,—,—,—
+Contact with other and unspecified heat and hot substances (X19),0,0,0,—,—,—,—,—,—,—,—,—
+Contact with venomous animals and plants (X20-X29),3,3,6,np,np,—,np,np,np,np,np,np
+Contact with venomous snakes and lizards (X20),1,2,3,np,np,np,np,np,np,np,np,np
+Contact with venomous spiders (X21),0,0,0,—,—,—,—,—,—,—,—,—
+Contact with scorpions (X22),0,0,0,—,—,—,—,—,—,—,—,—
+"Contact with hornets, wasps and bees (X23)",1,1,2,np,np,np,np,np,np,—,np,np
+Contact with centipedes and venomous millipedes (tropical) (X24),0,0,0,—,—,—,—,—,—,—,—,—
+Contact with other specified venomous arthropods (X25),1,0,1,np,—,np,np,—,np,—,—,—
+Contact with venomous marine animals and plants (X26),0,0,0,—,—,—,—,—,—,—,—,—
+Contact with other specified venomous animals (X27),0,0,0,—,—,—,—,—,—,—,—,—
+Contact with other specified venomous plants (X28),0,0,0,—,—,—,—,—,—,—,—,—
+Contact with unspecified venomous animal or plant (X29),0,0,0,—,—,—,—,—,—,—,—,—
+Exposure to forces of nature (X30-X39),33,23,56,0.2,0.2,0.2,0.2,0.1,0.2,777,477,1250
+Exposure to excessive natural heat (X30),13,6,19,0.1,—,0.1,np,np,np,220,np,320
+Exposure to excessive natural cold (X31),11,12,23,0.1,0.1,0.1,np,np,0.1,230,234,462
+Exposure to sunlight (X32),0,0,0,—,—,—,—,—,—,—,—,—
+Victim of lightning (X33),1,1,2,np,np,np,np,np,np,np,np,np
+Victim of earthquake (X34),0,0,0,—,—,—,—,—,—,—,—,—
+Victim of volcanic eruption (X35),0,0,0,—,—,—,—,—,—,—,—,—
+"Victim of avalanche, landslide and other earth movements (X36)",0,0,0,—,—,—,—,—,—,—,—,—
+Victim of cataclysmic storm (X37),4,2,6,np,np,—,np,np,np,np,np,207
+Victim of flood (X38),1,2,3,np,np,np,np,np,np,np,np,np
+Exposure to other and unspecified forces of nature (X39),3,0,3,np,—,np,np,—,np,np,—,np
+Accidental poisoning by and exposure to noxious substances (X40-X49),1182,436,1618,8.6,3.1,5.9,8.8,3.1,5.9,39725,13622,53257
+"Accidental poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics (X40)",4,5,9,np,—,—,np,np,np,np,np,153
+"Accidental poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not elsewhere classified (X41)",245,90,335,1.8,0.6,1.2,1.8,0.6,1.2,7583,2798,10348
+"Accidental poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not elsewhere classified (X42)",223,54,277,1.6,0.4,1,1.7,0.4,1,7472,1630,9083
+Accidental poisoning by and exposure to other drugs acting on the autonomic nervous system (X43),1,1,2,np,np,np,np,np,np,—,np,np
+"Accidental poisoning by and exposure to other and unspecified drugs, medicaments and biological substances (X44)",574,236,810,4.2,1.7,2.9,4.3,1.7,3,20238,7732,27946
+Accidental poisoning by and exposure to alcohol (X45),118,47,165,0.9,0.3,0.6,0.9,0.3,0.6,3692,1155,4835
+Accidental poisoning by and exposure to organic solvents and halogenated hydrocarbons and their vapours (X46),3,1,4,np,np,np,np,np,np,np,np,np
+Accidental poisoning by and exposure to other gases and vapours (X47),11,2,13,0.1,np,—,np,np,np,413,np,526
+Accidental poisoning by and exposure to pesticides (X48),0,0,0,—,—,—,—,—,—,—,—,—
+Accidental poisoning by and exposure to other and unspecified chemicals and noxious substances (X49),3,0,3,np,—,np,np,—,np,np,—,np
+"Overexertion, travel and privation (X50-X57)",1,4,5,np,np,—,np,np,np,np,np,124
+Overexertion and strenuous or repetitive movements (X50),1,2,3,np,np,np,np,np,np,np,np,np
+Travel and motion (X51),0,0,0,—,—,—,—,—,—,—,—,—
+Prolonged stay in weightless environment (X52),0,0,0,—,—,—,—,—,—,—,—,—
+Lack of food (X53),0,2,2,—,np,np,—,np,np,—,np,np
+Lack of water (X54),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified privation (X57),0,0,0,—,—,—,—,—,—,—,—,—
+Accidental exposure to other and unspecified factors (X58-X59),549,572,1121,4,4.1,4.1,3.1,2.4,2.8,1838,668,2489
+Exposure to other specified factors (X58),0,0,0,—,—,—,—,—,—,—,—,—
+Exposure to unspecified factor (X59),549,572,1121,4,4.1,4.1,3.1,2.4,2.8,1838,668,2489
+Other external causes of mortality (X60-Y36),2906,1041,3947,21.2,7.5,14.3,20.7,7.3,13.9,94249,35454,129746
+Intentional self-harm (X60-X84),2424,858,3282,17.7,6.2,11.9,17.2,6,11.6,78496,30145,108632
+"Intentional self-poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics (X60)",2,4,6,np,np,—,np,np,np,np,np,130
+"Intentional self-poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not elsewhere classified (X61)",34,44,78,0.2,0.3,0.3,0.2,0.3,0.3,770,1028,1795
+"Intentional self-poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not elsewhere classified (X62)",26,18,44,0.2,0.1,0.2,0.2,np,0.1,716,321,1038
+Intentional self-poisoning by and exposure to other drugs acting on the autonomic nervous system (X63),2,5,7,np,—,—,np,np,np,np,197,269
+"Intentional self-poisoning by and exposure to other and unspecified drugs, medicaments and biological substances (X64)",147,173,320,1.1,1.2,1.2,1,1.1,1.1,4108,4458,8568
+Intentional self-poisoning by and exposure to alcohol (X65),4,3,7,np,np,—,np,np,np,np,np,208
+Intentional self-poisoning by and exposure to organic solvents and halogenated hydrocarbons and their vapours (X66),1,1,2,np,np,np,np,np,np,np,np,np
+Intentional self-poisoning by and exposure to other gases and vapours (X67),76,17,93,0.6,0.1,0.3,0.5,np,0.3,2017,578,2591
+Intentional self-poisoning by and exposure to pesticides (X68),8,2,10,0.1,np,—,np,np,np,70,np,85
+Intentional self-poisoning by and exposure to other and unspecified chemicals and noxious substances (X69),4,1,5,np,np,—,np,np,np,np,np,np
+"Intentional self-harm by hanging, strangulation and suffocation (X70)",1468,440,1908,10.7,3.2,6.9,10.7,3.2,6.9,51862,18394,70213
+Intentional self-harm by drowning and submersion (X71),40,27,67,0.3,0.2,0.2,0.3,0.2,0.2,791,787,1568
+Intentional self-harm by handgun discharge (X72),15,0,15,0.1,—,0.1,np,—,np,422,—,423
+"Intentional self-harm by rifle, shotgun and larger firearm discharge (X73)",103,4,107,0.8,np,0.4,0.7,np,0.3,1915,np,2023
+Intentional self-harm by other and unspecified firearm discharge (X74),19,0,19,0.1,—,0.1,np,—,np,488,—,491
+Intentional self-harm by explosive material (X75),2,1,3,np,np,np,np,np,np,np,np,np
+"Intentional self-harm by smoke, fire and flames (X76)",33,6,39,0.2,—,0.1,0.2,np,0.1,792,222,1010
+"Intentional self-harm by steam, hot vapours and hot objects (X77)",0,1,1,—,np,np,—,np,np,—,np,np
+Intentional self-harm by sharp object (X78),114,20,134,0.8,0.1,0.5,0.8,0.1,0.5,2899,657,3540
+Intentional self-harm by blunt object (X79),0,0,0,—,—,—,—,—,—,—,—,—
+Intentional self-harm by jumping from a high place (X80),145,26,171,1.1,0.2,0.6,1,0.2,0.6,5311,997,6358
+Intentional self-harm by jumping or lying before moving object (X81),64,25,89,0.5,0.2,0.3,0.5,0.2,0.3,2256,843,3109
+Intentional self-harm by crashing of motor vehicle (X82),52,12,64,0.4,0.1,0.2,0.4,np,0.2,1731,495,2229
+Intentional self-harm by other specified means (X83),8,2,10,0.1,np,—,np,np,np,194,np,234
+Intentional self-harm by unspecified means (X84),57,26,83,0.4,0.2,0.3,0.4,0.2,0.3,1793,775,2574
+Assault (X85-Y09),171,81,252,1.2,0.6,0.9,1.2,0.6,0.9,5880,2494,8399
+"Assault by drugs, medicaments and biological substances (X85)",1,0,1,np,—,np,np,—,np,np,—,np
+Assault by corrosive substance (X86),0,0,0,—,—,—,—,—,—,—,—,—
+Assault by pesticides (X87),0,0,0,—,—,—,—,—,—,—,—,—
+Assault by gases and vapours (X88),0,0,0,—,—,—,—,—,—,—,—,—
+Assault by other specified chemicals and noxious substances (X89),0,0,0,—,—,—,—,—,—,—,—,—
+Assault by unspecified chemical or noxious substance (X90),0,0,0,—,—,—,—,—,—,—,—,—
+"Assault by hanging, strangulation and suffocation (X91)",1,9,10,np,0.1,—,np,np,np,np,356,408
+Assault by drowning and submersion (X92),0,1,1,—,np,np,—,np,np,—,np,np
+Assault by handgun discharge (X93),4,0,4,np,—,np,np,—,np,np,—,np
+"Assault by rifle, shotgun and larger firearm discharge (X94)",19,7,26,0.1,0.1,0.1,np,np,0.1,463,185,643
+Assault by other and unspecified firearm discharge (X95),13,3,16,0.1,np,0.1,np,np,np,613,np,735
+Assault by explosive material (X96),0,0,0,—,—,—,—,—,—,—,—,—
+"Assault by smoke, fire and flames (X97)",2,5,7,np,—,—,np,np,np,np,326,398
+"Assault by steam, hot vapours and hot objects (X98)",0,0,0,—,—,—,—,—,—,—,—,—
+Assault by sharp object (X99),67,19,86,0.5,0.1,0.3,0.5,np,0.3,2640,622,3291
+Assault by blunt object (Y00),7,9,16,0.1,0.1,0.1,np,np,np,234,204,439
+Assault by pushing from high place (Y01),0,0,0,—,—,—,—,—,—,—,—,—
+Assault by pushing or placing victim before moving object (Y02),0,1,1,—,np,np,—,np,np,—,np,np
+Assault by crashing of motor vehicle (Y03),3,3,6,np,np,—,np,np,np,np,np,np
+Assault by bodily force (Y04),27,9,36,0.2,0.1,0.1,0.2,np,0.1,649,np,769
+Sexual assault by bodily force (Y05),0,0,0,—,—,—,—,—,—,—,—,—
+Neglect and abandonment (Y06),0,1,1,—,np,np,—,np,np,—,np,np
+Other maltreatment (Y07),0,0,0,—,—,—,—,—,—,—,—,—
+Assault by other specified means (Y08),0,0,0,—,—,—,—,—,—,—,—,—
+Assault by unspecified means (Y09),27,14,41,0.2,0.1,0.1,0.2,np,0.1,809,417,1228
+Event of undetermined intent (Y10-Y34),303,101,404,2.2,0.7,1.5,2.2,0.7,1.4,9512,2772,12309
+"Poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics, undetermined intent (Y10)",0,2,2,—,np,np,—,np,np,—,np,np
+"Poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not elsewhere classified, (Y11)",8,11,19,0.1,0.1,0.1,np,np,np,326,379,707
+"Poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not elsewhere classified, undetermined intent (Y12)",5,1,6,—,np,—,np,np,np,224,np,275
+"Poisoning by and exposure to other drugs acting on the autonomic nervous system, undetermined intent (Y13)",0,0,0,—,—,—,—,—,—,—,—,—
+"Poisoning by and exposure to other and unspecified drugs, medicaments and biological substances, undetermined intent (Y14)",45,22,67,0.3,0.2,0.2,0.3,0.2,0.2,1517,642,2156
+"Poisoning by and exposure to alcohol, undetermined intent (Y15)",2,0,2,np,—,np,np,—,np,np,—,np
+"Poisoning by and exposure to organic solvents and halogenated hydrocarbons and their vapours, undetermined intent (Y16)",0,0,0,—,—,—,—,—,—,—,—,—
+"Poisoning by and exposure to other gases and vapours, undetermined intent (Y17)",3,0,3,np,—,np,np,—,np,np,—,np
+"Poisoning by and exposure to pesticides, undetermined intent (Y18)",0,0,0,—,—,—,—,—,—,—,—,—
+"Poisoning by and exposure to other and unspecified chemicals and noxious substances, undetermined intent (Y19)",0,0,0,—,—,—,—,—,—,—,—,—
+"Hanging, strangulation and suffocation, undetermined intent (Y20)",9,0,9,0.1,—,—,np,—,np,390,—,395
+"Drowning and submersion, undetermined intent (Y21)",19,11,30,0.1,0.1,0.1,np,np,0.1,594,238,838
+"Handgun discharge, undetermined intent (Y22)",0,0,0,—,—,—,—,—,—,—,—,—
+"Rifle, shotgun and larger firearm discharge, undetermined intent (Y23)",0,0,0,—,—,—,—,—,—,—,—,—
+"Other and unspecified firearm discharge, undetermined intent (Y24)",4,0,4,np,—,np,np,—,np,np,—,np
+"Contact with explosive material, undetermined intent (Y25)",0,0,0,—,—,—,—,—,—,—,—,—
+"Exposure to smoke, fire and flames, undetermined intent (Y26)",11,2,13,0.1,np,—,np,np,np,330,np,422
+"Contact with steam, hot vapours and hot objects, undetermined intent (Y27)",0,0,0,—,—,—,—,—,—,—,—,—
+"Contact with sharp object, undetermined intent (Y28)",5,2,7,—,np,—,np,np,np,98,np,179
+"Contact with blunt object, undetermined intent (Y29)",0,0,0,—,—,—,—,—,—,—,—,—
+"Falling, jumping or pushed from a high place, undetermined intent (Y30)",8,1,9,0.1,np,—,np,np,np,391,np,440
+"Falling, lying or running before or into moving object, undetermined intent (Y31)",8,6,14,0.1,—,0.1,np,np,np,316,283,596
+"Crashing of motor vehicle, undetermined intent (Y32)",20,2,22,0.1,np,0.1,0.1,np,0.1,821,np,914
+"Other specified events, undetermined intent (Y33)",1,2,3,np,np,np,np,np,np,np,np,np
+"Unspecified event, undetermined intent (Y34)",155,39,194,1.1,0.3,0.7,1.1,0.2,0.6,4213,781,4998
+Legal intervention and operations of war (Y35-Y36),8,1,9,0.1,np,—,np,np,np,360,np,407
+Legal intervention (Y35),8,1,9,0.1,np,—,np,np,np,360,np,407
+Operations of war (Y36),0,0,0,—,—,—,—,—,—,—,—,—
+Complications of medical and surgical care (Y40-Y84),46,38,84,0.3,0.3,0.3,0.3,0.2,0.2,554,244,796
+"Drugs, medicaments and biological substances causing adverse effects in therapeutic use (Y40-Y59)",23,27,50,0.2,0.2,0.2,0.1,0.1,0.1,336,192,527
+Systemic antibiotics (Y40),5,0,5,—,—,—,np,—,np,np,—,np
+Other systemic anti-infectives and antiparasitics (Y41),0,1,1,—,np,np,—,np,np,—,np,np
+"Hormones and their synthetic substitutes and antagonists, not elsewhere classified (Y42)",1,0,1,np,—,np,np,—,np,np,—,np
+Primarily systemic agents (Y43),0,1,1,—,np,np,—,np,np,—,np,np
+Agents primarily affecting blood constituents (Y44),2,3,5,np,np,—,np,np,np,np,np,np
+"Analgesics, antipyretics and anti-inflammatory drugs (Y45)",0,2,2,—,np,np,—,np,np,—,—,—
+Antiepileptics and antiparkinsonism drugs (Y46),0,0,0,—,—,—,—,—,—,—,—,—
+"Sedatives, hypnotics and antianxiety drugs (Y47)",0,0,0,—,—,—,—,—,—,—,—,—
+Anaesthetics and therapeutic gases (Y48),2,1,3,np,np,np,np,np,np,np,np,np
+"Psychotropic drugs, not elsewhere classified (Y49)",1,3,4,np,np,np,np,np,np,np,np,np
+"Central nervous system stimulants, not elsewhere classified (Y50)",0,0,0,—,—,—,—,—,—,—,—,—
+Drugs primarily affecting the autonomic nervous system (Y51),0,1,1,—,np,np,—,np,np,—,—,—
+Agents primarily affecting the cardiovascular system (Y52),2,4,6,np,np,—,np,np,np,—,np,np
+Agents primarily affecting the gastrointestinal system (Y53),0,0,0,—,—,—,—,—,—,—,—,—
+Agents primarily affecting water-balance and mineral and uric acid metabolism (Y54),0,0,0,—,—,—,—,—,—,—,—,—
+Agents primarily acting on smooth and skeletal muscles and the respiratory system (Y55),1,1,2,np,np,np,np,np,np,np,np,np
+"Topical agents primarily affecting skin and mucous membrane and ophthalmological, otorhinolaryngological and dental drugs (Y56)",0,0,0,—,—,—,—,—,—,—,—,—
+Other and unspecified drugs and medicaments (Y57),9,10,19,0.1,0.1,0.1,np,np,np,187,93,279
+Bacterial vaccines (Y58),0,0,0,—,—,—,—,—,—,—,—,—
+Other and unspecified vaccines and biological substances (Y59),0,0,0,—,—,—,—,—,—,—,—,—
+Misadventures to patients during surgical and medical care (Y60-Y69),2,1,3,np,np,np,np,np,np,np,np,np
+"Unintentional cut, puncture, perforation or haemorrhage during surgical and medical care (Y60)",1,1,2,np,np,np,np,np,np,np,np,np
+Foreign object accidentally left in body during surgical and medical care (Y61),0,0,0,—,—,—,—,—,—,—,—,—
+Failure of sterile precautions during surgical and medical care (Y62),0,0,0,—,—,—,—,—,—,—,—,—
+Failure in dosage during surgical and medical care (Y63),0,0,0,—,—,—,—,—,—,—,—,—
+Contaminated medical or biological substances (Y64),0,0,0,—,—,—,—,—,—,—,—,—
+Other misadventures during surgical and medical care (Y65),1,0,1,np,—,np,np,—,np,np,—,np
+Nonadministration of surgical and medical care (Y66),0,0,0,—,—,—,—,—,—,—,—,—
+Unspecified misadventure during surgical and medical care (Y69),0,0,0,—,—,—,—,—,—,—,—,—
+Medical devices associated with adverse incidents in diagnostic and therapeutic use (Y70-Y82),0,0,0,—,—,—,—,—,—,—,—,—
+Anaesthesiology devices associated with adverse incidents (Y70),0,0,0,—,—,—,—,—,—,—,—,—
+Cardiovascular devices associated with adverse incidents (Y71),0,0,0,—,—,—,—,—,—,—,—,—
+Otorhinolaryngological devices associated with adverse incidents (Y72),0,0,0,—,—,—,—,—,—,—,—,—
+Gastroenterology and urology devices associated with adverse incidents (Y73),0,0,0,—,—,—,—,—,—,—,—,—
+General hospital and personal-use devices associated with adverse incidents (Y74),0,0,0,—,—,—,—,—,—,—,—,—
+Neurological devices associated with adverse incidents (Y75),0,0,0,—,—,—,—,—,—,—,—,—
+Obstetric and gynaecological devices associated with adverse incidents (Y76),0,0,0,—,—,—,—,—,—,—,—,—
+Ophthalmic devices associated with adverse incidents (Y77),0,0,0,—,—,—,—,—,—,—,—,—
+Radiological devices associated with adverse incidents (Y78),0,0,0,—,—,—,—,—,—,—,—,—
+Orthopaedic devices associated with adverse incidents (Y79),0,0,0,—,—,—,—,—,—,—,—,—
+Physical medicine devices associated with adverse incidents (Y80),0,0,0,—,—,—,—,—,—,—,—,—
+General- and plastic-surgery devices associated with adverse incidents (Y81),0,0,0,—,—,—,—,—,—,—,—,—
+Other and unspecified medical devices associated with adverse incidents (Y82),0,0,0,—,—,—,—,—,—,—,—,—
+"Surgical and other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure (Y83-Y84)",21,10,31,0.2,0.1,0.1,0.1,np,0.1,189,52,241
+"Surgical operation and other surgical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure (Y83)",11,7,18,0.1,0.1,0.1,np,np,np,56,np,69
+"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure (Y84)",10,3,13,0.1,np,—,np,np,np,134,np,172
+Sequelae and supplementary factors of external cause (Y85-Y98),119,40,159,0.9,0.3,0.6,0.7,0.2,0.4,1068,388,1450
+Sequelae of external causes of morbidity and mortality (Y85-Y89),119,40,159,0.9,0.3,0.6,0.7,0.2,0.4,1068,388,1450
+Sequelae of transport accidents (Y85),16,6,22,0.1,—,0.1,np,np,0.1,365,164,529
+Sequelae of other accidents (Y86),95,31,126,0.7,0.2,0.5,0.6,0.2,0.3,545,224,762
+"Sequelae of intentional self-harm, assault and events of undetermined intent (Y87)",2,0,2,np,—,np,np,—,np,np,—,np
+Sequelae with surgical and medical care as external cause (Y88),6,3,9,—,np,—,np,np,np,np,—,np
+Sequelae of other external causes (Y89),0,0,0,—,—,—,—,—,—,—,—,—
+Supplementary factors related to causes of morbidity and mortality classified elsewhere (Y90-Y98),0,0,0,—,—,—,—,—,—,—,—,—
+Evidence of alcohol involvement determined by blood alcohol level (Y90),0,0,0,—,—,—,—,—,—,—,—,—
+Evidence of alcohol involvement determined by level of intoxication (Y91),0,0,0,—,—,—,—,—,—,—,—,—
+Nosocomial condition (Y95),0,0,0,—,—,—,—,—,—,—,—,—
+Work-related condition (Y96),0,0,0,—,—,—,—,—,—,—,—,—
+Environmental-pollution-related condition (Y97),0,0,0,—,—,—,—,—,—,—,—,—
+Lifestyle-related condition (Y98),0,0,0,—,—,—,—,—,—,—,—,—
+COVID-19 (U07.1-U07.2),994,880,1874,7.3,6.3,6.8,5.6,3.8,4.6,2085,1444,3512
+Multi-system inflammatory syndrome associated with COVID-19 (U10),0,0,0,—,—,—,—,—,—,—,—,—
+COVID-19 vaccines causing adverse effects in therapeutic use (U12),0,1,1,—,np,np,—,np,np,—,—,—

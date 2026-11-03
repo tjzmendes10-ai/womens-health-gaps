@@ -1,0 +1,135 @@
+{
+ "SP.DYN.LE00.FE.IN": {
+  "name": "Life expectancy at birth, female (years)",
+  "source_db": "World Development Indicators",
+  "source_org": "World Population Prospects, United Nations (UN), publisher: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs);\nDemographic Statistics, Eurostat (ESTAT)",
+  "note": "Life expectancy at birth indicates the number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life."
+ },
+ "SP.DYN.LE00.MA.IN": {
+  "name": "Life expectancy at birth, male (years)",
+  "source_db": "World Development Indicators",
+  "source_org": "World Population Prospects, United Nations (UN), publisher: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs);\nDemographic Statistics, Eurostat (ESTAT)",
+  "note": "Life expectancy at birth indicates the number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life."
+ },
+ "SP.DYN.LE60.FE.IN": {
+  "name": "Life expectancy at age 60, female (years)",
+  "source_db": "Gender Statistics",
+  "source_org": "2022 World Population Prospects, United Nations Population Division: Retrieved August 31, 2023.",
+  "note": "Life expectancy at age 60, female is the average number of years that a female at age 60 would live if prevailing patterns of mortality at the time of age 60 were to stay the same throughout her life."
+ },
+ "SP.DYN.LE60.MA.IN": {
+  "name": "Life expectancy at age 60, male (years)",
+  "source_db": "Gender Statistics",
+  "source_org": "2022 World Population Prospects, United Nations Population Division: Retrieved August 31, 2023.",
+  "note": "Life expectancy at age 60, male is the average number of years that a male at age 60 would live if prevailing patterns of mortality at the time of age 60 were to stay the same throughout his life."
+ },
+ "SH.STA.MMRT": {
+  "name": "Maternal mortality ratio (modeled estimate, per 100,000 live births)",
+  "source_db": "World Development Indicators",
+  "source_org": "Trends in Maternal Mortality, World Health Organization (WHO), uri: https://www.who.int/news/item/23-02-2023-a-woman-dies-every-two-minutes-due-to-pregnancy-or-childbirth--un-agencies;\nUN Children's Fund (UNICEF), note: Trends in Maternal Mortality;\nUN Population Fund (UNFPA), note: Trends in Maternal Mortality;\nWorld Bank Group (WBG), note: Trends in Maternal Mortality",
+  "note": "Maternal mortality ratio is the number of women who die from pregnancy-related causes while pregnant or within 42 days of pregnancy termination per 100,000 live births. The data are estimated with a regression model using information on the proportion of maternal deaths among non-AIDS deaths in women ages 15-49, fertility, birth attendants, and GDP measured using purchasing power parities (PPPs)."
+ },
+ "SH.MMR.RISK": {
+  "name": "Lifetime risk of maternal death (1 in: rate varies by country)",
+  "source_db": "World Development Indicators",
+  "source_org": "Trends in Maternal Mortality, World Health Organization (WHO);\nUN Children's Fund (UNICEF), note: Trends in Maternal Mortality;\nUN Population Fund (UNFPA), note: Trends in Maternal Mortality;\nWorld Bank Group (WBG), note: Trends in Maternal Mortality",
+  "note": "Life time risk of maternal death is the probability that a 15-year-old female will die eventually from a maternal cause assuming that current levels of fertility and mortality (including maternal mortality) do not change in the future, taking into account competing causes of death."
+ },
+ "SH.DYN.NCOM.FE.ZS": {
+  "name": "Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",
+  "source_db": "World Development Indicators",
+  "source_org": "World Health Organization, Global Health Observatory Data Repository (http://apps.who.int/ghodata/)., World Health Organization (WHO), uri: https://www.who.int/data/gho",
+  "note": "Mortality from CVD, cancer, diabetes or CRD is the percent of 30-year-old-people who would die before their 70th birthday from any of cardiovascular disease, cancer, diabetes,  or chronic respiratory disease, assuming that s/he would experience current mortality rates at every age and s/he would not die from any other cause of death (e.g., injuries or HIV/AIDS)."
+ },
+ "SH.DYN.NCOM.MA.ZS": {
+  "name": "Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",
+  "source_db": "World Development Indicators",
+  "source_org": "World Health Organization, Global Health Observatory Data Repository (http://apps.who.int/ghodata/)., World Health Organization (WHO), uri: https://www.who.int/data/gho",
+  "note": "Mortality from CVD, cancer, diabetes or CRD is the percent of 30-year-old-people who would die before their 70th birthday from any of cardiovascular disease, cancer, diabetes,  or chronic respiratory disease, assuming that s/he would experience current mortality rates at every age and s/he would not die from any other cause of death (e.g., injuries or HIV/AIDS)."
+ },
+ "SH.STA.SUIC.FE.P5": {
+  "name": "Suicide mortality rate, female (per 100,000 female population)",
+  "source_db": "World Development Indicators",
+  "source_org": "World Health Organization, Global Health Observatory Data Repository (http://apps.who.int/ghodata/)., World Health Organization (WHO), uri: https://www.who.int/data/gho",
+  "note": "Suicide mortality rate is the number of suicide deaths in a year per 100,000 population. Crude suicide rate (not age-adjusted)."
+ },
+ "SH.STA.SUIC.MA.P5": {
+  "name": "Suicide mortality rate, male (per 100,000 male population)",
+  "source_db": "World Development Indicators",
+  "source_org": "World Health Organization, Global Health Observatory Data Repository (http://apps.who.int/ghodata/)., World Health Organization (WHO), uri: https://www.who.int/data/gho",
+  "note": "Suicide mortality rate is the number of suicide deaths in a year per 100,000 population. Crude suicide rate (not age-adjusted)."
+ },
+ "SH.ANM.ALLW.ZS": {
+  "name": "Prevalence of anemia among women of reproductive age (% of women ages 15-49)",
+  "source_db": "World Development Indicators",
+  "source_org": "Global Health Observatory Data Repository/World Health Statistics, World Health Organization (WHO)",
+  "note": "Prevalence of anemia among women of reproductive age refers to the combined prevalence of both non-pregnant with haemoglobin levels below 12 g/dL and pregnant women with haemoglobin levels below 11 g/dL."
+ },
+ "SH.STA.BRTC.ZS": {
+  "name": "Births attended by skilled health staff (% of total)",
+  "source_db": "World Development Indicators",
+  "source_org": "State of the World's Children, UN Children's Fund (UNICEF);\nChildinfo, UN Children's Fund (UNICEF);\nDemographic and Health Surveys, Demographic and Health Surveys (DHS) Program",
+  "note": "Births attended by skilled health staff are the percentage of deliveries attended by personnel trained to give the necessary supervision, care, and advice to women during pregnancy, labor, and the postpartum period; to conduct deliveries on their own; and to care for newborns."
+ },
+ "SP.DYN.AMRT.FE": {
+  "name": "Mortality rate, adult, female (per 1,000 female adults)",
+  "source_db": "World Development Indicators",
+  "source_org": "World Population Prospects, United Nations (UN), publisher: UN Population Division;\nHuman Mortality Database, Max Planck Institute for Demographic Research, uri: www.mortality.org;\nUniversity of California, Berkeley, uri: www.mortality.org, note: Human Mortality Database;\nFrench Institute for Demographic Studies (INED), uri: www.mortality.org, note: Human Mortality Database",
+  "note": "Adult mortality rate, female, is the probability of dying between the ages of 15 and 60--that is, the probability of a 15-year-old female dying before reaching age 60, if subject to age-specific mortality rates of the specified year between those ages."
+ },
+ "SP.DYN.AMRT.MA": {
+  "name": "Mortality rate, adult, male (per 1,000 male adults)",
+  "source_db": "World Development Indicators",
+  "source_org": "World Population Prospects, United Nations (UN), publisher: UN Population Division;\nHuman Mortality Database, Max Planck Institute for Demographic Research (MPIDR), uri: www.mortality.org;\nUniversity of California, Berkeley (USA), uri: www.mortality.org, note: Human Mortality Database;\nFrench Institute for Demographic Studies (INED), uri: www.mortality.org, note: Human Mortality Database",
+  "note": "Adult mortality rate, male, is the probability of dying between the ages of 15 and 60--that is, the probability of a 15-year-old male dying before reaching age 60, if subject to age-specific mortality rates of the specified year between those ages."
+ },
+ "SH.PRV.SMOK.FE": {
+  "name": "Prevalence of current tobacco use, females (% of female adults)",
+  "source_db": "World Development Indicators",
+  "source_org": "Global Health Observatory Data Repository, World Health Organization (WHO), uri: https://www.who.int/data/gho",
+  "note": "The percentage of the female population ages 15 years and over who currently use any tobacco product (smoked and/or smokeless tobacco) on a daily or non-daily basis. Tobacco products include cigarettes, pipes, cigars, cigarillos, waterpipes (hookah, shisha), bidis, kretek, heated tobacco products, and all forms of smokeless (oral and nasal) tobacco. Tobacco products exclude e-cigarettes (which do not contain tobacco), \u201ce-cigars\u201d, \u201ce-hookahs\u201d, JUUL and \u201ce-pipes\u201d. The rates are age-standardized to the WHO Standard Population."
+ },
+ "SH.PRV.SMOK.MA": {
+  "name": "Prevalence of current tobacco use, males (% of male adults)",
+  "source_db": "World Development Indicators",
+  "source_org": "Global Health Observatory Data Repository, World Health Organization (WHO), uri: https://www.who.int/data/gho",
+  "note": "The percentage of the male population ages 15 years and over who currently use any tobacco product (smoked and/or smokeless tobacco) on a daily or non-daily basis. Tobacco products include cigarettes, pipes, cigars, cigarillos, waterpipes (hookah, shisha), bidis, kretek, heated tobacco products, and all forms of smokeless (oral and nasal) tobacco. Tobacco products exclude e-cigarettes (which do not contain tobacco), \u201ce-cigars\u201d, \u201ce-hookahs\u201d, JUUL and \u201ce-pipes\u201d. The rates are age-standardized to the WHO Standard Population."
+ },
+ "SH.HIV.INCD.FE.P3": {
+  "name": "Incidence of HIV, ages 15-49, female (per 1,000 uninfected female population ages 15-49)",
+  "source_db": "Gender Statistics",
+  "source_org": "UNAIDS estimates.",
+  "note": "Number of new HIV infections among uninfected female populations ages 15-49 expressed per 1,000 uninfected female population ages 15-49 in the year before the period."
+ },
+ "SP.ADO.TFRT": {
+  "name": "Adolescent fertility rate (births per 1,000 women ages 15-19)",
+  "source_db": "World Development Indicators",
+  "source_org": "World Population Prospects, United Nations (UN), publisher: UN Population Division",
+  "note": "Adolescent fertility rate is the number of births per 1,000 women ages 15-19."
+ },
+ "SH.FPL.SATM.ZS": {
+  "name": "Demand for family planning satisfied by modern methods (% of married women with demand for family planning)",
+  "source_db": "World Development Indicators",
+  "source_org": "Demographic and Health Surveys (DHS), uri: FP_NADM_W_PDM, date accessed: 2026-06-15",
+  "note": "Demand for family planning satisfied by modern methods refers to the percentage of married women ages 15-49 years whose need for family planning is satisfied with modern methods."
+ },
+ "SH.STA.ANVC.ZS": {
+  "name": "Pregnant women receiving prenatal care (%)",
+  "source_db": "World Development Indicators",
+  "source_org": "State of the World's Children, UN Children's Fund (UNICEF);\nChildinfo, UN Children's Fund (UNICEF);\nDemographic and Health Surveys, Demographic and Health Surveys (DHS) Program",
+  "note": "Pregnant women receiving prenatal care are the percentage of women attended at least once during pregnancy by skilled health personnel for reasons related to pregnancy."
+ },
+ "SH.STA.OWAD.FE.ZS": {
+  "name": "Prevalence of overweight, female (% of female adults)",
+  "source_db": "Health Nutrition and Population Statistics",
+  "source_org": "World Health Organization, Global Health Observatory Data Repository (http://apps.who.int/ghodata/).",
+  "note": "Prevalence of overweight female adults is the percentage of females ages 18 and over whose Body Mass Index (BMI) is more than 25 kg/m2. Body Mass Index (BMI) is a simple index of weight-for-height, or the weight in kilograms divided by the square of the height in meters."
+ },
+ "SH.STA.OWAD.MA.ZS": {
+  "name": "Prevalence of overweight, male (% of male adults)",
+  "source_db": "Health Nutrition and Population Statistics",
+  "source_org": "World Health Organization, Global Health Observatory Data Repository (http://apps.who.int/ghodata/).",
+  "note": "Prevalence of overweight male adults is the percentage of males ages 18 and over whose Body Mass Index (BMI) is more than 25 kg/m2. Body Mass Index (BMI) is a simple index of weight-for-height, or the weight in kilograms divided by the square of the height in meters."
+ },
+ "_retrieved": "2026-11-03"
+}
