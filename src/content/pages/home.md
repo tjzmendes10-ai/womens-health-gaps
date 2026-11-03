@@ -1,7 +1,7 @@
 ---
 page: home
 title: Living longer, living sicker
-description: Australian women live longer than men but spend more of those years unwell. Where women's healthcare falls short, how we got here, and where we're headed.
+description: Women's health is under-researched everywhere. This is what that looks like, and what it looks like in Australia.
 act1:
   title: Where care falls short
   blurb: Periods are a normal part of life. Severe pain and conditions that go unrecognised for years are not, yet they are too often dismissed as normal. This act starts there.
