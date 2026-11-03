@@ -60,7 +60,9 @@ actions:
 
 ## Progress so far
 
-The picture is not all bad. This page describes what was funded and what changed. It does not judge which governments did it.
+The women's health gap is global. This page is mostly about Australia: one country's response to that global problem. It describes what was funded and what changed, and it does not judge which governments did it.
+
+**There is now a global effort too.** The World Economic Forum hosts a Global Alliance for Women's Health, co-chaired by the Gates Foundation and Brazil's Ministry of Health. It brings governments, investors, researchers and advocates together to put women's health on the global agenda, with a focus on policy, financing and research and development ([World Economic Forum, 2024](https://www3.weforum.org/docs/WEF_Global_Alliance_for_Women%E2%80%99s_Health_2024.pdf)).
 
 **Endometriosis has a national plan.** On 5 December 2017 the federal Health Minister publicly apologised to people living with endometriosis ([Pelvic Pain Foundation of Australia](https://www.pelvicpain.org.au/endometriosis-coalition)), and in July 2018 the Department of Health published the first National Action Plan for Endometriosis ([Department of Health, 2018](https://australianwomenshealth.org/wp-content/uploads/2025/05/national-action-plan-for-endometriosis.pdf)). By early 2024, endometriosis-specific funding had reached $87.2 million across awareness, clinical care and research ([MJA InSight+, 2024](https://insightplus.mja.com.au/2024/2/why-australia-needs-a-second-national-action-plan-for-endometriosis/)). Specialised endometriosis and pelvic pain clinics now operate in general practice, and 11 more were funded in 2025–26, bringing the total to 33 and adding support for menopause and perimenopause ([RANZCOG, 2025](https://ranzcog.edu.au/news/government-invests-in-womens-health/)).
 

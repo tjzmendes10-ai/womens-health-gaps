@@ -18,9 +18,11 @@ I'm the middle child between two sisters, and my mum drove me to appointment aft
 
 ## How sources are checked
 
-Every statistic, date and claim on this site links to a source, and each one was checked against that source rather than written from memory. Where possible, sources are primary: the Australian Institute of Health and Welfare, the Australian Bureau of Statistics, government departments, peer-reviewed journals, and peak clinical and patient bodies.
+Every statistic, date and claim on this site links to a source, and each one was checked against that source rather than written from memory. Where possible, sources are primary: the World Health Organization, the Australian Institute of Health and Welfare, the Australian Bureau of Statistics, government departments, peer-reviewed journals, and peak clinical and patient bodies.
 
-Australian data comes first. Global figures are used only where Australian data doesn't exist, and are tagged "Global". Where good estimates disagree, the site shows the range and explains why rather than picking the most dramatic number. Where a figure rests on weaker evidence, such as a survey, a single small study, a media release or data more than about five years old, the text says so. Each problem page shows when it was last reviewed.
+Research, clinical trials and investment are global problems, so we use global figures for them, tagged Global. Diagnosis, care and policy differ from country to country, so for those we use Australian data, tagged AU. We never combine figures from different countries in a single comparison. Where good estimates disagree, the site shows the range and explains why rather than picking the most dramatic number. Where a figure rests on weaker evidence, such as a survey, a single small study, a media release or data more than about five years old, the text says so. Each problem page shows when it was last reviewed.
+
+Women in lower-income countries face different, and often larger, gaps, including access to basic care. This site focuses on the research and system gaps that affect women everywhere, using Australia as its lens.
 
 If you spot an error or a better source, please [open an issue on GitHub](https://github.com/tjzmendes10-ai/womens-health-gaps/issues).
 

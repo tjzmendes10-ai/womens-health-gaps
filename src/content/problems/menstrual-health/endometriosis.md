@@ -49,6 +49,10 @@ sources:
     publisher: InSight+, Medical Journal of Australia
     year: 2024
     url: https://insightplus.mja.com.au/2024/2/why-australia-needs-a-second-national-action-plan-for-endometriosis/
+  - title: Endometriosis (fact sheet)
+    publisher: World Health Organization
+    year: 2025
+    url: https://www.who.int/news-room/fact-sheets/detail/endometriosis
 lastReviewed: 2026-11-02T18:10:00+11:00
 ---
 
@@ -63,3 +67,8 @@ How long depends on where you start the clock. A 2025 study of Australian GP rec
 Endometriosis is becoming more visible in Australian health data. The proportion of women diagnosed in general practice almost doubled between 2011 and 2021 [[2]](#source-2), and hospitalisations have risen far faster than hospital use overall [[3]](#source-3). Some of this is likely better recognition, which is progress. Some of it is unmet need: emergency admissions for endometriosis rose from 7.8% to about 10% of endometriosis hospitalisations over the decade [[3]](#source-3).
 
 Who can pay matters. Seven in ten endometriosis procedures now happen in private hospitals [[3]](#source-3), which raises questions about access for people without private insurance or in regional areas. Since 2018 Australia has had a National Action Plan for Endometriosis [[6]](#source-6). The federal government has also funded specialised endometriosis and pelvic pain clinics in general practice; 11 more were funded in 2025–26, bringing the total to 33 [[5]](#source-5). In May 2025 a newer hormonal treatment, Ryeqo, was listed on the PBS. More than 8,500 women have since used it, at a fraction of its previous cost of around $2,700 a year [[4]](#source-4).
+
+## Global context
+
+Endometriosis is a global condition. The World Health Organization estimates it affects about 10% of women of reproductive age worldwide, around 190 million people, and that there is still no cure. WHO also notes that many knowledge gaps remain, including the need for non-invasive ways to diagnose it and for medical treatments that don't prevent pregnancy [[7]](#source-7).
+
