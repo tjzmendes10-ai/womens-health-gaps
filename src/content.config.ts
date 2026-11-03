@@ -165,6 +165,16 @@ const timeline = defineCollection({
   }),
 });
 
+/** "Where the words come from": short entries shown under the history timeline. */
+const origins = defineCollection({
+  loader: glob({ base: './src/content/origins', pattern: '*.md' }),
+  schema: z.object({
+    term: required('term', 'The word being explained, e.g. "Hysteria".'),
+    order: z.number({ error: '"order" must be a number (1 shows first).' }),
+    source,
+  }),
+});
+
 /** Standalone pages. "page" says which one, and decides which fields are needed. */
 const base = { title: required('title'), description: required('description', 'Used by search engines and link previews.') };
 const act = z.object({ title: required('title'), blurb: required('blurb') });
@@ -193,4 +203,4 @@ const pages = defineCollection({
   ),
 });
 
-export const collections = { topics, problems, timeline, pages };
+export const collections = { topics, problems, timeline, origins, pages };

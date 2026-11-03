@@ -1,0 +1,30 @@
+---
+// "Where the words come from": everyday words with a history, under the timeline.
+import { getCollection, render } from 'astro:content';
+import Source from './Source.astro';
+
+const entries = (await getCollection('origins')).sort((a, b) => a.data.order - b.data.order);
+const rendered = await Promise.all(entries.map(async (e) => ({ entry: e, Content: (await render(e)).Content })));
+---
+<section class="origins" aria-labelledby="origins-title">
+  <h2 id="origins-title">Where the words come from</h2>
+  <p class="origins-intro">
+    Some of the ideas in this timeline live on in everyday language. These words still carry the old
+    views of women's bodies that shaped how medicine treated them.
+  </p>
+  <dl class="origins-list">
+    {
+      rendered.map(({ entry, Content }) => (
+        <div class="origins-item">
+          <dt>{entry.data.term}</dt>
+          <dd>
+            <Content />
+            <p class="timeline-source">
+              Source: <Source source={entry.data.source} />
+            </p>
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+</section>

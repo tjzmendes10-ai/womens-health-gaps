@@ -19,7 +19,7 @@ Built by Tom Mendes with [Astro](https://astro.build), deployed to GitHub Pages.
 | | `/menstrual-health/endometriosis/` etc. | `src/content/problems/menstrual-health/*.md` |
 | | `/cardiovascular-disease/` (single page) | `src/content/topics/cardiovascular-disease.md` + `src/content/problems/cardiovascular-disease/overview.md` |
 | | Bones, Cancer ("coming soon" cards) | `src/content/topics/bones.md`, `cancer.md` |
-| Act 2: How we got here | `/history/` | `src/content/pages/history.md` (intro) + `src/content/timeline/*.md` (one file per event) |
+| Act 2: How we got here | `/history/` | `src/content/pages/history.md` (intro) + `src/content/timeline/*.md` (one file per event) + `src/content/origins/*.md` ("Where the words come from") |
 | Act 3: Where we're headed | `/where-were-headed/` | `src/content/pages/headed.md` |
 | About | `/about/` | `src/content/pages/about.md` |
 
@@ -97,6 +97,23 @@ source:
 ---
 
 Description of the event.
+```
+
+### "Where the words come from"
+
+The section under the timeline. One file per word in `src/content/origins/`, shown in `order`:
+
+```markdown
+---
+term: Hysteria           # the word, shown as the heading
+order: 1                 # 1 shows first
+source:
+  title: ...
+  publisher: ...
+  url: https://...
+---
+
+Where the word comes from, and what it says about how women's bodies were seen.
 ```
 
 ## Content rules
