@@ -103,9 +103,13 @@ const topics = defineCollection({
     title: required('title'),
     hook: required('hook'),
     order: z.number({ error: '"order" must be a number (1 shows first).' }),
-    status: z.enum(['live', 'coming-soon'], { error: '"status" must be live or coming-soon' }),
+    // live: a hub page listing conditions. page: a single condition page,
+    // written in problems/<topic>/overview.md. coming-soon: a card only.
+    status: z.enum(['live', 'page', 'coming-soon'], { error: '"status" must be live, page or coming-soon' }),
     // Sub-topics shown as "coming soon" on the hub page, e.g. Menopause.
     comingSoon: z.array(z.string()).default([]),
+    // Sources for any figures in the hook, shown on the home page card.
+    sources: z.array(source).default([]),
   }),
 });
 

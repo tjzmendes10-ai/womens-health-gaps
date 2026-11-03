@@ -1,6 +1,7 @@
 ---
 // Hub page for a topic, e.g. /dismissed-as-normal/
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
+import ProblemPage from '../../components/ProblemPage.astro';
 import Base from '../../layouts/Base.astro';
 import Text from '../../components/Text.astro';
 import { url } from '../../lib/url';
@@ -8,11 +9,20 @@ import PageBand from '../../components/PageBand.astro';
 import CycleSpot from '../../components/spots/CycleSpot.astro';
 
 export async function getStaticPaths() {
-  const topics = await getCollection('topics', (t) => t.data.status === 'live');
-  return topics.map((topic) => ({ params: { topic: topic.id }, props: { topic } }));
+  const topics = await getCollection('topics', (t) => t.data.status !== 'coming-soon');
+  return Promise.all(
+    topics.map(async (topic) => {
+      // Single-page topics show their condition page at the topic's address.
+      const overview = topic.data.status === 'page' ? await getEntry('problems', `${topic.id}/overview`) : undefined;
+      if (topic.data.status === 'page' && !overview) {
+        throw new Error(`src/content/topics/${topic.id}.md has status: page, so it needs src/content/problems/${topic.id}/overview.md`);
+      }
+      return { params: { topic: topic.id }, props: { topic, overview } };
+    }),
+  );
 }
 
-const { topic } = Astro.props as { topic: CollectionEntry<'topics'> };
+const { topic, overview } = Astro.props as { topic: CollectionEntry<'topics'>; overview?: CollectionEntry<'problems'> };
 // The intro (before the first ## heading) sits above the list of
 // conditions; any further sections (e.g. on the pill) follow the list.
 const html = topic.rendered?.html ?? '';
@@ -23,6 +33,9 @@ const problems = (await getCollection('problems', (p) => p.id.startsWith(`${topi
   (a, b) => a.data.order - b.data.order,
 );
 ---
+{overview ? (
+  <ProblemPage problem={overview} crumbLabel="Where care falls short" crumbHref={url('/#act-1')} />
+) : (
 <Base title={topic.data.title} description={topic.data.hook}>
   <PageBand title={topic.data.title} hook={topic.data.hook} eyebrow="Act 1 · Where care falls short" eyebrowHref={url('/#act-1')}>
     <CycleSpot />
@@ -56,3 +69,4 @@ const problems = (await getCollection('problems', (p) => p.id.startsWith(`${topi
     {more && <Fragment set:html={more} />}
   </article>
 </Base>
+)}

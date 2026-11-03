@@ -1,0 +1,80 @@
+---
+// The template for every condition page: title band, hook, Lifeline box
+// (mental-health pages), summary, stat callouts, "Why it matters in
+// Australia", optional global context, numbered sources, last reviewed.
+// Used for pages inside a hub (e.g. /dismissed-as-normal/endometriosis/)
+// and for single-page topics (e.g. /heart-disease/).
+import type { CollectionEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import StatCallout from './StatCallout.astro';
+import SourcesList from './SourcesList.astro';
+import Lifeline from './Lifeline.astro';
+import PageBand from './PageBand.astro';
+import CycleSpot from './spots/CycleSpot.astro';
+import ChairSpot from './spots/ChairSpot.astro';
+import ClockSpot from './spots/ClockSpot.astro';
+import CalmSpot from './spots/CalmSpot.astro';
+import HeartSpot from './spots/HeartSpot.astro';
+import { splitProblemBody } from '../lib/content';
+
+interface Props {
+  problem: CollectionEntry<'problems'>;
+  crumbLabel: string;
+  crumbHref: string;
+}
+const { problem, crumbLabel, crumbHref } = Astro.props;
+const { title, hook, stats, sources, mentalHealth, lastReviewed } = problem.data;
+const body = splitProblemBody(problem);
+
+// Small spot illustration per page. Mental-health pages always get the
+// quiet abstract shape: no characters, nothing playful.
+// Keyed by the page's own name, or by the topic for single-page topics
+// (whose file is <topic>/overview.md).
+const [topicId, pageId] = problem.id.split('/');
+const spotKey = pageId === 'overview' ? topicId : pageId;
+const spots: Record<string, typeof CycleSpot> = { endometriosis: ChairSpot, pmos: ClockSpot, 'heart-disease': HeartSpot };
+const Spot = mentalHealth ? CalmSpot : (spots[spotKey] ?? CycleSpot);
+
+// "Last reviewed" shows the date, plus the time in Sydney when one is given,
+// e.g. lastReviewed: 2026-11-02T18:10:00+11:00. A date on its own
+// (2026-11-02) is read as midnight UTC, so no time is shown for it.
+const reviewedHasTime =
+  lastReviewed instanceof Date &&
+  (lastReviewed.getUTCHours() !== 0 || lastReviewed.getUTCMinutes() !== 0 || lastReviewed.getUTCSeconds() !== 0);
+const reviewedFormat: Intl.DateTimeFormatOptions = reviewedHasTime
+  ? { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'Australia/Sydney', timeZoneName: 'short' }
+  : { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' };
+---
+<Base title={title} description={hook}>
+  <PageBand title={title} hook={hook} crumbLabel={crumbLabel} crumbHref={crumbHref}>
+    <Spot />
+  </PageBand>
+  <article class="page">
+
+    {mentalHealth && <Lifeline />}
+
+    <Fragment set:html={body.summary} />
+
+    <section class="stats" aria-label="Key statistics">
+      {stats.map((s) => <StatCallout {...s} />)}
+    </section>
+
+    <Fragment set:html={body.whyAustralia} />
+    {body.globalContext && <Fragment set:html={body.globalContext} />}
+
+    <SourcesList sources={sources} />
+
+    <p class="last-reviewed">
+      Last reviewed:{' '}
+      {
+        lastReviewed === 'not yet reviewed' ? (
+          <mark class="placeholder">[NOT YET REVIEWED]</mark>
+        ) : (
+          <time datetime={reviewedHasTime ? lastReviewed.toISOString() : lastReviewed.toISOString().slice(0, 10)}>
+            {lastReviewed.toLocaleString('en-AU', reviewedFormat)}
+          </time>
+        )
+      }
+    </p>
+  </article>
+</Base>
