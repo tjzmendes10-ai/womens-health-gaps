@@ -100,11 +100,6 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
         </p>
       </div>
       <div class="facts">
-        <div class="global-in-stage">
-          <LifeTable tag="Global" year={WHO_YEAR} caption={`Life expectancy and years in full and ill health, world, ${WHO_YEAR}`} women={world.women} men={world.men}>
-            <Fragment set:html={globalNote} />
-          </LifeTable>
-        </div>
         <LifeTable tag="Australia" year={2024} caption="Life expectancy and years in full and ill health, Australia, 2024" women={{ healthy: her.healthy, ill: +herIll, life: her.life }} men={{ healthy: him.healthy, ill: +himIll, life: him.life }}>
           *Calculated as life expectancy minus years in full health. Source:
           <a href={aihw}>AIHW, Australian Burden of Disease Study 2024</a> (2024 figures are projections).
@@ -143,7 +138,7 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
         </g>
 
         <!-- Distant ridge -->
-        <path d="M-900,162 C-500,142 -200,168 0,154 C150,136 300,146 420,148 C520,150 560,142 610,146 C900,154 1200,136 1500,146 L1500,460 L-900,460 Z" opacity="0.32" style="fill:var(--brand-mid)"></path>
+        <path d="M-900,162 C-500,142 -200,168 0,154 C150,136 300,146 420,148 C520,150 560,142 610,146 C900,154 1200,136 1500,146 L1500,400 L-900,400 Z" opacity="0.32" style="fill:var(--brand-mid)"></path>
 
         <!-- His lifeline and figures: behind, muted -->
         <g class="him-all">
@@ -166,11 +161,11 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
         </g>
 
         <g class="layer layer-mid">
-          <path d="M-900,262 C-600,226 -300,276 -10,272 C90,226 190,240 282,258 C382,278 472,234 610,244 C800,256 1100,228 1500,252 L1500,460 L-900,460 Z" opacity="0.7" style="fill:var(--brand-mid)"></path>
+          <path d="M-900,262 C-600,226 -300,276 -10,272 C90,226 190,240 282,258 C382,278 472,234 610,244 C800,256 1100,228 1500,252 L1500,400 L-900,400 Z" opacity="0.7" style="fill:var(--brand-mid)"></path>
         </g>
 
         <!-- Ground and her lifeline -->
-        <path d="M-900,326 C-500,316 -200,334 -10,328 C120,318 240,326 330,328 C430,331 520,320 610,326 C900,334 1200,318 1500,326 L1500,460 L-900,460 Z" style="fill:var(--brand-mid)"></path>
+        <path d="M-900,326 C-500,316 -200,334 -10,328 C120,318 240,326 330,328 C430,331 520,320 610,326 C900,334 1200,318 1500,326 L1500,400 L-900,400 Z" style="fill:var(--brand-mid)"></path>
         <rect x={x0} y={herY - 4} width="520" height="8" rx="4" opacity="0.5" style="fill:var(--brand-deep)"></rect>
         <rect class="line line-healthy her" x={x0} y={herY - 4} width={xAt(her.healthy) - x0} height="8" rx="4" style="fill:var(--cream)"></rect>
         <rect class="line line-ill her" x={xAt(her.healthy)} y={herY - 4} width={+(xAt(her.life) - xAt(her.healthy)).toFixed(1)} height="8" rx="4" fill="url(#hatch-her)"></rect>
@@ -202,11 +197,13 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
 </div>
 <!-- On small screens the global table sits below the scene, so the pinned
      stage still has room for the lifelines. Only one copy shows at a time. -->
-<div class="global-after">
+<section class="global-after" aria-labelledby="global-after-title">
+  <h2 id="global-after-title" class="global-after-title">Around the world</h2>
+  <p class="global-after-lead">The same pattern holds worldwide: women live longer than men, and spend more years in ill health.</p>
   <LifeTable tag="Global" year={WHO_YEAR} caption={`Life expectancy and years in full and ill health, world, ${WHO_YEAR}`} women={world.women} men={world.men}>
     <Fragment set:html={globalNote} />
   </LifeTable>
-</div>
+</section>
 
 <style>
   .stage { display: flex; flex-direction: column; }
@@ -223,12 +220,15 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
     gap: 1rem 3rem;
   }
   @media (min-width: 52rem) {
-    .sky-text { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: end; }
+    .sky-text { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: end; }
   }
   .hero-global a { color: var(--cream); }
   .hero-global .tag-light { color: var(--cream); margin-right: 0.35rem; }
   .hero-global { margin: 0.75rem 0 0; max-width: 34rem; font-size: 0.95rem; line-height: 1.5; color: var(--cream-soft); }
-  .headline h1 { margin-bottom: 0; max-width: none; font-size: min(var(--step-5), 10svh); }
+  /* Headline sized to its own column (14% of its width), so "Living longer,"
+     and "living sicker" each stay on one line at any screen size. */
+  .headline { container-type: inline-size; }
+  .headline h1 { margin-bottom: 0; max-width: none; font-size: min(var(--step-5), 10svh, 14cqi); }
   .art { position: relative; z-index: 0; }
   /* High sky shapes are switched off: the sky now holds the headline, the
      global intro and the facts table, and shapes there would sit behind text. */
@@ -239,15 +239,19 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
 
 
   .facts { display: grid; gap: 1.1rem; }
-  .global-after { display: none; }
-  @media (max-width: 40rem) {
-    .global-in-stage { display: none; }
-    .global-after { display: block; padding: 1.5rem var(--gutter) 0; }
-  }
+
+  /* World figures sit below the scene, under their own heading, so they are
+     never shown head-to-head with the Australian lifeline and its table. */
+  .global-after { position: relative; z-index: 1; max-width: var(--wide); margin-inline: auto; padding: clamp(2rem, 5vw, 3rem) var(--gutter) 0; }
+  .global-after :global(.life-table), .global-after :global(.facts-label), .global-after :global(.facts-note) { max-width: 34rem; }
+  .global-after-title { color: var(--cream); font-size: var(--step-2); margin: 0 0 0.4rem; }
+  .global-after-lead { color: var(--cream-soft); max-width: var(--measure); margin: 0 0 1rem; }
 
   /* ---- Illustration ---- */
   .art { width: 100%; }
-  svg { display: block; width: calc(100% - 2 * var(--gutter)); max-width: 60rem; height: auto; margin-inline: auto; overflow: visible; }
+  /* The drawing grows with the screen. In the static layout it is capped by
+     height; in the pinned stage it fills the space under the text. */
+  svg { display: block; width: calc(100% - 2 * var(--gutter)); max-width: 110rem; height: auto; max-height: 70svh; margin-inline: auto; overflow: visible; }
   .ground-strip { height: 1.5rem; background: var(--brand-mid); }
 
   .him-all { opacity: 0.6; }
@@ -268,7 +272,7 @@ const aihw = 'https://www.aihw.gov.au/reports/burden-of-disease/australian-burde
       .scene-track { height: 240svh; view-timeline-name: --hero; }
       .stage { position: sticky; top: 0; height: 100svh; }
       .art { flex: 1 1 0; min-height: 0; display: flex; align-items: flex-end; }
-      svg { height: 100%; }
+      svg { height: 100%; max-height: none; }
 
       .pos,
       .fade-in,

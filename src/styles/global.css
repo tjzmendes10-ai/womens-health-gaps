@@ -55,8 +55,8 @@
 
   /* Layout */
   --measure: 36rem; /* ~65–70 characters of body text */
-  --page: 46rem;
-  --wide: 68rem;
+  --page: 56rem;      /* page frame; body text stays at --measure for comfortable reading */
+  --wide: 78rem;
   --gutter: clamp(1.25rem, 5vw, 3rem);
   --space-section: clamp(3.5rem, 8vw, 6rem);
 }
@@ -68,7 +68,13 @@
 *::before,
 *::after { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; }
+/* Scale the whole site up gently on large screens, so it doesn't sit in a
+   narrow strip on a big monitor. Phones and laptops stay at 16px; a 2000px
+   wide window gets about 19px. Everything sized in rem grows with it. */
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: clamp(100%, 0.75rem + 0.35vw, 118.75%);
+}
 
 body {
   margin: 0;
