@@ -1,0 +1,19 @@
+location,cause,women_yld_rate,women_lower,women_upper,men_yld_rate,men_lower,men_upper,ratio_women_to_men,gap_clear
+Australia,Alzheimer's disease and other dementias,190.61,131.75,246.1,127.46,87.55,164.7,1.5,False
+Australia,Anxiety disorders,1618.03,1106.73,2187.41,1091.45,730.33,1547.65,1.48,False
+Australia,Depressive disorders,744.72,515.06,1043.07,691.47,475.36,967.96,1.08,False
+Australia,Low back pain,1631.24,1167.89,2181.95,831.76,577.4,1126.11,1.96,True
+Australia,Mental disorders,3346.46,2431.05,4409.58,3044.06,2251.44,3842.65,1.1,False
+Australia,Migraine,611.13,396.87,844.58,282.3,191.32,395.17,2.16,True
+Australia,Musculoskeletal disorders,2917.65,2137.38,3908.15,1848.75,1308.09,2487.84,1.58,False
+Australia,Osteoarthritis,324.34,157.01,711.47,237.61,113.88,515.24,1.36,False
+Australia,Rheumatoid arthritis,62.85,42.63,87.42,23.12,15.46,31.25,2.72,True
+Global,Alzheimer's disease and other dementias,156.72,109.35,202.08,111.2,78.28,141.71,1.41,False
+Global,Anxiety disorders,827.44,539.7,1210.58,527.51,341.66,783.97,1.57,False
+Global,Depressive disorders,804.71,554.5,1147.01,528.2,358.11,758.27,1.52,False
+Global,Low back pain,990.0,700.32,1329.14,615.74,433.22,829.85,1.61,False
+Global,Mental disorders,2239.31,1643.39,3013.76,1900.17,1399.76,2510.76,1.18,False
+Global,Migraine,675.19,450.01,944.2,302.09,205.41,418.58,2.24,True
+Global,Musculoskeletal disorders,2188.58,1604.08,2929.44,1456.54,1060.76,1955.74,1.5,False
+Global,Osteoarthritis,282.76,133.9,612.49,199.22,95.26,427.16,1.42,False
+Global,Rheumatoid arthritis,37.92,25.64,52.03,15.78,10.7,21.42,2.4,True

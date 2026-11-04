@@ -1,0 +1,20 @@
+condition,papers_per_100k_DALYs,pct_burden_from_living_unwell,gynaecological_exclude
+Endometriosis,498.2,99.6,True
+Polycystic ovarian syndrome,1347.7,100.0,True
+Premenstrual syndrome,9.5,100.0,True
+Uterine fibroids,1619.7,29.2,True
+Female infertility,1199.7,100.0,True
+Genital prolapse,1278.3,90.0,True
+Migraine,27.5,100.0,False
+Low back pain,18.4,100.0,False
+Rheumatoid arthritis,1048.3,72.6,False
+Osteoarthritis,166.8,100.0,False
+Depressive disorders,72.7,100.0,False
+Anxiety disorders,50.9,100.0,False
+Alzheimer's disease and other dementias,248.5,30.6,False
+Ischemic heart disease,61.9,5.2,False
+Stroke,62.3,10.7,False
+Breast cancer,550.0,6.5,False
+Cervical cancer,207.5,2.9,False
+Ovarian cancer,498.5,2.7,False
+Uterine cancer,401.7,9.0,False

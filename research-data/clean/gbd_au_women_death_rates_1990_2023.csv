@@ -1,0 +1,16 @@
+cause,year,death_rate_per_100k,lower_95,upper_95
+Breast cancer,1990,26.5,25.02,27.96
+Breast cancer,2010,18.43,16.62,19.8
+Breast cancer,2023,14.37,12.48,16.05
+Cervical cancer,1990,3.81,3.38,4.24
+Cervical cancer,2010,2.3,2.03,2.61
+Cervical cancer,2023,2.03,1.74,2.32
+Ischemic heart disease,1990,132.17,117.19,140.23
+Ischemic heart disease,2010,47.89,39.62,52.5
+Ischemic heart disease,2023,26.06,20.55,29.93
+Ovarian cancer,1990,7.29,6.83,7.76
+Ovarian cancer,2010,5.8,5.23,6.24
+Ovarian cancer,2023,4.64,4.06,5.09
+Stroke,1990,61.29,53.58,65.68
+Stroke,2010,29.44,24.07,32.42
+Stroke,2023,17.82,13.89,20.45
