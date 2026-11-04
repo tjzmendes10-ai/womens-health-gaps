@@ -175,6 +175,28 @@ XT upper-middle, XN lower-middle, XM low.
 
 ---
 
+### Chart-ready summaries from GBD (in this repo)
+
+Small summary tables calculated from the IHME files for the site's charts.
+Credit IHME with the citation above wherever they're used.
+
+- `clean/gbd_au_women_death_rates_1990_2023.csv`: Australian women,
+  age-standardised death rates per 100,000 (with 95% uncertainty) for heart
+  disease, stroke, and breast, cervical and ovarian cancer, in 1990, 2010 and
+  2023. For the "progress" chart.
+- `clean/gbd_yld_women_vs_men_2023.csv`: women vs men, age-standardised YLD rates
+  (2023, Global and Australia) with uncertainty ranges. `gap_clear` is true only
+  where the ranges don't overlap. Only use those rows for a "hits women harder"
+  claim.
+- `clean/research_vs_burden_type.csv`: for each condition, PubMed papers per
+  100,000 DALYs, plus the share of the condition's burden that comes from living
+  unwell (YLD) rather than early death (global, both sexes, 2023).
+  Gynaecological conditions are flagged for exclusion. Across the 13 other
+  conditions, the rank correlation is about −0.5. That's a pattern, not proof,
+  so describe it as "tend to".
+
+---
+
 ## 5. ClinicalTrials.gov: women's share of trial participants (Global)
 
 - **Where from:** ClinicalTrials.gov API v2, https://clinicaltrials.gov/api/v2/studies
