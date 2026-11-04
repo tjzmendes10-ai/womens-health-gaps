@@ -116,6 +116,18 @@ source:
 Where the word comes from, and what it says about how women's bodies were seen.
 ```
 
+## The "In numbers" page: how the charts read the data
+
+Nothing on `/in-numbers/` is typed in. Every figure is read when the site is built:
+
+- **Charts in "Now" and "Still to go"** read CSV files in `research-data/clean/`. There is one small loader per file in `src/lib/data/` (for example `abs-causes-of-death.ts` reads `abs_cod_2025_by_cause_sex.csv`). The loader looks up the exact rows and columns it needs.
+- **"Then"** reads its numbers from the timeline entries in `src/content/timeline/` (see `src/lib/data/timeline-figures.ts`). Edit a timeline entry and the "Then" chapter updates too.
+- **Charts** are drawn in `src/components/charts/`, and each scene (number, headline, chart, caveat, source) is in `src/components/numbers/`. The cardiovascular page and the home page teaser reuse the same scenes, so their figures always match.
+
+**To update a number:** replace or edit the CSV in `research-data/clean/` (keep the same column names), update its entry in `research-data/SOURCES.md`, then run `npm run build`. If a row or column the page needs has gone, or a headline's claim is no longer true (for example "women are higher in every region"), the build stops with a plain message saying which file and row to check.
+
+**Rules the charts follow:** one source per chart (or an explicit, labelled ratio of two), Australian and global figures never in the same chart, women always in the stronger colour (`--women`) and men in `--men`.
+
 ## Content rules
 
 1. **Never invent statistics, studies or quotes.** Until you have a verified source, use a placeholder.

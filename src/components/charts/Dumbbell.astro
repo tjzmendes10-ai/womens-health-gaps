@@ -1,0 +1,38 @@
+---
+// Two values per row on a 0–100% scale: women's share of trial participants
+// (filled dot) and women's share of the disease burden (ring).
+interface Row { label: string; a: number; b: number; highlight?: boolean }
+interface Props { id: string; title: string; desc: string; rows: Row[]; aName: string; bName: string; aShort: string; bShort: string }
+const { id, title, desc, rows, aName, bName, aShort, bShort } = Astro.props;
+const W = 400, PAD = 8, TOP = 52, ROW_H = 66;
+const x = (v: number) => PAD + (v / 100) * (W - 2 * PAD);
+const H = TOP + rows.length * ROW_H + 26;
+const ticks = [0, 25, 50, 75, 100];
+const r0 = (n: number) => Math.round(n);
+---
+<svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby={`${id}-t ${id}-d`}>
+  <title id={`${id}-t`}>{title}</title>
+  <desc id={`${id}-d`}>{desc}</desc>
+  <g class="legend">
+    <circle class="dot-women" cx="7" cy="10" r="6" /><text class="ct" x="18" y="14.5">{aName}</text>
+    <circle class="dot-ring" cx="7" cy="32" r="5.5" /><text class="ct" x="18" y="36.5">{bName}</text>
+  </g>
+  {ticks.map((t) => <line class={t === 50 ? 'grid grid-mid' : 'grid'} x1={x(t)} x2={x(t)} y1={TOP} y2={H - 22} />)}
+  {
+    rows.map((r, i) => {
+      const top = TOP + i * ROW_H;
+      const y = top + 48;
+      return (
+        <g>
+          {r.highlight && <rect class="row-highlight" x="0" y={top + 2} width={W} height={ROW_H - 4} rx="4" />}
+          <text class="ct ct-strong" x={PAD} y={top + 19}>{r.label}</text>
+          <text class="ct ct-small ct-muted" x={PAD} y={top + 34}>{aShort} {r0(r.a)}% · {bShort} {r0(r.b)}%</text>
+          <line class="joiner" x1={x(r.a)} x2={x(r.b)} y1={y} y2={y} />
+          <circle class="dot-ring" cx={x(r.b)} cy={y} r="5.5" />
+          <circle class="dot-women" cx={x(r.a)} cy={y} r="6" />
+        </g>
+      );
+    })
+  }
+  {ticks.map((t) => <text class="ct ct-small ct-muted" x={x(t)} y={H - 6} text-anchor={t === 0 ? 'start' : t === 100 ? 'end' : 'middle'}>{t}%</text>)}
+</svg>

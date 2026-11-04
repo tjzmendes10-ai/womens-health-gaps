@@ -1,0 +1,57 @@
+---
+// Horizontal bars in groups, e.g. women and men for each type of care.
+// Optional 95% margin-of-error whiskers. Every bar is labelled in text, so
+// colour is never the only way to tell them apart.
+interface Bar { name: string; value: number; moe?: number; style: 'women' | 'men' | 'outline'; valueLabel: string }
+interface Group { label: string; bars: Bar[] }
+interface Props { id: string; title: string; desc: string; groups: Group[]; max: number }
+const { id, title, desc, groups, max } = Astro.props;
+
+const W = 400;
+const LABEL_W = 116; // room for "Women 18.0%" after the bar
+const plotW = W - LABEL_W;
+const x = (v: number) => (Math.max(0, v) / max) * plotW;
+const BAR_H = 16, BAR_GAP = 6, LABEL_H = 22, GROUP_GAP = 18;
+
+let y = 0;
+const layout = groups.map((g) => {
+  const top = y;
+  y += LABEL_H;
+  const bars = g.bars.map((b) => {
+    const by = y;
+    y += BAR_H + BAR_GAP;
+    return { ...b, y: by };
+  });
+  y += GROUP_GAP - BAR_GAP;
+  return { ...g, top, bars };
+});
+const H = y - GROUP_GAP + 4;
+---
+<svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby={`${id}-t ${id}-d`}>
+  <title id={`${id}-t`}>{title}</title>
+  <desc id={`${id}-d`}>{desc}</desc>
+  {
+    layout.map((g) => (
+      <g>
+        <text class="ct ct-strong" x="0" y={g.top + 15}>{g.label}</text>
+        {g.bars.map((b) => {
+          const end = b.moe ? x(b.value + b.moe) : x(b.value);
+          return (
+            <g>
+              <rect class={`bar-${b.style}`} x="0" y={b.y} width={x(b.value)} height={BAR_H} rx="2" />
+              {b.moe && (
+                <g class="whisker">
+                  <path class="whisker-halo" d={`M${x(b.value - b.moe)},${b.y + BAR_H / 2} H${end} M${x(b.value - b.moe)},${b.y + 3} V${b.y + BAR_H - 3} M${end},${b.y + 3} V${b.y + BAR_H - 3}`} />
+                  <path class="whisker-line" d={`M${x(b.value - b.moe)},${b.y + BAR_H / 2} H${end} M${x(b.value - b.moe)},${b.y + 3} V${b.y + BAR_H - 3} M${end},${b.y + 3} V${b.y + BAR_H - 3}`} />
+                </g>
+              )}
+              <text class="ct" x={end + 6} y={b.y + 12.5}>
+                <tspan class="ct-muted">{b.name}</tspan> <tspan class="ct-strong">{b.valueLabel}</tspan>
+              </text>
+            </g>
+          );
+        })}
+      </g>
+    ))
+  }
+</svg>

@@ -1,0 +1,48 @@
+---
+// One line per cause across a few years, on one shared scale starting at 0.
+// Labels at the right are spaced so they never overlap.
+interface Row { label: string; values: number[]; endLabel: string }
+interface Props { id: string; title: string; desc: string; years: readonly number[]; rows: Row[]; max: number; unit: string }
+const { id, title, desc, years, rows, max, unit } = Astro.props;
+const W = 400, H = 300, TOP = 26, BOTTOM = 34, LEFT = 36, PLOT_R = 216;
+const plotH = H - TOP - BOTTOM;
+const x = (i: number) => LEFT + (i / (years.length - 1)) * (PLOT_R - LEFT);
+const y = (v: number) => TOP + plotH - (v / max) * plotH;
+// Spread the right-hand labels at least 17px apart, keeping them in order.
+const GAP = 17;
+const ends = rows.map((r, i) => ({ i, y: y(r.values[r.values.length - 1]) })).sort((a, b) => a.y - b.y);
+for (let k = 1; k < ends.length; k++) ends[k].y = Math.max(ends[k].y, ends[k - 1].y + GAP);
+const overflow = ends.length ? ends[ends.length - 1].y - (TOP + plotH) : 0;
+if (overflow > 0) {
+  ends[ends.length - 1].y -= overflow;
+  for (let k = ends.length - 2; k >= 0; k--) ends[k].y = Math.min(ends[k].y, ends[k + 1].y - GAP);
+}
+const labelY = new Map(ends.map((e) => [e.i, e.y]));
+const ticks = [0, max / 2, max];
+---
+<svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby={`${id}-t ${id}-d`}>
+  <title id={`${id}-t`}>{title}</title>
+  <desc id={`${id}-d`}>{desc}</desc>
+  <text class="ct ct-small ct-muted" x="0" y="12">{unit}</text>
+  {ticks.map((t) => (
+    <g>
+      <line class="grid" x1={LEFT} x2={PLOT_R} y1={y(t)} y2={y(t)} />
+      <text class="ct ct-small ct-muted" x={LEFT - 6} y={y(t) + 4} text-anchor="end">{t}</text>
+    </g>
+  ))}
+  {years.map((yr, i) => <text class="ct ct-small ct-muted" x={x(i)} y={H - 12} text-anchor="middle">{yr}</text>)}
+  {
+    rows.map((r, i) => {
+      const ly = labelY.get(i)!;
+      const ey = y(r.values[r.values.length - 1]);
+      return (
+        <g>
+          <polyline class="slope-line" points={r.values.map((v, k) => `${x(k)},${y(v)}`).join(' ')} />
+          {r.values.map((v, k) => <circle class="dot-women" cx={x(k)} cy={y(v)} r="3.5" />)}
+          <path class="leader" d={`M${PLOT_R + 6},${ey} L${PLOT_R + 14},${ly - 4}`} />
+          <text class="ct ct-small" x={PLOT_R + 18} y={ly}><tspan class="ct-strong">{r.label}</tspan> {r.endLabel}</text>
+        </g>
+      );
+    })
+  }
+</svg>

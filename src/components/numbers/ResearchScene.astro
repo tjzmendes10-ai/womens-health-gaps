@@ -1,0 +1,61 @@
+---
+// N7 · Global · Conditions people live with, rather than die from, tend to
+// get less research.
+import Scene from '../charts/Scene.astro';
+import Scatter from '../charts/Scatter.astro';
+import DataTable from '../charts/DataTable.astro';
+import { researchVsBurden, researchRow, RESEARCH_FILE } from '../../lib/data/research-burden';
+import { clearGapCauses, YLD_FILE, GBD_YEAR } from '../../lib/data/gbd-yld';
+import { fmt, spearman } from '../../lib/data/csv';
+
+const rows = researchVsBurden();
+const marked = clearGapCauses();
+const SHORT: Record<string, string> = {
+  'Ischemic heart disease': 'Heart disease',
+  "Alzheimer's disease and other dementias": 'Dementia',
+  'Depressive disorders': 'Depression',
+  'Anxiety disorders': 'Anxiety',
+};
+const label = (c: string) => SHORT[c] ?? c;
+const lowest = [...rows].sort((a, b) => a.papers - b.papers)[0];
+const heart = researchRow('Ischemic heart disease');
+const rho = spearman(rows.map((r) => r.livingUnwell), rows.map((r) => r.papers));
+if (rho >= 0) throw new Error('"In numbers" N7: the headline says conditions people live with tend to get less research, but the rank correlation is no longer negative.');
+const yMax = Math.max(...rows.map((r) => r.papers)) * 1.6;
+const yMin = 10 ** Math.floor(Math.log10(Math.min(...rows.map((r) => r.papers))));
+---
+<Scene
+  id="research"
+  region="Global"
+  year="2015–2024"
+  big={fmt(lowest.papers, 1)}
+  headline={`${lowest.condition} gets ${fmt(lowest.papers, 1)} research papers per 100,000 years of healthy life lost. Heart disease gets ${fmt(heart.papers, 1)}.`}
+  summary={`Across ${rows.length} conditions, those whose burden comes mostly from living unwell tend to have fewer research papers per unit of burden (rank correlation ${fmt(rho, 2)}). That is a pattern, not proof.`}
+  caveat={`PubMed papers 2015–2024 per 100,000 DALYs (GBD ${GBD_YEAR}). A rough measure of research attention across ${rows.length} conditions. Gynaecological conditions are left out because GBD's burden estimates for them are unreliable.`}
+  sourceNote="Ratio of two sources"
+  sources={[
+    { label: "PubMed, US National Library of Medicine; analysis by Women's Health Gaps", url: 'https://pubmed.ncbi.nlm.nih.gov/' },
+    { label: `IHME, GBD ${GBD_YEAR}`, url: 'https://vizhub.healthdata.org/gbd-results/' },
+  ]}
+  csv={[RESEARCH_FILE.file, YLD_FILE.file]}
+>
+  <p slot="lead" class="scene-lead">Conditions people live with, rather than die from, tend to get less research.</p>
+  <Scatter
+    id="research-chart"
+    title="Research papers per 100,000 DALYs against the share of burden from living unwell, by condition"
+    desc={rows.map((r) => `${label(r.condition)}: ${fmt(r.livingUnwell, 1)}% of burden from living unwell, ${fmt(r.papers, 1)} papers per 100,000 DALYs`).join('; ') + '.'}
+    points={rows.map((r) => ({ label: label(r.condition), x: r.livingUnwell, y: r.papers, marked: marked.has(r.condition) }))}
+    xLabel="Share of burden from living unwell"
+    yLabel="Papers per 100,000 DALYs (log scale)"
+    yMin={yMin}
+    yMax={yMax}
+    markedName="Clearly hits women harder (GBD, uncertainty ranges don't overlap)"
+    otherName="Other conditions"
+  />
+  <DataTable
+    slot="data"
+    caption="Research papers and type of burden, by condition"
+    head={['Condition', 'Papers per 100,000 DALYs', 'Burden from living unwell', 'Clearly hits women harder']}
+    rows={[...rows].sort((a, b) => a.papers - b.papers).map((r) => [r.condition, fmt(r.papers, 1), `${fmt(r.livingUnwell, 1)}%`, marked.has(r.condition) ? 'Yes' : 'No'])}
+  />
+</Scene>

@@ -1,0 +1,36 @@
+---
+// N2 · Australia · Most of women's disease burden is living unwell (AIHW).
+import Scene from '../charts/Scene.astro';
+import StackedBars from '../charts/StackedBars.astro';
+import DataTable from '../charts/DataTable.astro';
+import { burdenSplit, BURDEN_FILE } from '../../lib/data/aihw-burden';
+
+const { women, men, source } = burdenSplit();
+const rows: { label: string; style: 'women' | 'men'; nonFatal: number; fatal: number }[] = [{ label: 'Women', style: 'women', nonFatal: women.nonFatal, fatal: women.fatal }];
+if (men) rows.push({ label: 'Men', style: 'men' as const, nonFatal: men.nonFatal, fatal: men.fatal });
+---
+<Scene
+  id="burden"
+  region="Australia"
+  year="AIHW 2025"
+  big={`${women.nonFatal}%`}
+  headline={`${women.nonFatal}% of Australian women's burden of disease comes from living with illness, not from dying early.`}
+  summary={`Of all the healthy life Australian women lose to disease, ${women.nonFatal}% is lost to living with illness and ${women.fatal}% to dying early.${men ? ` For men: ${men.nonFatal}% and ${men.fatal}%.` : ''}`}
+  caveat="Burden of disease counts the years of healthy life lost, both to living with illness and to dying early."
+  sources={[source]}
+  csv={[BURDEN_FILE.file]}
+>
+  <StackedBars
+    id="burden-chart"
+    title="Burden of disease: living with illness vs dying early, Australia"
+    desc={`Women: ${women.nonFatal}% living with illness, ${women.fatal}% dying early.${men ? ` Men: ${men.nonFatal}% and ${men.fatal}%.` : ''}`}
+    rows={rows}
+  />
+  <DataTable
+    slot="data"
+    caption="Share of the burden of disease, Australia (%)"
+    head={['', 'Living with illness', 'Dying early']}
+    rows={[['Women', `${women.nonFatal}%`, `${women.fatal}%`], ...(men ? [['Men', `${men.nonFatal}%`, `${men.fatal}%`]] : [])]}
+    note={`Transcribed from ${source.label}, as cited on the home page.${men ? '' : " The source as cited gives women's figure only, so men aren't shown."}`}
+  />
+</Scene>

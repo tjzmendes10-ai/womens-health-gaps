@@ -1,0 +1,29 @@
+---
+// One of two side-by-side panels inside a scene, each with its own tag,
+// year and source (e.g. Global and Australia, or ABS and OECD).
+import { csvUrl } from '../../lib/data/csv';
+
+interface Link { label: string; url: string }
+interface Props { region: 'Australia' | 'Global'; year: string | number; title: string; summary?: string; note?: string; sources: Link[]; csv?: string[] }
+const { region, year, title, summary, note, sources, csv = [] } = Astro.props;
+---
+<section class="panel">
+  <p class="scene-eyebrow"><span class="tag">{region}</span><span class="scene-year">{year}</span></p>
+  <h4 class="panel-title">{title}</h4>
+  <slot name="lead" />
+  <figure class="scene-chart">
+    <slot />
+    {summary && <figcaption class="scene-summary">{summary}</figcaption>}
+  </figure>
+  {Astro.slots.has('data') && (
+    <details class="scene-data">
+      <summary>Show the data</summary>
+      <slot name="data" />
+    </details>
+  )}
+  {note && <p class="scene-caveat">{note}</p>}
+  <p class="scene-source">
+    {sources.length === 1 ? 'Source' : 'Sources'}: {sources.map((s, i) => <>{i > 0 && '; '}<a href={s.url}>{s.label}</a></>)}.
+    {csv.length > 0 && <> Data: {csv.map((f, i) => <>{i > 0 && ', '}<a href={csvUrl(f)}><code>{f}</code></a></>)}</>}
+  </p>
+</section>

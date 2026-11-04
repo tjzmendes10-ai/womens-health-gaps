@@ -1,0 +1,20 @@
+---
+// The "Show the data" table under a chart.
+interface Props {
+  caption: string;
+  head: string[];
+  rows: (string | number)[][];
+  note?: string;
+}
+const { caption, head, rows, note } = Astro.props;
+---
+<div class="data-table-wrap">
+  <table class="data-table">
+    <caption>{caption}</caption>
+    <thead><tr>{head.map((h) => <th scope="col">{h}</th>)}</tr></thead>
+    <tbody>
+      {rows.map((r) => <tr>{r.map((c, i) => (i === 0 ? <th scope="row">{c}</th> : <td>{c}</td>))}</tr>)}
+    </tbody>
+  </table>
+  {note && <p class="data-table-note">{note}</p>}
+</div>

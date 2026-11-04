@@ -1,0 +1,21 @@
+---
+// Home page teaser for the In numbers page, using N1's GP figures.
+import { costBarriers, COST_FILE, COST_SOURCE, COST_YEAR } from '../../lib/data/abs-patient-experiences';
+import { fmt, csvUrl } from '../../lib/data/csv';
+import { url } from '../../lib/url';
+
+const gp = costBarriers().find((r) => r.key === 'gp')!;
+const pct = (n: number) => `${fmt(n, 1)}%`;
+---
+<section class="numbers-teaser" aria-labelledby="teaser-headline">
+  <div class="ledger">
+    <p class="scene-eyebrow"><span class="tag">Australia</span><span class="scene-year">{COST_YEAR}</span></p>
+    <p class="teaser-figures" aria-hidden="true">
+      <span class="teaser-pair"><span class="teaser-women">{pct(gp.women)}</span> <span class="teaser-vs">of women</span></span>
+      <span class="teaser-pair"><span class="teaser-men">{pct(gp.men)}</span> <span class="teaser-vs">of men</span></span>
+    </p>
+    <h2 class="scene-headline" id="teaser-headline">{pct(gp.women)} of women delayed or skipped a GP visit because of cost, compared with {pct(gp.men)} of men.</h2>
+    <p class="scene-source">Source: <a href={COST_SOURCE.url}>{COST_SOURCE.label}</a>. Data: <a href={csvUrl(COST_FILE.file)}><code>{COST_FILE.file}</code></a></p>
+    <p class="teaser-link"><a href={url('/in-numbers/')}>See the rest in numbers</a></p>
+  </div>
+</section>

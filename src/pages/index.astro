@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Text from '../components/Text.astro';
 import HeroScene from '../components/HeroScene.astro';
+import HomeTeaser from '../components/numbers/HomeTeaser.astro';
 import CycleScene from '../components/scenes/CycleScene.astro';
 import HistoryScene from '../components/scenes/HistoryScene.astro';
 import FutureScene from '../components/scenes/FutureScene.astro';
@@ -26,6 +27,8 @@ const heroTitle = rest.length ? `${escape(first)}, <span class="hl">${escape(res
       <div class="home-intro"><Content /></div>
     </div>
   </section>
+
+  <HomeTeaser />
 
   <section class="act" id="act-1" aria-labelledby="act-1-title">
     <div class="act-inner">

@@ -1,0 +1,74 @@
+---
+// One "scene" on the In numbers page: tag + year, big number, one-line
+// headline, the chart, a plain-text summary, "Show the data", a one-line
+// caveat and the source. Chart goes in the default slot, the data table in
+// the "data" slot.
+import { csvUrl } from '../../lib/data/csv';
+
+interface Link { label: string; url: string }
+interface Props {
+  id: string;
+  region: 'Australia' | 'Global' | 'Global and Australia';
+  year: string | number;
+  big: string;
+  headline: string;
+  /** Plain-text summary sentence shown under the chart. */
+  summary?: string;
+  caveat?: string;
+  sources: Link[];
+  /** Data files in research-data/clean/ (linked on GitHub), or other links to the data. */
+  csv?: string[];
+  data?: Link[];
+  /** e.g. "Ratio of two sources" */
+  sourceNote?: string;
+  level?: 2 | 3;
+  /** Word before the data links, e.g. "Data" or "See". */
+  dataLabel?: string;
+  /** Set when the default slot holds <Panel>s rather than one chart. */
+  panels?: boolean;
+}
+const { id, region, year, big, headline, summary, caveat, sources, csv = [], data = [], sourceNote, level = 3, panels = false, dataLabel = 'Data' } = Astro.props;
+const dataLinks = [...csv.map((f) => ({ label: f, url: csvUrl(f), code: true })), ...data.map((d) => ({ ...d, code: false }))];
+const H = level === 2 ? 'h2' : 'h3';
+const hasChart = Astro.slots.has('default');
+const hasData = Astro.slots.has('data');
+---
+<article class="scene" id={id} aria-labelledby={`${id}-headline`}>
+  <p class="scene-eyebrow">
+    {region.split(' and ').map((r) => <span class="tag">{r}</span>)}
+    <span class="scene-year">{year}</span>
+  </p>
+  <p class="scene-number" aria-hidden="true">{big}</p>
+  <H class="scene-headline" id={`${id}-headline`}>{headline}</H>
+  <slot name="lead" />
+  {hasChart && panels && <div class="panels"><slot /></div>}
+  {
+    hasChart && !panels && (
+      <figure class="scene-chart">
+        <slot />
+        {summary && <figcaption class="scene-summary">{summary}</figcaption>}
+      </figure>
+    )
+  }
+  {!hasChart && summary && <p class="scene-summary">{summary}</p>}
+  {
+    hasData && (
+      <details class="scene-data">
+        <summary>Show the data</summary>
+        <slot name="data" />
+      </details>
+    )
+  }
+  {caveat && <p class="scene-caveat">{caveat}</p>}
+  {sources.length > 0 && <p class="scene-source">
+    {sourceNote && <>{sourceNote}. </>}
+    {sources.length === 1 ? 'Source' : 'Sources'}:{' '}
+    {sources.map((s, i) => <>{i > 0 && '; '}<a href={s.url}>{s.label}</a></>)}.
+    {dataLinks.length > 0 && (
+      <>
+        {' '}{dataLabel}:{' '}
+        {dataLinks.map((d, i) => <>{i > 0 && ', '}<a href={d.url}>{d.code ? <code>{d.label}</code> : d.label}</a></>)}
+      </>
+    )}
+  </p>}
+</article>

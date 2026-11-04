@@ -1,0 +1,29 @@
+---
+// A row of pill shapes, some highlighted.
+interface Props { id: string; title: string; desc: string; total: number; highlighted: number; onLabel: string; offLabel: string }
+const { id, title, desc, total, highlighted, onLabel, offLabel } = Astro.props;
+const W = 400, PER_ROW = Math.min(total, 10), CELL = W / PER_ROW, PH = 22, PW = Math.min(30, CELL - 8);
+const rows = Math.ceil(total / PER_ROW);
+const H = rows * (PH + 14) + 44;
+---
+<svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby={`${id}-t ${id}-d`}>
+  <title id={`${id}-t`}>{title}</title>
+  <desc id={`${id}-d`}>{desc}</desc>
+  {
+    Array.from({ length: total }, (_, k) => {
+      const cx = (k % PER_ROW) * CELL + CELL / 2;
+      const cy = Math.floor(k / PER_ROW) * (PH + 14) + PH / 2 + 2;
+      const on = k < highlighted;
+      return (
+        <g transform={`translate(${cx},${cy}) rotate(-30)`}>
+          <rect class={on ? 'pill-on' : 'pill-off'} x={-PW / 2} y={-PH / 4 - 1} width={PW} height={PH / 2 + 2} rx={PH / 4 + 1} />
+          <line class={on ? 'pill-split-on' : 'pill-split-off'} x1="0" x2="0" y1={-PH / 4} y2={PH / 4} />
+        </g>
+      );
+    })
+  }
+  <g transform={`translate(0,${H - 18})`}>
+    <rect class="pill-on" x="0" y="-9" width="22" height="12" rx="6" /><text class="ct ct-small" x="30" y="1">{onLabel}</text>
+    <rect class="pill-off" x="200" y="-9" width="22" height="12" rx="6" /><text class="ct ct-small" x="230" y="1">{offLabel}</text>
+  </g>
+</svg>
