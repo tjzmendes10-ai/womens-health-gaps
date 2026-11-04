@@ -1,0 +1,133 @@
+---
+// Chapter 1, "Then": a ledger of big numbers from the history timeline,
+// oldest first. Each figure is read from its timeline entry
+// (src/lib/data/timeline-figures.ts) and links back to it on /history/.
+import Scene from '../charts/Scene.astro';
+import IconRows from '../charts/IconRows.astro';
+import Pills from '../charts/Pills.astro';
+import { thenFigures, type ThenFigure } from '../../lib/data/timeline-figures';
+import { fmt, numberWord, capitalise, REPO_URL } from '../../lib/data/csv';
+import { url } from '../../lib/url';
+
+const f = await thenFigures();
+const PER = 1000;
+
+// Each scene cites the entry's own source and links to the entry on the
+// timeline and to its file on GitHub.
+const sources = (...entries: ThenFigure[]) =>
+  entries.flatMap((e) => (e.source.url ? [{ label: `${e.source.publisher}${e.source.year ? `, ${e.source.year}` : ''}`, url: e.source.url }] : []));
+const links = (...entries: ThenFigure[]) =>
+  entries.flatMap((e) => [
+    { label: `On the timeline: ${e.date}`, url: url(`/history/#${e.id}`) },
+    { label: `the entry on GitHub`, url: `${REPO_URL}/blob/main/src/content/timeline/${e.id}.md` },
+  ]);
+---
+<Scene
+  id="then-exclusion"
+  region="Global"
+  year={`${f.exclusion.from}–${f.exclusion.to}`}
+  big={`${f.exclusion.years} years`}
+  headline={`For ${f.exclusion.years} years, from ${f.exclusion.from} to ${f.exclusion.to}, US rules kept women who could become pregnant out of early drug trials by default.`}
+  sources={sources(...f.exclusion.entries)}
+  dataLabel="See"
+  data={links(...f.exclusion.entries)}
+/>
+
+<Scene
+  id="then-aspirin-men"
+  region="Global"
+  year={f.aspirinMen.year}
+  big={`${fmt(f.aspirinMen.men)} men, 0 women`}
+  headline={`The ${f.aspirinMen.year} aspirin study that shaped advice on heart health studied ${fmt(f.aspirinMen.men)} men and no women.`}
+  sources={sources(f.aspirinMen.entry)}
+  dataLabel="See"
+  data={links(f.aspirinMen.entry)}
+>
+  <IconRows
+    id="aspirin-men-chart"
+    title={`Participants in the ${f.aspirinMen.year} aspirin study`}
+    desc={`${fmt(f.aspirinMen.men)} men, shown as ${Math.round(f.aspirinMen.men / PER)} figures, and an empty space for women: none were studied. One figure = ${fmt(PER)} people.`}
+    per={PER}
+    emptyLabel="No women"
+    rows={[
+      { label: 'Men', sub: fmt(f.aspirinMen.men), count: f.aspirinMen.men, style: 'men' },
+      { label: 'Women', sub: '0', count: 0, style: 'women' },
+    ]}
+  />
+  <p class="chart-key">One figure = {fmt(PER)} people.</p>
+</Scene>
+
+<Scene
+  id="then-aspirin-women"
+  region="Global"
+  year={f.aspirinWomen.year}
+  big={`${fmt(f.aspirinWomen.women)} women`}
+  headline={`When ${fmt(f.aspirinWomen.women)} women were finally studied, in ${f.aspirinWomen.year}, aspirin worked differently for them.`}
+  sources={sources(f.aspirinWomen.entry)}
+  dataLabel="See"
+  data={links(f.aspirinWomen.entry)}
+>
+  <IconRows
+    id="aspirin-women-chart"
+    title={`Participants in the ${f.aspirinWomen.year} Women's Health Study`}
+    desc={`${fmt(f.aspirinWomen.women)} women, shown as ${Math.round(f.aspirinWomen.women / PER)} figures. One figure = ${fmt(PER)} people.`}
+    per={PER}
+    rows={[{ label: 'Women', sub: fmt(f.aspirinWomen.women), count: f.aspirinWomen.women, style: 'women' }]}
+  />
+  <p class="chart-key">One figure = {fmt(PER)} people.</p>
+</Scene>
+
+<Scene
+  id="then-withdrawn"
+  region="Global"
+  year={f.withdrawn.year}
+  big={`${f.withdrawn.riskier} of ${f.withdrawn.total}`}
+  headline={`${f.withdrawn.riskier} of the ${f.withdrawn.total} prescription drugs recently withdrawn from the US market posed greater health risks for women, a ${f.withdrawn.year} audit found.`}
+  caveat={`${capitalise(numberWord(f.withdrawn.prescribedMore))} of the ${numberWord(f.withdrawn.riskier)} were prescribed more often to women.`}
+  sources={sources(f.withdrawn.entry)}
+  dataLabel="See"
+  data={links(f.withdrawn.entry)}
+>
+  <Pills
+    id="withdrawn-chart"
+    title={`${f.withdrawn.total} withdrawn drugs, ${f.withdrawn.riskier} riskier for women`}
+    desc={`${f.withdrawn.total} pill shapes, ${f.withdrawn.riskier} of them highlighted: the drugs that posed greater health risks for women.`}
+    total={f.withdrawn.total}
+    highlighted={f.withdrawn.riskier}
+    onLabel={`Riskier for women (${f.withdrawn.riskier})`}
+    offLabel={`Not (${f.withdrawn.total - f.withdrawn.riskier})`}
+  />
+</Scene>
+
+<Scene
+  id="then-male-bias"
+  region="Global"
+  year={f.maleBias.year}
+  big={`${f.maleBias.ratio} to 1`}
+  headline={`In neuroscience, studies of only male animals outnumbered studies of only female animals by ${f.maleBias.ratio} to 1.`}
+  sources={sources(f.maleBias.entry)}
+  dataLabel="See"
+  data={links(f.maleBias.entry)}
+/>
+
+<Scene
+  id="then-zolpidem"
+  region="Global"
+  year={`${f.zolpidem.from}–${f.zolpidem.to}`}
+  big={`${f.zolpidem.years} years`}
+  headline={`It took ${f.zolpidem.years} years, from ${f.zolpidem.from} to ${f.zolpidem.to}, for women's recommended dose of the sleeping pill zolpidem (Ambien) to be halved in the US.`}
+  sources={sources(f.zolpidem.entry)}
+  dataLabel="See"
+  data={links(f.zolpidem.entry)}
+/>
+
+<Scene
+  id="then-nhmrc"
+  region="Australia"
+  year={f.nhmrc.year}
+  big={String(f.nhmrc.year)}
+  headline={`From ${f.nhmrc.year}, Australia's main health research funders, the NHMRC and the Medical Research Future Fund, require the research they fund to consider sex and gender.`}
+  sources={sources(f.nhmrc.entry)}
+  dataLabel="See"
+  data={links(f.nhmrc.entry)}
+/>

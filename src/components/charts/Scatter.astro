@@ -1,0 +1,64 @@
+---
+// Labelled scatter: x on a 0–100% scale, y on a log scale. Marked points are
+// filled; the rest are rings. Labels are spaced so they never overlap.
+interface Point { label: string; x: number; y: number; marked: boolean }
+interface Props { id: string; title: string; desc: string; points: Point[]; xLabel: string; yLabel: string; yMin: number; yMax: number; markedName: string; otherName: string }
+const { id, title, desc, points, xLabel, yLabel, yMin, yMax, markedName, otherName } = Astro.props;
+const W = 400, H = 380, LEFT = 40, RIGHT = 10, TOP = 66, BOTTOM = 44;
+const plotW = W - LEFT - RIGHT, plotH = H - TOP - BOTTOM;
+const px = (v: number) => LEFT + (v / 100) * plotW;
+const py = (v: number) => TOP + plotH - ((Math.log10(v) - Math.log10(yMin)) / (Math.log10(yMax) - Math.log10(yMin))) * plotH;
+const yTicks: number[] = [];
+for (let t = 10 ** Math.ceil(Math.log10(yMin)); t <= yMax; t *= 10) yTicks.push(t);
+
+// Points on the right are labelled to their left. Points near the left edge
+// share one label column just right of the cluster; points in the middle
+// are labelled to their right. Labels in a column are spaced so they never overlap.
+const GAP = 14;
+const side = (x: number) => (x > 60 ? 'left' : 'right');
+const placed = points.map((p) => ({ ...p, cx: px(p.x), cy: py(p.y), side: side(p.x), ly: py(p.y) + 4, lx: 0, near: p.x < 20 }));
+const column = Math.max(...placed.filter((p) => p.near).map((p) => p.cx), LEFT) + 14;
+for (const s of ['left', 'right']) {
+  const group = placed.filter((p) => p.side === s).sort((a, b) => a.cy - b.cy);
+  for (let k = 1; k < group.length; k++) group[k].ly = Math.max(group[k].ly, group[k - 1].ly + GAP);
+}
+for (const p of placed) {
+  if (p.side === 'left') p.lx = p.cx - 9;
+  else p.lx = p.near ? column : p.cx + 9;
+}
+---
+<svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby={`${id}-t ${id}-d`}>
+  <title id={`${id}-t`}>{title}</title>
+  <desc id={`${id}-d`}>{desc}</desc>
+  <g class="legend">
+    <circle class="dot-women" cx="7" cy="10" r="5.5" /><text class="ct ct-small" x="18" y="14">{markedName}</text>
+    <circle class="dot-ring-muted" cx="7" cy="30" r="5" /><text class="ct ct-small" x="18" y="34">{otherName}</text>
+  </g>
+  {yTicks.map((t) => (
+    <g>
+      <line class="grid" x1={LEFT} x2={W - RIGHT} y1={py(t)} y2={py(t)} />
+      <text class="ct ct-small ct-muted" x={LEFT - 6} y={py(t) + 4} text-anchor="end">{t.toLocaleString('en-AU')}</text>
+    </g>
+  ))}
+  {[0, 50, 100].map((t) => (
+    <g>
+      <line class="grid" x1={px(t)} x2={px(t)} y1={TOP} y2={TOP + plotH} />
+      <text class="ct ct-small ct-muted" x={px(t)} y={TOP + plotH + 16} text-anchor={t === 100 ? 'end' : 'middle'}>{t}%</text>
+    </g>
+  ))}
+  <text class="ct ct-small ct-muted" x={W - RIGHT} y={H - 6} text-anchor="end">{xLabel} →</text>
+  <text class="ct ct-small ct-muted" x={LEFT} y={TOP - 10}>↑ {yLabel}</text>
+  {
+    placed.map((p) => {
+      const lx = p.lx;
+      const lead = (Math.abs(p.ly - 4 - p.cy) > 3 || Math.abs(lx - p.cx) > 12);
+      return (
+        <g>
+          {lead && <path class="leader" d={`M${p.cx + (p.side === 'right' ? 5 : -5)},${p.cy} L${lx + (p.side === 'right' ? -3 : 3)},${p.ly - 4}`} />}
+          {p.marked ? <circle class="dot-women" cx={p.cx} cy={p.cy} r="5.5" /> : <circle class="dot-ring-muted" cx={p.cx} cy={p.cy} r="5" />}
+          <text class={p.marked ? 'ct ct-small ct-strong' : 'ct ct-small'} x={lx} y={p.ly} text-anchor={p.side === 'left' ? 'end' : 'start'}>{p.label}</text>
+        </g>
+      );
+    })
+  }
+</svg>

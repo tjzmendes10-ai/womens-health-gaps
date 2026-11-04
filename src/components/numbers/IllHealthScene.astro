@@ -1,0 +1,46 @@
+---
+// N3 · Global · Women spend more years in ill health in every WHO region.
+import Scene from '../charts/Scene.astro';
+import PairedDots from '../charts/PairedDots.astro';
+import DataTable from '../charts/DataTable.astro';
+import { illHealthByRegion, countriesWomenHigher, WHO_FILE, WHO_SOURCE, WHO_YEAR } from '../../lib/data/who-ill-health';
+import { fmt } from '../../lib/data/csv';
+
+const regions = illHealthByRegion();
+const { higher, total } = countriesWomenHigher();
+if (!regions.every((r) => r.women > r.men)) throw new Error('"In numbers" N3: the headline says women spend more years in ill health in every WHO region, but the data no longer shows that.');
+const gaps = regions.map((r) => ({ ...r, gap: r.women - r.men })).sort((a, b) => a.gap - b.gap);
+const lo = gaps[0], hi = gaps[gaps.length - 1];
+const min = Math.floor(Math.min(...regions.map((r) => r.men)) / 2) * 2 - 2;
+const max = Math.ceil(Math.max(...regions.map((r) => r.women)) / 2) * 2 + 2;
+const countText = higher === total ? `all ${fmt(total)}` : `${fmt(higher)} of ${fmt(total)}`;
+---
+<Scene
+  id="ill-health"
+  region="Global"
+  year={WHO_YEAR}
+  big={`${fmt(higher)} of ${fmt(total)}`}
+  headline={`In ${countText} countries with WHO estimates, women spend more years in ill health than men.`}
+  summary={`In every WHO region, women spend more years in ill health than men. The gap ranges from ${fmt(lo.gap, 1)} years (${lo.region}) to ${fmt(hi.gap, 1)} years (${hi.region}).`}
+  caveat={`Years in ill health is life expectancy minus healthy life expectancy. ${WHO_YEAR} estimates, which include the effects of COVID-19.`}
+  sources={[WHO_SOURCE]}
+  csv={[WHO_FILE.file]}
+>
+  <PairedDots
+    id="ill-health-chart"
+    title={`Years lived in ill health, women and men, by WHO region, ${WHO_YEAR}`}
+    desc={regions.map((r) => `${r.region}: women ${fmt(r.women, 1)}, men ${fmt(r.men, 1)} years`).join('; ') + '.'}
+    rows={regions.map((r) => ({ label: r.region, women: r.women, men: r.men }))}
+    min={min}
+    max={max}
+    unit="years"
+    axisLabel="Years in ill health"
+  />
+  <DataTable
+    slot="data"
+    caption={`Years lived in ill health by WHO region, ${WHO_YEAR}`}
+    head={['WHO region', 'Women', 'Men', 'Difference']}
+    rows={regions.map((r) => [r.region, fmt(r.women, 2), fmt(r.men, 2), fmt(r.women - r.men, 2)])}
+    note={`Countries where women's figure is higher than men's: ${fmt(higher)} of ${fmt(total)} (geo_type COUNTRY, ${WHO_YEAR}).`}
+  />
+</Scene>

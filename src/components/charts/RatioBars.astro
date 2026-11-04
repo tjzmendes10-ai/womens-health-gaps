@@ -1,0 +1,29 @@
+---
+// How many times higher women's rate is than men's. A dashed line marks 1×
+// (the same as men).
+interface Row { label: string; ratio: number }
+interface Props { id: string; title: string; desc: string; rows: Row[]; max: number }
+const { id, title, desc, rows, max } = Astro.props;
+const W = 400, LABEL_W = 132, BAR_H = 18, ROW_H = 50, TOP = 6;
+const plotW = W - LABEL_W;
+const x = (v: number) => (v / max) * plotW;
+const H = TOP + rows.length * ROW_H + 22;
+---
+<svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby={`${id}-t ${id}-d`}>
+  <title id={`${id}-t`}>{title}</title>
+  <desc id={`${id}-d`}>{desc}</desc>
+  {
+    rows.map((r, i) => {
+      const y = TOP + i * ROW_H;
+      return (
+        <g>
+          <text class="ct ct-strong" x="0" y={y + 14}>{r.label}</text>
+          <rect class="bar-women" x="0" y={y + 22} width={x(r.ratio)} height={BAR_H} rx="2" />
+          <text class="ct" x={x(r.ratio) + 6} y={y + 36}><tspan class="ct-strong">{r.ratio.toFixed(1)}×</tspan> <tspan class="ct-muted">men's rate</tspan></text>
+        </g>
+      );
+    })
+  }
+  <line class="men-ref" x1={x(1)} x2={x(1)} y1={TOP + 18} y2={H - 18} />
+  <text class="ct ct-small ct-muted" x={x(1)} y={H - 4} text-anchor="middle">1× = same as men</text>
+</svg>

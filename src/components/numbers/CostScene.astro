@@ -1,0 +1,47 @@
+---
+// N1 · Australia · Cost keeps women from care (ABS Patient Experiences).
+import Scene from '../charts/Scene.astro';
+import Bars from '../charts/Bars.astro';
+import DataTable from '../charts/DataTable.astro';
+import { costBarriers, COST_FILE, COST_SOURCE, COST_YEAR } from '../../lib/data/abs-patient-experiences';
+import { fmt } from '../../lib/data/csv';
+
+const rows = costBarriers();
+const gp = rows.find((r) => r.key === 'gp')!;
+const allHigher = rows.every((r) => r.women > r.men);
+if (!allHigher) throw new Error('"In numbers" N1: the summary says women were more likely for every type of care, but the data no longer shows that. Reword CostScene.astro.');
+const max = Math.ceil(Math.max(...rows.flatMap((r) => [r.women + r.womenMoe, r.men + r.menMoe])) / 5) * 5;
+const pct = (n: number) => `${fmt(n, 1)}%`;
+const list = rows.map((r) => `${r.label === 'GP' ? 'GP' : r.label.toLowerCase()} ${pct(r.women)} vs ${pct(r.men)}`).join('; ');
+---
+<Scene
+  id="cost"
+  region="Australia"
+  year={COST_YEAR}
+  big={pct(gp.women)}
+  headline={`${pct(gp.women)} of women delayed or skipped a GP visit because of cost, compared with ${pct(gp.men)} of men.`}
+  summary={`Women were more likely than men to delay or go without every type of care shown because of cost (women vs men): ${list}. Whiskers show the 95% margin of error.`}
+  caveat="People aged 15 and over who delayed or went without care in the last 12 months. The survey doesn't show why the gap exists."
+  sources={[COST_SOURCE]}
+  csv={[COST_FILE.file]}
+>
+  <Bars
+    id="cost-chart"
+    title="Delayed or went without care because of cost, women and men, Australia 2024–25"
+    desc={`Paired bars for women and men: ${list}.`}
+    max={max}
+    groups={rows.map((r) => ({
+      label: r.label,
+      bars: [
+        { name: 'Women', value: r.women, moe: r.womenMoe, style: 'women', valueLabel: pct(r.women) },
+        { name: 'Men', value: r.men, moe: r.menMoe, style: 'men', valueLabel: pct(r.men) },
+      ],
+    }))}
+  />
+  <DataTable
+    slot="data"
+    caption={`Delayed or went without care because of cost, people aged 15+, Australia ${COST_YEAR} (%, ± 95% margin of error)`}
+    head={['Type of care', 'Women', 'Men']}
+    rows={rows.map((r) => [r.label, `${pct(r.women)} ± ${fmt(r.womenMoe, 1)}`, `${pct(r.men)} ± ${fmt(r.menMoe, 1)}`])}
+  />
+</Scene>

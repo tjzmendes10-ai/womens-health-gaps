@@ -1,0 +1,85 @@
+---
+// "In numbers": a data-only page in three chapters (Then, Now, Still to go).
+// Every figure is read at build time from research-data/clean/ or from the
+// timeline entries. See README.md, "How the charts read the data".
+import Base from '../layouts/Base.astro';
+import ThenScenes from '../components/numbers/ThenScenes.astro';
+import CostScene from '../components/numbers/CostScene.astro';
+import BurdenScene from '../components/numbers/BurdenScene.astro';
+import IllHealthScene from '../components/numbers/IllHealthScene.astro';
+import TrialsScene from '../components/numbers/TrialsScene.astro';
+import HeartBreastScene from '../components/numbers/HeartBreastScene.astro';
+import HarderScene from '../components/numbers/HarderScene.astro';
+import ResearchScene from '../components/numbers/ResearchScene.astro';
+import ProgressScene from '../components/numbers/ProgressScene.astro';
+import RemainingGapsScene from '../components/numbers/RemainingGapsScene.astro';
+import { SOURCES_URL } from '../lib/data/csv';
+import { PLACEHOLDER_TITLE } from '../lib/placeholder-plugins.mjs';
+import { url } from '../lib/url';
+
+const chapters = [
+  { id: 'then', label: 'Then' },
+  { id: 'now', label: 'Now' },
+  { id: 'still-to-go', label: 'Still to go' },
+];
+---
+<Base title="In numbers" description="How medicine has served women, in the past and now, and how far there is still to go, in figures from public data and published research.">
+  <header class="numbers-intro">
+    <div class="ledger">
+      <p class="eyebrow">In numbers</p>
+      <h1>Women's health, in numbers</h1>
+      <p>
+        These figures come from public data and published research. Australian and global figures are never mixed in one
+        chart. Methods, sources and caveats for every dataset are in <a href={SOURCES_URL}>research-data/SOURCES.md</a>.
+      </p>
+    </div>
+  </header>
+
+  <nav class="chapter-index" aria-label="Chapters">
+    <ol>
+      {chapters.map((c) => <li><a href={`#${c.id}`}>{c.label}</a></li>)}
+    </ol>
+  </nav>
+
+  <section class="chapter chapter-dark" id="then" aria-labelledby="then-title">
+    <div class="ledger">
+      <p class="chapter-label">Chapter 1</p>
+      <h2 id="then-title" class="chapter-title">Then</h2>
+      <ThenScenes />
+    </div>
+  </section>
+
+  <section class="chapter" id="now" aria-labelledby="now-title">
+    <div class="ledger">
+      <p class="chapter-label">Chapter 2</p>
+      <h2 id="now-title" class="chapter-title">Now</h2>
+      <CostScene />
+      <BurdenScene />
+      <IllHealthScene />
+      <TrialsScene />
+      <HeartBreastScene />
+      <HarderScene />
+      <ResearchScene />
+    </div>
+  </section>
+
+  <section class="chapter chapter-dark" id="still-to-go" aria-labelledby="still-title">
+    <div class="ledger">
+      <p class="chapter-label">Chapter 3</p>
+      <h2 id="still-title" class="chapter-title">Still to go</h2>
+      <ProgressScene />
+      <RemainingGapsScene />
+
+      <article class="scene scene-unfinished" id="diagnosis" aria-labelledby="diagnosis-headline">
+        <p class="scene-eyebrow"><span class="tag">Australia</span></p>
+        <p class="scene-number"><mark class="placeholder" title={PLACEHOLDER_TITLE}>[DATA NEEDED]</mark></p>
+        <h3 class="scene-headline" id="diagnosis-headline">How long women wait for a diagnosis</h3>
+        <p><mark class="placeholder" title={PLACEHOLDER_TITLE}>[DATA NEEDED – years to diagnosis for endometriosis and other conditions]</mark></p>
+      </article>
+
+      <p class="numbers-close">
+        <a href={url('/where-were-headed/')}>What needs to change, and who can change it</a>
+      </p>
+    </div>
+  </section>
+</Base>

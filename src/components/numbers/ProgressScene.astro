@@ -1,0 +1,43 @@
+---
+// S1 · Australia · Progress is possible (GBD death rates, 1990 → 2023).
+import Scene from '../charts/Scene.astro';
+import Slope from '../charts/Slope.astro';
+import DataTable from '../charts/DataTable.astro';
+import { deathRateTrends, RATES_FILE, RATE_YEARS } from '../../lib/data/gbd-au-death-rates';
+import { GBD_SOURCE, GBD_YEAR } from '../../lib/data/gbd-yld';
+import { fmt } from '../../lib/data/csv';
+
+const rows = deathRateTrends();
+const label = (c: string) => (c === 'Ischemic heart disease' ? 'Heart disease' : c);
+const heart = rows.find((r) => r.cause === 'Ischemic heart disease');
+if (!heart) throw new Error(`research-data/clean/${RATES_FILE.file} has no rows where cause = "Ischemic heart disease".`);
+const first = RATE_YEARS[0], last = RATE_YEARS[RATE_YEARS.length - 1];
+const max = Math.ceil(Math.max(...rows.flatMap((r) => r.rates)) / 20) * 20;
+---
+<Scene
+  id="progress"
+  region="Australia"
+  year={`${first}–${last}`}
+  big={`${fmt(heart.fallPct)}%`}
+  headline={`Heart disease death rates for Australian women fell by ${fmt(heart.fallPct)}% between ${first} and ${last}.`}
+  summary={`Fall in age-standardised death rates for Australian women, ${first} to ${last}: ${rows.map((r) => `${label(r.cause).toLowerCase()} ${fmt(r.fallPct)}%`).join(', ')}.`}
+  caveat="Age-standardised rates; falls are similar for men. Investment in research, prevention and treatment works."
+  sources={[GBD_SOURCE]}
+  csv={[RATES_FILE.file]}
+>
+  <Slope
+    id="progress-chart"
+    title={`Age-standardised death rates per 100,000, Australian women, ${RATE_YEARS.join(', ')}`}
+    desc={rows.map((r) => `${label(r.cause)}: ${r.rates.map((v) => fmt(v, 1)).join(' → ')} (down ${fmt(r.fallPct)}%)`).join('; ') + '.'}
+    years={RATE_YEARS}
+    rows={rows.map((r) => ({ label: label(r.cause), values: r.rates, endLabel: `−${fmt(r.fallPct)}%` }))}
+    max={max}
+    unit="Deaths per 100,000 women (age-standardised)"
+  />
+  <DataTable
+    slot="data"
+    caption={`Age-standardised death rates per 100,000, Australian women (GBD ${GBD_YEAR})`}
+    head={['Cause', ...RATE_YEARS.map(String), `Fall, ${first}–${last}`]}
+    rows={rows.map((r) => [label(r.cause), ...r.rates.map((v) => fmt(v, 1)), `${fmt(r.fallPct, 1)}%`])}
+  />
+</Scene>

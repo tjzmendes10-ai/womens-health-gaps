@@ -1,0 +1,55 @@
+---
+// N6 · Global and Australia (two panels) · Some conditions hit women far
+// harder. Only rows where the uncertainty ranges don't overlap.
+import Scene from '../charts/Scene.astro';
+import Panel from '../charts/Panel.astro';
+import RatioBars from '../charts/RatioBars.astro';
+import DataTable from '../charts/DataTable.astro';
+import { clearGaps, YLD_FILE, GBD_SOURCE, GBD_YEAR } from '../../lib/data/gbd-yld';
+import { fmt } from '../../lib/data/csv';
+
+const panels = (['Global', 'Australia'] as const).map((location) => ({ location, rows: clearGaps(location) }));
+const top = panels.flatMap((p) => p.rows.map((r) => ({ ...r, location: p.location }))).sort((a, b) => b.ratio - a.ratio)[0];
+const max = Math.ceil(top.ratio);
+const who = top.location === 'Australia' ? 'Australian women' : 'Women worldwide';
+const x = (n: number) => `${fmt(n, 1)}×`;
+const NOTE = "Rows shown only where the uncertainty ranges for women and men don't overlap.";
+---
+<Scene
+  id="harder"
+  region="Global and Australia"
+  year={GBD_YEAR}
+  big={x(top.ratio)}
+  headline={`${who} live with ${x(top.ratio)} as much ill health from ${top.cause.toLowerCase()} as men, age for age.`}
+  caveat={`Years lived with disability (YLDs) per 100,000, age-standardised. ${NOTE}`}
+  sources={[]}
+  panels
+>
+  {
+    panels.map((p) => (
+      <Panel
+        region={p.location}
+        year={GBD_YEAR}
+        title={p.location === 'Global' ? 'Worldwide' : 'In Australia'}
+        summary={`${p.location === 'Global' ? 'Worldwide' : 'In Australia'}, women's rate of years lived with disability compared with men's: ${p.rows.map((r) => `${r.cause.toLowerCase()} ${x(r.ratio)}`).join(', ')}.`}
+        sources={[GBD_SOURCE]}
+        csv={[YLD_FILE.file]}
+      >
+        <RatioBars
+          id={`harder-${p.location.toLowerCase()}`}
+          title={`How many times higher women's rate of years lived with disability is than men's, ${p.location}, ${GBD_YEAR}`}
+          desc={p.rows.map((r) => `${r.cause}: ${x(r.ratio)} men's rate`).join('; ') + '.'}
+          rows={p.rows.map((r) => ({ label: r.cause, ratio: r.ratio }))}
+          max={max}
+        />
+        <DataTable
+          slot="data"
+          caption={`Years lived with disability per 100,000, age-standardised, ${p.location}, ${GBD_YEAR}`}
+          head={['Condition', 'Women', 'Men', 'Women ÷ men']}
+          rows={p.rows.map((r) => [r.cause, fmt(r.women, 1), fmt(r.men, 1), fmt(r.ratio, 2)])}
+          note="Rows where gap_clear is True only."
+        />
+      </Panel>
+    ))
+  }
+</Scene>

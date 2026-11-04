@@ -11,7 +11,7 @@ const rendered = await Promise.all(entries.map(async (e) => ({ entry: e, Content
 <ol class="timeline">
   {
     rendered.map(({ entry, Content }) => (
-      <li class="timeline-entry">
+      <li class="timeline-entry" id={entry.id}>
         <p class="timeline-date">{entry.data.date}</p>
         <div class="timeline-body">
           <h2 class="timeline-title"><Text text={entry.data.title} /></h2>

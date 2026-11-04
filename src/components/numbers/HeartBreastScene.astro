@@ -1,0 +1,49 @@
+---
+// N5 · Australia · Heart disease kills more Australian women than breast cancer.
+// Also used on the cardiovascular disease page.
+import Scene from '../charts/Scene.astro';
+import IconRows from '../charts/IconRows.astro';
+import DataTable from '../charts/DataTable.astro';
+import { womensDeaths, COD_FILE, COD_SOURCE, COD_YEAR } from '../../lib/data/abs-causes-of-death';
+import { fmt } from '../../lib/data/csv';
+
+interface Props { level?: 2 | 3 }
+const { level = 3 } = Astro.props;
+
+const PER = 100;
+const heart = womensDeaths('heart');
+const breast = womensDeaths('breast');
+if (heart.deaths <= breast.deaths) throw new Error('"In numbers" N5: the headline says heart disease kills more women than breast cancer, but the data no longer shows that.');
+if (breast.ypll <= heart.ypll) throw new Error('"In numbers" N5: the caveat says breast cancer costs more years of life, but the data no longer shows that.');
+const perDay = (d: number) => Math.round(d / 365);
+---
+<Scene
+  id="heart-vs-breast"
+  level={level}
+  region="Australia"
+  year={COD_YEAR}
+  big={fmt(heart.deaths)}
+  headline={`Coronary heart disease killed ${fmt(heart.deaths)} Australian women in ${COD_YEAR}. Breast cancer killed ${fmt(breast.deaths)}.`}
+  summary={`About ${perDay(heart.deaths)} women a day died from coronary heart disease, and about ${perDay(breast.deaths)} a day from breast cancer. Each figure stands for ${PER} deaths, rounded to the nearest ${PER}.`}
+  caveat={`Breast cancer kills women younger, so it costs more years of life: ${fmt(breast.ypll)} years of potential life lost, compared with ${fmt(heart.ypll)} for coronary heart disease.`}
+  sources={[COD_SOURCE]}
+  csv={[COD_FILE.file]}
+>
+  <IconRows
+    id="heart-vs-breast-chart"
+    title={`Deaths of Australian women from coronary heart disease and breast cancer, ${COD_YEAR}`}
+    desc={`Coronary heart disease: ${fmt(heart.deaths)} deaths, shown as ${Math.round(heart.deaths / PER)} figures. Breast cancer: ${fmt(breast.deaths)} deaths, shown as ${Math.round(breast.deaths / PER)} figures. One figure = ${PER} deaths.`}
+    per={PER}
+    rows={[
+      { label: 'Coronary heart disease', sub: `${fmt(heart.deaths)} deaths · about ${perDay(heart.deaths)} a day`, count: heart.deaths, style: 'women' },
+      { label: 'Breast cancer', sub: `${fmt(breast.deaths)} deaths · about ${perDay(breast.deaths)} a day`, count: breast.deaths, style: 'women' },
+    ]}
+  />
+  <DataTable
+    slot="data"
+    caption={`Australian women, deaths registered in ${COD_YEAR}`}
+    head={['Cause (ABS name)', 'Deaths', 'Deaths a day', 'Years of potential life lost']}
+    rows={[heart, breast].map((c) => [c.cause, fmt(c.deaths), fmt(c.deaths / 365, 1), fmt(c.ypll)])}
+    note="Deaths a day = deaths ÷ 365."
+  />
+</Scene>

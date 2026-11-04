@@ -330,7 +330,26 @@ statistically clear.
 
 ---
 
-## 10. Not collected yet
+## 10. AIHW: burden of disease, fatal vs non-fatal (AU)
+
+- **File:** `clean/aihw_burden_fatal_nonfatal.csv`
+- **What it is:** the share of Australian women's burden of disease that comes
+  from living with illness (non-fatal) rather than dying early (fatal):
+  60% vs 40%. Transcribed by hand from the figure already cited on the home
+  page (`src/content/pages/home.md`), with the same link:
+  https://www.aihw.gov.au/reports/womens-health/the-health-of-women-in-australia
+- **Used by:** the "In numbers" page (Now, burden of disease).
+
+**Caveats:**
+- The figure as cited gives women only, so there is no men's row yet. The
+  chart shows women only until a men's figure is added from AIHW (the site
+  blocks automated downloads, so it needs to be copied in by hand).
+- Transcribed, not downloaded: check it against the AIHW report when it's next
+  updated.
+
+---
+
+## 11. Not collected yet
 
 | Source | Why not | What's needed |
 |---|---|---|

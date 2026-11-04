@@ -16,6 +16,9 @@ import ClockSpot from './spots/ClockSpot.astro';
 import CalmSpot from './spots/CalmSpot.astro';
 import HeartSpot from './spots/HeartSpot.astro';
 import { splitProblemBody } from '../lib/content';
+import TrialsScene from './numbers/TrialsScene.astro';
+import HeartBreastScene from './numbers/HeartBreastScene.astro';
+import { url } from '../lib/url';
 
 interface Props {
   problem: CollectionEntry<'problems'>;
@@ -34,6 +37,11 @@ const [topicId, pageId] = problem.id.split('/');
 const spotKey = pageId === 'overview' ? topicId : pageId;
 const spots: Record<string, typeof CycleSpot> = { endometriosis: ChairSpot, pmos: ClockSpot, 'cardiovascular-disease': HeartSpot };
 const Spot = mentalHealth ? CalmSpot : (spots[spotKey] ?? CycleSpot);
+
+// Charts from the In numbers page shown on a condition page (the same
+// components, so the figures always match).
+const numberScenes: Record<string, (typeof TrialsScene)[]> = { 'cardiovascular-disease': [HeartBreastScene, TrialsScene] };
+const embeds = numberScenes[spotKey] ?? [];
 
 // "Last reviewed" shows the date, plus the time in Sydney when one is given,
 // e.g. lastReviewed: 2026-11-02T18:10:00+11:00. A date on its own
@@ -61,6 +69,14 @@ const reviewedFormat: Intl.DateTimeFormatOptions = reviewedHasTime
 
     <Fragment set:html={body.whyAustralia} />
     {body.globalContext && <Fragment set:html={body.globalContext} />}
+
+    {embeds.length > 0 && (
+      <section class="numbers-embed" aria-labelledby="in-numbers-heading">
+        <h2 id="in-numbers-heading">In numbers</h2>
+        <p class="muted">From the <a href={url('/in-numbers/')}>In numbers</a> page. Each chart lists its own source.</p>
+        {embeds.map((S) => <S />)}
+      </section>
+    )}
 
     <SourcesList sources={sources} />
 

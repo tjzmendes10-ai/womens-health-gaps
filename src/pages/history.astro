@@ -4,6 +4,7 @@ import Base from '../layouts/Base.astro';
 import Timeline from '../components/Timeline.astro';
 import Origins from '../components/Origins.astro';
 import { getPage } from '../lib/content';
+import { url } from '../lib/url';
 
 const page = await getPage('history', 'history');
 const { Content } = await render(page);
@@ -16,6 +17,7 @@ import PagesSpot from '../components/spots/PagesSpot.astro';
   </PageBand>
   <article class="page">
     <Content />
+    <p class="history-numbers">The key figures from this history are also set out in <a href={url('/in-numbers/#then')}>In numbers: Then</a>.</p>
     <Timeline />
     <Origins />
   </article>

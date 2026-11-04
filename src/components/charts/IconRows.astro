@@ -1,0 +1,40 @@
+---
+// Rows of small figures: one figure stands for `per` people.
+interface Row { label: string; sub?: string; count: number; style: 'women' | 'men' }
+interface Props { id: string; title: string; desc: string; rows: Row[]; per: number; perRow?: number; emptyLabel?: string }
+const { id, title, desc, rows, per, perRow = 20, emptyLabel } = Astro.props;
+const W = 400, CELL = W / perRow, ICON_H = 26, LABEL_H = 40, ROW_GAP = 18;
+let y = 0;
+const layout = rows.map((r) => {
+  const n = Math.round(r.count / per);
+  const lines = Math.max(1, Math.ceil(n / perRow));
+  const top = y;
+  y += LABEL_H + lines * ICON_H + ROW_GAP;
+  return { ...r, n, lines, top };
+});
+const H = y - ROW_GAP;
+// A simple standing figure, 12 wide and 22 tall.
+const person = 'M6,0a3.6,3.6 0 1 1 0,7.2a3.6,3.6 0 1 1 0,-7.2z M1.5,9.2h9a1.5,1.5 0 0 1 1.5,1.5v6.3h-2.6v5h-6.8v-5h-2.6v-6.3a1.5,1.5 0 0 1 1.5,-1.5z';
+---
+<svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby={`${id}-t ${id}-d`}>
+  <title id={`${id}-t`}>{title}</title>
+  <desc id={`${id}-d`}>{desc}</desc>
+  {
+    layout.map((r) => (
+      <g>
+        <text class="ct ct-strong" x="0" y={r.top + 15}>{r.label}</text>
+        {r.sub && <text class="ct ct-small ct-muted" x="0" y={r.top + 32}>{r.sub}</text>}
+        {r.n === 0 ? (
+          <g>
+            <rect class="empty-slot" x="1" y={r.top + LABEL_H} width={W - 2} height={ICON_H - 2} rx="3" />
+            <text class="ct ct-strong" x={W / 2} y={r.top + LABEL_H + 16.5} text-anchor="middle">{emptyLabel}</text>
+          </g>
+        ) : (
+          Array.from({ length: r.n }, (_, k) => (
+            <path class={`icon-${r.style}`} d={person} transform={`translate(${(k % perRow) * CELL + (CELL - 12) / 2},${r.top + LABEL_H + Math.floor(k / perRow) * ICON_H})`} />
+          ))
+        )}
+      </g>
+    ))
+  }
+</svg>

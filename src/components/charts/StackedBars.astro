@@ -1,0 +1,27 @@
+---
+// 100% stacked bars: non-fatal (living with illness) vs fatal (dying early).
+interface Row { label: string; style: 'women' | 'men'; nonFatal: number; fatal: number }
+interface Props { id: string; title: string; desc: string; rows: Row[] }
+const { id, title, desc, rows } = Astro.props;
+const W = 400, BAR_H = 40, ROW_H = 76;
+const H = rows.length * ROW_H - 8;
+---
+<svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby={`${id}-t ${id}-d`}>
+  <title id={`${id}-t`}>{title}</title>
+  <desc id={`${id}-d`}>{desc}</desc>
+  {
+    rows.map((r, i) => {
+      const y = i * ROW_H + 22;
+      const split = (r.nonFatal / 100) * W;
+      return (
+        <g>
+          <text class="ct ct-strong" x="0" y={y - 8}>{r.label}</text>
+          <rect class={`bar-${r.style}`} x="0" y={y} width={split} height={BAR_H} />
+          <rect class={`bar-${r.style}-pale`} x={split} y={y} width={W - split} height={BAR_H} />
+          <text class="ct ct-on-dark ct-strong" x="10" y={y + 25}>Living with illness {r.nonFatal}%</text>
+          <text class="ct ct-strong" x={W - 10} y={y + 25} text-anchor="end">Dying early {r.fatal}%</text>
+        </g>
+      );
+    })
+  }
+</svg>

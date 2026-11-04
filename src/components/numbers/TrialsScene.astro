@@ -1,0 +1,59 @@
+---
+// N4 · Global · Women are under-represented in heart disease trials.
+// Also used on the cardiovascular disease page.
+import Scene from '../charts/Scene.astro';
+import Dumbbell from '../charts/Dumbbell.astro';
+import DataTable from '../charts/DataTable.astro';
+import { trialShares, heartTrials, trialCount, conditionLabel, HEART, STROKE, TRIALS_FILES } from '../../lib/data/ctgov-trials';
+import { GBD_YEAR } from '../../lib/data/gbd-yld';
+import { fmt } from '../../lib/data/csv';
+
+interface Props { level?: 2 | 3 }
+const { level = 3 } = Astro.props;
+
+const rows = trialShares();
+const heart = heartTrials();
+const n = trialCount();
+const under = rows.filter((r) => r.pooled < r.burden);
+const worst = rows[0];
+const r0 = (v: number) => Math.round(v);
+// "Half of trials are less than X% women": round the median UP to one
+// decimal place so the sentence stays true (median 28.47 -> 28.5).
+const medianUp = Math.ceil(heart.median * 10) / 10;
+---
+<Scene
+  id="trials"
+  level={level}
+  region="Global"
+  year={`${n.firstYear}–${n.lastYear}`}
+  big={`${r0(heart.pooled)}%`}
+  headline={`Women are ${r0(heart.pooled)}% of heart disease trial participants but carry ${r0(heart.burden)}% of the burden.`}
+  summary={`Women's share of trial participants was below their share of the disease burden in ${under.length} of ${rows.length} conditions. The biggest shortfall was in ${conditionLabel(worst.condition)} (${r0(worst.pooled)}% of participants, ${r0(worst.burden)}% of the burden).`}
+  caveat={`Our analysis of ${fmt(n.distinct)} ClinicalTrials.gov trials (${n.firstYear}–${n.lastYear}) that reported participants by sex, compared with GBD ${GBD_YEAR} burden (DALYs). Studies that compare with prevalence find similar patterns (Rivera et al., JAMA Netw Open 2025).`}
+  sourceNote="Ratio of two sources"
+  sources={[
+    { label: 'ClinicalTrials.gov, US National Library of Medicine; analysis by Women\'s Health Gaps', url: 'https://clinicaltrials.gov/' },
+    { label: `IHME, GBD ${GBD_YEAR}`, url: 'https://vizhub.healthdata.org/gbd-results/' },
+    { label: 'Rivera FB et al., JAMA Netw Open 2025', url: 'https://doi.org/10.1001/jamanetworkopen.2025.29104' },
+  ]}
+  csv={TRIALS_FILES.map((f) => f.file)}
+>
+  <p slot="lead" class="scene-lead">Half of heart disease trials are less than {fmt(medianUp, 1)}% women.</p>
+  <Dumbbell
+    id="trials-chart"
+    title="Women's share of trial participants vs women's share of the disease burden, by condition"
+    desc={rows.map((r) => `${conditionLabel(r.condition)}: ${r0(r.pooled)}% of participants, ${r0(r.burden)}% of burden`).join('; ') + '.'}
+    aName="Women's share of trial participants"
+    bName={`Women's share of the disease burden (DALYs, GBD ${GBD_YEAR})`}
+    aShort="Participants"
+    bShort="Burden"
+    rows={rows.map((r) => ({ label: conditionLabel(r.condition), a: r.pooled, b: r.burden, highlight: r.condition === HEART || r.condition === STROKE }))}
+  />
+  <DataTable
+    slot="data"
+    caption="Women's share of trial participants and of the disease burden, by condition (sorted by the gap)"
+    head={['Condition', 'Trials', 'Women, all participants', 'Women, median trial', 'Women, share of burden']}
+    rows={rows.map((r) => [conditionLabel(r.condition), fmt(r.trials), `${fmt(r.pooled, 1)}%`, `${fmt(r.median, 1)}%`, `${fmt(r.burden, 1)}%`])}
+    note={`Some trials are counted under more than one condition: ${fmt(n.entries)} trial–condition entries, ${fmt(n.distinct)} distinct trials. Very large trials can skew the "all participants" share; the median trial is shown too.`}
+  />
+</Scene>

@@ -1,0 +1,85 @@
+---
+// S2 · Australia · The gaps that remain are deadly. Two panels, each with
+// its own source: (a) ABS deaths, (b) OECD screening.
+import Scene from '../charts/Scene.astro';
+import Panel from '../charts/Panel.astro';
+import Bars from '../charts/Bars.astro';
+import DataTable from '../charts/DataTable.astro';
+import { womensDeaths, COD_FILE, COD_SOURCE, COD_YEAR } from '../../lib/data/abs-causes-of-death';
+import { screening, OECD_FILE, OECD_SOURCE } from '../../lib/data/oecd-screening';
+import { fmt } from '../../lib/data/csv';
+
+const ovarian = womensDeaths('ovarian');
+const cervical = womensDeaths('cervical');
+const screens = screening();
+const deathMax = Math.ceil(Math.max(ovarian.deaths, cervical.deaths) / 500) * 500;
+const pct = (n: number) => `${fmt(n, 1)}%`;
+const years = [...new Set(screens.map((s) => s.year))].join(', ');
+const flagged = screens.filter((s) => s.status);
+---
+<Scene
+  id="remaining-gaps"
+  region="Australia"
+  year={COD_YEAR}
+  big={fmt(ovarian.deaths)}
+  headline={`Ovarian cancer killed ${fmt(ovarian.deaths)} Australian women in ${COD_YEAR}. Cervical cancer killed ${fmt(cervical.deaths)}.`}
+  sources={[]}
+  panels
+>
+  <Panel
+    region="Australia"
+    year={COD_YEAR}
+    title="Deaths: ovarian and cervical cancer"
+    summary={`Deaths of Australian women registered in ${COD_YEAR}: ovarian cancer ${fmt(ovarian.deaths)}, cervical cancer ${fmt(cervical.deaths)}.`}
+    sources={[COD_SOURCE]}
+    csv={[COD_FILE.file]}
+  >
+    <p slot="lead" class="scene-lead">Cervical cancer has a national screening program. Ovarian cancer has no screening test.</p>
+    <Bars
+      id="ovarian-cervical-chart"
+      title={`Deaths of Australian women from ovarian and cervical cancer, ${COD_YEAR}`}
+      desc={`Ovarian cancer: ${fmt(ovarian.deaths)} deaths. Cervical cancer: ${fmt(cervical.deaths)} deaths.`}
+      max={deathMax}
+      groups={[
+        { label: 'Ovarian cancer', bars: [{ name: 'Deaths', value: ovarian.deaths, style: 'women', valueLabel: fmt(ovarian.deaths) }] },
+        { label: 'Cervical cancer', bars: [{ name: 'Deaths', value: cervical.deaths, style: 'women', valueLabel: fmt(cervical.deaths) }] },
+      ]}
+    />
+    <DataTable
+      slot="data"
+      caption={`Australian women, deaths registered in ${COD_YEAR}`}
+      head={['Cause (ABS name)', 'Deaths']}
+      rows={[ovarian, cervical].map((c) => [c.cause, fmt(c.deaths)])}
+    />
+  </Panel>
+  <Panel
+    region="Australia"
+    year={years}
+    title="Screening: Australia and other countries"
+    summary={screens.map((s) => `${s.label} (ages ${s.ages}), ${s.year}: Australia ${pct(s.australia)}, median of ${s.countries} other countries ${pct(s.median)}.`).join(' ')}
+    note={`OECD measures breast screening at ages 50–69; BreastScreen Australia invites women aged 50–74.${flagged.length ? ` OECD flags Australia's ${flagged.map((s) => s.label.toLowerCase()).join(' and ')} figure: "${flagged.map((s) => s.status).join('; ')}".` : ''}`}
+    sources={[OECD_SOURCE]}
+    csv={[OECD_FILE.file]}
+  >
+    <Bars
+      id="screening-chart"
+      title="Share of women screened, Australia vs the median of other countries reporting (OECD programme data)"
+      desc={screens.map((s) => `${s.label}: Australia ${pct(s.australia)}, other countries' median ${pct(s.median)}`).join('; ') + '.'}
+      max={100}
+      groups={screens.map((s) => ({
+        label: `${s.label} (ages ${s.ages})`,
+        bars: [
+          { name: 'Australia', value: s.australia, style: 'women', valueLabel: pct(s.australia) },
+          { name: 'Other countries, median', value: s.median, style: 'outline', valueLabel: pct(s.median) },
+        ],
+      }))}
+    />
+    <DataTable
+      slot="data"
+      caption="Women screened, programme data (%)"
+      head={['Screening', 'Year', 'Australia', 'Median, other countries', 'Countries reporting']}
+      rows={screens.map((s) => [`${s.label} (ages ${s.ages})`, s.year, pct(s.australia), pct(s.median), s.countries])}
+      note={flagged.length ? `OECD status for Australia: ${flagged.map((s) => `${s.label.toLowerCase()} "${s.status}"`).join('; ')}.` : undefined}
+    />
+  </Panel>
+</Scene>
