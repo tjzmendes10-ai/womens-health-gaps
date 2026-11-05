@@ -349,7 +349,33 @@ statistically clear.
 
 ---
 
-## 11. Not collected yet
+## 11. Time to diagnosis: published surveys (AU, plus one global)
+
+- **File:** `clean/time_to_diagnosis.csv`
+- **What it is:** average time to diagnosis for endometriosis (and some
+  related figures for PMDD, PCOS (PMOS) and ovarian cancer), transcribed by
+  hand from published studies. One row per figure, with the study, sample
+  size, what the delay is measured from, and a caveat.
+- **Checked against the source:** the Armour et al. 2020 figures (8 years in
+  total; 4.9 years from first doctor; 9.9, 4.8 and 1.5 years by when people
+  first saw a doctor) were checked against Table 2 of the full text via
+  Europe PMC. Mosterd et al. 2025 is from the abstract only (the full text
+  site blocks automated access).
+- **Used by:** the "In numbers" page (Still to go, endometriosis). The chart
+  uses Armour 2020 only; Mosterd 2025 is quoted in the caveat. The PMDD, PCOS
+  and ovarian cancer rows aren't used yet.
+
+**Caveats:**
+- All the endometriosis and PMDD figures are online surveys of people
+  recruited through support groups, so they aren't representative.
+- The "2013 onwards" group in Armour 2020 is cut short by the 2017 survey date.
+- The figures use different measures (mean vs median) and start points
+  (first symptoms vs first doctor), so don't put them on one axis.
+- Moradi et al. (8.1 years) is a preprint and isn't used on the site.
+
+---
+
+## 12. Not collected yet
 
 | Source | Why not | What's needed |
 |---|---|---|

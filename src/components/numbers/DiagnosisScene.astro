@@ -1,0 +1,45 @@
+---
+// S3 · Australia · How long people with endometriosis wait for a diagnosis.
+// One study on the chart (Armour et al. 2020); a later survey is quoted in
+// the caveat so the fall in waiting times isn't overstated.
+import Scene from '../charts/Scene.astro';
+import Bars from '../charts/Bars.astro';
+import DataTable from '../charts/DataTable.astro';
+import { endometriosisDelay, DIAGNOSIS_FILE } from '../../lib/data/diagnosis-delay';
+import { fmt, numberWord } from '../../lib/data/csv';
+
+const d = endometriosisDelay();
+const yrs = (n: number) => `${fmt(n, 1)} years`;
+const max = Math.ceil(Math.max(...d.periods.map((p) => p.years)) / 2) * 2;
+const periodText = d.periods.map((p) => `${p.label}, ${yrs(p.years)}`).join('; ');
+
+// Guard: the headline below says waits got shorter over time.
+if (!d.periods.every((p, i) => i === 0 || p.years < d.periods[i - 1].years)) {
+  throw new Error(`research-data/clean/${DIAGNOSIS_FILE.file}: waits by year of first visit no longer fall over time, so the endometriosis headline needs rewriting.`);
+}
+---
+<Scene
+  id="diagnosis"
+  region="Australia"
+  year={`Survey ${d.surveyYear}`}
+  big={`${fmt(d.years)} years`}
+  headline={`People with endometriosis in Australia waited an average of ${numberWord(d.years)} years from their first symptoms to a diagnosis.`}
+  summary={`Average years from first seeing a doctor to an endometriosis diagnosis, by when people first saw a doctor: ${periodText}. Waits have got shorter, but the most recent group is cut short (see below).`}
+  caveat={`The survey ran in ${d.surveyYear}, so people first seen from 2013 who were still waiting weren't counted. A ${d.later.year} survey of ${fmt(d.later.sampleSize)} Australians found an average of ${fmt(d.later.years, 1)} years from symptoms to diagnosis, and ${fmt(d.later.recent, 1)} years for people who first saw a GP from 2018. Both surveys recruited through endometriosis groups, so they aren't representative.`}
+  sources={d.sources}
+  csv={[DIAGNOSIS_FILE.file]}
+>
+  <Bars
+    id="diagnosis-chart"
+    title="Average years from first seeing a doctor to an endometriosis diagnosis, Australia, by when people first saw a doctor"
+    desc={`${periodText}. Survey of ${fmt(d.sampleSize)} people, ${d.surveyYear}.`}
+    groups={d.periods.map((p) => ({ label: `First saw a doctor ${p.label}`, bars: [{ name: '', value: p.years, style: 'women' as const, valueLabel: yrs(p.years) }] }))}
+    max={max}
+  />
+  <DataTable
+    slot="data"
+    caption={`Average years from first seeing a doctor to an endometriosis diagnosis (survey of ${fmt(d.sampleSize)} people, ${d.surveyYear})`}
+    head={['First saw a doctor', 'Average years to diagnosis']}
+    rows={d.periods.map((p) => [p.label, fmt(p.years, 1)])}
+  />
+</Scene>
