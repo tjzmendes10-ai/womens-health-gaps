@@ -6,6 +6,7 @@ import PageBand from '../components/PageBand.astro';
 import SunSpot from '../components/spots/SunSpot.astro';
 import Source from '../components/Source.astro';
 import { getPage } from '../lib/content';
+import { changeId } from '../lib/headed';
 import { PLACEHOLDER_TITLE } from '../lib/placeholder-plugins.mjs';
 
 const page = await getPage('headed', 'headed');
@@ -40,7 +41,7 @@ const { Content } = await render(page);
       <ul class="change-cards">
         {
           page.data.changes.map((c) => (
-            <li class="change-card">
+            <li class="change-card" id={changeId(c.who)}>
               <h3><Text text={c.who} /></h3>
               <ul>
                 {c.points.map((pt) => <li><Text text={pt} /></li>)}

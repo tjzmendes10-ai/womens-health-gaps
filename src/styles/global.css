@@ -639,6 +639,7 @@ main:has(.actions-panel) { padding-bottom: 0; }
 .change-cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
 @media (min-width: 40rem) { .change-cards { grid-template-columns: 1fr 1fr; } }
 .change-card {
+  scroll-margin-top: 1.5rem;
   background: var(--surface);
   border-radius: 14px;
   border-top: 5px solid var(--brand-deep);
@@ -779,6 +780,22 @@ main:has(> .numbers-intro) { padding-block: 0; }
 .scene-unfinished .scene-headline { color: var(--cream); }
 .numbers-close { margin: clamp(2rem, 6vw, 3rem) 0 0; font-family: var(--serif); font-size: var(--step-2); font-weight: 600; }
 .numbers-close a::after { content: ' →'; }
+
+/* "What would fix it": the last thing in each chapter */
+.chapter-fix {
+  margin-top: clamp(1.5rem, 5vw, 2.5rem);
+  padding: clamp(1rem, 4vw, 1.5rem);
+  border-left: 5px solid var(--accent);
+  background: var(--surface);
+  border-radius: 0 10px 10px 0;
+  max-width: 40rem;
+}
+.chapter-dark .chapter-fix { background: rgba(251, 245, 239, 0.08); }
+.chapter-fix-label { font-size: var(--step--1); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin: 0; color: var(--brand-mid); }
+.chapter-dark .chapter-fix-label { color: var(--accent); }
+.chapter-fix-text { font-family: var(--serif); font-size: var(--step-1); line-height: 1.4; margin: 0.4rem 0 0.75rem; }
+.chapter-fix a { font-weight: 600; }
+.chapter-fix a::after { content: ' →'; }
 
 /* Chart marks. Text is sized in SVG units: about 12–13px on a phone. */
 svg.chart { display: block; width: 100%; height: auto; overflow: visible; }

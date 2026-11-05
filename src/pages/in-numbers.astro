@@ -12,8 +12,9 @@ import HarderScene from '../components/numbers/HarderScene.astro';
 import ResearchScene from '../components/numbers/ResearchScene.astro';
 import ProgressScene from '../components/numbers/ProgressScene.astro';
 import RemainingGapsScene from '../components/numbers/RemainingGapsScene.astro';
+import DiagnosisScene from '../components/numbers/DiagnosisScene.astro';
+import ChapterFix from '../components/numbers/ChapterFix.astro';
 import { SOURCES_URL } from '../lib/data/csv';
-import { PLACEHOLDER_TITLE } from '../lib/placeholder-plugins.mjs';
 import { url } from '../lib/url';
 
 const chapters = [
@@ -45,6 +46,7 @@ const chapters = [
       <p class="chapter-label">Chapter 1</p>
       <h2 id="then-title" class="chapter-title">Then</h2>
       <ThenScenes />
+      <ChapterFix who="Governments and funders" point="Enforce the 2026 requirement" />
     </div>
   </section>
 
@@ -58,6 +60,7 @@ const chapters = [
       <IllHealthScene />
       <BurdenScene />
       <HeartBreastScene />
+      <ChapterFix who="Researchers and institutions" point="Include women in trials" />
     </div>
   </section>
 
@@ -68,12 +71,8 @@ const chapters = [
       <ProgressScene />
       <RemainingGapsScene />
 
-      <article class="scene scene-unfinished" id="diagnosis" aria-labelledby="diagnosis-headline">
-        <p class="scene-eyebrow"><span class="tag">Australia</span></p>
-        <p class="scene-number"><mark class="placeholder" title={PLACEHOLDER_TITLE}>[DATA NEEDED]</mark></p>
-        <h3 class="scene-headline" id="diagnosis-headline">How long women wait for a diagnosis</h3>
-        <p><mark class="placeholder" title={PLACEHOLDER_TITLE}>[DATA NEEDED – years to diagnosis for endometriosis and other conditions]</mark></p>
-      </article>
+      <DiagnosisScene />
+      <ChapterFix who="Medical schools and doctors" point="Training on endometriosis" />
 
       <p class="numbers-close">
         <a href={url('/where-were-headed/')}>What needs to change, and who can change it</a>
