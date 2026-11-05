@@ -1,0 +1,28 @@
+---
+// "What would fix it": ends a chapter of "In numbers" with one point from
+// "What needs to change" (src/content/pages/headed.md), quoted word for word
+// and linked to its card. If that point is reworded or removed, the build
+// stops and says which one it was looking for.
+import Text from '../Text.astro';
+import { getPage } from '../../lib/content';
+import { changeId } from '../../lib/headed';
+import { url } from '../../lib/url';
+
+interface Props {
+  /** The card heading, e.g. "Researchers and institutions". */
+  who: string;
+  /** The start of the point to quote. */
+  point: string;
+}
+const { who, point } = Astro.props;
+const page = await getPage('headed', 'headed');
+const card = page.data.changes.find((c) => c.who === who);
+if (!card) throw new Error(`"In numbers" page: no "${who}" card in src/content/pages/headed.md (under changes).`);
+const text = card.points.find((p) => p.startsWith(point));
+if (!text) throw new Error(`"In numbers" page: the "${who}" card in src/content/pages/headed.md has no point starting "${point}".`);
+---
+<aside class="chapter-fix" aria-label="What would fix it">
+  <p class="chapter-fix-label">What would fix it</p>
+  <p class="chapter-fix-text"><Text text={text} /></p>
+  <a href={url(`/where-were-headed/#${changeId(who)}`)}>{who}: what needs to change</a>
+</aside>
