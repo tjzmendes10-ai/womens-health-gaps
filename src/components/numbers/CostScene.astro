@@ -19,8 +19,8 @@ const list = rows.map((r) => `${r.label === 'GP' ? 'GP' : r.label.toLowerCase()}
   region="Australia"
   year={COST_YEAR}
   big={pct(gp.women)}
-  headline={`${pct(gp.women)} of women delayed or skipped a GP visit because of cost, compared with ${pct(gp.men)} of men.`}
-  summary={`Women were more likely than men to delay or go without every type of care shown because of cost (women vs men): ${list}. Whiskers show the 95% margin of error.`}
+  headline={`Cost kept ${pct(gp.women)} of women from a GP visit they needed, compared with ${pct(gp.men)} of men.`}
+  summary={`For every type of care shown, cost kept more women than men from getting it when they needed it, or made them wait (women vs men): ${list}. Whiskers show the 95% margin of error.`}
   caveat="People aged 15 and over who delayed or went without care in the last 12 months. The survey doesn't show why the gap exists."
   sources={[COST_SOURCE]}
   csv={[COST_FILE.file]}

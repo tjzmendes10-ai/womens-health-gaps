@@ -823,7 +823,7 @@ svg.chart { display: block; width: 100%; height: auto; overflow: visible; }
 .teaser-figures { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.6rem; margin: 0 0 0.75rem; font-family: var(--serif); font-weight: 600; line-height: 1; }
 .teaser-women { font-size: clamp(3rem, 2rem + 6vw, 5.5rem); color: var(--women); letter-spacing: -0.02em; }
 .teaser-pair { white-space: nowrap; margin-right: 1rem; }
-.teaser-men { font-size: clamp(2rem, 1.5rem + 3vw, 3.25rem); color: var(--ink-muted); }
+.teaser-second { font-size: clamp(2rem, 1.5rem + 3vw, 3.25rem); color: var(--women); } /* also women's figure, so the same colour */
 .teaser-vs { font-family: var(--sans); font-size: var(--step--1); font-weight: 600; color: var(--ink-muted); }
 .numbers-teaser .scene-headline { margin-top: 0; }
 .teaser-link { margin: 1rem 0 0; font-weight: 600; }
